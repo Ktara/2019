@@ -3,27 +3,208 @@
     var sections_btn = $('.vostock-zapad');
     var stage_btn = $('.unscale_slide .layout_stage_position');
     var stages = $('.unscale_slide img');
-    stage_btn.click(function(){
-        var index = stage_btn.index(this);
+    var plan_row = $('.unscale_block .layout_row');
+    var plans_row = $('.unscale_block .plans_row');
+    var plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+    var plans = $('.unscale_block .unscale_slide .plans_wrapper');
+    var blocks = $('.section_block');
+    var stage_up = $('.unscale_slide .layout_stage_up');
+    var stage_down = $('.unscale_slide .layout_stage_down');
+    stage_up.click(function(){
+        var curent_stage = $('.unscale_slide .layout_stage_position_active');
+        var index = stage_btn.index(curent_stage) - 1;
+        console.log(index);
+        if(index === -1) index = stage_btn.length - 1;
+        plan_row = $('.unscale_block .layout_row');
+        plans_row = $('.unscale_block .plans_row');
         stage_btn.removeClass('layout_stage_position_active');
-        $(this).addClass('layout_stage_position_active');
+        $(stage_btn[index]).addClass('layout_stage_position_active');
+
         stages.removeClass('unscale_slide');
         $(stages[index]).addClass('unscale_slide');
+
+        plan_row.removeClass('unscale_slide');
+        $(plan_row[index]).addClass('unscale_slide');
+
+        plans_row.removeClass('unscale_slide');
+        $(plans_row[index]).addClass('unscale_slide');
+
+        plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+        plans = $('.unscale_block .unscale_slide .plans_wrapper');
+        plan_btn.click(function(){
+            var index = plan_btn.index(this);
+            plan_btn.removeClass('layout_btn_active');
+            $(this).addClass('layout_btn_active');
+            plans.removeClass('unscale_slide');
+            $(plans[index]).addClass('unscale_slide');
+        });
+    });
+    stage_down.click(function(){
+        var curent_stage = $('.unscale_slide .layout_stage_position_active');
+        var index = stage_btn.index(curent_stage) + 1;
+        console.log(index);
+        if(index === stage_btn.length) index = 0;
+        plan_row = $('.unscale_block .layout_row');
+        plans_row = $('.unscale_block .plans_row');
+        stage_btn.removeClass('layout_stage_position_active');
+        $(stage_btn[index]).addClass('layout_stage_position_active');
+
+        stages.removeClass('unscale_slide');
+        $(stages[index]).addClass('unscale_slide');
+
+        plan_row.removeClass('unscale_slide');
+        $(plan_row[index]).addClass('unscale_slide');
+
+        plans_row.removeClass('unscale_slide');
+        $(plans_row[index]).addClass('unscale_slide');
+
+        plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+        plans = $('.unscale_block .unscale_slide .plans_wrapper');
+        plan_btn.click(function(){
+            var index = plan_btn.index(this);
+            plan_btn.removeClass('layout_btn_active');
+            $(this).addClass('layout_btn_active');
+            plans.removeClass('unscale_slide');
+            $(plans[index]).addClass('unscale_slide');
+        });
+    });
+    stage_btn.click(function(){
+        var index = stage_btn.index(this);
+        plan_row = $('.unscale_block .layout_row');
+        plans_row = $('.unscale_block .plans_row');
+        stage_btn.removeClass('layout_stage_position_active');
+        $(this).addClass('layout_stage_position_active');
+
+        stages.removeClass('unscale_slide');
+        $(stages[index]).addClass('unscale_slide');
+
+        plan_row.removeClass('unscale_slide');
+        $(plan_row[index]).addClass('unscale_slide');
+
+        plans_row.removeClass('unscale_slide');
+        $(plans_row[index]).addClass('unscale_slide');
+
+        plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+        plans = $('.unscale_block .unscale_slide .plans_wrapper');
+        plan_btn.click(function(){
+            var index = plan_btn.index(this);
+            plan_btn.removeClass('layout_btn_active');
+            $(this).addClass('layout_btn_active');
+            plans.removeClass('unscale_slide');
+            $(plans[index]).addClass('unscale_slide');
+        });
+    });
+    plan_btn.click(function(){
+        var index = plan_btn.index(this);
+        plan_btn.removeClass('layout_btn_active');
+        $(this).addClass('layout_btn_active');
+        plans.removeClass('unscale_slide');
+        $(plans[index]).addClass('unscale_slide');
     });
     sections_btn.click(function(){
        var index = sections_btn.index(this);
        sections.removeClass('unscale_slide');
+       blocks.removeClass('unscale_block');
        sections_btn.removeClass('layout_btn_active');
        $(this).addClass('layout_btn_active');
        $(sections[index]).addClass('unscale_slide');
+       $(blocks[index]).addClass('unscale_block');
        stage_btn = $('.unscale_slide .layout_stage_position');
        stages = $('.unscale_slide img');
        stage_btn.click(function(){
            var index = stage_btn.index(this);
+           plan_row = $('.unscale_block .layout_row');
+           plans_row = $('.unscale_block .plans_row');
            stage_btn.removeClass('layout_stage_position_active');
            $(this).addClass('layout_stage_position_active');
+
            stages.removeClass('unscale_slide');
            $(stages[index]).addClass('unscale_slide');
+
+           plan_row.removeClass('unscale_slide');
+           $(plan_row[index]).addClass('unscale_slide');
+
+           plans_row.removeClass('unscale_slide');
+           $(plans_row[index]).addClass('unscale_slide');
+
+           plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+           plans = $('.unscale_block .unscale_slide .plans_wrapper');
+           plan_btn.click(function(){
+               var index = plan_btn.index(this);
+               plan_btn.removeClass('layout_btn_active');
+               $(this).addClass('layout_btn_active');
+               plans.removeClass('unscale_slide');
+               $(plans[index]).addClass('unscale_slide');
+           });
        });
+       plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+       plans = $('.unscale_block .unscale_slide .plans_wrapper');
+       plan_btn.click(function(){
+            var index = plan_btn.index(this);
+            plan_btn.removeClass('layout_btn_active');
+            $(this).addClass('layout_btn_active');
+            plans.removeClass('unscale_slide');
+            $(plans[index]).addClass('unscale_slide');
+        });
+        var stage_up = $('.unscale_slide .layout_stage_up');
+        var stage_down = $('.unscale_slide .layout_stage_down');
+        stage_up.click(function(){
+            var curent_stage = $('.unscale_slide .layout_stage_position_active');
+            var index = stage_btn.index(curent_stage) - 1;
+            console.log(index);
+            if(index === -1) index = stage_btn.length - 1;
+            plan_row = $('.unscale_block .layout_row');
+            plans_row = $('.unscale_block .plans_row');
+            stage_btn.removeClass('layout_stage_position_active');
+            $(stage_btn[index]).addClass('layout_stage_position_active');
+
+            stages.removeClass('unscale_slide');
+            $(stages[index]).addClass('unscale_slide');
+
+            plan_row.removeClass('unscale_slide');
+            $(plan_row[index]).addClass('unscale_slide');
+
+            plans_row.removeClass('unscale_slide');
+            $(plans_row[index]).addClass('unscale_slide');
+
+            plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+            plans = $('.unscale_block .unscale_slide .plans_wrapper');
+            plan_btn.click(function(){
+                var index = plan_btn.index(this);
+                plan_btn.removeClass('layout_btn_active');
+                $(this).addClass('layout_btn_active');
+                plans.removeClass('unscale_slide');
+                $(plans[index]).addClass('unscale_slide');
+            });
+        });
+        stage_down.click(function(){
+            var curent_stage = $('.unscale_slide .layout_stage_position_active');
+            var index = stage_btn.index(curent_stage) + 1;
+            console.log(index);
+            if(index === stage_btn.length) index = 0;
+            plan_row = $('.unscale_block .layout_row');
+            plans_row = $('.unscale_block .plans_row');
+            stage_btn.removeClass('layout_stage_position_active');
+            $(stage_btn[index]).addClass('layout_stage_position_active');
+
+            stages.removeClass('unscale_slide');
+            $(stages[index]).addClass('unscale_slide');
+
+            plan_row.removeClass('unscale_slide');
+            $(plan_row[index]).addClass('unscale_slide');
+
+            plans_row.removeClass('unscale_slide');
+            $(plans_row[index]).addClass('unscale_slide');
+
+            plan_btn = $('.unscale_block .unscale_slide .layout_btn');
+            plans = $('.unscale_block .unscale_slide .plans_wrapper');
+            plan_btn.click(function(){
+                var index = plan_btn.index(this);
+                plan_btn.removeClass('layout_btn_active');
+                $(this).addClass('layout_btn_active');
+                plans.removeClass('unscale_slide');
+                $(plans[index]).addClass('unscale_slide');
+            });
+        });
     });
 })();

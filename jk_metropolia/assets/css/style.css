@@ -253,10 +253,9 @@
   width: 100%;
   margin-top: 80px; }
   .layout_row {
+    display: none;
     transform: scale(0);
     transition: all 1s; }
-  .layout_row:nth-child(1) {
-    transform: scale(1); }
   .layout_btn {
     display: inline-block;
     cursor: pointer;
@@ -396,6 +395,11 @@
 .plans_wrapper {
   width: 100%;
   transform: scale(0);
+  opacity: 0;
+  padding-top: 80px;
+  position: absolute;
+  top: 0;
+  left: 15px;
   transition: all 1s; }
 .plans_img {
   width: 100%;
@@ -405,13 +409,21 @@
     height: auto; }
 .plans_row {
   transform: scale(0);
+  opacity: 0;
   transition: all 1s; }
-.plans_row:nth-child(9) {
-  transform: scale(1); }
-  .plans_row:nth-child(9) .plans_wrapper:nth-child(1) {
-    transform: scale(1); }
+
+.section_block {
+  display: none;
+  transform: scale(0);
+  transition: all 1s; }
 
 .unscale_slide {
+  display: flex !important;
+  transform: scale(1) !important;
+  opacity: 1; }
+
+.unscale_block {
+  display: block !important;
   transform: scale(1) !important; }
 
 .price {

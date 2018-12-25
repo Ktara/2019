@@ -3,10 +3,9 @@
   width: 100%
   margin-top: 80px
   &_row
+    display: none
     transform: scale(0)
     transition: all 1s
-  &_row:nth-child(1)
-    transform: scale(1)
   &_btn
     display: inline-block
     cursor: pointer
@@ -148,6 +147,11 @@
   &_wrapper
     width: 100%
     transform: scale(0)
+    opacity: 0
+    padding-top: 80px
+    position: absolute
+    top: 0
+    left: 15px
     transition: all 1s
   &_img
     width: 100%
@@ -157,12 +161,18 @@
       height: auto
   &_row
     transform: scale(0)
+    opacity: 0
     transition: all 1s
-  &_row:nth-child(9)
-    transform: scale(1)
-    .plans_wrapper:nth-child(1)
-      transform: scale(1)
+.section_block
+  display: none
+  transform: scale(0)
+  transition: all 1s
 .unscale_slide
+  display: flex !important
   transform: scale(1) !important
-//.scale_slide
-//  transform: scale(0)
+  opacity: 1
+.unscale_block
+  display: block !important
+  transform: scale(1) !important
+
+
