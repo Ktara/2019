@@ -318,3 +318,24 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
+
+
+
+
+$('.mob_price_title').click(function(){
+    $('.price_shadow_block').animate({
+        height: 0
+    }, 400);
+    var target = $(this).next();
+    if ($(this).hasClass('mob_price_title_open')){
+        $(this).removeClass('amob_price_title_open');
+        return;
+    };
+    $('.mob_price_title').removeClass('mob_price_title_open');
+    var childHeight = target.children().height();
+    target.animate({
+        height: childHeight
+    }, 600);
+    $(this).addClass('mob_price_title_open');
+});
