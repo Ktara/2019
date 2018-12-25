@@ -2,15 +2,23 @@
   position: relative
   width: 100%
   height: 100vh
+  @media screen and (max-width: 750px)
+    height: auto
   &_block
     position: relative
     width: 100%
     height: 100vh
+    @media screen and (max-width: 768px)
+      height: 60vh
+    @media screen and (max-width: 750px)
+      height: 80vh
     &_img
       position: absolute
       bottom: 0
       width: 100%
       height: auto
+      @media screen and (max-width: 750px)
+        min-height: 80vh
   &_first_btn
     position: relative
     display: inline-block
@@ -27,6 +35,12 @@
     font-size: 18px
     float: right
     cursor: pointer
+    @media screen and (max-width: 750px)
+      width: calc(100% - 30px)
+      height: 40px
+      line-height: 38px
+      margin-right: 15px
+      margin-top: 20px
   &_second_btn
     position: relative
     display: inline-block
@@ -45,6 +59,14 @@
     cursor: pointer
     @media screen and (max-width: 1440px)
       margin-right: 16.6666%
+    @media screen and (max-width: 768px)
+      margin-right: 8.3333%
+    @media screen and (max-width: 750px)
+      width: calc(100% - 30px)
+      height: 40px
+      line-height: 38px
+      margin-right: 15px
+      margin-top: 50px
   &_logo_block
     position: relative
     display: flex
@@ -59,8 +81,20 @@
     cursor: pointer
     @media screen and (max-width: 1440px)
       margin-right: 24.9999%
+    @media screen and (max-width: 768px)
+      width: 400px
+      height: 200px
+      margin-top: 20%
+    @media screen and (max-width: 750px)
+      width: calc(100% - 30px)
+      height: 180px
+      margin-right: 15px
     img
       width: 280px
+      @media screen and (max-width: 768px)
+        width: 220px
+      @media screen and (max-width: 750px)
+        width: 170px
   &_sub_block
     position: relative
     width: 100%
@@ -76,6 +110,17 @@
       left: 0
       background-color: rgba(51, 183, 211, 0.85)
       z-index: 250
+      @media screen and (max-width: 768px)
+        width: 50%
+        height: 40vh
+        left: 50%
+        z-index: 100
+      @media screen and (max-width: 750px)
+        position: relative
+        width: 100%
+        height: 50vh
+        min-height: 285px
+        left: 0
       &_title
         display: block
         width: calc(100% - 60px)
@@ -99,6 +144,15 @@
       top: 60vh
       left: 0
       z-index: 250
+      @media screen and (max-width: 768px)
+        width: 50%
+        top: 0
+        z-index: 100
+      @media screen and (max-width: 750px)
+        position: relative
+        width: 100%
+        height: 50vh
+        min-height: 285px
       &:after
         content: ''
         position: absolute
@@ -123,6 +177,8 @@
         z-index: 251
         @media screen and (max-width: 1440px)
           width: calc(100% - 80px)
+        @media screen and (max-width: 750px)
+          font-size: 16px
       &_image
         display: inline-block
         width: 100px
