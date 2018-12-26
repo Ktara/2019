@@ -339,3 +339,16 @@ $('.mob_price_title_block').click(function(){
     }, 600);
     $(this).addClass('mob_price_title_open');
 });
+
+
+
+
+$('.main_sub_block_dark').slick({
+    infinite: true,
+    fade: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000
+});
