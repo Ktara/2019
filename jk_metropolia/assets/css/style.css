@@ -412,7 +412,7 @@
           z-index: 0; }
         @media screen and (max-width: 768px) {
           .main_sub_block_dark_slide_viewer {
-            width: 50%; } }
+            width: 100%; } }
         @media screen and (max-width: 750px) {
           .main_sub_block_dark_slide_viewer {
             width: 100%;
