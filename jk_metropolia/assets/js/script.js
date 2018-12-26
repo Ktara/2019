@@ -323,16 +323,16 @@ $(document).ready(function(){
 
 
 
-$('.mob_price_title').click(function(){
-    $('.price_shadow_block').animate({
+$('.mob_price_title_block').click(function(){
+    $('.mob_price_wrapper').animate({
         height: 0
     }, 400);
     var target = $(this).next();
     if ($(this).hasClass('mob_price_title_open')){
-        $(this).removeClass('amob_price_title_open');
+        $(this).removeClass('mob_price_title_open');
         return;
     };
-    $('.mob_price_title').removeClass('mob_price_title_open');
+    $('.mob_price_title_block').removeClass('mob_price_title_open');
     var childHeight = target.children().height();
     target.animate({
         height: childHeight

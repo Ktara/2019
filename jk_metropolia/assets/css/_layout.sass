@@ -9,8 +9,7 @@
   &_btn
     display: inline-block
     cursor: pointer
-    //height: 60px
-    line-height: 60px
+    line-height: 56px
     height: 60px
     width: 100%
     text-align: center
@@ -18,6 +17,7 @@
     margin-top: 80px
     font-size: 16px
     border-radius: 10px
+    border: 2px solid #D8D8D8
     background-color: #D8D8D8
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16)
     -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16)
@@ -27,9 +27,15 @@
     -ms-transition: all 0.5s
     -o-transition: all 0.5s
     transition: all 0.5s
+    @media screen and (max-width: 750px)
+      height: 35px
+      line-height: 31px
+      margin-top: 40px
     &_active
       border: 2px solid #707070
       line-height: 58px
+      @media screen and (max-width: 750px)
+        line-height: 31px
     &:hover
       background-color: #F7F7F7
   &_main
@@ -45,6 +51,8 @@
       height: 100%
       transform: scale(0)
       transition: all 1s
+      @media screen and (max-width: 750px)
+        width: 80%
       img
         transform: scale(0)
         width: 100%
@@ -64,6 +72,7 @@
     justify-content: center
     @media screen and (max-width: 768px)
       right: -35%
+      top: -20%
     &_position
       display: block
       border: 2px solid #707070
@@ -76,6 +85,11 @@
       position: relative
       z-index: 2
       cursor: pointer
+      @media screen and (max-width: 750px)
+        width: 60px
+        height: 25px
+        line-height: 21px
+        font-size: 13px
       &:hover
         background-color: #A2E2E2
       &_active
@@ -90,6 +104,8 @@
       margin-bottom: 10px
       position: relative
       cursor: pointer
+      @media screen and (max-width: 750px)
+        margin-bottom: 0
       &:hover
         border-bottom: 40px solid #A2E2E2
       //overflow: hidden
@@ -106,6 +122,10 @@
         top: 10px
         left: -30px
         transform: rotate(45deg)
+        @media screen and (max-width: 750px)
+          width: 42px
+          height: 42px
+          left: -20px
       &:after
         content: ''
         width: 80px
@@ -116,6 +136,10 @@
         bottom: -41.5px
         left: -40px
         border-radius: 3px
+        @media screen and (max-width: 750px)
+          width: 56px
+          bottom: -33px
+          left: -28px
     &_down
       width: 0
       height: 0
@@ -125,8 +149,12 @@
       margin-top: 0
       position: relative
       cursor: pointer
+      @media screen and (max-width: 750px)
+        border-top: 30px solid white
       &:hover
         border-top: 40px solid #A2E2E2
+        @media screen and (max-width: 750px)
+          border-top: 30px solid #A2E2E2
       &:before
         content: ''
         border: 3px solid #707070
@@ -140,6 +168,10 @@
         bottom: 10px
         left: -30px
         transform: rotate(45deg)
+        @media screen and (max-width: 750px)
+          width: 42px
+          height: 42px
+          left: -20px
       &:after
         content: ''
         width: 80px
@@ -150,6 +182,10 @@
         top: -41.5px
         left: -40px
         border-radius: 3px
+        @media screen and (max-width: 750px)
+          width: 56px
+          top: -33px
+          left: -28px
 .plans
   &_wrapper
     width: 100%
