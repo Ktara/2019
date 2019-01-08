@@ -1,0 +1,52 @@
+.proxi-reg
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 400
+
+.proxi-bold
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 700
+
+.proxi-semi
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 600
+
+.proxi-semiit
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 600
+  font-style: italic
+
+.proxi-black
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 900
+
+
+
+$blue: #4BCDFF
+$black: #000000
+$dark-grey: #747474
+$green: #0D8940
+$white: #ffffff
+$light-grey: #DFDFDF
+
+
+
+body
+  font-size: 10px
+  @media screen and (max-width: 1680px)
+    font-size: 8px
+  @media screen and (max-width: 1500px)
+    font-size: 7px
+  @media screen and (max-width: 1300px)
+    font-size: 6px
+
+
+
+.main_wrapper
+  @extend .proxi-reg
+  overflow: hidden
+
+
+
+.main_wrapper .container
+  @media screen and (min-width: 1680px)
+    max-width: 1600px
