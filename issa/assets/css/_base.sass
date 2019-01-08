@@ -23,21 +23,22 @@
 
 $blue: #4BCDFF
 $black: #000000
-$dark-grey: #747474
+$grey: #747474
 $green: #0D8940
 $white: #ffffff
 $light-grey: #DFDFDF
 
 
 
-body
-  font-size: 10px
-  @media screen and (max-width: 1680px)
+html, body
+  @media screen and (min-width: 1300px)
     font-size: 8px
-  @media screen and (max-width: 1500px)
-    font-size: 7px
-  @media screen and (max-width: 1300px)
-    font-size: 6px
+  //@media screen and (min-width: 1500px)
+  //  font-size: 8.5px
+  @media screen and (min-width: 1680px)
+    font-size: 10px
+  font-size: 7px
+
 
 
 
@@ -49,4 +50,12 @@ body
 
 .main_wrapper .container
   @media screen and (min-width: 1680px)
-    max-width: 1600px
+    max-width: 1680px
+
+
+
+.section_header
+  font-size: 10rem
+  color: $green
+  text-align: center
+  @extend .proxi-bold
