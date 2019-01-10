@@ -1,0 +1,86 @@
+.about
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_image_wrapper
+    position: relative
+    width: 100%
+    min-height: 250px
+    height: auto
+    margin-top: 50px
+  &_image
+    width: 100%
+  &_image_first_decor
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 70px
+    height: calc(100% - 100px)
+    top: 50px
+    left: 0
+    background-color: $blue
+    box-shadow: -10px 10px 15px rgba(75, 205, 255, 0.3)
+  &_image_second_decor
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 33%
+    height: 100px
+    bottom: -50px
+    right: 0
+    background-color: $blue
+    box-shadow: -10px 10px 15px rgba(75, 205, 255, 0.3)
+    img
+      width: 100px
+  &_image_third_decor
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 500px
+    height: auto
+    bottom: -10%
+    left: 20%
+    img
+      width: 100%
+  &_image_forth_decor
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 500px
+    height: auto
+    bottom: -10%
+    left: 20%
+    img
+      width: 100%
+  &_image_fifth_decor
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 250px
+    height: auto
+    bottom: -32%
+    right: 0
+    img
+      width: 80%
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+
+  &_text
+    width: 100%
+    color: $grey
+    font-size: 2.4rem
+    line-height: 29px
+    margin-top: 115px
+    @extend .proxi-semi
+    b
+      display: block
+      margin-top: 30px
+      @extend .proxi-bold
