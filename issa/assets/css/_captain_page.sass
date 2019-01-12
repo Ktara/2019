@@ -1,0 +1,235 @@
+.captain_main
+  position: relative
+  width: 100%
+  height: 100vh
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(255, 255, 255, 0.7)
+    z-index: 0
+  &_title
+    position: relative
+    font-size: 7.2rem
+    color: $black
+    margin-top: 35vh
+    z-index: 10
+    @extend .proxi-bold
+  &_text
+    position: relative
+    font-size: 2.4rem
+    line-height: 29px
+    color: $black
+    margin-top: 55px
+    z-index: 10
+    @extend .proxi-bold
+  &_btn
+    position: relative
+    display: block
+    width: 100%
+    height: 70px
+    margin-top: 90px
+    border: 1px solid $blue
+    border-radius: 10px
+    background-color: $blue
+    color: $white
+    font-size: 2.4rem
+    line-height: 68px
+    text-align: center
+    cursor: pointer
+    z-index: 20
+  &_water
+    position: absolute
+    display: block
+    width: 100%
+    bottom: -10%
+    left: 0
+    -webkit-transform: rotate(180deg)
+    -moz-transform: rotate(180deg)
+    -ms-transform: rotate(180deg)
+    -o-transform: rotate(180deg)
+    transform: rotate(180deg)
+    z-index: 1
+    @media screen and (max-width: 1280px)
+      bottom: -20%
+    img
+      width: 100%
+      opacity: 0.76
+
+
+
+
+
+.captain_service
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_image
+    display: inline-block
+    width: 100%
+    margin-top: 30px
+    img
+      width: 100%
+  &_text
+    display: inline-block
+    padding-top: 80px
+    p
+      color: $grey
+      font-size: 2.4rem
+      line-height: 29px
+      margin-top: 20px
+      @extend .proxi-semi
+
+
+
+
+
+
+
+.captain_certificates
+  position: relative
+  width: 100%
+  padding-top: 120px
+  &_card_wrapper
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding-top: 30px
+    .cardContainer
+      width: calc(20% - 12px)
+      -webkit-transition: all .3s ease
+      -moz-transition: all .3s ease
+      -ms-transition: all .3s ease
+      transition: all .3s ease
+
+
+      /*depth of the elements */
+      -webkit-perspective: 800px
+      -moz-perspective: 800px
+      -o-perspective: 800px
+      perspective: 800px
+
+      /*border: 1px solid #ff0000;*/
+      padding-left: 1%
+    .card
+      position: relative
+      display: inline-block
+      width: 100%
+      height: 35vh
+      background-color: $blue
+      border-radius: 20px
+      cursor: pointer
+      -webkit-transition: -webkit-transform 0.6s
+      -moz-transition: -moz-transform 0.6s
+      -o-transition: -o-transform 0.6s
+      transition: transform 0.6s
+      -webkit-transform-style: preserve-3d
+      -moz-transform-style: preserve-3d
+      -o-transform-style: preserve-3d
+      transform-style: preserve-3d
+      .front_title
+        font-size: 3.2rem
+        @extend .proxi-semi
+        color: $white
+        padding-top: 25px
+        padding-left: 25px
+        padding-right: 25px
+      .back_title
+        font-size: 1.8rem
+        line-height: 20px
+        @extend .proxi-bold
+        color: $white
+        padding-top: 25px
+        padding-left: 20px
+        padding-right: 20px
+      .back_text
+        font-size: 1.6rem
+        line-height: 20px
+        @extend .proxi-reg
+        color: $white
+        padding-top: 30px
+        p
+          padding-left: 20px
+          padding-right: 20px
+          padding-bottom: 20px
+        b
+          @extend .proxi-semi
+          display: block
+      &_image
+        position: absolute
+        display: block
+        width: 100px
+        right: 20px
+        bottom: 20px
+        img
+          width: 100%
+    .card.flipped
+      -webkit-transform: rotateY( 180deg )
+      -moz-transform: rotateY( 180deg )
+      -o-transform: rotateY( 180deg )
+      transform: rotateY( 180deg )
+    .card .front,
+    .card .back
+      display: block
+      height: 100%
+      width: 100%
+      position: absolute
+      border-radius: 20px
+      -webkit-backface-visibility: hidden
+      -moz-backface-visibility: hidden
+      -o-backface-visibility: hidden
+      backface-visibility: hidden
+      box-shadow: 10px 10px 15px rgba(75, 205, 255, 0.3)
+      -webkit-box-shadow: 10px 10px 15px rgba(75, 205, 255, 0.3)
+    .card .back
+      width: 100%
+      background-color: $blue
+      -webkit-transform: rotateY( 180deg )
+      -moz-transform: rotateY( 180deg )
+      -o-transform: rotateY( 180deg )
+      transform: rotateY( 180deg )
+
+
+
+.captain_training
+  position: relative
+  width: 100%
+  padding-top: 120px
+  &_image
+    position: relative
+    display: block
+    overflow: hidden
+    min-height: 375px
+    margin-top: 30px
+    img
+      max-height: 375px
+  &_text
+    display: inline-block
+    padding-top: 60px
+    p
+      color: $grey
+      font-size: 2.4rem
+      line-height: 29px
+      @extend .proxi-semi
+  &_btn
+    position: relative
+    display: block
+    width: 100%
+    height: 100px
+    margin-top: 70px
+    border: 1px solid $blue
+    border-radius: 10px
+    background-color: $blue
+    color: $white
+    font-size: 2.4rem
+    line-height: 98px
+    text-align: center
+    //cursor: pointer
