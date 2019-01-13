@@ -1,4 +1,4 @@
-.school_main
+.instructor_main
   position: relative
   width: 100%
   height: 100vh
@@ -66,109 +66,103 @@
 
 
 
+.instructor_about
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_image
+    display: inline-block
+    width: 100%
+    margin-top: 30px
+    img
+      width: 100%
+  &_text
+    display: inline-block
+    padding-top: 80px
+    p
+      color: $grey
+      font-size: 2.4rem
+      line-height: 29px
+      margin-top: 20px
+      @extend .proxi-semi
 
 
-.school_advantages
+
+
+.instructor_how
   position: relative
   width: 100%
   padding-top: 120px
-  &_image
-    position: relative
-    width: 100%
-    display: block
-    overflow: hidden
-    min-height: 800px
-    margin-top: 30px
-    img
-      position: absolute
-      left: -100%
-      min-height: 800px
   &_text_wrapper
-    padding-top: 50px
-  &_text
     position: relative
-    display: flex
-    align-items: center
     width: 100%
-    height: 120px
-    margin-top: 25px
-    p
-      font-size: 2.4rem
-      line-height: 29px
-      color: $grey
-      @extend .proxi-semi
-    .number
+    height: 50vh
+    min-height: 625px
+    &_image
       position: absolute
-      display: inline-block
-      min-width: 40px
-      height: 100px
-      top: 10px
-      left: -10%
-      font-size: 10rem
-      @extend .proxi-bold
-      color: rgba(75, 205, 255, 0.5)
-
-  &_second
+      display: block
+      width: 58.5%
+      height: 50vh
+      top: 60px
+      left: 41.5%
+      img
+        width: 100%
+        min-height: 565px
+  &_text
+    font-size: 2.4rem
+    line-height: 29px
+    color: $grey
+    @extend .proxi-semi
+    padding-top: 60px
+  &_card
     position: relative
-    display: flex
-    align-items: center
     width: 100%
-    height: 370px
-    margin-top: 160px
+    height: 22vh
+    min-height: 230px
+    background-color: $blue
+    margin-top: 50px
     &_text
       font-size: 2.4rem
       line-height: 29px
-      color: $grey
-    &_image
-      position: relative
-      width: 100%
-      height: 370px
-      display: block
-      //overflow: hidden
-      max-height: 370px
-      .img
-        position: absolute
-        width: 100%
-        left: 0
-        top: 0
-        min-height: 370px
-      .first_decor
-        position: absolute
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 500px
-        height: auto
-        bottom: -10%
-        left: 20%
-        img
-          width: 100%
-      .second_decor
-        position: absolute
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 250px
-        height: auto
-        bottom: -27%
-        left: 0
-        img
-          width: 80%
-          -webkit-transform: rotate(45deg)
-          -moz-transform: rotate(45deg)
-          -ms-transform: rotate(45deg)
-          -o-transform: rotate(45deg)
-          transform: rotate(45deg)
+      color: $white
+      @extend .proxi-semi
+      padding-top: 25px
+      padding-left: 15px
+      padding-right: 15px
 
 
 
 
 
+.instructor_requirement
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_text
+    font-size: 2.4rem
+    line-height: 29px
+    color: $grey
+    @extend .proxi-semi
+    margin-top: 30px
 
-.school_open
+
+
+
+.instructor_training
   position: relative
   width: 100%
   padding-top: 120px
+  &_image
+    position: relative
+    width: 100%
+    display: block
+    overflow: hidden
+    min-height: 800px
+    margin-top: 30px
+    img
+      position: absolute
+      left: -100%
+      min-height: 800px
   &_text_wrapper
     padding-top: 50px
   &_text
@@ -183,8 +177,6 @@
       line-height: 29px
       color: $grey
       @extend .proxi-semi
-      span
-        color: $blue
     .number
       position: absolute
       display: inline-block
@@ -195,23 +187,11 @@
       font-size: 10rem
       @extend .proxi-bold
       color: rgba(75, 205, 255, 0.5)
-  &_image
-    position: relative
-    width: 100%
-    display: block
-    overflow: hidden
-    min-height: 800px
-    margin-top: 30px
-    img
-      position: absolute
-      left: -100%
-      min-height: 800px
 
 
 
 
-
-.school_other
+.instructor_other
   position: relative
   width: 100%
   margin-top: 120px
@@ -255,42 +235,38 @@
       line-height: 29px
       @extend .proxi-semi
       color: $grey
-  &_review
-    position: relative
+  &_btn_wrapper
     width: 100%
-    height: 35vh
-    min-height: 375px
-    margin-top: 60px
-    background-color: $white
-    border-radius: 20px
-    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1)
-    -webkit-box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1)
-    &_foto
-      position: relative
-      width: 100%
-      height: 35vh
-      max-height: 375px
-      overflow: hidden
-      display: inline-block
-      img
-        position: absolute
-        left: -25%
-        min-height: 375px
-    &_wrapper
-      padding-left: 30px
-      &_name
-        font-size: 2rem
-        @extend .proxi-bold
-        padding-top: 30px
-        color: $black
-      &_sub_name
-        font-size: 1.4rem
-        margin-top: 5px
-        color: $black
-        @extend .proxi-reg
-      &_text
-        font-size: 1.8rem
-        line-height: 22px
-        color: $black
-        @extend .proxi-reg
-        margin-top: 25px
+    height: 145px
+    margin-top: 30px
+    display: flex
+    align-items: center
+  &_btn
+    display: inline-block
+    width: 100%
+    height: 70px
+    border: 1px solid $blue
+    border-radius: 10px
+    background-color: $blue
+    text-align: center
+    cursor: pointer
+    color: $white
+    font-size: 2.4rem
+    line-height: 68px
+
+
+
+
+.instructor_review
+  position: relative
+  width: 100%
+  margin-top: 120px
+
+
+
+
+
+.instructor_gallery
+  position: relative
+  width: 100%
+  margin-top: 120px
