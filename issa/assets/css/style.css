@@ -1245,10 +1245,10 @@ html, body {
     .instructor_training_text .number {
       position: absolute;
       display: inline-block;
-      min-width: 40px;
+      min-width: 100px;
       height: 90px;
       top: 10px;
-      left: -13%; }
+      left: -14%; }
       .instructor_training_text .number img {
         min-height: 90px;
         max-height: 110px; }
@@ -1444,7 +1444,7 @@ html, body {
       .instructor_gallery_slider_image img {
         position: absolute;
         display: block;
-        width: 100%;
+        width: 100;
         bottom: -25%;
         left: 0; }
   .instructor_gallery_slider_nav {
