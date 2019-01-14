@@ -23,15 +23,15 @@
   src: url("../fonts/ProximaNova-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
-.proxi-reg, .main_wrapper, .captain_certificates_card_wrapper .card .back_text, .school_other_review_wrapper_sub_name, .school_other_review_wrapper_text {
+.proxi-reg, .main_wrapper, .captain_certificates_card_wrapper .card .back_text, .school_other_review_wrapper_sub_name, .school_other_review_wrapper_text, .instructor_review_block_sub_name, .instructor_review_block_text {
   font-family: "ProximaNova", sans-serif;
   font-weight: 400; }
 
-.proxi-bold, .section_header, .main_title, .services_card_image_title b, .services_card_text p, .about_text b, .captain_main_title, .captain_main_text, .captain_certificates_card_wrapper .card .back_title, .school_main_title, .school_main_text, .school_advantages_text .number, .school_open_text .number, .school_other_review_wrapper_name, .instructor_main_title, .instructor_main_text, .instructor_training_text .number {
+.proxi-bold, .section_header, .main_title, .services_card_image_title b, .services_card_text p, .about_text b, .captain_main_title, .captain_main_text, .captain_certificates_card_wrapper .card .back_title, .school_main_title, .school_main_text, .school_advantages_text .number, .school_open_text .number, .school_other_review_wrapper_name, .instructor_main_title, .instructor_main_text, .instructor_review_block_name {
   font-family: "ProximaNova", sans-serif;
   font-weight: 700; }
 
-.proxi-semi, .nav_header_list ul li, .about_text, .captain_service_text p, .captain_certificates_card_wrapper .card .front_title, .captain_certificates_card_wrapper .card .back_text b, .captain_training_text p, .school_advantages_text p, .school_open_text p, .school_other_text p, .instructor_about_text p, .instructor_how_text, .instructor_how_card_text, .instructor_requirement_text, .instructor_training_text p, .instructor_other_text p {
+.proxi-semi, .nav_header_list ul li, .about_text, .captain_service_text p, .captain_certificates_card_wrapper .card .front_title, .captain_certificates_card_wrapper .card .back_text b, .captain_training_text p, .school_advantages_text p, .school_open_text p, .school_other_text p, .instructor_about_text p, .instructor_how_text, .instructor_how_card_text, .instructor_requirement_text, .instructor_requirement_wrapper_text p, .instructor_requirement_info, .instructor_training_text p, .instructor_training_info, .instructor_calendar_city, .instructor_calendar_data, .instructor_other_text p {
   font-family: "ProximaNova", sans-serif;
   font-weight: 600; }
 
@@ -1177,6 +1177,41 @@ html, body {
     line-height: 29px;
     color: #747474;
     margin-top: 30px; }
+  .instructor_requirement_wrapper {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center; }
+    .instructor_requirement_wrapper_text {
+      display: inline-block;
+      width: 100%;
+      height: 270px;
+      margin-top: 25px;
+      border-radius: 10px;
+      background-color: #4BCDFF; }
+      .instructor_requirement_wrapper_text p {
+        display: inline-block;
+        width: 60%;
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 2.4rem;
+        line-height: 29px; }
+  .instructor_requirement_info {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #4BCDFF;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 2.4rem;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 85px; }
 
 .instructor_training {
   position: relative;
@@ -1187,12 +1222,12 @@ html, body {
     width: 100%;
     display: block;
     overflow: hidden;
-    min-height: 800px;
+    min-height: 700px;
     margin-top: 30px; }
     .instructor_training_image img {
       position: absolute;
       left: -100%;
-      min-height: 800px; }
+      min-height: 700px; }
   .instructor_training_text_wrapper {
     padding-top: 50px; }
   .instructor_training_text {
@@ -1210,11 +1245,75 @@ html, body {
       position: absolute;
       display: inline-block;
       min-width: 40px;
-      height: 100px;
+      height: 90px;
       top: 10px;
-      left: -10%;
-      font-size: 10rem;
-      color: rgba(75, 205, 255, 0.5); }
+      left: -13%; }
+      .instructor_training_text .number img {
+        min-height: 90px;
+        max-height: 110px; }
+  .instructor_training_info {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #4BCDFF;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 2.4rem;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 60px; }
+
+.instructor_calendar {
+  position: relative;
+  width: 100%;
+  margin-top: 230px; }
+  .instructor_calendar_wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+  .instructor_calendar_block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(14.28% - 15px); }
+  .instructor_calendar_city {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #4BCDFF;
+    border-radius: 20px 20px 0 0;
+    font-size: 2.4rem;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 10px 50px 30px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 10px 50px 30px rgba(255, 255, 255, 0.1); }
+  .instructor_calendar_data {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+    font-size: 1.8rem;
+    color: #747474;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(75, 205, 255, 0.3);
+    -webkit-box-shadow: 10px 10px 15px rgba(75, 205, 255, 0.3); }
+  .instructor_calendar_wrapper .instructor_calendar_block:nth-child(n+2):before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 15px;
+    top: 52.5px;
+    left: -13%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 10px 50px 30px rgba(255, 255, 255, 0.05);
+    -webkit-box-shadow: 10px 50px 30px rgba(255, 255, 255, 0.05); }
 
 .instructor_other {
   position: relative;
@@ -1282,10 +1381,141 @@ html, body {
   position: relative;
   width: 100%;
   margin-top: 120px; }
+  .instructor_review_block {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    min-height: 450px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1); }
+    .instructor_review_block_foto {
+      position: relative;
+      width: 100%;
+      height: 35vh;
+      min-height: 450px;
+      overflow: hidden;
+      display: inline-block; }
+      .instructor_review_block_foto img {
+        position: absolute;
+        left: -50%;
+        min-height: 450px; }
+    .instructor_review_block_wrapper {
+      padding-left: 30px; }
+    .instructor_review_block_name {
+      font-size: 2rem;
+      padding-top: 30px;
+      color: #000000; }
+    .instructor_review_block_sub_name {
+      font-size: 1.4rem;
+      margin-top: 5px;
+      color: #000000; }
+    .instructor_review_block_text {
+      font-size: 1.8rem;
+      line-height: 22px;
+      color: #000000;
+      margin-top: 25px; }
 
 .instructor_gallery {
   position: relative;
   width: 100%;
   margin-top: 120px; }
+  .instructor_gallery_slider_wrapper {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    max-height: 785px;
+    display: block;
+    overflow: hidden;
+    margin-top: 30px; }
+  .instructor_gallery_slider {
+    display: block;
+    width: 100%;
+    height: 75vh;
+    min-height: 785px; }
+    .instructor_gallery_slider_image {
+      width: 100%;
+      height: 75vh;
+      min-height: 785px;
+      overflow: hidden; }
+      .instructor_gallery_slider_image img {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: -25%;
+        left: 0; }
+  .instructor_gallery_slider_nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    height: 20vh;
+    min-height: 215px;
+    bottom: 45px;
+    left: 17%; }
+    .instructor_gallery_slider_nav_image {
+      display: inline-block;
+      width: calc(33% - 15px);
+      height: 20vh;
+      max-height: 215px;
+      overflow: hidden;
+      margin: 0 15px; }
+      .instructor_gallery_slider_nav_image img {
+        width: 100%;
+        min-height: 215px; }
+  .instructor_gallery_prewAr {
+    position: absolute;
+    background-image: url(../img/icon/boat.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 80%;
+    background-size: 80%;
+    background-position: center;
+    width: 110px;
+    height: 110px;
+    top: 25%;
+    left: -15%;
+    border-radius: 100%;
+    border: 5px solid #4BCDFF;
+    cursor: pointer;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
+    .instructor_gallery_prewAr img {
+      width: 70px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  .instructor_gallery_nextAr {
+    position: absolute;
+    background-image: url(../img/icon/boat.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 80%;
+    background-size: 80%;
+    background-position: center;
+    width: 110px;
+    height: 110px;
+    top: 25%;
+    right: -15%;
+    border-radius: 100%;
+    border: 5px solid #4BCDFF;
+    cursor: pointer;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+    .instructor_gallery_nextAr img {
+      width: 70px;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
 
 /*# sourceMappingURL=style.css.map */
