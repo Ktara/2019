@@ -1335,7 +1335,7 @@ html, body {
     height: 145px;
     right: 0;
     top: 30px;
-    z-index: 1;
+    z-index: 0;
     background-color: rgba(75, 205, 255, 0.15); }
   .instructor_other_blue {
     position: absolute;
@@ -1452,8 +1452,8 @@ html, body {
       .instructor_gallery_slider_image img {
         position: absolute;
         display: block;
-        width: 100;
-        bottom: -25%;
+        width: 100%;
+        bottom: 0;
         left: 0; }
   .instructor_gallery_slider_nav {
     position: absolute;
