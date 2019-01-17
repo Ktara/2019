@@ -207,11 +207,12 @@
     position: relative
     display: block
     overflow: hidden
-    min-height: 375px
+    min-height: 400px
     margin-top: 30px
     img
-      max-height: 375px
+      max-height: 400px
   &_text
+    position: relative
     display: inline-block
     padding-top: 60px
     p
@@ -219,6 +220,9 @@
       font-size: 2.4rem
       line-height: 29px
       @extend .proxi-semi
+    img
+      width: 100%
+      margin-top: 20px
   &_btn
     position: relative
     display: block
