@@ -156,11 +156,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_header.sass" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_header.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/_header.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+                <state relative-caret-position="550">
+                  <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_mian_services.sass" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/css/_mian_services.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="682">
+                  <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -180,7 +189,6 @@
         <option value="$PROJECT_DIR$/assets/css/_main.sass" />
         <option value="$PROJECT_DIR$/assets/css/style.sass" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
-        <option value="$PROJECT_DIR$/assets/css/_mian_services.sass" />
         <option value="$PROJECT_DIR$/assets/css/_main_about.sass" />
         <option value="$PROJECT_DIR$/assets/css/_main_location.sass" />
         <option value="$PROJECT_DIR$/assets/css/_captain_page.sass" />
@@ -192,6 +200,7 @@
         <option value="$PROJECT_DIR$/school.html" />
         <option value="$PROJECT_DIR$/assets/css/_school_page.sass" />
         <option value="$PROJECT_DIR$/assets/css/_header.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_mian_services.sass" />
       </list>
     </option>
   </component>
@@ -287,12 +296,12 @@
       <workItem from="1547286381414" duration="15694000" />
       <workItem from="1547375816329" duration="10322000" />
       <workItem from="1547456078353" duration="16316000" />
-      <workItem from="1547715709194" duration="6127000" />
+      <workItem from="1547715709194" duration="6399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68750000" />
+    <option name="totallyTimeSpent" value="69022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -707,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_mian_services.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_captain_page.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -830,8 +832,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_header.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state relative-caret-position="550">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_mian_services.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
         </state>
       </provider>
     </entry>
