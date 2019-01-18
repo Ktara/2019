@@ -38,5 +38,27 @@ $('.main_video_play').click(function(){
     }, 600);
     $('.main_video_play').css({
         visibility: 'hidden'
-    })
+    });
+    $('.nav_header').css({
+        visibility: 'hidden'
+    });
+    $('.main_video_close').css({
+        display: 'block'
+    });
+});
+
+
+$('.main_video_close').click(function(){
+    $('.main_video_wrapper').removeClass('open_wrapper').velocity({
+        opacity: 1
+    }, 600);
+    $('.main_video_close').css({
+        display: 'none'
+    });
+    $('.main_video_play').css({
+        visibility: 'visible'
+    });
+    $('.nav_header').css({
+        visibility: 'visible'
+    });
 });

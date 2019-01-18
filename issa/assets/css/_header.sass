@@ -6,16 +6,17 @@
   left: 0
   z-index: 200
   border-bottom: 1px solid $light-grey
+  overflow: hidden
   @media screen and (max-width: 768px)
     display: none
   .filter
     position: absolute
     display: block
-    width: 100%
-    height: 110px
-    top: 0
-    left: 0
-    filter: blur(50px) brightness(0.9)
+    width: 200%
+    height: 200px
+    top: -30px
+    left: -50%
+    filter: blur(60px)
     background-color: $white
 
   &_logo
