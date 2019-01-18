@@ -22,6 +22,8 @@
     margin-top: 35vh
     z-index: 10
     @extend .proxi-bold
+    @media screen and (max-width: 1280px)
+      margin-top: 25vh
   &_text
     position: relative
     font-size: 2.4rem
@@ -45,6 +47,8 @@
     text-align: center
     cursor: pointer
     z-index: 20
+    @media screen and (max-width: 1280px)
+      margin-top: 60px
   &_water
     position: absolute
     display: block
@@ -57,8 +61,6 @@
     -o-transform: rotate(180deg)
     transform: rotate(180deg)
     z-index: 1
-    @media screen and (max-width: 1280px)
-      bottom: -20%
     img
       width: 100%
       opacity: 0.76
@@ -83,6 +85,8 @@
       position: absolute
       left: -100%
       min-height: 800px
+      @media screen and (max-width: 1440px)
+        left: -200%
   &_text_wrapper
     padding-top: 50px
   &_text
@@ -99,15 +103,18 @@
       @extend .proxi-semi
     .number
       position: absolute
-      display: inline-block
-      min-width: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 60px
       height: 100px
       top: 10px
       left: -10%
       font-size: 10rem
       @extend .proxi-bold
       color: rgba(75, 205, 255, 0.5)
-
+      @media screen and (max-width: 1440px)
+        left: -13%
   &_second
     position: relative
     display: flex
@@ -141,6 +148,9 @@
         height: auto
         top: -25%
         right: -25px
+        @media screen and (max-width: 1440px)
+          top: -15%
+          right: -15px
         img
           width: 100%
       .second_decor
@@ -182,14 +192,18 @@
         color: $blue
     .number
       position: absolute
-      display: inline-block
-      min-width: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 60px
       height: 100px
       top: 10px
       left: -10%
       font-size: 10rem
       @extend .proxi-bold
       color: rgba(75, 205, 255, 0.5)
+      @media screen and (max-width: 1440px)
+        left: -13%
   &_image
     position: relative
     width: 100%
@@ -231,6 +245,8 @@
     img
       height: 110%
       margin-left: 25px
+      @media screen and (max-width: 1440px)
+        height: 100%
   &_text
     width: 100%
     height: 145px
@@ -256,13 +272,15 @@
       position: relative
       width: 100%
       height: 35vh
-      max-height: 375px
+      min-height: 375px
       overflow: hidden
       display: inline-block
       img
         position: absolute
         left: -25%
         min-height: 375px
+        @media screen and (max-width: 1440px)
+          left: -50%
     &_wrapper
       padding-left: 30px
       &_name

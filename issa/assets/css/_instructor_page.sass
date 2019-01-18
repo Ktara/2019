@@ -22,6 +22,8 @@
     margin-top: 35vh
     z-index: 10
     @extend .proxi-bold
+    @media screen and (max-width: 1280px)
+      margin-top: 25vh
   &_text
     position: relative
     font-size: 2.4rem
@@ -45,6 +47,8 @@
     text-align: center
     cursor: pointer
     z-index: 20
+    @media screen and (max-width: 1280px)
+      margin-top: 60px
   &_water
     position: absolute
     display: block
@@ -57,8 +61,6 @@
     -o-transform: rotate(180deg)
     transform: rotate(180deg)
     z-index: 1
-    @media screen and (max-width: 1280px)
-      bottom: -20%
     img
       width: 100%
       opacity: 0.76
@@ -79,6 +81,8 @@
   &_text
     display: inline-block
     padding-top: 80px
+    @media screen and (max-width: 1440px)
+      padding-top: 60px
     p
       color: $grey
       font-size: 2.4rem
@@ -123,6 +127,10 @@
     min-height: 230px
     background-color: $blue
     margin-top: 50px
+    @media screen and (max-width: 1440px)
+      min-height: 280px
+    @media screen and (max-width: 1280px)
+      min-height: 230px
     &_text
       font-size: 2.4rem
       line-height: 29px
@@ -131,6 +139,10 @@
       padding-top: 25px
       padding-left: 15px
       padding-right: 15px
+      @media screen and (max-width: 1440px)
+        padding-left: 5px
+        padding-right: 5px
+        line-height: 25px
 
 
 
@@ -216,6 +228,8 @@
       height: 100%
       top: 0
       left: -10%
+      @media screen and (max-width: 1440px)
+        left: -10.5%
       img
         height: 100%
   &_text
@@ -238,9 +252,16 @@
       height: 90px
       top: 10px
       left: -14%
+      @media screen and (max-width: 1440px)
+        min-width: 80px
+        height: 80px
+        left: -15%
       img
         min-height: 90px
         max-height: 110px
+        @media screen and (max-width: 1440px)
+          min-height: 80px
+          max-height: 80px
   &_info
     display: block
     width: 100%
@@ -284,6 +305,8 @@
     img
       height: 110%
       margin-left: 25px
+      @media screen and (max-width: 1440px)
+        height: 100%
   &_text
     width: 100%
     height: 145px
@@ -394,6 +417,11 @@
         width: 180px
         top: -25%
         right: -155px
+        @media screen and (max-width: 1440px)
+          top: -45%
+        @media screen and (max-width: 1280px)
+          width: 150px
+          right: -130px
   &_block
     position: relative
     width: 100%
@@ -415,6 +443,8 @@
         position: absolute
         left: -50%
         min-height: 450px
+        @media screen and (max-width: 1440px)
+          left: -100%
     &_wrapper
       padding-left: 30px
     &_name
@@ -446,7 +476,7 @@
     position: relative
     width: 100%
     height: 75vh
-    max-height: 785px
+    min-height: 785px
     display: block
     overflow: hidden
     margin-top: 30px
@@ -464,6 +494,7 @@
         position: absolute
         display: block
         width: 100%
+        min-height: 785px
         bottom: 0
         left: 0
   &_slider_nav
@@ -475,6 +506,8 @@
     min-height: 215px
     bottom: 45px
     left: 17%
+    @media screen and (max-width: 1440px)
+      min-height: 180px
     &_image
       display: inline-block
       width: calc(33% - 15px)
@@ -482,9 +515,13 @@
       max-height: 215px
       overflow: hidden
       margin: 0 15px
+      @media screen and (max-width: 1440px)
+        max-height: 180px
       img
-        width: 100%
+        max-width: 100%
         min-height: 215px
+        @media screen and (max-width: 1440px)
+          min-height: 180px
   &_prewAr
     position: absolute
     background-image: url(../img/icon/boat-deg.svg)

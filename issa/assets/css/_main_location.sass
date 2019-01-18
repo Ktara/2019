@@ -2,6 +2,19 @@
   position: relative
   width: 100%
   margin-top: 120px
+  &_wrapper
+    position: relative
+    width: 100%
+    .location_help
+      position: absolute
+      display: block
+      width: 290px
+      height: auto
+      right: -80px
+      bottom: -80px
+      z-index: 10
+      img
+        width: 100%
   &_color_wrapper
     position: relative
     width: 100%
@@ -26,6 +39,8 @@
       z-index: 3
       img
         height: 110%
+        @media screen and (max-width: 1440px)
+          height: 100%
   &_list
     position: relative
     width: 100%
@@ -48,18 +63,13 @@
   &_map
     position: relative
     width: 100%
-    //overflow: hidden
+    overflow: hidden
     max-height: 649px
     margin-top: 50px
+    @media screen and (max-width: 1440px)
+      max-height: 678px
     .map_img
       min-width: 100%
-      max-height: 649px
-    &_help
-      position: absolute
-      display: block
-      width: 290px
-      height: auto
-      right: -80px
-      bottom: -80px
-      img
-        width: 100%
+      min-height: 649px
+      @media screen and (max-width: 1440px)
+        min-height: 678px
