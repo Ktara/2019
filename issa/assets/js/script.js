@@ -62,3 +62,47 @@ $('.main_video_close').click(function(){
         visibility: 'visible'
     });
 });
+
+
+
+
+
+$('.instructor_review_slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    nextArrow: '<div class="instructor_review_prewAr"></div>',
+    prevArrow: '<div class="instructor_review_nextAr"></div>',
+    infinite: true
+});
+
+
+
+
+
+$('.nav_header_list').click(function(){
+    $('.popup_nav_menu').addClass('popup_nav_menu_active').velocity({
+        opacity: 1
+    }, 600);
+    $('.nav_header').addClass('nav_header_white').velocity({
+        opacity: 1
+    }, 600);
+});
+
+$('.popup_nav_menu_close').click(function(){
+    $('.popup_nav_menu').removeClass('popup_nav_menu_active').velocity({
+        opacity: 0
+    }, 600);
+});
+
+$('.popup_nav_menu').click(function(event){
+    if(event.target === this){
+        $(this).velocity({
+            opacity: 0
+        }, 600);
+        setTimeout(function(){
+            $('.popup_nav_menu').removeClass('popup_nav_menu_active');
+        }, 600);
+    };
+});

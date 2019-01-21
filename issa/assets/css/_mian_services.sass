@@ -13,6 +13,11 @@
     height: auto
     top: 0
     right: 4%
+    z-index: 15
+    @media screen and (max-width: 768px)
+      width: 70px
+      right: -2%
+      top: 8%
     img
       width: 100%
   &_card
@@ -22,7 +27,7 @@
     border-radius: 20px
     overflow: hidden
     background-color: $white
-    box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 50px 30px rgba(0, 0, 0, 0.1)
     -webkit-transition: margin-top 0.6s
     -moz-transition: margin-top 0.6s
     -ms-transition: margin-top 0.6s
@@ -34,6 +39,8 @@
       position: relative
       width: 100%
       height: 500px
+      @media screen and (max-width: 768px)
+        height: 215px
       &:after
         content: ''
         position: absolute
@@ -52,6 +59,9 @@
         top: 0
         left: -25%
         filter: blur(0.5px) brightness(85%)
+        @media screen and (max-width: 768px)
+          max-height: 215px
+          min-height: 215px
       &_title
         position: absolute
         width: calc(100% - 60px)
@@ -62,15 +72,25 @@
         color: $white
         @media screen and (max-width: 1440px)
           line-height: 40px
+        @media screen and (max-width: 768px)
+          font-size: 16px
+          line-height: 20px
+          left: 15px
         b
           @extend .proxi-bold
     &_text
       display: flex
       align-items: center
       height: 15vh
+      @media screen and (max-width: 768px)
+        height: 12vh
+        min-height: 120px
       p
         font-size: 2.4rem
         color: $black
         margin-left: 15px
         margin-right: 15px
         @extend .proxi-bold
+        @media screen and (max-width: 768px)
+          font-size: 14px
+          line-height: 17px
