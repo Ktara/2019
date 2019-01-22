@@ -24,6 +24,8 @@
     @extend .proxi-bold
     @media screen and (max-width: 1440px)
       margin-top: 25vh
+    @media screen and (max-width: 768px)
+      font-size: 50px
   &_text
     position: relative
     font-size: 2.4rem
@@ -32,6 +34,9 @@
     margin-top: 55px
     z-index: 10
     @extend .proxi-bold
+    @media screen and (max-width: 768px)
+      font-size: 18px
+      line-height: 22px
   &_btn
     position: relative
     display: block
@@ -61,6 +66,8 @@
     -o-transform: rotate(180deg)
     transform: rotate(180deg)
     z-index: 1
+    @media screen and (max-width: 768px)
+      bottom: -5%
     img
       width: 100%
       opacity: 0.76
@@ -76,19 +83,28 @@
     display: inline-block
     width: 100%
     margin-top: 30px
+    @media screen and (max-width: 768px)
+      max-height: 275px
     img
       width: 100%
+      @media screen and (max-width: 768px)
+        min-height: 275px
   &_text
     display: inline-block
     padding-top: 80px
     @media screen and (max-width: 1440px)
       padding-top: 60px
+    @media screen and (max-width: 768px)
+      padding-top: 10px
     p
       color: $grey
       font-size: 2.4rem
       line-height: 29px
       margin-top: 20px
       @extend .proxi-semi
+      @media screen and (max-width: 768px)
+        font-size: 18px
+        line-height: 22px
 
 
 
@@ -104,6 +120,8 @@
     width: 100%
     height: 50vh
     min-height: 625px
+    @media screen and (max-width: 768px)
+      min-height: 800px
     &_image
       position: absolute
       display: block
@@ -111,6 +129,11 @@
       height: 50vh
       top: 60px
       left: 41.5%
+      @media screen and (max-width: 768px)
+        width: 80%
+        left: auto
+        right: -30%
+        top: 130px
       img
         width: 100%
         min-height: 565px
@@ -120,6 +143,9 @@
     color: $grey
     @extend .proxi-semi
     padding-top: 60px
+    @media screen and (max-width: 768px)
+      font-size: 18px
+      line-height: 22px
   &_card
     position: relative
     width: 100%
@@ -170,6 +196,8 @@
     -webkit-background-size: cover
     background-size: cover
     background-position: center
+    @media screen and (max-width: 768px)
+      height: 420px
     &_text
       display: inline-block
       width: 100%
@@ -177,6 +205,8 @@
       margin-top: 25px
       border-radius: 10px
       background-color: $blue
+      @media screen and (max-width: 768px)
+        height: 170px
       p
         display: inline-block
         width: 60%
@@ -186,6 +216,9 @@
         font-size: 2.4rem
         line-height: 29px
         @extend .proxi-semi
+        @media screen and (max-width: 768px)
+          font-size: 24px
+          line-height: 29px
   &_info
     display: block
     width: 100%
@@ -198,6 +231,8 @@
     @extend .proxi-semi
     text-align: center
     margin-top: 85px
+    @media screen and (max-width: 768px)
+      font-size: 18px
 
 
 
@@ -427,12 +462,17 @@
         @media screen and (max-width: 1280px)
           width: 150px
           right: -130px
+        @media screen and (max-width: 768px)
+          width: 100px
+          right: -85px
   &_slider_wrapper
     position: relative
     width: 100%
     max-height: 460px
     overflow: hidden
     margin-top: 60px
+    @media screen and (max-width: 768px)
+      max-height: 520px
   &_block
     position: relative
     width: 100%
@@ -449,6 +489,18 @@
       min-height: 360px
       overflow: hidden
       display: inline-block
+      @media screen and (max-width: 768px)
+        width: 150%
+        &:after
+          content: ''
+          position: absolute
+          display: block
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0
+          background-color: rgba(255, 255, 255, 0.3)
+          z-index: 0
       img
         position: absolute
         left: -20%
@@ -457,22 +509,34 @@
           left: -60%
     &_wrapper
       padding-left: 30px
+      @media screen and (max-width: 768px)
+        padding-left: 0
+        margin-right: -15px
     &_name
       font-size: 2rem
       @extend .proxi-bold
       padding-top: 30px
       color: $black
+      @media screen and (max-width: 768px)
+        font-size: 14px
+        line-height: 18px
     &_sub_name
       font-size: 1.4rem
       margin-top: 5px
       color: $black
       @extend .proxi-reg
+      @media screen and (max-width: 768px)
+        font-size: 11px
+        line-height: 14px
     &_text
       font-size: 1.8rem
       line-height: 22px
       color: $black
       @extend .proxi-reg
       margin-top: 25px
+      @media screen and (max-width: 768px)
+        font-size: 16px
+        line-height: 20px
   &_prewAr
     position: absolute
     background-image: url(../img/icon/boat-deg.svg)
@@ -484,6 +548,11 @@
     cursor: pointer
     @media screen and (max-width: 1440px)
       left: -8%
+    @media screen and (max-width: 768px)
+      width: 45px
+      height: 32px
+      -webkit-background-size: cover
+      background-size: cover
   &_nextAr
     position: absolute
     background-image: url(../img/icon/boat-deg.svg)
@@ -500,7 +569,11 @@
     transform: rotate(180deg)
     @media screen and (max-width: 1440px)
       right: -8%
-
+    @media screen and (max-width: 768px)
+      width: 45px
+      height: 32px
+      -webkit-background-size: cover
+      background-size: cover
 
 
 
@@ -517,16 +590,25 @@
     display: block
     overflow: hidden
     margin-top: 30px
+    @media screen and (max-width: 768px)
+      min-height: 340px
+      height: 45vh
   &_slider
     display: block
     width: 100%
     height: 75vh
     min-height: 785px
+    @media screen and (max-width: 768px)
+      min-height: 340px
+      height: 45vh
     &_image
       width: 100%
       height: 75vh
       min-height: 785px
       overflow: hidden
+      @media screen and (max-width: 768px)
+        min-height: 340px
+        height: 45vh
       img
         position: absolute
         display: block
@@ -534,6 +616,8 @@
         min-height: 785px
         bottom: 0
         left: 0
+        @media screen and (max-width: 768px)
+          min-height: 340px
   &_slider_nav
     position: absolute
     display: flex
@@ -545,6 +629,10 @@
     left: 17%
     @media screen and (max-width: 1440px)
       min-height: 180px
+    @media screen and (max-width: 768px)
+      height: 10vh
+      min-height: 140px
+      bottom: 0
     &_image
       display: inline-block
       width: calc(33% - 15px)
@@ -554,11 +642,16 @@
       margin: 0 15px
       @media screen and (max-width: 1440px)
         min-height: 180px
+      @media screen and (max-width: 768px)
+        min-height: 140px
+        height: 10vh
       img
         max-width: 100%
         min-height: 215px
         @media screen and (max-width: 1440px)
           min-height: 180px
+        @media screen and (max-width: 768px)
+          min-height: 140px
   &_prewAr
     position: absolute
     background-image: url(../img/icon/boat-deg.svg)
@@ -573,6 +666,9 @@
     border-radius: 100%
     border: 5px solid $blue
     cursor: pointer
+    @media screen and (max-width: 768px)
+      width: 70px
+      height: 70px
   &_nextAr
     position: absolute
     background-image: url(../img/icon/boat-deg.svg)
@@ -592,3 +688,6 @@
     -ms-transform: rotate(180deg)
     -o-transform: rotate(180deg)
     transform: rotate(180deg)
+    @media screen and (max-width: 768px)
+      width: 70px
+      height: 70px

@@ -24,6 +24,8 @@
     @extend .proxi-bold
     @media screen and (max-width: 1440px)
       margin-top: 25vh
+    @media screen and (max-width: 768px)
+      font-size: 50px
   &_text
     position: relative
     font-size: 2.4rem
@@ -32,6 +34,9 @@
     margin-top: 55px
     z-index: 10
     @extend .proxi-bold
+    @media screen and (max-width: 768px)
+      font-size: 18px
+      line-height: 22px
   &_btn
     position: relative
     display: block
@@ -61,6 +66,8 @@
     -o-transform: rotate(180deg)
     transform: rotate(180deg)
     z-index: 1
+    @media screen and (max-width: 768px)
+      bottom: -5%
     img
       width: 100%
       opacity: 0.76
@@ -77,19 +84,28 @@
     display: inline-block
     width: 100%
     margin-top: 30px
+    @media screen and (max-width: 768px)
+      max-height: 275px
     img
       width: 100%
+      @media screen and (max-width: 768px)
+        min-height: 275px
   &_text
     display: inline-block
     padding-top: 80px
     @media screen and (max-width: 1440px)
       padding-top: 50px
+    @media screen and (max-width: 768px)
+      padding-top: 10px
     p
       color: $grey
       font-size: 2.4rem
       line-height: 29px
       margin-top: 20px
       @extend .proxi-semi
+      @media screen and (max-width: 768px)
+        font-size: 18px
+        line-height: 22px
 
 
 
@@ -107,12 +123,18 @@
     display: flex
     justify-content: space-between
     padding-top: 30px
+    @media screen and (max-width: 768px)
+      display: inline-block
     .cardContainer
       width: calc(20% - 12px)
       -webkit-transition: all .3s ease
       -moz-transition: all .3s ease
       -ms-transition: all .3s ease
       transition: all .3s ease
+      @media screen and (max-width: 768px)
+        width: calc(50% - 12px)
+        display: inline-block
+        margin-top: 30px
 
 
       /*depth of the elements */
@@ -145,6 +167,9 @@
       @media screen and (max-width: 1280px)
         height: 40vh
         min-height: 405px
+      @media screen and (max-width: 768px)
+        height: 20vh
+        min-height: 300px
       .front_title
         font-size: 3.2rem
         @extend .proxi-semi
@@ -160,6 +185,8 @@
         padding-top: 25px
         padding-left: 20px
         padding-right: 20px
+        @media screen and (max-width: 768px)
+          font-size: 16px
       .back_text
         font-size: 1.6rem
         line-height: 20px
@@ -219,6 +246,8 @@
   position: relative
   width: 100%
   padding-top: 120px
+  @media screen and (max-width: 768px)
+    overflow: hidden
   &_image
     position: relative
     display: block
@@ -239,9 +268,15 @@
       font-size: 2.4rem
       line-height: 29px
       @extend .proxi-semi
+      @media screen and (max-width: 768px)
+        font-size: 18px
+        line-height: 22px
     img
       width: 100%
       margin-top: 20px
+      @media screen and (max-width: 768px)
+        width: 150%
+        margin-left: -25%
   &_btn
     position: relative
     display: block
@@ -255,4 +290,124 @@
     font-size: 2.4rem
     line-height: 98px
     text-align: center
-    //cursor: pointer
+    @media screen and (max-width: 768px)
+      font-size: 16px
+      height: 80px
+      line-height: 78px
+      margin-top: 30px
+
+
+
+
+
+.captain_location
+  position: relative
+  width: 100%
+  margin-top: 120px
+  @media screen and (max-width: 768px)
+    //overflow: hidden
+    margin-top: 0
+    padding-top: 120px
+  &_wrapper
+    position: relative
+    width: 100%
+    .captain_location_help
+      position: absolute
+      display: block
+      width: 290px
+      height: auto
+      right: -80px
+      bottom: -80px
+      z-index: 10
+      @media screen and (max-width: 768px)
+        width: 170px
+        right: -60px
+        bottom: -40px
+        z-index: 15
+      img
+        width: 100%
+  &_color_wrapper
+    position: relative
+    width: 100%
+    min-height: 350px
+    margin-top: 50px
+    @media screen and (max-width: 768px)
+      position: absolute
+      display: block
+      min-height: 200px
+      margin-top: 0
+      top: -145px
+    &_light
+      position: absolute
+      display: block
+      width: 200%
+      height: 145px
+      right: 0
+      top: 90px
+      z-index: 1
+      background-color: rgba(75, 205, 255, 0.15)
+      @media screen and (max-width: 768px)
+        height: 65px
+        right: -50%
+    &_image
+      position: absolute
+      display: block
+      width: auto
+      height: 270px
+      left: 18%
+      top: 70px
+      z-index: 3
+      @media screen and (max-width: 768px)
+        height: 170px
+        left: 0
+      img
+        height: 110%
+        @media screen and (max-width: 1440px)
+          height: 100%
+  &_list
+    position: relative
+    width: 100%
+    height: auto
+    background-color: $blue
+    margin-top: 75px
+    border-radius: 20px 0 0 20px
+    @media screen and (max-width: 768px)
+      margin-top: 90px
+      width: 70%
+      border-radius: 20px
+      height: 900px
+    ul
+      display: inline-block
+      width: 80%
+      margin-left: 10%
+      padding-top: 25px
+      padding-bottom: 25px
+      li
+        font-size: 2.4rem
+        line-height: 29px
+        color: $white
+    &_active
+      text-decoration: underline
+  &_map
+    position: relative
+    width: 100%
+    overflow: hidden
+    max-height: 649px
+    margin-top: 50px
+    @media screen and (max-width: 1440px)
+      max-height: 678px
+    @media screen and (max-width: 768px)
+      position: absolute
+      display: block
+      width: 150%
+      top: -740px
+      left: -25%
+      max-height: 665px
+      z-index: 10
+    .map_img
+      min-width: 100%
+      min-height: 649px
+      @media screen and (max-width: 1440px)
+        min-height: 678px
+      @media screen and (max-width: 768px)
+        min-height: 665px

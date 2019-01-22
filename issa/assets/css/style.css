@@ -64,6 +64,9 @@ html, body {
   font-size: 10rem;
   color: #0D8940;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .section_header {
+      font-size: 43px; } }
 
 .nav_header {
   position: fixed;
@@ -659,6 +662,10 @@ html, body {
   position: relative;
   width: 100%;
   margin-top: 120px; }
+  @media screen and (max-width: 768px) {
+    .location {
+      margin-top: 0;
+      padding-top: 120px; } }
   .location_wrapper {
     position: relative;
     width: 100%; }
@@ -670,6 +677,12 @@ html, body {
       right: -80px;
       bottom: -80px;
       z-index: 10; }
+      @media screen and (max-width: 768px) {
+        .location_wrapper .location_help {
+          width: 170px;
+          right: -60px;
+          bottom: -40px;
+          z-index: 15; } }
       .location_wrapper .location_help img {
         width: 100%; }
   .location_color_wrapper {
@@ -677,6 +690,13 @@ html, body {
     width: 100%;
     min-height: 350px;
     margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .location_color_wrapper {
+        position: absolute;
+        display: block;
+        min-height: 200px;
+        margin-top: 0;
+        top: -145px; } }
     .location_color_wrapper_light {
       position: absolute;
       display: block;
@@ -686,6 +706,10 @@ html, body {
       top: 90px;
       z-index: 1;
       background-color: rgba(75, 205, 255, 0.15); }
+      @media screen and (max-width: 768px) {
+        .location_color_wrapper_light {
+          height: 65px;
+          right: -50%; } }
     .location_color_wrapper_image {
       position: absolute;
       display: block;
@@ -706,6 +730,12 @@ html, body {
     background-color: #4BCDFF;
     margin-top: 75px;
     border-radius: 20px 0 0 20px; }
+    @media screen and (max-width: 768px) {
+      .location_list {
+        margin-top: 90px;
+        width: 70%;
+        border-radius: 20px;
+        height: 900px; } }
     .location_list ul {
       display: inline-block;
       width: 80%;
@@ -727,12 +757,24 @@ html, body {
     @media screen and (max-width: 1440px) {
       .location_map {
         max-height: 678px; } }
+    @media screen and (max-width: 768px) {
+      .location_map {
+        position: absolute;
+        display: block;
+        width: 150%;
+        top: -740px;
+        left: -25%;
+        max-height: 665px;
+        z-index: 10; } }
     .location_map .map_img {
       min-width: 100%;
       min-height: 649px; }
       @media screen and (max-width: 1440px) {
         .location_map .map_img {
           min-height: 678px; } }
+      @media screen and (max-width: 768px) {
+        .location_map .map_img {
+          min-height: 665px; } }
 
 .footer {
   position: relative;
@@ -822,6 +864,9 @@ html, body {
     @media screen and (max-width: 1440px) {
       .captain_main_title {
         margin-top: 25vh; } }
+    @media screen and (max-width: 768px) {
+      .captain_main_title {
+        font-size: 50px; } }
   .captain_main_text {
     position: relative;
     font-size: 2.4rem;
@@ -829,6 +874,10 @@ html, body {
     color: #000000;
     margin-top: 55px;
     z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .captain_main_text {
+        font-size: 18px;
+        line-height: 22px; } }
   .captain_main_btn {
     position: relative;
     display: block;
@@ -859,6 +908,9 @@ html, body {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .captain_main_water {
+        bottom: -5%; } }
     .captain_main_water img {
       width: 100%;
       opacity: 0.76; }
@@ -871,19 +923,32 @@ html, body {
     display: inline-block;
     width: 100%;
     margin-top: 30px; }
+    @media screen and (max-width: 768px) {
+      .captain_service_image {
+        max-height: 275px; } }
     .captain_service_image img {
       width: 100%; }
+      @media screen and (max-width: 768px) {
+        .captain_service_image img {
+          min-height: 275px; } }
   .captain_service_text {
     display: inline-block;
     padding-top: 80px; }
     @media screen and (max-width: 1440px) {
       .captain_service_text {
         padding-top: 50px; } }
+    @media screen and (max-width: 768px) {
+      .captain_service_text {
+        padding-top: 10px; } }
     .captain_service_text p {
       color: #747474;
       font-size: 2.4rem;
       line-height: 29px;
       margin-top: 20px; }
+      @media screen and (max-width: 768px) {
+        .captain_service_text p {
+          font-size: 18px;
+          line-height: 22px; } }
 
 .captain_certificates {
   position: relative;
@@ -895,6 +960,9 @@ html, body {
     display: flex;
     justify-content: space-between;
     padding-top: 30px; }
+    @media screen and (max-width: 768px) {
+      .captain_certificates_card_wrapper {
+        display: inline-block; } }
     .captain_certificates_card_wrapper .cardContainer {
       width: calc(20% - 12px);
       -webkit-transition: all 0.3s ease;
@@ -908,6 +976,11 @@ html, body {
       perspective: 800px;
       /*border: 1px solid #ff0000; */
       padding-left: 1%; }
+      @media screen and (max-width: 768px) {
+        .captain_certificates_card_wrapper .cardContainer {
+          width: calc(50% - 12px);
+          display: inline-block;
+          margin-top: 30px; } }
     .captain_certificates_card_wrapper .card {
       position: relative;
       display: inline-block;
@@ -932,6 +1005,10 @@ html, body {
         .captain_certificates_card_wrapper .card {
           height: 40vh;
           min-height: 405px; } }
+      @media screen and (max-width: 768px) {
+        .captain_certificates_card_wrapper .card {
+          height: 20vh;
+          min-height: 300px; } }
       .captain_certificates_card_wrapper .card .front_title {
         font-size: 3.2rem;
         color: #ffffff;
@@ -945,6 +1022,9 @@ html, body {
         padding-top: 25px;
         padding-left: 20px;
         padding-right: 20px; }
+        @media screen and (max-width: 768px) {
+          .captain_certificates_card_wrapper .card .back_title {
+            font-size: 16px; } }
       .captain_certificates_card_wrapper .card .back_text {
         font-size: 1.6rem;
         line-height: 20px;
@@ -1003,6 +1083,9 @@ html, body {
   position: relative;
   width: 100%;
   padding-top: 120px; }
+  @media screen and (max-width: 768px) {
+    .captain_training {
+      overflow: hidden; } }
   .captain_training_image {
     position: relative;
     display: block;
@@ -1023,9 +1106,17 @@ html, body {
       color: #747474;
       font-size: 2.4rem;
       line-height: 29px; }
+      @media screen and (max-width: 768px) {
+        .captain_training_text p {
+          font-size: 18px;
+          line-height: 22px; } }
     .captain_training_text img {
       width: 100%;
       margin-top: 20px; }
+      @media screen and (max-width: 768px) {
+        .captain_training_text img {
+          width: 150%;
+          margin-left: -25%; } }
   .captain_training_btn {
     position: relative;
     display: block;
@@ -1039,6 +1130,134 @@ html, body {
     font-size: 2.4rem;
     line-height: 98px;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .captain_training_btn {
+        font-size: 16px;
+        height: 80px;
+        line-height: 78px;
+        margin-top: 30px; } }
+
+.captain_location {
+  position: relative;
+  width: 100%;
+  margin-top: 120px; }
+  @media screen and (max-width: 768px) {
+    .captain_location {
+      margin-top: 0;
+      padding-top: 120px; } }
+  .captain_location_wrapper {
+    position: relative;
+    width: 100%; }
+    .captain_location_wrapper .captain_location_help {
+      position: absolute;
+      display: block;
+      width: 290px;
+      height: auto;
+      right: -80px;
+      bottom: -80px;
+      z-index: 10; }
+      @media screen and (max-width: 768px) {
+        .captain_location_wrapper .captain_location_help {
+          width: 170px;
+          right: -60px;
+          bottom: -40px;
+          z-index: 15; } }
+      .captain_location_wrapper .captain_location_help img {
+        width: 100%; }
+  .captain_location_color_wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .captain_location_color_wrapper {
+        position: absolute;
+        display: block;
+        min-height: 200px;
+        margin-top: 0;
+        top: -145px; } }
+    .captain_location_color_wrapper_light {
+      position: absolute;
+      display: block;
+      width: 200%;
+      height: 145px;
+      right: 0;
+      top: 90px;
+      z-index: 1;
+      background-color: rgba(75, 205, 255, 0.15); }
+      @media screen and (max-width: 768px) {
+        .captain_location_color_wrapper_light {
+          height: 65px;
+          right: -50%; } }
+    .captain_location_color_wrapper_image {
+      position: absolute;
+      display: block;
+      width: auto;
+      height: 270px;
+      left: 18%;
+      top: 70px;
+      z-index: 3; }
+      @media screen and (max-width: 768px) {
+        .captain_location_color_wrapper_image {
+          height: 170px;
+          left: 0; } }
+      .captain_location_color_wrapper_image img {
+        height: 110%; }
+        @media screen and (max-width: 1440px) {
+          .captain_location_color_wrapper_image img {
+            height: 100%; } }
+  .captain_location_list {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #4BCDFF;
+    margin-top: 75px;
+    border-radius: 20px 0 0 20px; }
+    @media screen and (max-width: 768px) {
+      .captain_location_list {
+        margin-top: 90px;
+        width: 70%;
+        border-radius: 20px;
+        height: 900px; } }
+    .captain_location_list ul {
+      display: inline-block;
+      width: 80%;
+      margin-left: 10%;
+      padding-top: 25px;
+      padding-bottom: 25px; }
+      .captain_location_list ul li {
+        font-size: 2.4rem;
+        line-height: 29px;
+        color: #ffffff; }
+    .captain_location_list_active {
+      text-decoration: underline; }
+  .captain_location_map {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 649px;
+    margin-top: 50px; }
+    @media screen and (max-width: 1440px) {
+      .captain_location_map {
+        max-height: 678px; } }
+    @media screen and (max-width: 768px) {
+      .captain_location_map {
+        position: absolute;
+        display: block;
+        width: 150%;
+        top: -740px;
+        left: -25%;
+        max-height: 665px;
+        z-index: 10; } }
+    .captain_location_map .map_img {
+      min-width: 100%;
+      min-height: 649px; }
+      @media screen and (max-width: 1440px) {
+        .captain_location_map .map_img {
+          min-height: 678px; } }
+      @media screen and (max-width: 768px) {
+        .captain_location_map .map_img {
+          min-height: 665px; } }
 
 .school_main {
   position: relative;
@@ -1066,6 +1285,9 @@ html, body {
     @media screen and (max-width: 1440px) {
       .school_main_title {
         margin-top: 25vh; } }
+    @media screen and (max-width: 768px) {
+      .school_main_title {
+        font-size: 50px; } }
   .school_main_text {
     position: relative;
     font-size: 2.4rem;
@@ -1073,6 +1295,10 @@ html, body {
     color: #000000;
     margin-top: 55px;
     z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .school_main_text {
+        font-size: 18px;
+        line-height: 22px; } }
   .school_main_btn {
     position: relative;
     display: block;
@@ -1103,6 +1329,9 @@ html, body {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .school_main_water {
+        bottom: -5%; } }
     .school_main_water img {
       width: 100%;
       opacity: 0.76; }
@@ -1138,6 +1367,10 @@ html, body {
       font-size: 2.4rem;
       line-height: 29px;
       color: #747474; }
+      @media screen and (max-width: 768px) {
+        .school_advantages_text p {
+          font-size: 18px;
+          line-height: 22px; } }
     .school_advantages_text .number {
       position: absolute;
       display: flex;
@@ -1159,10 +1392,17 @@ html, body {
     width: 100%;
     height: 370px;
     margin-top: 160px; }
+    @media screen and (max-width: 768px) {
+      .school_advantages_second {
+        margin-top: 70px; } }
     .school_advantages_second_text {
       font-size: 2.4rem;
       line-height: 29px;
       color: #747474; }
+      @media screen and (max-width: 768px) {
+        .school_advantages_second_text {
+          font-size: 18px;
+          line-height: 22px; } }
     .school_advantages_second_image {
       position: relative;
       width: 100%;
@@ -1188,6 +1428,10 @@ html, body {
           .school_advantages_second_image .first_decor {
             top: -15%;
             right: -15px; } }
+        @media screen and (max-width: 768px) {
+          .school_advantages_second_image .first_decor {
+            top: -7%;
+            right: -10px; } }
         .school_advantages_second_image .first_decor img {
           width: 100%; }
       .school_advantages_second_image .second_decor {
@@ -1199,6 +1443,10 @@ html, body {
         height: auto;
         bottom: -38%;
         left: -2%; }
+        @media screen and (max-width: 768px) {
+          .school_advantages_second_image .second_decor {
+            width: 125px;
+            bottom: -70px; } }
         .school_advantages_second_image .second_decor img {
           width: 100%; }
 
@@ -1219,6 +1467,10 @@ html, body {
       font-size: 2.4rem;
       line-height: 29px;
       color: #747474; }
+      @media screen and (max-width: 768px) {
+        .school_open_text p {
+          font-size: 18px;
+          line-height: 22px; } }
       .school_open_text p span {
         color: #4BCDFF; }
     .school_open_text .number {
@@ -1235,6 +1487,10 @@ html, body {
       @media screen and (max-width: 1440px) {
         .school_open_text .number {
           left: -13%; } }
+      @media screen and (max-width: 768px) {
+        .school_open_text .number {
+          left: auto;
+          right: -13%; } }
   .school_open_image {
     position: relative;
     width: 100%;
@@ -1285,6 +1541,10 @@ html, body {
       font-size: 2.4rem;
       line-height: 29px;
       color: #747474; }
+      @media screen and (max-width: 768px) {
+        .school_other_text p {
+          font-size: 18px;
+          line-height: 22px; } }
   .school_other_review {
     position: relative;
     width: 100%;
@@ -1302,6 +1562,20 @@ html, body {
       min-height: 375px;
       overflow: hidden;
       display: inline-block; }
+      @media screen and (max-width: 768px) {
+        .school_other_review_foto {
+          width: 150%;
+          margin-left: -25%; }
+          .school_other_review_foto:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            z-index: 0; } }
       .school_other_review_foto img {
         position: absolute;
         left: -25%;
@@ -1309,21 +1583,39 @@ html, body {
         @media screen and (max-width: 1440px) {
           .school_other_review_foto img {
             left: -50%; } }
+        @media screen and (max-width: 768px) {
+          .school_other_review_foto img {
+            left: -70%; } }
     .school_other_review_wrapper {
       padding-left: 30px; }
+      @media screen and (max-width: 768px) {
+        .school_other_review_wrapper {
+          padding-left: 0; } }
       .school_other_review_wrapper_name {
         font-size: 2rem;
         padding-top: 30px;
         color: #000000; }
+        @media screen and (max-width: 768px) {
+          .school_other_review_wrapper_name {
+            font-size: 14px;
+            line-height: 18px; } }
       .school_other_review_wrapper_sub_name {
         font-size: 1.4rem;
         margin-top: 5px;
         color: #000000; }
+        @media screen and (max-width: 768px) {
+          .school_other_review_wrapper_sub_name {
+            font-size: 11px;
+            line-height: 14px; } }
       .school_other_review_wrapper_text {
         font-size: 1.8rem;
         line-height: 22px;
         color: #000000;
         margin-top: 25px; }
+        @media screen and (max-width: 768px) {
+          .school_other_review_wrapper_text {
+            font-size: 16px;
+            line-height: 20px; } }
 
 .instructor_main {
   position: relative;
@@ -1351,6 +1643,9 @@ html, body {
     @media screen and (max-width: 1440px) {
       .instructor_main_title {
         margin-top: 25vh; } }
+    @media screen and (max-width: 768px) {
+      .instructor_main_title {
+        font-size: 50px; } }
   .instructor_main_text {
     position: relative;
     font-size: 2.4rem;
@@ -1358,6 +1653,10 @@ html, body {
     color: #000000;
     margin-top: 55px;
     z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .instructor_main_text {
+        font-size: 18px;
+        line-height: 22px; } }
   .instructor_main_btn {
     position: relative;
     display: block;
@@ -1388,6 +1687,9 @@ html, body {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .instructor_main_water {
+        bottom: -5%; } }
     .instructor_main_water img {
       width: 100%;
       opacity: 0.76; }
@@ -1400,19 +1702,32 @@ html, body {
     display: inline-block;
     width: 100%;
     margin-top: 30px; }
+    @media screen and (max-width: 768px) {
+      .instructor_about_image {
+        max-height: 275px; } }
     .instructor_about_image img {
       width: 100%; }
+      @media screen and (max-width: 768px) {
+        .instructor_about_image img {
+          min-height: 275px; } }
   .instructor_about_text {
     display: inline-block;
     padding-top: 80px; }
     @media screen and (max-width: 1440px) {
       .instructor_about_text {
         padding-top: 60px; } }
+    @media screen and (max-width: 768px) {
+      .instructor_about_text {
+        padding-top: 10px; } }
     .instructor_about_text p {
       color: #747474;
       font-size: 2.4rem;
       line-height: 29px;
       margin-top: 20px; }
+      @media screen and (max-width: 768px) {
+        .instructor_about_text p {
+          font-size: 18px;
+          line-height: 22px; } }
 
 .instructor_how {
   position: relative;
@@ -1423,6 +1738,9 @@ html, body {
     width: 100%;
     height: 50vh;
     min-height: 625px; }
+    @media screen and (max-width: 768px) {
+      .instructor_how_text_wrapper {
+        min-height: 800px; } }
     .instructor_how_text_wrapper_image {
       position: absolute;
       display: block;
@@ -1430,6 +1748,12 @@ html, body {
       height: 50vh;
       top: 60px;
       left: 41.5%; }
+      @media screen and (max-width: 768px) {
+        .instructor_how_text_wrapper_image {
+          width: 80%;
+          left: auto;
+          right: -30%;
+          top: 130px; } }
       .instructor_how_text_wrapper_image img {
         width: 100%;
         min-height: 565px; }
@@ -1438,6 +1762,10 @@ html, body {
     line-height: 29px;
     color: #747474;
     padding-top: 60px; }
+    @media screen and (max-width: 768px) {
+      .instructor_how_text {
+        font-size: 18px;
+        line-height: 22px; } }
   .instructor_how_card {
     position: relative;
     width: 100%;
@@ -1485,6 +1813,9 @@ html, body {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center; }
+    @media screen and (max-width: 768px) {
+      .instructor_requirement_wrapper {
+        height: 420px; } }
     .instructor_requirement_wrapper_text {
       display: inline-block;
       width: 100%;
@@ -1492,6 +1823,9 @@ html, body {
       margin-top: 25px;
       border-radius: 10px;
       background-color: #4BCDFF; }
+      @media screen and (max-width: 768px) {
+        .instructor_requirement_wrapper_text {
+          height: 170px; } }
       .instructor_requirement_wrapper_text p {
         display: inline-block;
         width: 60%;
@@ -1500,6 +1834,10 @@ html, body {
         color: #ffffff;
         font-size: 2.4rem;
         line-height: 29px; }
+        @media screen and (max-width: 768px) {
+          .instructor_requirement_wrapper_text p {
+            font-size: 24px;
+            line-height: 29px; } }
   .instructor_requirement_info {
     display: block;
     width: 100%;
@@ -1511,6 +1849,9 @@ html, body {
     line-height: 100px;
     text-align: center;
     margin-top: 85px; }
+    @media screen and (max-width: 768px) {
+      .instructor_requirement_info {
+        font-size: 18px; } }
 
 .instructor_training {
   position: relative;
@@ -1721,12 +2062,19 @@ html, body {
           .instructor_review .section_header_wrapper .section_header img {
             width: 150px;
             right: -130px; } }
+        @media screen and (max-width: 768px) {
+          .instructor_review .section_header_wrapper .section_header img {
+            width: 100px;
+            right: -85px; } }
   .instructor_review_slider_wrapper {
     position: relative;
     width: 100%;
     max-height: 460px;
     overflow: hidden;
     margin-top: 60px; }
+    @media screen and (max-width: 768px) {
+      .instructor_review_slider_wrapper {
+        max-height: 520px; } }
   .instructor_review_block {
     position: relative;
     width: 100%;
@@ -1743,6 +2091,19 @@ html, body {
       min-height: 360px;
       overflow: hidden;
       display: inline-block; }
+      @media screen and (max-width: 768px) {
+        .instructor_review_block_foto {
+          width: 150%; }
+          .instructor_review_block_foto:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            z-index: 0; } }
       .instructor_review_block_foto img {
         position: absolute;
         left: -20%;
@@ -1752,19 +2113,35 @@ html, body {
             left: -60%; } }
     .instructor_review_block_wrapper {
       padding-left: 30px; }
+      @media screen and (max-width: 768px) {
+        .instructor_review_block_wrapper {
+          padding-left: 0;
+          margin-right: -15px; } }
     .instructor_review_block_name {
       font-size: 2rem;
       padding-top: 30px;
       color: #000000; }
+      @media screen and (max-width: 768px) {
+        .instructor_review_block_name {
+          font-size: 14px;
+          line-height: 18px; } }
     .instructor_review_block_sub_name {
       font-size: 1.4rem;
       margin-top: 5px;
       color: #000000; }
+      @media screen and (max-width: 768px) {
+        .instructor_review_block_sub_name {
+          font-size: 11px;
+          line-height: 14px; } }
     .instructor_review_block_text {
       font-size: 1.8rem;
       line-height: 22px;
       color: #000000;
       margin-top: 25px; }
+      @media screen and (max-width: 768px) {
+        .instructor_review_block_text {
+          font-size: 16px;
+          line-height: 20px; } }
   .instructor_review_prewAr {
     position: absolute;
     background-image: url(../img/icon/boat-deg.svg);
@@ -1777,6 +2154,12 @@ html, body {
     @media screen and (max-width: 1440px) {
       .instructor_review_prewAr {
         left: -8%; } }
+    @media screen and (max-width: 768px) {
+      .instructor_review_prewAr {
+        width: 45px;
+        height: 32px;
+        -webkit-background-size: cover;
+        background-size: cover; } }
   .instructor_review_nextAr {
     position: absolute;
     background-image: url(../img/icon/boat-deg.svg);
@@ -1794,6 +2177,12 @@ html, body {
     @media screen and (max-width: 1440px) {
       .instructor_review_nextAr {
         right: -8%; } }
+    @media screen and (max-width: 768px) {
+      .instructor_review_nextAr {
+        width: 45px;
+        height: 32px;
+        -webkit-background-size: cover;
+        background-size: cover; } }
 
 .instructor_gallery {
   position: relative;
@@ -1807,16 +2196,28 @@ html, body {
     display: block;
     overflow: hidden;
     margin-top: 30px; }
+    @media screen and (max-width: 768px) {
+      .instructor_gallery_slider_wrapper {
+        min-height: 340px;
+        height: 45vh; } }
   .instructor_gallery_slider {
     display: block;
     width: 100%;
     height: 75vh;
     min-height: 785px; }
+    @media screen and (max-width: 768px) {
+      .instructor_gallery_slider {
+        min-height: 340px;
+        height: 45vh; } }
     .instructor_gallery_slider_image {
       width: 100%;
       height: 75vh;
       min-height: 785px;
       overflow: hidden; }
+      @media screen and (max-width: 768px) {
+        .instructor_gallery_slider_image {
+          min-height: 340px;
+          height: 45vh; } }
       .instructor_gallery_slider_image img {
         position: absolute;
         display: block;
@@ -1824,6 +2225,9 @@ html, body {
         min-height: 785px;
         bottom: 0;
         left: 0; }
+        @media screen and (max-width: 768px) {
+          .instructor_gallery_slider_image img {
+            min-height: 340px; } }
   .instructor_gallery_slider_nav {
     position: absolute;
     display: flex;
@@ -1836,6 +2240,11 @@ html, body {
     @media screen and (max-width: 1440px) {
       .instructor_gallery_slider_nav {
         min-height: 180px; } }
+    @media screen and (max-width: 768px) {
+      .instructor_gallery_slider_nav {
+        height: 10vh;
+        min-height: 140px;
+        bottom: 0; } }
     .instructor_gallery_slider_nav_image {
       display: inline-block;
       width: calc(33% - 15px);
@@ -1846,12 +2255,19 @@ html, body {
       @media screen and (max-width: 1440px) {
         .instructor_gallery_slider_nav_image {
           min-height: 180px; } }
+      @media screen and (max-width: 768px) {
+        .instructor_gallery_slider_nav_image {
+          min-height: 140px;
+          height: 10vh; } }
       .instructor_gallery_slider_nav_image img {
         max-width: 100%;
         min-height: 215px; }
         @media screen and (max-width: 1440px) {
           .instructor_gallery_slider_nav_image img {
             min-height: 180px; } }
+        @media screen and (max-width: 768px) {
+          .instructor_gallery_slider_nav_image img {
+            min-height: 140px; } }
   .instructor_gallery_prewAr {
     position: absolute;
     background-image: url(../img/icon/boat-deg.svg);
@@ -1866,6 +2282,10 @@ html, body {
     border-radius: 100%;
     border: 5px solid #4BCDFF;
     cursor: pointer; }
+    @media screen and (max-width: 768px) {
+      .instructor_gallery_prewAr {
+        width: 70px;
+        height: 70px; } }
   .instructor_gallery_nextAr {
     position: absolute;
     background-image: url(../img/icon/boat-deg.svg);
@@ -1885,6 +2305,10 @@ html, body {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg); }
+    @media screen and (max-width: 768px) {
+      .instructor_gallery_nextAr {
+        width: 70px;
+        height: 70px; } }
 
 .popup_nav_menu {
   position: relative;
