@@ -6,6 +6,8 @@
     //overflow: hidden
     margin-top: 0
     padding-top: 120px
+  @media screen and (max-width: 750px)
+    padding-top: 80px
   &_wrapper
     position: relative
     width: 100%
@@ -22,6 +24,8 @@
         right: -60px
         bottom: -40px
         z-index: 15
+      @media screen and (max-width: 750px)
+        right: -30%
       img
         width: 100%
   &_color_wrapper
@@ -55,6 +59,14 @@
       left: 18%
       top: 70px
       z-index: 3
+      @media screen and (max-width: 768px)
+        height: 170px
+        left: 0
+      @media screen and (max-width: 750px)
+        height: 130px
+        top: 80px
+        left: auto
+        right: -25px
       img
         height: 110%
         @media screen and (max-width: 1440px)
@@ -71,6 +83,9 @@
       width: 70%
       border-radius: 20px
       height: 900px
+    @media screen and (max-width: 750px)
+      margin-top: 50px
+      width: 100%
     ul
       display: inline-block
       width: 80%
@@ -81,6 +96,7 @@
         font-size: 2.4rem
         line-height: 29px
         color: $white
+        cursor: pointer
     &_active
       text-decoration: underline
   &_map
