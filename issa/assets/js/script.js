@@ -84,3 +84,73 @@ $('.nav_header_list').click(function(){
     $('.nav_header').toggleClass('nav_header_white');
     $('.nav_header_list').toggleClass('nav_header_burger_close');
 });
+
+
+
+
+
+$('.instructor_calendar_wrapper').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+
+
+
+
+$('.instructor_other_btn').click(function(){
+    $('.popup_form').addClass('popup_form_active').animate({
+        opacity: 1
+    }, 600, function () {
+        $('.popup_form').css('display', 'block');
+    });
+    $('.nav_header').css('display', 'none');
+});
+$('.popup_form_close').click(function(){
+    $('.popup_form').removeClass('popup_form_active').animate({
+        opacity: 0
+    }, 600, function () {
+        $('.popup_form').css('display', 'none');
+    });
+    $('.nav_header').css('display', 'block');
+});
+
+
+
+
+
+
+$('.instructor_calendar_btn').click(function(){
+    $('.popup_form').addClass('popup_form_active').animate({
+        opacity: 1
+    }, 600, function () {
+        $('.popup_form').css('display', 'block');
+    });
+    $('.nav_header').css('display', 'none');
+});
+$('.popup_form_close').click(function(){
+    $('.popup_form').removeClass('popup_form_active').animate({
+        opacity: 0
+    }, 600, function () {
+        $('.popup_form').css('display', 'none');
+    });
+    $('.nav_header').css('display', 'block');
+});

@@ -31,7 +31,7 @@
   font-family: "ProximaNova", sans-serif;
   font-weight: 700; }
 
-.proxi-semi, .nav_header_list ul li, .nav_header_tel p, .about_text, .captain_service_text p, .captain_certificates_card_wrapper .card .front_title, .captain_certificates_card_wrapper .card .back_text b, .captain_training_text p, .school_advantages_text p, .school_open_text p, .school_other_text p, .instructor_about_text p, .instructor_how_text, .instructor_how_card_text, .instructor_requirement_text, .instructor_requirement_wrapper_text p, .instructor_requirement_info, .instructor_training_text p, .instructor_training_info, .instructor_other_text p, .instructor_calendar_city, .instructor_calendar_data, .popup_nav_menu_list ul li a {
+.proxi-semi, .nav_header_list ul li, .nav_header_tel p, .about_text, .captain_service_text p, .captain_certificates_card_wrapper .card .front_title, .captain_certificates_card_wrapper .card .back_text b, .captain_training_text p, .school_advantages_text p, .school_open_text p, .school_other_text p, .instructor_about_text p, .instructor_how_text, .instructor_how_card_text, .instructor_requirement_text, .instructor_requirement_wrapper_text p, .instructor_requirement_info, .instructor_training_text p, .instructor_training_info, .instructor_other_text p, .instructor_calendar_city, .instructor_calendar_data, .popup_nav_menu_list ul li a, .popup_form_registration_header {
   font-family: "ProximaNova", sans-serif;
   font-weight: 600; }
 
@@ -2334,18 +2334,21 @@ html, body {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px; }
   .instructor_calendar_block {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(14.28% - 15px); }
+    width: 15%;
+    margin-right: 15px;
+    padding-bottom: 35px; }
   .instructor_calendar_city {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 60px;
-    line-height: 60px;
     background-color: #4BCDFF;
     border-radius: 20px 20px 0 0;
     font-size: 2.4rem;
@@ -2372,14 +2375,41 @@ html, body {
     width: 40px;
     height: 15px;
     top: 52.5px;
-    left: -13%;
+    left: -27.5px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 10px 50px 30px rgba(255, 255, 255, 0.05);
     -webkit-box-shadow: 10px 50px 30px rgba(255, 255, 255, 0.05); }
-    @media screen and (max-width: 1440px) {
-      .instructor_calendar_wrapper .instructor_calendar_block:nth-child(n+2):before {
-        left: -20%; } }
+  .instructor_calendar_arrow {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .instructor_calendar_arrow {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center; } }
+    .instructor_calendar_arrow p {
+      font-size: 11px;
+      margin-right: 5px; }
+    .instructor_calendar_arrow img {
+      width: 35px; }
+  .instructor_calendar_btn {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #4BCDFF;
+    border-radius: 10px;
+    background-color: #4BCDFF;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 2.4rem;
+    line-height: 68px; }
+    @media screen and (max-width: 750px) {
+      .instructor_calendar_btn {
+        height: 50px;
+        line-height: 48px; } }
 
 .instructor_review {
   position: relative;
@@ -2400,9 +2430,6 @@ html, body {
         top: -25%;
         right: -155px; }
         @media screen and (max-width: 1440px) {
-          .instructor_review .section_header_wrapper .section_header img {
-            top: -45%; } }
-        @media screen and (max-width: 1280px) {
           .instructor_review .section_header_wrapper .section_header img {
             top: -75%;
             width: 130px;
@@ -2752,5 +2779,140 @@ html, body {
           height: 30px;
           top: 0;
           left: 0; }
+
+.popup_form {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 410;
+  overflow: hidden;
+  opacity: 0; }
+  .popup_form_active {
+    height: 100vh; }
+  .popup_form:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); }
+  @media screen and (max-width: 750px) {
+    .popup_form .container {
+      padding: 0; } }
+  .popup_form_wrapper {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: 10vh;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #ffffff; }
+    @media screen and (max-width: 1440px) {
+      .popup_form_wrapper {
+        margin-top: 70px; } }
+    @media screen and (max-width: 750px) {
+      .popup_form_wrapper {
+        height: 100vh;
+        margin-top: 0; } }
+    .popup_form_wrapper .popup_form_close {
+      position: absolute;
+      display: block;
+      width: 21px;
+      height: 21px;
+      top: 50px;
+      right: 50px;
+      z-index: 220;
+      cursor: pointer; }
+      .popup_form_wrapper .popup_form_close img {
+        width: 100%; }
+  .popup_form_registration {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    z-index: 1; }
+    @media screen and (max-width: 750px) {
+      .popup_form_registration {
+        height: 100vh; } }
+    .popup_form_registration_header {
+      text-align: center;
+      font-size: 100px;
+      color: #4BCDFF;
+      margin-top: 100px; }
+    .popup_form_registration_form {
+      position: relative;
+      width: 100%;
+      margin-top: 10px; }
+      @media screen and (max-width: 750px) {
+        .popup_form_registration_form {
+          width: 100%;
+          margin-left: 15px; } }
+      .popup_form_registration_form input {
+        width: 100%;
+        height: 50px;
+        font-size: 22px;
+        color: #4BCDFF;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 2px solid rgba(75, 205, 255, 0.5);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-indent: 10px;
+        outline: none; }
+      .popup_form_registration_form input::-moz-placeholder {
+        color: rgba(75, 205, 255, 0.5); }
+      .popup_form_registration_form input::-webkit-input-placeholder {
+        color: rgba(75, 205, 255, 0.5); }
+      .popup_form_registration_form input:-ms-input-placeholder {
+        color: rgba(75, 205, 255, 0.5); }
+      .popup_form_registration_form input::-ms-input-placeholder {
+        color: rgba(75, 205, 255, 0.5); }
+      .popup_form_registration_form input::placeholder {
+        color: rgba(75, 205, 255, 0.5); }
+      .popup_form_registration_form input:focus::placeholder {
+        color: #4bcdff;
+        outline: none; }
+      .popup_form_registration_form select {
+        width: 100%;
+        height: 50px;
+        font-size: 22px;
+        color: #4BCDFF;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 2px solid rgba(75, 205, 255, 0.5);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-indent: 10px;
+        outline: none;
+        background-image: url(../img/arrD.svg);
+        background-repeat: no-repeat;
+        background-position: 95% center; }
+    .popup_form_registration_btn {
+      display: block;
+      width: 80%;
+      height: 70px;
+      margin-left: 10%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 68px;
+      color: #ffffff;
+      border-radius: 10px;
+      background-color: #4BCDFF;
+      border: 1px solid #4BCDFF;
+      margin-top: 50px;
+      cursor: pointer; }
+      @media screen and (max-width: 1440px) {
+        .popup_form_registration_btn {
+          margin-top: 30px; } }
+      @media screen and (max-width: 750px) {
+        .popup_form_registration_btn {
+          width: calc(100% - 30px); } }
 
 /*# sourceMappingURL=style.css.map */

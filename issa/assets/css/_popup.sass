@@ -79,3 +79,138 @@
           height: 30px
           top: 0
           left: 0
+
+
+
+
+
+
+.popup_form
+  position: fixed
+  display: block
+  width: 100%
+  height: 0
+  top: 0
+  left: 0
+  z-index: 410
+  overflow: hidden
+  opacity: 0
+  &_active
+    height: 100vh
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(255, 255, 255, 0.8)
+  .container
+    @media screen and (max-width: 750px)
+      padding: 0
+  &_wrapper
+    position: relative
+    width: 100%
+    height: 80vh
+    margin-top: 10vh
+    overflow: hidden
+    z-index: 1
+    background-color: $white
+    @media screen and (max-width: 1440px)
+      margin-top: 70px
+    @media screen and (max-width: 750px)
+      height: 100vh
+      margin-top: 0
+    .popup_form_close
+      position: absolute
+      display: block
+      width: 21px
+      height: 21px
+      top: 50px
+      right: 50px
+      z-index: 220
+      cursor: pointer
+      img
+        width: 100%
+  &_registration
+    position: relative
+    width: 100%
+    height: auto
+    background-color: white
+    z-index: 1
+    @media screen and (max-width: 750px)
+      height: 100vh
+    &_header
+      text-align: center
+      font-size: 100px
+      @extend .proxi-semi
+      color: $blue
+      margin-top: 100px
+    &_form
+      position: relative
+      width: 100%
+      margin-top: 10px
+      @media screen and (max-width: 750px)
+        width: 100%
+        margin-left: 15px
+      input
+        width: 100%
+        height: 50px
+        font-size: 22px
+        color: $blue
+        margin-top: 10px
+        border: none
+        border-bottom: 2px solid rgba(75, 205, 255, 0.5)
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        text-indent: 10px
+        outline: none
+      input::-moz-placeholder
+        color: rgba(75, 205, 255, 0.5)
+      input::-webkit-input-placeholder
+        color: rgba(75, 205, 255, 0.5)
+      input:-ms-input-placeholder
+        color: rgba(75, 205, 255, 0.5)
+      input::-ms-input-placeholder
+        color: rgba(75, 205, 255, 0.5)
+      input::placeholder
+        color: rgba(75, 205, 255, 0.5)
+      input:focus::placeholder
+        color: rgba(75, 205, 255, 1)
+        outline: none
+      select
+        width: 100%
+        height: 50px
+        font-size: 22px
+        color: $blue
+        margin-top: 10px
+        border: none
+        border-bottom: 2px solid rgba(75, 205, 255, 0.5)
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        text-indent: 10px
+        outline: none
+        background-image: url(../img/arrD.svg)
+        background-repeat: no-repeat
+        background-position: 95% center
+    &_btn
+      display: block
+      width: 80%
+      height: 70px
+      margin-left: 10%
+      text-align: center
+      font-size: 24px
+      line-height: 68px
+      color: $white
+      border-radius: 10px
+      background-color: $blue
+      border: 1px solid $blue
+      margin-top: 50px
+      cursor: pointer
+      @media screen and (max-width: 1440px)
+        margin-top: 30px
+      @media screen and (max-width: 750px)
+        width: calc(100% - 30px)
