@@ -73,7 +73,16 @@ $('.instructor_review_slider').slick({
     arrows: true,
     nextArrow: '<div class="instructor_review_prewAr"></div>',
     prevArrow: '<div class="instructor_review_nextAr"></div>',
-    infinite: true
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 
