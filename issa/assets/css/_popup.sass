@@ -15,10 +15,13 @@
     z-index: 400
     overflow: hidden
     opacity: 0
+    transition: opacity 0.5s
   @media screen and (max-width: 750px)
     border-radius: 0
   &_active
     height: calc(80vh - 100px)
+    opacity: 1
+    transition: opacity 0.5s
     @media screen and (max-width: 750px)
       height: calc(100vh - 100px)
   &_list

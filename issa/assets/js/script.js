@@ -47,7 +47,6 @@ $('.main_video_play').click(function(){
     });
 });
 
-
 $('.main_video_close').click(function(){
     $('.main_video_wrapper').removeClass('open_wrapper').velocity({
         opacity: 1
@@ -80,29 +79,8 @@ $('.instructor_review_slider').slick({
 
 
 
-
 $('.nav_header_list').click(function(){
-    $('.popup_nav_menu').addClass('popup_nav_menu_active').velocity({
-        opacity: 1
-    }, 600);
-    $('.nav_header').addClass('nav_header_white').velocity({
-        opacity: 1
-    }, 600);
-});
-
-$('.popup_nav_menu_close').click(function(){
-    $('.popup_nav_menu').removeClass('popup_nav_menu_active').velocity({
-        opacity: 0
-    }, 600);
-});
-
-$('.popup_nav_menu').click(function(event){
-    if(event.target === this){
-        $(this).velocity({
-            opacity: 0
-        }, 600);
-        setTimeout(function(){
-            $('.popup_nav_menu').removeClass('popup_nav_menu_active');
-        }, 600);
-    };
+    $('.popup_nav_menu').toggleClass('popup_nav_menu_active');
+    $('.nav_header').toggleClass('nav_header_white');
+    $('.nav_header_list').toggleClass('nav_header_burger_close');
 });
