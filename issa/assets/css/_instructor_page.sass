@@ -57,6 +57,7 @@
     text-align: center
     cursor: pointer
     z-index: 20
+    text-decoration: none
     @media screen and (max-width: 1440px)
       margin-top: 60px
     @media screen and (max-width: 750px)
@@ -264,7 +265,7 @@
     line-height: 100px
     @extend .proxi-semi
     text-align: center
-    margin-top: 85px
+    margin-top: 45px
     @media screen and (max-width: 768px)
       font-size: 18px
     @media screen and (max-width: 750px)
@@ -456,7 +457,7 @@
 .instructor_calendar
   position: relative
   width: 100%
-  margin-top: 230px
+  margin-top: 120px
   @media screen and (max-width: 750px)
     margin-top: 80px
   &_wrapper
@@ -519,8 +520,9 @@
       flex-direction: row
       justify-content: right
       align-items: center
+      float: right
     p
-      font-size: 11px
+      font-size: 15px
       margin-right: 5px
     img
       width: 35px
@@ -536,6 +538,7 @@
     color: $white
     font-size: 2.4rem
     line-height: 68px
+    margin-top: 30px
     @media screen and (max-width: 750px)
       height: 50px
       line-height: 48px
@@ -696,7 +699,8 @@
     overflow: hidden
     margin-top: 30px
     @media screen and (max-width: 1440px)
-      min-height: 600px
+      height: 40vh
+      min-height: 400px
     @media screen and (max-width: 768px)
       min-height: 340px
       height: 45vh
@@ -706,7 +710,8 @@
     height: 75vh
     min-height: 785px
     @media screen and (max-width: 1440px)
-      min-height: 600px
+      height: 40vh
+      min-height: 400px
     @media screen and (max-width: 768px)
       min-height: 340px
       height: 45vh
@@ -716,7 +721,8 @@
       min-height: 785px
       overflow: hidden
       @media screen and (max-width: 1440px)
-        min-height: 600px
+        height: 40vh
+        min-height: 400px
       @media screen and (max-width: 768px)
         min-height: 340px
         height: 45vh
@@ -728,7 +734,10 @@
         bottom: 0
         left: 0
         @media screen and (max-width: 1440px)
-          min-height: 600px
+          top: 0
+          bottom: auto
+          height: 40vh
+          min-height: 400px
         @media screen and (max-width: 768px)
           min-height: 340px
   &_slider_nav
@@ -741,11 +750,11 @@
     bottom: 45px
     left: 17%
     @media screen and (max-width: 1440px)
-      min-height: 130px
+      min-height: 90px
       bottom: 10px
       height: 10vh
     @media screen and (max-width: 768px)
-      min-height: 140px
+      min-height: 90px
       bottom: 0
     &_image
       display: inline-block
@@ -755,7 +764,7 @@
       overflow: hidden
       margin: 0 15px
       @media screen and (max-width: 1440px)
-        min-height: 130px
+        min-height: 90px
         height: 10vh
       @media screen and (max-width: 768px)
         min-height: 140px
@@ -763,7 +772,7 @@
         max-width: 100%
         min-height: 215px
         @media screen and (max-width: 1440px)
-          min-height: 130px
+          min-height: 90px
         @media screen and (max-width: 768px)
           min-height: 140px
   &_prewAr

@@ -147,6 +147,9 @@
       @extend .proxi-semi
       color: $blue
       margin-top: 100px
+      @media screen and (max-width: 1440px)
+        font-size: 50px
+        margin-top: 10%
     &_form
       position: relative
       width: 100%
@@ -167,6 +170,9 @@
         appearance: none
         text-indent: 10px
         outline: none
+        @media screen and (max-width: 1440px)
+          font-size: 18px
+          height: 40px
       input::-moz-placeholder
         color: rgba(75, 205, 255, 0.5)
       input::-webkit-input-placeholder
@@ -196,6 +202,10 @@
         background-image: url(../img/arrD.svg)
         background-repeat: no-repeat
         background-position: 95% center
+        @media screen and (max-width: 1440px)
+          font-size: 18px
+          height: 40px
+          text-indent: 4px
     &_btn
       display: block
       width: 80%
@@ -212,5 +222,8 @@
       cursor: pointer
       @media screen and (max-width: 1440px)
         margin-top: 30px
+        font-size: 18px
+        height: 50px
+        line-height: 48px
       @media screen and (max-width: 750px)
         width: calc(100% - 30px)

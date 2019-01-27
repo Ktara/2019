@@ -102,7 +102,8 @@ html, body {
     width: 100%;
     height: 110px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    text-decoration: none; }
     @media screen and (max-width: 768px) {
       .nav_header_logo {
         height: 100px; } }
@@ -1011,7 +1012,8 @@ html, body {
     line-height: 68px;
     text-align: center;
     cursor: pointer;
-    z-index: 20; }
+    z-index: 20;
+    text-decoration: none; }
     @media screen and (max-width: 1440px) {
       .captain_main_btn {
         margin-top: 60px; } }
@@ -1487,7 +1489,8 @@ html, body {
     line-height: 68px;
     text-align: center;
     cursor: pointer;
-    z-index: 20; }
+    z-index: 20;
+    text-decoration: none; }
     @media screen and (max-width: 1440px) {
       .school_main_btn {
         margin-top: 60px; } }
@@ -1918,7 +1921,8 @@ html, body {
     line-height: 68px;
     text-align: center;
     cursor: pointer;
-    z-index: 20; }
+    z-index: 20;
+    text-decoration: none; }
     @media screen and (max-width: 1440px) {
       .instructor_main_btn {
         margin-top: 60px; } }
@@ -2135,7 +2139,7 @@ html, body {
     font-size: 2.4rem;
     line-height: 100px;
     text-align: center;
-    margin-top: 85px; }
+    margin-top: 45px; }
     @media screen and (max-width: 768px) {
       .instructor_requirement_info {
         font-size: 18px; } }
@@ -2326,7 +2330,7 @@ html, body {
 .instructor_calendar {
   position: relative;
   width: 100%;
-  margin-top: 230px; }
+  margin-top: 120px; }
   @media screen and (max-width: 750px) {
     .instructor_calendar {
       margin-top: 80px; } }
@@ -2388,9 +2392,10 @@ html, body {
         display: flex;
         flex-direction: row;
         justify-content: right;
-        align-items: center; } }
+        align-items: center;
+        float: right; } }
     .instructor_calendar_arrow p {
-      font-size: 11px;
+      font-size: 15px;
       margin-right: 5px; }
     .instructor_calendar_arrow img {
       width: 35px; }
@@ -2405,7 +2410,8 @@ html, body {
     cursor: pointer;
     color: #ffffff;
     font-size: 2.4rem;
-    line-height: 68px; }
+    line-height: 68px;
+    margin-top: 30px; }
     @media screen and (max-width: 750px) {
       .instructor_calendar_btn {
         height: 50px;
@@ -2571,7 +2577,8 @@ html, body {
     margin-top: 30px; }
     @media screen and (max-width: 1440px) {
       .instructor_gallery_slider_wrapper {
-        min-height: 600px; } }
+        height: 40vh;
+        min-height: 400px; } }
     @media screen and (max-width: 768px) {
       .instructor_gallery_slider_wrapper {
         min-height: 340px;
@@ -2583,7 +2590,8 @@ html, body {
     min-height: 785px; }
     @media screen and (max-width: 1440px) {
       .instructor_gallery_slider {
-        min-height: 600px; } }
+        height: 40vh;
+        min-height: 400px; } }
     @media screen and (max-width: 768px) {
       .instructor_gallery_slider {
         min-height: 340px;
@@ -2595,7 +2603,8 @@ html, body {
       overflow: hidden; }
       @media screen and (max-width: 1440px) {
         .instructor_gallery_slider_image {
-          min-height: 600px; } }
+          height: 40vh;
+          min-height: 400px; } }
       @media screen and (max-width: 768px) {
         .instructor_gallery_slider_image {
           min-height: 340px;
@@ -2609,7 +2618,10 @@ html, body {
         left: 0; }
         @media screen and (max-width: 1440px) {
           .instructor_gallery_slider_image img {
-            min-height: 600px; } }
+            top: 0;
+            bottom: auto;
+            height: 40vh;
+            min-height: 400px; } }
         @media screen and (max-width: 768px) {
           .instructor_gallery_slider_image img {
             min-height: 340px; } }
@@ -2624,12 +2636,12 @@ html, body {
     left: 17%; }
     @media screen and (max-width: 1440px) {
       .instructor_gallery_slider_nav {
-        min-height: 130px;
+        min-height: 90px;
         bottom: 10px;
         height: 10vh; } }
     @media screen and (max-width: 768px) {
       .instructor_gallery_slider_nav {
-        min-height: 140px;
+        min-height: 90px;
         bottom: 0; } }
     .instructor_gallery_slider_nav_image {
       display: inline-block;
@@ -2640,7 +2652,7 @@ html, body {
       margin: 0 15px; }
       @media screen and (max-width: 1440px) {
         .instructor_gallery_slider_nav_image {
-          min-height: 130px;
+          min-height: 90px;
           height: 10vh; } }
       @media screen and (max-width: 768px) {
         .instructor_gallery_slider_nav_image {
@@ -2650,7 +2662,7 @@ html, body {
         min-height: 215px; }
         @media screen and (max-width: 1440px) {
           .instructor_gallery_slider_nav_image img {
-            min-height: 130px; } }
+            min-height: 90px; } }
         @media screen and (max-width: 768px) {
           .instructor_gallery_slider_nav_image img {
             min-height: 140px; } }
@@ -2844,6 +2856,10 @@ html, body {
       font-size: 100px;
       color: #4BCDFF;
       margin-top: 100px; }
+      @media screen and (max-width: 1440px) {
+        .popup_form_registration_header {
+          font-size: 50px;
+          margin-top: 10%; } }
     .popup_form_registration_form {
       position: relative;
       width: 100%;
@@ -2865,6 +2881,10 @@ html, body {
         appearance: none;
         text-indent: 10px;
         outline: none; }
+        @media screen and (max-width: 1440px) {
+          .popup_form_registration_form input {
+            font-size: 18px;
+            height: 40px; } }
       .popup_form_registration_form input::-moz-placeholder {
         color: rgba(75, 205, 255, 0.5); }
       .popup_form_registration_form input::-webkit-input-placeholder {
@@ -2894,6 +2914,11 @@ html, body {
         background-image: url(../img/arrD.svg);
         background-repeat: no-repeat;
         background-position: 95% center; }
+        @media screen and (max-width: 1440px) {
+          .popup_form_registration_form select {
+            font-size: 18px;
+            height: 40px;
+            text-indent: 4px; } }
     .popup_form_registration_btn {
       display: block;
       width: 80%;
@@ -2910,7 +2935,10 @@ html, body {
       cursor: pointer; }
       @media screen and (max-width: 1440px) {
         .popup_form_registration_btn {
-          margin-top: 30px; } }
+          margin-top: 30px;
+          font-size: 18px;
+          height: 50px;
+          line-height: 48px; } }
       @media screen and (max-width: 750px) {
         .popup_form_registration_btn {
           width: calc(100% - 30px); } }

@@ -108,14 +108,14 @@ $('.instructor_calendar_wrapper').slick({
             breakpoint: 769,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1
+                slidesToScroll: 3
             }
         },
         {
             breakpoint: 750,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 2
             }
         }
     ]
@@ -162,4 +162,44 @@ $('.popup_form_close').click(function(){
         $('.popup_form').css('display', 'none');
     });
     $('.nav_header').css('display', 'block');
+});
+
+
+
+
+
+$(".instructor_main_btn").click(function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href')
+        , top = $(id).offset().top - 150;
+    $('body,html').animate({
+        scrollTop: top
+    }, 1200);
+});
+
+
+
+
+
+$(".school_main_btn").click(function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href')
+        , top = $(id).offset().top - 0;
+    $('body,html').animate({
+        scrollTop: top
+    }, 1200);
+});
+
+
+
+
+
+
+$(".captain_main_btn").click(function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href')
+        , top = $(id).offset().top - 150;
+    $('body,html').animate({
+        scrollTop: top
+    }, 1200);
 });
