@@ -10,7 +10,7 @@
     top: 5vh
     right: -60%
     overflow: hidden
-    border-radius: 150px 0 0 150px
+    border-radius: 150px 0 0 150px !important
     -webkit-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s
     -moz-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s
     -ms-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s
@@ -23,6 +23,8 @@
       right: -50%
     @media screen and (max-width: 750px)
       bottom: 9vh
+  .main .main_video_wrapper[x-apple-data-detectors]
+    border-radius: inherit !important
   .open_wrapper
     width: 100%
     height: 100vh
