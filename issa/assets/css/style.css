@@ -179,8 +179,14 @@ html, body {
     border-top: none;
     right: -7px;
     top: 32px; }
+    @media screen and (max-width: 768px) {
+      .nav_header_burger_close:after {
+        right: -10px; } }
   .nav_header_burger_close:before {
     transform: rotate(-45deg); }
+    @media screen and (max-width: 768px) {
+      .nav_header_burger_close:before {
+        right: -3px; } }
   .nav_header_tel {
     display: flex;
     width: 100%;
@@ -693,7 +699,7 @@ html, body {
     align-items: center;
     width: 40%;
     height: auto;
-    top: -20%;
+    top: -15%;
     left: -5px; }
     @media screen and (max-width: 768px) {
       .about_image_forth_decor {
@@ -707,18 +713,21 @@ html, body {
     align-items: center;
     width: 250px;
     height: auto;
-    bottom: -45%;
-    right: -6%; }
+    bottom: -50px;
+    right: -70px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
     @media screen and (max-width: 1440px) {
       .about_image_fifth_decor {
-        width: 200px;
-        bottom: -70px;
-        right: -7%; } }
+        width: 200px; } }
     @media screen and (max-width: 768px) {
       .about_image_fifth_decor {
         width: 150px;
-        bottom: -82px;
-        right: -8%; } }
+        bottom: -40px;
+        right: -50px; } }
     .about_image_fifth_decor img {
       width: 100%; }
   .about_text {
@@ -848,7 +857,8 @@ html, body {
     @media screen and (max-width: 750px) {
       .location_list {
         margin-top: 50px;
-        width: 100%; } }
+        width: 100%;
+        height: 600px; } }
     .location_list ul {
       display: inline-block;
       width: 80%;
@@ -880,6 +890,10 @@ html, body {
         left: -25%;
         max-height: 665px;
         z-index: 10; } }
+    @media screen and (max-width: 750px) {
+      .location_map {
+        max-height: 365px;
+        top: -440px; } }
     .location_map .map_img {
       min-width: 100%;
       min-height: 649px; }
@@ -889,6 +903,9 @@ html, body {
       @media screen and (max-width: 768px) {
         .location_map .map_img {
           min-height: 665px; } }
+      @media screen and (max-width: 750px) {
+        .location_map .map_img {
+          min-height: 365px; } }
 
 .footer {
   position: relative;
@@ -957,7 +974,8 @@ html, body {
   height: 100vh;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .captain_main:after {
     content: "";
     position: absolute;
@@ -1387,7 +1405,8 @@ html, body {
     @media screen and (max-width: 750px) {
       .captain_location_list {
         margin-top: 50px;
-        width: 100%; } }
+        width: 100%;
+        height: 600px; } }
     .captain_location_list ul {
       display: inline-block;
       width: 80%;
@@ -1418,6 +1437,10 @@ html, body {
         left: -25%;
         max-height: 665px;
         z-index: 10; } }
+    @media screen and (max-width: 750px) {
+      .captain_location_map {
+        max-height: 365px;
+        top: -440px; } }
     .captain_location_map .map_img {
       min-width: 100%;
       min-height: 649px; }
@@ -1427,6 +1450,9 @@ html, body {
       @media screen and (max-width: 768px) {
         .captain_location_map .map_img {
           min-height: 665px; } }
+      @media screen and (max-width: 750px) {
+        .captain_location_map .map_img {
+          min-height: 365px; } }
 
 .school_main {
   position: relative;
@@ -1434,7 +1460,8 @@ html, body {
   height: 100vh;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .school_main:after {
     content: "";
     position: absolute;
@@ -1603,26 +1630,36 @@ html, body {
         .school_advantages_second_text {
           font-size: 18px;
           line-height: 22px; } }
+    .school_advantages_second_image_wrapper {
+      position: relative;
+      width: 100%;
+      height: 370px;
+      display: block;
+      overflow: hidden;
+      min-height: 370px; }
+      @media screen and (max-width: 750px) {
+        .school_advantages_second_image_wrapper {
+          height: 120px;
+          min-height: 120px; } }
     .school_advantages_second_image {
       position: relative;
       width: 100%;
       height: 370px;
       display: block;
-      max-height: 370px; }
+      min-height: 370px; }
       @media screen and (max-width: 750px) {
         .school_advantages_second_image {
           height: 120px;
-          max-height: 120px; } }
+          min-height: 120px; } }
       .school_advantages_second_image .img {
         position: absolute;
         width: 100%;
         left: 0;
-        top: 0;
+        bottom: -40%;
         min-height: 370px; }
         @media screen and (max-width: 750px) {
           .school_advantages_second_image .img {
-            max-height: 120px;
-            min-height: auto; } }
+            min-height: 120px; } }
       .school_advantages_second_image .first_decor {
         position: absolute;
         display: flex;
@@ -1718,6 +1755,7 @@ html, body {
     .school_open_image img {
       position: absolute;
       left: -100%;
+      bottom: 0;
       min-height: 800px; }
 
 .school_other {
@@ -1866,7 +1904,8 @@ html, body {
   height: 100vh;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .instructor_main:after {
     content: "";
     position: absolute;
@@ -2013,7 +2052,8 @@ html, body {
       width: 58.5%;
       height: 50vh;
       top: 60px;
-      left: 41.5%; }
+      left: 41.5%;
+      overflow: hidden; }
       @media screen and (max-width: 768px) {
         .instructor_how_text_wrapper_image {
           width: 80%;
@@ -2024,6 +2064,8 @@ html, body {
         .instructor_how_text_wrapper_image {
           display: none; } }
       .instructor_how_text_wrapper_image img {
+        position: absolute;
+        bottom: 0;
         width: 100%;
         min-height: 565px; }
   .instructor_how_text {
@@ -2099,7 +2141,7 @@ html, body {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: center; }
+    background-position: 100% 70%; }
     @media screen and (max-width: 768px) {
       .instructor_requirement_wrapper {
         height: 420px; } }
@@ -2167,6 +2209,7 @@ html, body {
     .instructor_training_image img {
       position: absolute;
       left: -100%;
+      bottom: 0;
       min-height: 650px; }
   .instructor_training_text_wrapper {
     position: relative;
@@ -2389,15 +2432,14 @@ html, body {
     @media screen and (max-width: 768px) {
       .instructor_calendar_arrow {
         position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: center;
-        float: right; } }
+        display: block;
+        text-align: right; } }
     .instructor_calendar_arrow p {
+      display: inline-block;
       font-size: 15px;
       margin-right: 5px; }
     .instructor_calendar_arrow img {
+      display: inline-block;
       width: 35px; }
   .instructor_calendar_btn {
     display: inline-block;
@@ -2432,9 +2474,9 @@ html, body {
       display: inline-block; }
       .instructor_review .section_header_wrapper .section_header img {
         position: absolute;
-        width: 180px;
-        top: -25%;
-        right: -155px; }
+        width: 150px;
+        top: -45px;
+        right: -133px; }
         @media screen and (max-width: 1440px) {
           .instructor_review .section_header_wrapper .section_header img {
             top: -75%;
@@ -2445,6 +2487,21 @@ html, body {
             top: -45%;
             width: 100px;
             right: -85px; } }
+  .instructor_review_arrow {
+    display: none; }
+    @media screen and (max-width: 750px) {
+      .instructor_review_arrow {
+        position: relative;
+        display: block;
+        text-align: right;
+        margin-top: 10px; } }
+    .instructor_review_arrow p {
+      display: inline-block;
+      font-size: 15px;
+      margin-right: 5px; }
+    .instructor_review_arrow img {
+      display: inline-block;
+      width: 35px; }
   .instructor_review_slider_wrapper {
     position: relative;
     width: 100%;
@@ -2463,6 +2520,9 @@ html, body {
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
     -webkit-box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1); }
+    @media screen and (max-width: 768px) {
+      .instructor_review_block {
+        min-height: 455px; } }
     .instructor_review_block_foto {
       position: relative;
       width: 100%;
@@ -2472,7 +2532,8 @@ html, body {
       display: inline-block; }
       @media screen and (max-width: 768px) {
         .instructor_review_block_foto {
-          width: 150%; }
+          width: 100%;
+          min-height: 455px; }
           .instructor_review_block_foto:after {
             content: "";
             position: absolute;
@@ -2490,18 +2551,27 @@ html, body {
         @media screen and (max-width: 1440px) {
           .instructor_review_block_foto img {
             left: -60%; } }
+        @media screen and (max-width: 768px) {
+          .instructor_review_block_foto img {
+            left: 0;
+            min-height: 455px; } }
     .instructor_review_block_wrapper {
       padding-left: 30px; }
       @media screen and (max-width: 768px) {
         .instructor_review_block_wrapper {
           padding-left: 0;
-          margin-right: -15px; } }
+          position: absolute;
+          display: block;
+          width: 90%;
+          top: -455px;
+          left: 10px; } }
     .instructor_review_block_name {
       font-size: 2rem;
       padding-top: 30px;
       color: #000000; }
       @media screen and (max-width: 768px) {
         .instructor_review_block_name {
+          padding-top: 10px;
           font-size: 14px;
           line-height: 18px; } }
     .instructor_review_block_sub_name {
@@ -2583,6 +2653,9 @@ html, body {
       .instructor_gallery_slider_wrapper {
         min-height: 340px;
         height: 45vh; } }
+    @media screen and (max-width: 750px) {
+      .instructor_gallery_slider_wrapper {
+        min-height: 440px; } }
   .instructor_gallery_slider {
     display: block;
     width: 100%;
@@ -2596,6 +2669,9 @@ html, body {
       .instructor_gallery_slider {
         min-height: 340px;
         height: 45vh; } }
+    @media screen and (max-width: 750px) {
+      .instructor_gallery_slider {
+        min-height: 440px; } }
     .instructor_gallery_slider_image {
       width: 100%;
       height: 75vh;
@@ -2618,9 +2694,8 @@ html, body {
         left: 0; }
         @media screen and (max-width: 1440px) {
           .instructor_gallery_slider_image img {
-            top: 0;
-            bottom: auto;
-            height: 40vh;
+            bottom: -35%;
+            height: auto;
             min-height: 400px; } }
         @media screen and (max-width: 768px) {
           .instructor_gallery_slider_image img {
@@ -2657,15 +2732,22 @@ html, body {
       @media screen and (max-width: 768px) {
         .instructor_gallery_slider_nav_image {
           min-height: 140px; } }
+      @media screen and (max-width: 750px) {
+        .instructor_gallery_slider_nav_image {
+          min-height: 80px; } }
       .instructor_gallery_slider_nav_image img {
-        max-width: 100%;
+        width: 100%;
         min-height: 215px; }
         @media screen and (max-width: 1440px) {
           .instructor_gallery_slider_nav_image img {
-            min-height: 90px; } }
+            max-height: 90px;
+            min-height: auto; } }
         @media screen and (max-width: 768px) {
           .instructor_gallery_slider_nav_image img {
-            min-height: 140px; } }
+            max-height: 140px; } }
+        @media screen and (max-width: 750px) {
+          .instructor_gallery_slider_nav_image img {
+            ma-height: 80px; } }
   .instructor_gallery_prewAr {
     position: absolute;
     background-image: url(../img/icon/boat-deg.svg);
@@ -2684,6 +2766,12 @@ html, body {
       .instructor_gallery_prewAr {
         width: 70px;
         height: 70px; } }
+    @media screen and (max-width: 750px) {
+      .instructor_gallery_prewAr {
+        width: 50px;
+        height: 50px;
+        top: 20%;
+        left: -20%; } }
   .instructor_gallery_nextAr {
     position: absolute;
     background-image: url(../img/icon/boat-deg.svg);
@@ -2707,6 +2795,12 @@ html, body {
       .instructor_gallery_nextAr {
         width: 70px;
         height: 70px; } }
+    @media screen and (max-width: 750px) {
+      .instructor_gallery_nextAr {
+        width: 50px;
+        height: 50px;
+        top: 20%;
+        right: -20%; } }
 
 .popup_nav_menu {
   position: relative;
@@ -2737,6 +2831,18 @@ html, body {
     @media screen and (max-width: 750px) {
       .popup_nav_menu_active {
         height: calc(100vh - 100px); } }
+  .popup_nav_menu .popup_list_active {
+    position: relative;
+    width: auto; }
+    .popup_nav_menu .popup_list_active:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: -5px;
+      background-color: #0D8940; }
   .popup_nav_menu_list ul {
     position: relative;
     width: 100%;
@@ -2840,6 +2946,10 @@ html, body {
       right: 50px;
       z-index: 220;
       cursor: pointer; }
+      @media screen and (max-width: 750px) {
+        .popup_form_wrapper .popup_form_close {
+          top: 20px;
+          right: 20px; } }
       .popup_form_wrapper .popup_form_close img {
         width: 100%; }
   .popup_form_registration {
@@ -2860,14 +2970,18 @@ html, body {
         .popup_form_registration_header {
           font-size: 50px;
           margin-top: 10%; } }
+      @media screen and (max-width: 750px) {
+        .popup_form_registration_header {
+          font-size: 40px;
+          margin-top: 15%; } }
     .popup_form_registration_form {
       position: relative;
       width: 100%;
       margin-top: 10px; }
       @media screen and (max-width: 750px) {
         .popup_form_registration_form {
-          width: 100%;
-          margin-left: 15px; } }
+          width: 80%;
+          margin-left: 10%; } }
       .popup_form_registration_form input {
         width: 100%;
         height: 50px;
@@ -2941,6 +3055,7 @@ html, body {
           line-height: 48px; } }
       @media screen and (max-width: 750px) {
         .popup_form_registration_btn {
-          width: calc(100% - 30px); } }
+          width: 100%;
+          margin-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,7 +24,16 @@ $('.instructor_gallery_slider_nav').slick({
     focusOnSelect: true,
     arrows: true,
     prevArrow: '<div class="instructor_gallery_prewAr"></div>',
-    nextArrow: '<div class="instructor_gallery_nextAr"></div>'
+    nextArrow: '<div class="instructor_gallery_nextAr"></div>',
+    responsive: [
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 
