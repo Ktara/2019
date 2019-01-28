@@ -143,11 +143,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_instructor_page.sass" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_instructor_page.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/_instructor_page.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="805" column="19" lean-forward="true" selection-start-line="805" selection-start-column="19" selection-end-line="805" selection-end-column="19" />
+                <state relative-caret-position="528">
+                  <caret line="809" column="16" selection-start-line="809" selection-start-column="16" selection-end-line="809" selection-end-column="16" />
                   <folding>
                     <element signature="e#17#1945#0" />
                     <element signature="e#1967#2811#0" />
@@ -156,6 +156,15 @@
                     <element signature="e#6261#8350#0" />
                     <element signature="e#8374#9817#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_header.sass" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/css/_header.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1761">
+                  <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -331,12 +340,12 @@
       <workItem from="1548413402928" duration="6633000" />
       <workItem from="1548423019826" duration="2336000" />
       <workItem from="1548585977020" duration="4206000" />
-      <workItem from="1548657557851" duration="7116000" />
+      <workItem from="1548657557851" duration="7482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135994000" />
+    <option name="totallyTimeSpent" value="136360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -715,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2442">
-          <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_main_location.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -836,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_instructor_page.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="805" column="19" lean-forward="true" selection-start-line="805" selection-start-column="19" selection-end-line="805" selection-end-column="19" />
+        <state relative-caret-position="528">
+          <caret line="809" column="16" selection-start-line="809" selection-start-column="16" selection-end-line="809" selection-end-column="16" />
           <folding>
             <element signature="e#17#1945#0" />
             <element signature="e#1967#2811#0" />
@@ -846,6 +848,13 @@
             <element signature="e#6261#8350#0" />
             <element signature="e#8374#9817#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1761">
+          <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
         </state>
       </provider>
     </entry>

@@ -203,6 +203,12 @@ html, body {
       @media screen and (max-width: 768px) {
         .nav_header_tel p {
           font-size: 11px; } }
+      @media screen and (max-width: 750px) {
+        .nav_header_tel p {
+          font-size: 9px; } }
+  @media screen and (max-width: 750px) {
+    .nav_header .col-fix {
+      padding-left: 0; } }
 
 .nav_header_mob {
   display: none; }
@@ -2747,7 +2753,7 @@ html, body {
             max-height: 140px; } }
         @media screen and (max-width: 750px) {
           .instructor_gallery_slider_nav_image img {
-            ma-height: 80px; } }
+            max-height: 80px; } }
   .instructor_gallery_prewAr {
     position: absolute;
     background-image: url(../img/icon/boat-deg.svg);
