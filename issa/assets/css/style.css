@@ -31,7 +31,7 @@
   font-family: "ProximaNova", sans-serif;
   font-weight: 700; }
 
-.proxi-semi, .nav_header_list ul li, .nav_header_tel p, .about_text, .captain_service_text p, .captain_certificates_card_wrapper .card .front_title, .captain_certificates_card_wrapper .card .back_text b, .captain_training_text p, .school_advantages_text p, .school_open_text p, .school_other_text p, .instructor_about_text p, .instructor_how_text, .instructor_how_card_text, .instructor_requirement_text, .instructor_requirement_wrapper_text p, .instructor_requirement_info, .instructor_training_text p, .instructor_training_info, .instructor_other_text p, .instructor_calendar_city, .instructor_calendar_data, .popup_nav_menu_list ul li a, .popup_form_registration_header {
+.proxi-semi, .nav_header_list ul li, .nav_header_tel a, .about_text, .captain_service_text p, .captain_certificates_card_wrapper .card .front_title, .captain_certificates_card_wrapper .card .back_text b, .captain_training_text p, .school_advantages_text p, .school_open_text p, .school_other_text p, .instructor_about_text p, .instructor_how_text, .instructor_how_card_text, .instructor_requirement_text, .instructor_requirement_wrapper_text p, .instructor_requirement_info, .instructor_training_text p, .instructor_training_info, .instructor_other_text p, .instructor_calendar_city, .instructor_calendar_data, .popup_nav_menu_list ul li a, .popup_form_registration_header {
   font-family: "ProximaNova", sans-serif;
   font-weight: 600; }
 
@@ -197,14 +197,17 @@ html, body {
       .nav_header_tel {
         justify-content: center;
         height: 100px; } }
-    .nav_header_tel p {
+    .nav_header_tel a {
+      display: inline-block;
+      text-decoration: none;
       font-size: 18px;
-      color: #0D8940; }
+      color: #0D8940 !important;
+      cursor: default; }
       @media screen and (max-width: 768px) {
-        .nav_header_tel p {
+        .nav_header_tel a {
           font-size: 11px; } }
       @media screen and (max-width: 750px) {
-        .nav_header_tel p {
+        .nav_header_tel a {
           font-size: 9px; } }
   @media screen and (max-width: 750px) {
     .nav_header .col-fix {
@@ -327,7 +330,7 @@ html, body {
     top: 5vh;
     right: -60%;
     overflow: hidden;
-    border-radius: 50% 0 0 50%;
+    border-radius: 150px 0 0 150px;
     -webkit-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s;
     -moz-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s;
     -ms-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s;
