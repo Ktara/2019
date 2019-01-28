@@ -330,6 +330,7 @@ html, body {
     top: 5vh;
     right: -60%;
     overflow: hidden;
+    z-index: 1;
     border-radius: 150px 0 0 150px !important;
     border: 1px solid transparent;
     -webkit-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s;
