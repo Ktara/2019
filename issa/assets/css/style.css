@@ -331,6 +331,7 @@ html, body {
     right: -60%;
     overflow: hidden;
     border-radius: 150px 0 0 150px !important;
+    border: 1px solid transparent;
     -webkit-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s;
     -moz-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s;
     -ms-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s;
@@ -588,7 +589,8 @@ html, body {
             min-height: 215px; } }
         @media screen and (max-width: 750px) {
           .services_card_image img {
-            min-width: 100%;
+            width: 100%;
+            min-height: auto;
             left: 0; } }
       .services_card_image_title {
         position: absolute;
@@ -2862,6 +2864,9 @@ html, body {
     flex-direction: column; }
     .popup_nav_menu_list ul li {
       margin-top: 60px; }
+      @media screen and (max-width: 750px) {
+        .popup_nav_menu_list ul li {
+          margin-top: 40px; } }
       .popup_nav_menu_list ul li a {
         text-decoration: none;
         color: #000000;
