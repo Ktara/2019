@@ -12,10 +12,10 @@
     overflow: hidden
     border-radius: 150px 0 0 150px !important
     border: 1px solid transparent
-    -webkit-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s
-    -moz-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s
-    -ms-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s
-    -o-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 3s
+    -webkit-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s
+    -moz-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s
+    -ms-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s
+    -o-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s
     transition: width 1s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s
     @media screen and (max-width: 768px)
       height: 40vh
@@ -94,6 +94,15 @@
     width: 100vw
     height: 100vh
     z-index: 50
+    iframe
+      border-radius: inherit !important
+      overflow: hidden
+      border: 1px solid transparent
+      -webkit-transition:  border-radius 1.5s
+      -moz-transition:  border-radius 1.5s
+      -ms-transition:  border-radius 1.5s
+      -o-transition:  border-radius 1.5s
+      transition:  border-radius 1.5s
   &_sub_title
     font-size: 2.6rem
     color: $light-grey
