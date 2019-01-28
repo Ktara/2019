@@ -4,6 +4,37 @@ $('.cardContainer').mouseenter(function(){
 
 
 
+(function(){
+    var cards = $('.card');
+    var card1 = $(cards[0]);
+    var card2 = $(cards[1]);
+    var card3 = $(cards[2]);
+    var card4 = $(cards[3]);
+    var card5 = $(cards[4]);
+    window.onscroll = function() {
+        var screenheight = document.documentElement.clientHeight*0.6;
+        var screenwidth = document.documentElement.clientWidth;
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > card1.offset().top - screenheight && screenwidth < 769 ) {
+            card1.addClass('flipped')
+        }
+        if(scrolled > card2.offset().top - screenheight && screenwidth < 769 ) {
+            card2.addClass('flipped')
+        }
+        if(scrolled > card3.offset().top - screenheight && screenwidth < 769 ) {
+            card3.addClass('flipped')
+        }
+        if(scrolled > card4.offset().top - screenheight && screenwidth < 769 ) {
+            card4.addClass('flipped')
+        }
+        if(scrolled > card5.offset().top - screenheight && screenwidth < 769 ) {
+            card5.addClass('flipped')
+        }
+    }
+})();
+
+
+
 
 
 
