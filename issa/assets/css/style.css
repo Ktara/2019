@@ -2071,10 +2071,6 @@ html, body {
         .school_other_text p {
           font-size: 18px;
           line-height: 22px; } }
-      @media screen and (max-height: 420px) {
-        .school_other_text p {
-          font-size: 18px;
-          line-height: 22px; } }
   .school_other_review {
     position: relative;
     width: 100%;
@@ -2085,12 +2081,12 @@ html, body {
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
     -webkit-box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1); }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
       .school_other_review {
         min-height: 475px; } }
     @media screen and (max-height: 420px) {
       .school_other_review {
-        min-height: 475px; } }
+        min-height: 375px; } }
     .school_other_review_foto {
       position: relative;
       width: 100%;
@@ -2100,17 +2096,11 @@ html, body {
       display: inline-block; }
       @media screen and (max-width: 768px) {
         .school_other_review_foto {
-          width: 150%;
-          margin-left: -25%; } }
-      @media screen and (max-width: 750px) {
-        .school_other_review_foto {
-          margin-left: 0;
+          width: 100%;
           min-height: 475px; } }
       @media screen and (max-height: 420px) {
         .school_other_review_foto {
-          width: 150%;
-          margin-left: 0;
-          min-height: 475px; }
+          min-height: 375px; }
           .school_other_review_foto:after {
             content: "";
             position: absolute;
@@ -2130,38 +2120,34 @@ html, body {
             left: -50%; } }
         @media screen and (max-width: 768px) {
           .school_other_review_foto img {
-            left: -70%; } }
-        @media screen and (max-width: 750px) {
-          .school_other_review_foto img {
-            left: -50%; } }
+            left: 0;
+            min-height: 455px; } }
         @media screen and (max-height: 420px) {
           .school_other_review_foto img {
-            left: -50%; } }
+            left: 0;
+            min-height: 375px; } }
     .school_other_review_wrapper {
       padding-left: 30px; }
       @media screen and (max-width: 768px) {
         .school_other_review_wrapper {
-          padding-left: 0; } }
-      @media screen and (max-width: 750px) {
-        .school_other_review_wrapper {
-          padding-left: 30px; } }
+          padding-left: 0;
+          position: absolute;
+          display: block;
+          width: 90%;
+          top: -455px;
+          left: 10px; } }
       @media screen and (max-height: 420px) {
         .school_other_review_wrapper {
-          padding-left: 0; } }
+          top: -375px; } }
       .school_other_review_wrapper_name {
         font-size: 2rem;
         padding-top: 30px;
         color: #000000; }
         @media screen and (max-width: 768px) {
           .school_other_review_wrapper_name {
+            padding-top: 10px;
             font-size: 14px;
             line-height: 18px; } }
-        @media screen and (max-width: 750px) {
-          .school_other_review_wrapper_name {
-            padding-top: 0; } }
-        @media screen and (max-height: 420px) {
-          .school_other_review_wrapper_name {
-            padding-top: 0; } }
       .school_other_review_wrapper_sub_name {
         font-size: 1.4rem;
         margin-top: 5px;

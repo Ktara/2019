@@ -367,9 +367,6 @@
       @media screen and (max-width: 768px)
         font-size: 18px
         line-height: 22px
-      @media screen and (max-height: 420px)
-        font-size: 18px
-        line-height: 22px
   &_review
     position: relative
     width: 100%
@@ -380,10 +377,10 @@
     border-radius: 20px
     box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1)
     -webkit-box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1)
-    @media screen and (max-width: 750px)
+    @media screen and (max-width: 768px)
       min-height: 475px
     @media screen and (max-height: 420px)
-      min-height: 475px
+      min-height: 375px
     &_foto
       position: relative
       width: 100%
@@ -392,15 +389,10 @@
       overflow: hidden
       display: inline-block
       @media screen and (max-width: 768px)
-        width: 150%
-        margin-left: -25%
-      @media screen and (max-width: 750px)
-        margin-left: 0
+        width: 100%
         min-height: 475px
       @media screen and (max-height: 420px)
-        width: 150%
-        margin-left: 0
-        min-height: 475px
+        min-height: 375px
         &:after
           content: ''
           position: absolute
@@ -418,31 +410,31 @@
         @media screen and (max-width: 1440px)
           left: -50%
         @media screen and (max-width: 768px)
-          left: -70%
-        @media screen and (max-width: 750px)
-          left: -50%
+          left: 0
+          min-height: 455px
         @media screen and (max-height: 420px)
-          left: -50%
+          left: 0
+          min-height: 375px
     &_wrapper
       padding-left: 30px
       @media screen and (max-width: 768px)
         padding-left: 0
-      @media screen and (max-width: 750px)
-        padding-left: 30px
+        position: absolute
+        display: block
+        width: 90%
+        top: -455px
+        left: 10px
       @media screen and (max-height: 420px)
-        padding-left: 0
+        top: -375px
       &_name
         font-size: 2rem
         @extend .proxi-bold
         padding-top: 30px
         color: $black
         @media screen and (max-width: 768px)
+          padding-top: 10px
           font-size: 14px
           line-height: 18px
-        @media screen and (max-width: 750px)
-          padding-top: 0
-        @media screen and (max-height: 420px)
-          padding-top: 0
       &_sub_name
         font-size: 1.4rem
         margin-top: 5px
