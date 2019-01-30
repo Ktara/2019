@@ -171,8 +171,8 @@
           <file leaf-file-name="_popup.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/_popup.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="924">
-                  <caret line="268" column="22" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
+                <state relative-caret-position="506">
+                  <caret line="195" column="21" selection-start-line="195" selection-start-column="21" selection-end-line="195" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -317,12 +317,12 @@
       <workItem from="1548423019826" duration="2336000" />
       <workItem from="1548585977020" duration="4206000" />
       <workItem from="1548657557851" duration="16948000" />
-      <workItem from="1548829215692" duration="5882000" />
+      <workItem from="1548829215692" duration="6099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151708000" />
+    <option name="totallyTimeSpent" value="151925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -820,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_popup.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="268" column="22" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
+        <state relative-caret-position="506">
+          <caret line="195" column="21" selection-start-line="195" selection-start-column="21" selection-end-line="195" selection-end-column="21" />
         </state>
       </provider>
     </entry>
