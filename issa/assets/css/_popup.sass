@@ -123,6 +123,8 @@
   .container
     @media screen and (max-width: 750px)
       padding: 0
+    @media screen and (max-height: 420px)
+      padding: 0
   &_wrapper
     position: relative
     width: 100%
@@ -134,6 +136,9 @@
     @media screen and (max-width: 1440px)
       margin-top: 70px
     @media screen and (max-width: 750px)
+      height: 100vh
+      margin-top: 0
+    @media screen and (max-height: 420px)
       height: 100vh
       margin-top: 0
     .popup_form_close
@@ -148,6 +153,9 @@
       @media screen and (max-width: 750px)
         top: 20px
         right: 20px
+      @media screen and (max-height: 420px)
+        top: 20px
+        right: 20px
       img
         width: 100%
   &_registration
@@ -157,6 +165,8 @@
     background-color: white
     z-index: 1
     @media screen and (max-width: 750px)
+      height: 100vh
+    @media screen and (max-height: 420px)
       height: 100vh
     &_header
       text-align: center
@@ -170,6 +180,9 @@
       @media screen and (max-width: 750px)
         font-size: 40px
         margin-top: 15%
+      @media screen and (max-height: 420px)
+        font-size: 32px
+        margin-top: 40px
     &_form
       position: relative
       width: 100%
@@ -177,6 +190,10 @@
       @media screen and (max-width: 750px)
         width: 80%
         margin-left: 10%
+      @media screen and (max-height: 420px)
+        width: 80%
+        margin-left: 10%
+        margin-top: 0
       input
         width: 100%
         height: 50px
@@ -193,6 +210,9 @@
         @media screen and (max-width: 1440px)
           font-size: 18px
           height: 40px
+        @media screen and (max-height: 420px)
+          font-size: 16px
+          height: 30px
       input::-moz-placeholder
         color: rgba(75, 205, 255, 0.5)
       input::-webkit-input-placeholder
@@ -226,6 +246,9 @@
           font-size: 18px
           height: 40px
           text-indent: 4px
+        @media screen and (max-height: 420px)
+          font-size: 16px
+          height: 30px
     &_btn
       display: block
       width: 80%
@@ -246,5 +269,8 @@
         height: 50px
         line-height: 48px
       @media screen and (max-width: 750px)
+        width: 100%
+        margin-left: 0
+      @media screen and (max-height: 420px)
         width: 100%
         margin-left: 0

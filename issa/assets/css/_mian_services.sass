@@ -23,6 +23,9 @@
     @media screen and (max-width: 750px)
       top: auto
       bottom: 25%
+    @media screen and (max-height: 375px)
+      width: 120px
+      right: -60px
     img
       width: 100%
   &_card
@@ -48,6 +51,8 @@
         height: 215px
       @media screen and (max-width: 750px)
         min-width: 100%
+      @media screen and (max-height: 375px)
+        height: 250px
       &:after
         content: ''
         position: absolute
@@ -73,6 +78,9 @@
           width: 100%
           min-height: auto
           left: 0
+        @media screen and (max-height: 375px)
+          max-height: 250px
+          min-height: 250px
       &_title
         position: absolute
         width: calc(100% - 60px)
@@ -87,6 +95,9 @@
           font-size: 16px
           line-height: 20px
           left: 15px
+        @media screen and (max-height: 375px)
+          font-size: 24px
+          line-height: 28px
         b
           @extend .proxi-bold
     &_text
@@ -96,6 +107,8 @@
       @media screen and (max-width: 768px)
         height: 12vh
         min-height: 120px
+      @media screen and (max-height: 375px)
+        min-height: 130px
       p
         font-size: 2.4rem
         color: $black

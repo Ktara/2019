@@ -6,6 +6,10 @@
   -webkit-background-size: cover
   background-size: cover
   background-position: center
+  @media screen and (max-height: 420px)
+    height: auto
+    min-height: 100vh
+    padding-bottom: 30px
   &:after
     content: ''
     position: absolute
@@ -29,6 +33,9 @@
       font-size: 50px
     @media screen and (max-width: 750px)
       font-size: 24px
+    @media screen and (max-height: 420px)
+      font-size: 36px
+      margin-top: 130px
   &_text
     position: relative
     font-size: 2.4rem
@@ -42,6 +49,10 @@
       line-height: 22px
     @media screen and (max-width: 750px)
       font-size: 16px
+      line-height: 20px
+    @media screen and (max-height: 420px)
+      margin-top: 15px
+      font-size: 18px
       line-height: 20px
   &_btn
     position: relative
@@ -65,6 +76,11 @@
       height: 50px
       line-height: 48px
       font-size: 18px
+    @media screen and (max-height: 420px)
+      height: 50px
+      line-height: 48px
+      font-size: 18px
+      margin-top: 15px
   &_water
     position: absolute
     display: block
@@ -100,9 +116,13 @@
     margin-top: 30px
     @media screen and (max-width: 768px)
       max-height: 275px
+    @media screen and (max-height: 420px)
+      max-height: 275px
     img
       width: 100%
       @media screen and (max-width: 768px)
+        min-height: 275px
+      @media screen and (max-height: 420px)
         min-height: 275px
   &_text
     display: inline-block
@@ -110,6 +130,8 @@
     @media screen and (max-width: 1440px)
       padding-top: 60px
     @media screen and (max-width: 768px)
+      padding-top: 10px
+    @media screen and (max-height: 420px)
       padding-top: 10px
     p
       color: $grey
@@ -121,6 +143,9 @@
         font-size: 18px
         line-height: 22px
       @media screen and (max-width: 750px)
+        font-size: 16px
+        line-height: 20px
+      @media screen and (max-height: 420px)
         font-size: 16px
         line-height: 20px
 
@@ -155,6 +180,8 @@
         top: 130px
       @media screen and (max-width: 750px)
         display: none
+      @media screen and (max-height: 420px)
+        display: none
       img
         position: absolute
         bottom: 0
@@ -170,6 +197,9 @@
       font-size: 18px
       line-height: 22px
     @media screen and (max-width: 750px)
+      font-size: 16px
+      line-height: 20px
+    @media screen and (max-height: 420px)
       font-size: 16px
       line-height: 20px
   &_card
@@ -188,6 +218,8 @@
       min-height: 230px
     @media screen and (max-width: 750px)
       min-height: 190px
+    @media screen and (max-height: 420px)
+      min-height: 190px
     &_text
       font-size: 2.4rem
       line-height: 29px
@@ -203,6 +235,9 @@
       @media screen and (max-width: 750px)
         font-size: 16px
         line-height: 20px
+      @media screen and (max-height: 420px)
+        font-size: 16px
+        line-height: 20px
 
 
 
@@ -213,7 +248,7 @@
   width: 100%
   margin-top: 120px
   @media screen and (max-width: 750px)
-    margin-top: 120px
+    margin-top: 80px
   &_text
     font-size: 2.4rem
     line-height: 29px
@@ -221,6 +256,9 @@
     @extend .proxi-semi
     margin-top: 30px
     @media screen and (max-width: 750px)
+      font-size: 16px
+      line-height: 20px
+    @media screen and (max-height: 420px)
       font-size: 16px
       line-height: 20px
   &_wrapper
@@ -234,6 +272,8 @@
     background-position: 100% 70%
     @media screen and (max-width: 768px)
       height: 420px
+    @media screen and (max-height: 420px)
+      height: 420px
     &_text
       display: inline-block
       width: 100%
@@ -242,6 +282,8 @@
       border-radius: 10px
       background-color: $blue
       @media screen and (max-width: 768px)
+        height: 170px
+      @media screen and (max-height: 420px)
         height: 170px
       p
         display: inline-block
@@ -256,6 +298,9 @@
           font-size: 24px
           line-height: 29px
         @media screen and (max-width: 750px)
+          font-size: 16px
+          line-height: 20px
+        @media screen and (max-height: 420px)
           font-size: 16px
           line-height: 20px
   &_info
@@ -277,7 +322,11 @@
       line-height: 20px
       padding-top: 20px
       margin-top: 30px
-
+    @media screen and (max-height: 420px)
+      font-size: 16px
+      line-height: 20px
+      padding-top: 20px
+      margin-top: 30px
 
 
 
@@ -577,6 +626,10 @@
           top: -45%
           width: 100px
           right: -85px
+        @media screen and (max-height: 420px)
+          top: -45%
+          width: 100px
+          right: -85px
   &_arrow
     display: none
     @media screen and (max-width: 750px)
@@ -599,6 +652,8 @@
     margin-top: 60px
     @media screen and (max-width: 768px)
       max-height: 520px
+    @media screen and (max-height: 420px)
+      max-height: 520px
   &_block
     position: relative
     width: 100%
@@ -609,6 +664,8 @@
     box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1)
     -webkit-box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1)
     @media screen and (max-width: 768px)
+      min-height: 455px
+    @media screen and (max-height: 420px)
       min-height: 455px
     &_foto
       position: relative
@@ -630,6 +687,19 @@
           left: 0
           background-color: rgba(255, 255, 255, 0.3)
           z-index: 0
+      @media screen and (max-height: 420px)
+        width: 100%
+        min-height: 455px
+        &:after
+          content: ''
+          position: absolute
+          display: block
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0
+          background-color: rgba(255, 255, 255, 0.3)
+          z-index: 0
       img
         position: absolute
         left: -20%
@@ -639,9 +709,19 @@
         @media screen and (max-width: 768px)
           left: 0
           min-height: 455px
+        @media screen and (max-height: 420px)
+          left: 0
+          min-height: 455px
     &_wrapper
       padding-left: 30px
       @media screen and (max-width: 768px)
+        padding-left: 0
+        position: absolute
+        display: block
+        width: 90%
+        top: -455px
+        left: 10px
+      @media screen and (max-height: 420px)
         padding-left: 0
         position: absolute
         display: block
@@ -657,12 +737,19 @@
         padding-top: 10px
         font-size: 14px
         line-height: 18px
+      @media screen and (max-height: 420px)
+        padding-top: 10px
+        font-size: 14px
+        line-height: 18px
     &_sub_name
       font-size: 1.4rem
       margin-top: 5px
       color: $black
       @extend .proxi-reg
       @media screen and (max-width: 768px)
+        font-size: 11px
+        line-height: 14px
+      @media screen and (max-height: 420px)
         font-size: 11px
         line-height: 14px
     &_text
@@ -672,6 +759,9 @@
       @extend .proxi-reg
       margin-top: 25px
       @media screen and (max-width: 768px)
+        font-size: 16px
+        line-height: 20px
+      @media screen and (max-height: 420px)
         font-size: 16px
         line-height: 20px
   &_prewAr
@@ -686,6 +776,11 @@
     @media screen and (max-width: 1440px)
       left: -8%
     @media screen and (max-width: 768px)
+      width: 45px
+      height: 32px
+      -webkit-background-size: cover
+      background-size: cover
+    @media screen and (max-height: 420px)
       width: 45px
       height: 32px
       -webkit-background-size: cover
@@ -707,6 +802,11 @@
     @media screen and (max-width: 1440px)
       right: -8%
     @media screen and (max-width: 768px)
+      width: 45px
+      height: 32px
+      -webkit-background-size: cover
+      background-size: cover
+    @media screen and (max-height: 420px)
       width: 45px
       height: 32px
       -webkit-background-size: cover

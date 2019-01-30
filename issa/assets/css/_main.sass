@@ -11,7 +11,7 @@
     right: -60%
     overflow: hidden
     z-index: 1
-    border-radius: 150px 0 0 150px !important
+    border-radius: 1000px 0 0 1000px !important
     border: 1px solid transparent
     -webkit-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s
     -moz-transition: width 0.6s, height 0.6s, top 0.6s, right 0.6s, border-radius 1.5s
@@ -25,6 +25,10 @@
       right: -50%
     @media screen and (max-width: 750px)
       bottom: 9vh
+    @media screen and (max-height: 420px)
+      top: auto
+      bottom: 9vh
+      right: -60%
   .main .main_video_wrapper[x-apple-data-detectors]
     border-radius: inherit !important
   .open_wrapper
@@ -51,6 +55,10 @@
       width: 40px
       height: 40px
       bottom: 25vh
+    @media screen and (max-height: 420px)
+      width: 60px
+      top: auto
+
     img
       width: 100%
   &_video_close
@@ -114,6 +122,8 @@
     @media screen and (max-width: 750px)
       font-size: 14px
       margin-top: 28vh
+    @media screen and (max-height: 420px)
+      margin-top: 150px
   &_title
     font-size: 7.2rem
     margin-top: 40px
@@ -127,6 +137,8 @@
     @media screen and (max-width: 750px)
       font-size: 24px
       line-height: 29px
+    @media screen and (max-height: 420px)
+      font-size: 32px
   &_text_block
     position: relative
     width: 100%
@@ -137,6 +149,8 @@
       margin-top: 25px
     @media screen and (max-width: 768px)
       text-align: right
+    @media screen and (max-height: 420px)
+      text-align: center
     p
       display: inline-block
       font-size: 3.6rem
@@ -160,6 +174,8 @@
       margin-top: 50%
     @media screen and (max-width: 750px)
       margin-top: 60%
+    @media screen and (max-height: 420px)
+      margin-top: -6%
     img
       width: 100%
       opacity: 0.82
@@ -182,3 +198,5 @@
       font-size: 150px
       left: 0
       top: 30vh
+    @media screen and (max-height: 420px)
+      font-size: 200px

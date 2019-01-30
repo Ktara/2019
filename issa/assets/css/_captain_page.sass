@@ -6,6 +6,10 @@
   -webkit-background-size: cover
   background-size: cover
   background-position: center
+  @media screen and (max-height: 420px)
+    height: auto
+    min-height: 100vh
+    padding-bottom: 30px
   &:after
     content: ''
     position: absolute
@@ -29,6 +33,9 @@
       font-size: 50px
     @media screen and (max-width: 750px)
       font-size: 24px
+    @media screen and (max-height: 420px)
+      font-size: 36px
+      margin-top: 130px
   &_text
     position: relative
     font-size: 2.4rem
@@ -42,6 +49,10 @@
       line-height: 22px
     @media screen and (max-width: 750px)
       font-size: 16px
+      line-height: 20px
+    @media screen and (max-height: 420px)
+      margin-top: 15px
+      font-size: 18px
       line-height: 20px
   &_btn
     position: relative
@@ -65,6 +76,11 @@
       height: 50px
       line-height: 48px
       font-size: 18px
+    @media screen and (max-height: 420px)
+      height: 50px
+      line-height: 48px
+      font-size: 18px
+      margin-top: 15px
   &_water
     position: absolute
     display: block
@@ -145,6 +161,8 @@
     padding-top: 30px
     @media screen and (max-width: 768px)
       display: inline-block
+    @media screen and (max-height: 420px)
+      display: inline-block
     .cardContainer
       width: calc(20% - 12px)
       -webkit-transition: all .3s ease
@@ -157,6 +175,10 @@
         margin-top: 30px
       @media screen and (max-width: 750px)
         width: 100%
+      @media screen and (max-height: 420px)
+        width: calc(50% - 12px)
+        display: inline-block
+        margin-top: 30px
 
 
 
@@ -193,6 +215,9 @@
       @media screen and (max-width: 768px)
         height: 20vh
         min-height: 320px
+      @media screen and (max-height: 420px)
+        height: 20vh
+        min-height: 320px
       .front_title
         font-size: 3.2rem
         @extend .proxi-semi
@@ -209,6 +234,8 @@
         padding-left: 20px
         padding-right: 20px
         @media screen and (max-width: 768px)
+          font-size: 16px
+        @media screen and (max-height: 420px)
           font-size: 16px
       .back_text
         font-size: 1.6rem
@@ -341,9 +368,16 @@
     padding-top: 120px
   @media screen and (max-width: 750px)
     padding-top: 80px
+  @media screen and (max-height: 420px)
+    margin-top: 0
+    padding-top: 80px
   &_wrapper
     position: relative
     width: 100%
+    @media screen and (max-width: 768px)
+      height: auto
+    @media screen and (max-height: 420px)
+      height: auto
     .captain_location_help
       position: absolute
       display: block
@@ -359,6 +393,11 @@
         z-index: 15
       @media screen and (max-width: 750px)
         right: -30%
+      @media screen and (max-height: 420px)
+        width: 170px
+        right: -25%
+        bottom: -40px
+        z-index: 15
       img
         width: 100%
   &_color_wrapper
@@ -367,6 +406,12 @@
     min-height: 350px
     margin-top: 50px
     @media screen and (max-width: 768px)
+      position: absolute
+      display: block
+      min-height: 200px
+      margin-top: 0
+      top: -145px
+    @media screen and (max-height: 420px)
       position: absolute
       display: block
       min-height: 200px
@@ -384,6 +429,9 @@
       @media screen and (max-width: 768px)
         height: 65px
         right: -50%
+      @media screen and (max-height: 420px)
+        height: 65px
+        right: -50%
     &_image
       position: absolute
       display: block
@@ -396,6 +444,11 @@
         height: 170px
         left: 0
       @media screen and (max-width: 750px)
+        height: 130px
+        top: 80px
+        left: auto
+        right: -25px
+      @media screen and (max-height: 420px)
         height: 130px
         top: 80px
         left: auto
@@ -417,6 +470,12 @@
       border-radius: 20px
       height: 900px
     @media screen and (max-width: 750px)
+      margin-top: 50px
+      width: 100%
+      height: 600px
+    @media screen and (max-height: 420px)
+      position: relative
+      border-radius: 20px
       margin-top: 50px
       width: 100%
       height: 600px
@@ -448,6 +507,14 @@
       left: -25%
       max-height: 665px
       z-index: 10
+    @media screen and (max-height: 420px)
+      position: absolute
+      display: block
+      width: 150%
+      top: -440px
+      left: -25%
+      max-height: 365px
+      z-index: 10
     @media screen and (max-width: 750px)
       max-height: 365px
       top: -440px
@@ -459,4 +526,6 @@
       @media screen and (max-width: 768px)
         min-height: 665px
       @media screen and (max-width: 750px)
+        min-height: 365px
+      @media screen and (max-height: 420px)
         min-height: 365px
