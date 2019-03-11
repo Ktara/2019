@@ -20,6 +20,8 @@
     line-height: 60px
     color: $font-color
     text-align: center
+    @media screen and (max-width: 750px)
+      font-size: 24px
   &_container
     width: 100%
     font-size: 0
@@ -40,11 +42,17 @@
     line-height: 20px
     font-weight: 400
     padding: 30px 20px
+    @media screen and (max-width: 750px)
+      height: auto
+      min-height: auto
+      overflow: visible
     &_header
       font-size: 23px
       margin-bottom: 20px
     &_img
       position: absolute
+      @media screen and (max-width: 750px)
+        position: relative
       img
         min-height: 100%
     &_content
@@ -93,15 +101,22 @@
       margin-left: 15px
       @media screen and (max-width: 768px)
         width: 100%
-
+      @media screen and (max-width: 750px)
+        margin-left: 0
       .study_block_img
         left: 0
         top: 0
         height: 100%
         width: auto
+        @media screen and (max-width: 750px)
+          width: 150%
+          left: -25%
       .study_block_content
         width: 45%
         float: right
+        @media screen and (max-width: 750px)
+          float: none
+          width: 80%
     &:nth-child(2)
       width: calc(33.3% - 30px)
       height: calc(70vh + 30px)
@@ -110,6 +125,9 @@
       float: right
       @media screen and (max-width: 768px)
         width: calc(49.3% - 30px)
+      @media screen and (max-width: 750px)
+        width: 100%
+        margin-right: 0
       .study_block_img
         bottom: 0
         width: 100%
@@ -118,6 +136,11 @@
         bottom: 0
         @media screen and (max-width: 1440px)
           bottom: -45px
+        @media screen and (max-width: 750px)
+          bottom: 0
+      .study_block_content
+        @media screen and (max-width: 750px)
+          width: 80%
     &:nth-child(3)
       width: calc(33.3% - 30px)
       margin-right: 30px
@@ -125,15 +148,27 @@
       background-color: transparent
       @media screen and (max-width: 768px)
         width: calc(49.3% - 30px)
+      @media screen and (max-width: 750px)
+        width: 100%
+        margin-left: 0
+        margin-right: 0
       .study_block_img
         display: none
+      .study_block_content
+        @media screen and (max-width: 750px)
+          width: 80%
     &:nth-child(4)
       width: calc(33.3% - 30px)
       background-color: transparent
       @media screen and (max-width: 768px)
         width: calc(49.3% - 30px)
+      @media screen and (max-width: 750px)
+        width: 100%
       .study_block_img
         display: none
+      .study_block_content
+        @media screen and (max-width: 750px)
+          width: 80%
     &:nth-child(5)
       width: calc(66.6% - 30px)
       float: right
@@ -144,8 +179,12 @@
         right: 0
         top: 0
         height: 100%
+        @media screen and (max-width: 750px)
+          right: 25%
       .study_block_content
         width: 45%
+        @media screen and (max-width: 750px)
+          width: 80%
   &_img
     width: calc(33.3% - 30px)
     display: block

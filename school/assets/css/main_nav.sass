@@ -159,6 +159,8 @@
       text-decoration: underline
     &:nth-child(1)
       margin-right: 5px
+      @media screen and (max-width: 750px)
+        margin-right: 0
       &:after
         content: ''
         display: block
@@ -171,7 +173,7 @@
         @media screen and (max-width: 750px)
           width: 16px
           height: 1px
-          right: 0
+          right: 10px
           top: auto
   &_connects
     display: flex

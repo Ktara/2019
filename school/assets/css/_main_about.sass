@@ -11,6 +11,11 @@
   -webkit-box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
   -moz-box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
   box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
+  @media screen and (max-width: 750px)
+    width: 100%
+    height: auto
+    min-height: auto
+    left: 0
   &_header
     width: 100%
     text-align: center
@@ -20,6 +25,8 @@
     color: $font-color
     text-align: center
     display: block
+    @media screen and (max-width: 750px)
+      font-size: 24px
   &_block
     display: block
     width: 100%
@@ -28,6 +35,9 @@
     padding-top: 15%
     text-align: center
     position: relative
+    @media screen and (max-width: 750px)
+      height: auto
+      min-height: auto
     .square_illustration
       width: 80%
       height: 105%
@@ -73,12 +83,20 @@
     @media screen and (max-width: 768px)
       bottom: auto
       top: 20%
+    @media screen and (max-width: 750px)
+      top: auto
+      width: 60%
+      left: 5%
+      bottom: -40%
     img
       width: 100%
   &_text
     width: 100%
     height: auto
     padding-top: 30px
+    @media screen and (max-width: 750px)
+      padding-top: 120px
+      padding-left: 15px
     p
       font-family: ProximaNova
       font-size: 16px
@@ -120,3 +138,6 @@
     margin: -140px auto 0 auto
     box-sizing: border-box
     line-height: 55px
+    @media screen and (max-width: 750px)
+      margin: 0
+      width: 100%

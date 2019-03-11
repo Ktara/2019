@@ -13,6 +13,8 @@
     text-align: center
     font-weight: 400
     color: $font-color
+    @media screen and (max-width: 750px)
+      font-size: 24px
   &_block
     width: calc(100% + 30px)
     height: auto
@@ -70,6 +72,8 @@
     text-decoration: none
     @media screen and (max-width: 1440px)
       bottom: -40px
+    @media screen and (max-width: 750px)
+      bottom: -60px
     &:after
       content: url("../img/r_blue_arrow.png")
       display: block
