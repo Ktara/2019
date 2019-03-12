@@ -1668,6 +1668,11 @@
   line-height: 46px;
   color: #212121;
 }
+@media screen and (max-width: 768px) {
+  .anons_block_date {
+    font-size: 18px;
+  }
+}
 .anons_block_date p:nth-child(1) {
   display: inline-block;
   position: relative;
@@ -1686,6 +1691,11 @@
   font-size: 14px;
   line-height: 24px;
 }
+@media screen and (max-width: 768px) {
+  .anons_block_date p:nth-child(2) {
+    font-size: 10px;
+  }
+}
 .anons_block_header {
   width: 73%;
   display: inline-block;
@@ -1695,6 +1705,13 @@
   font-size: 24px;
   line-height: 30px;
   color: #212121;
+}
+@media screen and (max-width: 768px) {
+  .anons_block_header {
+    font-size: 16px;
+    line-height: 20px;
+    width: 70%;
+  }
 }
 .anons_block_text {
   padding: 20px 20px 0 20px;
@@ -2046,6 +2063,11 @@
   line-height: 46px;
   color: #212121;
 }
+@media screen and (max-width: 768px) {
+  .article_date {
+    width: 100%;
+  }
+}
 .article_date p:nth-child(1) {
   display: inline-block;
   position: relative;
@@ -2072,6 +2094,13 @@
   line-height: 46px;
   vertical-align: top;
   color: #212121;
+}
+@media screen and (max-width: 768px) {
+  .article_header {
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+  }
 }
 .article_text {
   width: 100%;
