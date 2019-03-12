@@ -15,6 +15,9 @@
   -webkit-box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
   -moz-box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
   box-shadow: inset 0px 0px 180px 92px rgba(255,255,255,1)
+  @media screen and (max-width: 750px)
+    width: 100%
+    left: 0
   &_header
     font-family: ProximaNova
     font-size: 36px
@@ -29,12 +32,18 @@
     overflow: hidden
     height: 50vh
     min-height: 450px
+    @media screen and (max-width: 750px)
+      height: auto
+      min-height: auto
   &_viewer
     width: 86%
     margin: 0 auto
     position: relative
     height: 100%
     min-height: 400px
+    @media screen and (max-width: 750px)
+      width: 100%
+      min-height: 650px
   &_slide
     transform: scale(0)
     display: flex
@@ -49,6 +58,8 @@
     left: 0
     top: 0
     transition: all 0.6s
+    @media screen and (max-width: 750px)
+      min-height: 650px
     &_block
       width: 40%
       height: auto
@@ -58,6 +69,9 @@
       justify-content: space-between
       align-items: center
       align-content: flex-start
+      @media screen and (max-width: 750px)
+        width: 100%
+        min-height: 150px
     &_ilu
       width: 60px
       img
@@ -70,9 +84,15 @@
       bottom: 0
       display: block
       text-align: center
+      @media screen and (max-width: 750px)
+        height: 40%
       img
         width: auto
         height: 100%
+        @media screen and (max-width: 750px)
+          position: absolute
+          right: -15%
+          top: -50%
     &_text
       font-family: ProximaNova
       font-weight: 500
@@ -89,6 +109,8 @@
       position: absolute
       left: 60px
       top: 0
+      @media screen and (max-width: 750px)
+        top: 40%
   &_slide_active
     transform: scale(1)
     .advantage_slide_block:nth-child(2)
