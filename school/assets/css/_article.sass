@@ -5,6 +5,8 @@
   height: auto
   margin-top: 160px
   padding-bottom: 120px
+  @media screen and (max-width: 750px)
+    padding-bottom: 0
   &_img
     margin-bottom: 30px
     width: 100%
@@ -51,6 +53,10 @@
       font-size: 24px
       line-height: 30px
       width: 100%
+  &_text_wrapper
+    @media screen and (max-width: 750px)
+      height: 740px
+      overflow: hidden
   &_text
     width: 100%
     font-family: ProximaNova
@@ -60,6 +66,14 @@
     color: $font-color
     p
       margin-top: 30px
+    &_read
+      display: none
+      @media screen and (max-width: 750px)
+        display: inline-block
+        font-size: 18px
+        margin-top: 20px
+        cursor: pointer
+        color: #739cd2
   &_btn
     background-color: $blue-color
     color: white

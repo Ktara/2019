@@ -38,3 +38,12 @@ $('.show_call').click(function(){
         $(this).toggleClass('start_active_header').next().toggleClass('hover_course_wrapper');
     })
 })();
+(function () {
+    $('.article_text_read').click(function (e) {
+        $(e.target).css('display', 'none');
+        var trHeight = $(e.target).prev().children().css('height');
+        $(e.target).prev().animate({
+            'height': trHeight
+        }, 600);
+    });
+})();
