@@ -3,6 +3,8 @@
   height: auto
   margin-top: 160px
   padding-bottom: 120px
+  @media screen and (max-width: 750px)
+    padding-bottom: 0
   &_header
     position: relative
     z-index: 1
@@ -13,6 +15,11 @@
     color: $font-color
     margin-bottom: 30px
     margin-top: 50px
+    @media screen and (max-width: 768px)
+      font-size: 24px
+      line-height: 30px
+    @media screen and (max-width: 750px)
+      margin-top: 30px
   &_img
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
     width: 100%
@@ -66,3 +73,6 @@
     &:after
       border: 50px solid #fafafa
       opacity: 1
+  &_mob_hid
+    @media screen and (max-width: 768px)
+      display: none

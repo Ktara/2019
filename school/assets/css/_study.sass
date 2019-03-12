@@ -1,6 +1,9 @@
 .row-shadow
   height: 115px
   line-height: 115px
+  @media screen and (max-width: 768px)
+    line-height: inherit
+    align-items: center
   .row
     margin: 0
   &:nth-child(2n - 1)
@@ -35,11 +38,18 @@
     line-height: 60px
     color: $font-color
     margin-left: 15px
+    @media screen and (max-width: 768px)
+      font-size: 24px
+      line-height: 30px
   &_container
     width: 100%
     font-size: 0
     padding: 50px 0
     overflow: hidden
+    @media screen and (max-width: 768px)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
   &_block
     display: inline-block
     position: relative
@@ -104,6 +114,8 @@
     &:nth-child(2n-1)
       width: calc(66.6% - 30px)
       margin-left: 15px
+      @media screen and (max-width: 768px)
+        width: 100%
       .studies_block_img
         left: 0
         top: 0
@@ -116,9 +128,14 @@
       width: calc(33.3% - 30px)
       margin-left: 30px
       background-color: transparent
+      @media screen and (max-width: 768px)
+        width: 49%
+        margin-left: 0
       .studies_block_img
         display: none
     &:nth-child(3)
+      @media screen and (max-width: 768px)
+        order: 1
       .studies_block_img
         left: auto
         top: auto
@@ -135,6 +152,8 @@
           z-index: 1
     &:nth-child(5)
       width: calc(100% - 30px)
+      @media screen and (max-width: 768px)
+        order: 1
       .studies_block_img
         left: auto
         right: 0
@@ -176,6 +195,10 @@
     font-weight: 400
     line-height: 80px
     margin-top: 25px
+    @media screen and (max-width: 768px)
+      font-size: 18px
+      line-height: 20px
+      margin-bottom: 20px
   &_column_date
     font-size: 18px
     font-weight: 300
@@ -203,6 +226,9 @@
     color: white
     transition: all 0.3s
     cursor: pointer
+    @media screen and (max-width: 768px)
+      width: 100%
+      font-size: 16px
     &:hover
       color: $blue-color
       background-color: white

@@ -30,7 +30,7 @@
   &_block
     display: inline-block
     position: relative
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
     border-radius: 5px
     background-color: white
     margin-bottom: 30px
@@ -131,10 +131,14 @@
       @media screen and (max-width: 750px)
         width: 100%
         margin-right: 0
+        height: auto
+        min-height: 400px
       .study_block_img
         bottom: 0
         width: 100%
         left: 0
+        @media screen and (max-width: 750px)
+          display: none
       .study_block_btn
         bottom: 0
         @media screen and (max-width: 1440px)
@@ -177,12 +181,13 @@
       margin-right: 15px
       @media screen and (max-width: 768px)
         width: 100%
+        margin-left: 0
       .study_block_img
         right: 0
         top: 0
         height: 100%
         @media screen and (max-width: 750px)
-          right: 25%
+          right: 100%
       .study_block_content
         width: 45%
         @media screen and (max-width: 750px)

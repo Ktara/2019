@@ -23,6 +23,9 @@
     line-height: 60px
     color: $font-color
     margin-bottom: 30px
+    @media screen and (max-width: 750px)
+      font-size: 24px
+      line-height: 30px
   &_img
     width: 100%
     height: auto
@@ -49,6 +52,9 @@
       color: $font-color
       font-weight: 400
       transition: all 0.3s
+      @media screen and (max-width: 750px)
+        font-size: 18px
+        padding-left: 45px
       &:before
         content: ''
         width: 20px
@@ -60,6 +66,8 @@
         left: 45px
         top: 10px
         transition: all 1s
+        @media screen and (max-width: 750px)
+          left: 15px
       &:after
         content: ''
         width: 20px
@@ -71,6 +79,8 @@
         left: 45px
         top: 10px
         transition: all 1s
+        @media screen and (max-width: 750px)
+          left: 15px
     &_wrapper
       width: 100%
       padding: 0 45px 0 45px
@@ -78,6 +88,9 @@
       height: 525px
       overflow: hidden
       transition: all 1s
+      @media screen and (max-width: 750px)
+        padding-left: 15px
+        padding-right: 15px
     &_viewer
       width: 100%
       display: flex
@@ -87,6 +100,11 @@
       justify-content: space-between
       flex-wrap: wrap
       position: relative
+      @media screen and (max-width: 768px)
+        flex-direction: inherit
+        height: 800px
+      @media screen and (max-width: 750px)
+        height: 720px
     &_text
       width: 45%
       font-family: ProximaNova
@@ -94,6 +112,9 @@
       line-height: 24px
       color: $font-color
       font-weight: 400
+      @media screen and (max-width: 750px)
+        width: 100%
+        font-size: 16px
       p
         margin-bottom: 15px
     &_btn
@@ -119,6 +140,10 @@
 .course_block_viewer
   height: 425px
   padding-bottom: 0
+  @media screen and (max-width: 768px)
+    height: 800px
+  @media screen and (max-width: 750px)
+    height: 720px
   .start_block_viewer
     padding-bottom: 0
 .hover_course_wrapper
