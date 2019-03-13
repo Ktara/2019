@@ -540,6 +540,7 @@
 }
 .study_block_img img {
   min-height: 100%;
+  max-width: 100%;
 }
 .study_block_content {
   height: 35vh;
