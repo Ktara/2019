@@ -4,6 +4,9 @@
   @media screen and (max-width: 768px)
     line-height: inherit
     align-items: center
+    height: auto
+    padding-top: 25px
+    padding-bottom: 25px
   .row
     margin: 0
   &:nth-child(2n - 1)
@@ -50,6 +53,8 @@
       display: flex
       flex-direction: row
       flex-wrap: wrap
+    @media screen and (max-width: 750px)
+      padding-top: 30px
   &_block
     display: inline-block
     position: relative
@@ -65,6 +70,9 @@
     line-height: 20px
     font-weight: 400
     padding: 30px 20px
+    @media screen and (max-width: 750px)
+      padding: 0
+      height: auto
     &_header
       font-size: 23px
       margin-bottom: 20px
@@ -116,14 +124,23 @@
       margin-left: 15px
       @media screen and (max-width: 768px)
         width: 100%
+      @media screen and (max-width: 750px)
+        margin-left: 0
       .studies_block_img
         left: 0
         top: 0
         height: 100%
         width: auto
+        @media screen and (max-width: 750px)
+          position: relative
+          left: -25%
+          height: auto
+          width: 150%
       .studies_block_content
         width: 45%
         float: right
+        @media screen and (max-width: 750px)
+          width: 100%
     &:nth-child(2n)
       width: calc(33.3% - 30px)
       margin-left: 30px
@@ -131,6 +148,8 @@
       @media screen and (max-width: 768px)
         width: 49%
         margin-left: 0
+      @media screen and (max-width: 750px)
+        width: 100%
       .studies_block_img
         display: none
     &:nth-child(3)
@@ -143,9 +162,15 @@
         bottom: 5%
         height: 85%
         width: auto
+        @media screen and (max-width: 750px)
+          right: auto
+          left: -25%
+          bottom: auto
+          top: 0
+          height: auto
+          width: 150%
       .studies_block_content
         float: left
-
         p
           position: relative
           text-shadow: 2px 2px 25px rgba(255, 255, 255, 1)
@@ -160,9 +185,18 @@
         top: 0
         height: 100%
         width: auto
+        @media screen and (max-width: 750px)
+          right: auto
+          left: -100%
+          bottom: auto
+          top: 0
+          height: auto
+          width: 150%
       .studies_block_content
         float: left
         width: 30%
+        @media screen and (max-width: 750px)
+          width: 100%
   &_img
     width: calc(33.3% - 30px)
     display: block
@@ -178,6 +212,8 @@
   &_table
     padding-bottom: 120px
     position: relative
+    @media screen and (max-width: 750px)
+      padding-bottom: 50px
     .square_illustration
       transform: rotate(18deg)
       width: 50%
@@ -186,6 +222,8 @@
       right: auto
       left: 10%
       bottom: auto
+      @media screen and (max-width: 750px)
+        display: none
       &:after
         border-color: #f1f1f1
   &_column_header
@@ -209,6 +247,8 @@
     font-weight: 700
     color: $font-color
     font-family: ProximaNova
+    @media screen and (max-width: 750px)
+      margin-top: 20px
   &_column_description
     color: $font-color
     font-family: ProximaNova
@@ -220,6 +260,16 @@
     height: 100%
     align-content: center
     align-items: center
+  &_column_description_mob
+    display: none
+    @media screen and (max-width: 768px)
+      color: $font-color
+      font-family: ProximaNova
+      font-size: 18px
+      font-weight: 400
+      line-height: 20px
+      display: inline-block
+      margin-top: 20px
   &_column_btn
     margin-top: 30px
     background-color: $blue-color
@@ -229,6 +279,9 @@
     @media screen and (max-width: 768px)
       width: 100%
       font-size: 16px
+      margin-top: 0
+    @media screen and (max-width: 750px)
+      margin-top: 25px
     &:hover
       color: $blue-color
       background-color: white

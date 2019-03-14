@@ -47,3 +47,28 @@ $('.show_call').click(function(){
         }, 600);
     });
 })();
+
+
+$('.studies_column_btn').click(function(){
+    $('.popup_form').addClass('popup_form_active').animate({
+        opacity: 1
+    }, 600, function () {
+        $('.popup_form').css('display', 'block');
+    });
+});
+$('.popup_form_close').click(function(){
+    $('.popup_form').removeClass('popup_form_active').animate({
+        opacity: 0
+    }, 600, function () {
+        $('.popup_form').css('display', 'none');
+    });
+});
+
+
+
+
+$('.main_menu_tbl_burger').click(function(){
+    $('.popup_nav_menu').toggleClass('popup_nav_menu_active');
+    $('.main_menu_tbl_burger').toggleClass('main_menu_tbl_burger_active');
+    $('.main_menu_tbl_burger_close').toggleClass('main_menu_tbl_burger_close_active');
+});

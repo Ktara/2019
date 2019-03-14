@@ -116,6 +116,28 @@
   z-index: 100
   @media screen and (max-width: 768px)
     display: block
+  &_burger
+    opacity: 1
+    -webkit-transition: opacity 0.5s
+    -moz-transition: opacity 0.5s
+    -ms-transition: opacity 0.5s
+    -o-transition: opacity 0.5s
+    transition: opacity 0.5s
+  &_burger_close
+    display: none
+    position: absolute
+    width: 30px
+    height: 30px
+    top: 20px
+    left: 20px
+    z-index: 220
+    cursor: pointer
+    img
+      width: 100%
+  &_burger_close_active
+    display: block
+  &_burger_active
+    opacity: 0
   &_logo
     display: inline-block
     vertical-align: middle
