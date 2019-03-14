@@ -2123,6 +2123,9 @@
   font-size: 14px;
   line-height: 24px;
 }
+.students_block_table_mob {
+  display: none;
+}
 @media screen and (max-width: 750px) {
   .students_block_table_mob {
     display: block;
