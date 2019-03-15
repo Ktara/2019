@@ -683,7 +683,7 @@
 }
 .study_block:nth-child(2) {
   width: calc(33.3% - 30px);
-  height: calc(70vh + 30px);
+  height: calc(60vh + 30px);
   min-height: 630px;
   margin-right: 15px;
   float: right;
