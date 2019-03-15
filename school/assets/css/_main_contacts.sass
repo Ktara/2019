@@ -24,6 +24,8 @@
     position: absolute
     top: 0
     z-index: 100
+    @media screen and (max-width: 768px)
+      width: calc(40% - 15px)
     @media screen and (max-width: 750px)
       position: relative
       width: 100%
@@ -34,6 +36,8 @@
       padding: 30px 50px 20px 50px
       display: block
       background-color: white
+      @media screen and (max-width: 768px)
+        padding: 25px
     &_header
       font-family: ProximaNova
       font-size: 36px

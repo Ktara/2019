@@ -69,6 +69,6 @@ $('.popup_form_close').click(function(){
 
 $('.main_menu_tbl_burger').click(function(){
     $('.popup_nav_menu').toggleClass('popup_nav_menu_active');
-    $('.main_menu_tbl_burger').toggleClass('main_menu_tbl_burger_active');
-    $('.main_menu_tbl_burger_close').toggleClass('main_menu_tbl_burger_close_active');
+    $('.main_menu_tbl').toggleClass('main_menu_tbl_white');
+    $('.main_menu_tbl_burger').toggleClass('main_menu_tbl_burger_close');
 });
