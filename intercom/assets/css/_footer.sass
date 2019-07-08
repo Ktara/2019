@@ -1,0 +1,88 @@
+.footer
+  position: relative
+  width: 100%
+  margin-top: 150px
+  &_text
+    font-size: 16px
+    line-height: 24px
+    color: $black
+    margin-top: 20px
+  &_contact
+    font-size: 16px
+    line-height: 24px
+    color: $black
+  &_social
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 45px
+    a
+      text-decoration: none
+      width: 40px
+      height: 40px
+      @media screen and (max-width: 1440px)
+        width: 30px
+        height: 30px
+      img
+        width: 100%
+  &_menu_wrapper
+    position: relative
+    width: 100%
+    margin-top: 40px
+    &:after
+      content: ''
+      position: absolute
+      width: 200%
+      height: 1px
+      top: -20px
+      left: -100%
+      background-color: $purple
+      opacity: 0.2
+  &_copy
+    width: 100%
+    text-align: center
+    font-size: 16px
+    @extend .open-light
+    color: $dark-grey
+    opacity: 0.75
+    margin-top: 30px
+    margin-bottom: 50px
+  &_menu
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    li
+      display: inline-block
+      width: auto
+    a
+      text-decoration: none
+      color: $dark-grey
+      @extend .open-light
+      opacity: 0.75
+  &_form
+    width: 100%
+    display: flex
+    justify-content: space-between
+    label
+      position: absolute
+      width: 100%
+      top: 0
+      left: 0
+      font-size: 16px
+      @extend .open-light
+      color: $dark-grey
+      opacity: 0.75
+    input
+      position: relative
+      display: inline-block
+      width: 48%
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      border: none
+      border-bottom: 4px solid rgba(39, 39, 39, 0.75)
+    &_btn
+      width: 48%

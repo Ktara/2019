@@ -1,0 +1,139 @@
+.second_block
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_text
+    @extend .open-it
+    font-size: 18px
+    color: $black
+    opacity: 0.5
+    text-align: right
+    margin-top: 20px
+  &_header
+    @extend .open-semi
+    font-size: 32px
+    color: $black
+    margin-top: 60px
+    text-align: right
+  &_sub_header
+    font-size: 18px
+    color: $black
+    opacity: 0.75
+    margin-top: 20px
+    text-align: right
+  &_image
+    width: 100%
+    height: 30vh
+    min-height: 400px
+    border-radius: 10px
+    overflow: hidden
+    img
+      height: 100%
+      min-width: 100%
+  &_box_wrapper
+    margin-top: 35px
+  &_box_wrapper:nth-child(2) .second_block_box_decor
+    left: auto
+    right: 20px
+    top: 20px
+  &_box_wrapper:nth-child(3) .second_block_box_decor
+    left: auto
+    top: auto
+    bottom: 80px
+    right: 100px
+  &_box
+    position: relative
+    display: block
+    width: 100%
+    height: 25vh
+    min-height: 345px
+    background-color: $white
+    border-radius: 10px
+    border-top: 25px solid $blue
+    box-shadow: 0 3px 20px rgba(255,255,255,0.16)
+    cursor: pointer
+    overflow: hidden
+    @media screen and (max-width: 1440px)
+      min-height: 300px
+    &:hover
+      .second_block_box_link
+        opacity: 0.75
+      .second_block_box_text
+        top: 0
+    &_image
+      width: 180px
+      height: 160px
+      margin-top: 40px
+      margin-left: 35px
+      opacity: 0.5
+      @media screen and (max-width: 1440px)
+        width: 150px
+        height: 130px
+        margin-top: 25px
+      img
+        height: 100%
+    &_header
+      position: absolute
+      display: block
+      width: auto
+      height: auto
+      bottom: 20px
+      left: 35px
+      @extend .open-semi
+      font-size: 28px
+      color: $black
+    &_decor
+      position: absolute
+      display: block
+      width: 80px
+      height: 80px
+      top: calc(50% - 40px)
+      left: calc(50% - 40px)
+      @media screen and (max-width: 1440px)
+        width: 60px
+        height: 60px
+        top: calc(50% - 30px)
+        left: 50%
+      img
+        width: 100%
+    &_link
+      position: absolute
+      display: block
+      width: auto
+      height: auto
+      bottom: 25px
+      right: 40px
+      color: $black
+      opacity: 0
+      @extend .open-semi
+      font-size: 18px
+      text-decoration: none
+      -webkit-transition: opacity 0.6s
+      -moz-transition: opacity 0.6s
+      -ms-transition: opacity 0.6s
+      -o-transition: opacity 0.6s
+      transition: opacity 0.6s
+    &_text
+      position: absolute
+      display: block
+      width: 100%
+      height: 80%
+      top: -80%
+      left: 0
+      padding-top: 30px
+      padding-left: 25px
+      padding-right: 25px
+      background-color: $blue
+      color: $white
+      font-size: 20px
+      -webkit-transition: top 0.6s
+      -moz-transition: top 0.6s
+      -ms-transition: top 0.6s
+      -o-transition: top 0.6s
+      transition: top 0.6s
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+
+
+
+
