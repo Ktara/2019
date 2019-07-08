@@ -25,6 +25,8 @@
 
 
 $blue: #41C4DC
+$light-blue: #CEF7FF
+$dark-blue: #25A6BE
 $black: #000000
 $white: #ffffff
 
@@ -34,3 +36,50 @@ $white: #ffffff
 .main_wrapper
   @extend .open-reg
   overflow: hidden
+
+
+.btn
+  display: block
+  width: 100%
+  height: 50px
+  line-height: 46px
+  @extend .open-reg
+  color: $white
+  font-size: 18px
+  text-align: center
+  border-radius: 30px
+  border: 2px solid $blue
+  background-color: $blue
+  cursor: pointer
+  text-decoration: none
+  -webkit-transition: all 0.6s
+  -moz-transition: all 0.6s
+  -ms-transition: all 0.6s
+  -o-transition: all 0.6s
+  transition: all 0.6s
+  &:hover
+    border: 2px solid $dark-blue
+    background-color: $dark-blue
+
+.light_btn
+  display: block
+  width: 100%
+  height: 50px
+  line-height: 48px
+  @extend .open-reg
+  color: $black
+  font-size: 18px
+  text-align: center
+  border-radius: 30px
+  border: 1px solid $blue
+  background-color: inherit
+  cursor: pointer
+  text-decoration: none
+  -webkit-transition: all 0.6s
+  -moz-transition: all 0.6s
+  -ms-transition: all 0.6s
+  -o-transition: all 0.6s
+  transition: all 0.6s
+  &:hover
+    border: 2px solid $blue
+    background-color: $light-blue

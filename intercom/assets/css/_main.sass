@@ -1,0 +1,166 @@
+.main
+  position: relative
+  width: 100%
+  height: 100vh
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  .filter
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: linear-gradient(90deg, rgba(63, 70, 75, 0.7), rgba(13, 14, 15, 0))
+  &_text
+    display: inline-block
+    width: 100%
+    @extend .open-it
+    color: $white
+    font-size: 18px
+    opacity: 0.85
+    margin-top: 35vh
+  &_header
+    display: inline-block
+    width: 100%
+    @extend .open-semi
+    font-size: 50px
+    color: $white
+    margin-top: 50px
+  &_sub_header
+    display: inline-block
+    width: 100%
+    @extend .open-light
+    font-size: 24px
+    color: $white
+    margin-top: 10px
+  &_btn
+    margin-top: 50px
+  &_media_wrapper
+    position: fixed
+    display: block
+    background-color: $white
+    border-radius: 50%
+    width: 80px
+    height: 80px
+    bottom: 50px
+    right: 25px
+    z-index: 20
+    cursor: pointer
+    &:hover
+      .main_media_wrapper_first
+        opacity: 1
+        z-index: 20
+        top: -60px
+        right: 15px
+      .main_media_wrapper_second
+        opacity: 1
+        z-index: 20
+        top: -40px
+        right: 70px
+      .main_media_wrapper_third
+        opacity: 1
+        z-index: 20
+        top: 15px
+        right: 90px
+    .main_media_wrapper_dots
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      width: 50px
+      height: 80px
+      margin-left: 15px
+      .main_media_wrapper_dot
+        width: 10px
+        height: 10px
+        border: 2px solid $black
+        border-radius: 50%
+    .main_media_wrapper_first
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+      background-color: $white
+      border-radius: 50%
+      right: 15px
+      top: 10px
+      text-decoration: none
+      z-index: -1
+      opacity: 0
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      img
+        width: 30px
+        margin-left: 10px
+      &_text
+        position: absolute
+        color: $white
+        top: -50%
+        text-shadow: $black 0 0 0.5px
+    .main_media_wrapper_second
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+      background-color: $white
+      border-radius: 50%
+      right: 0
+      top: 0
+      text-decoration: none
+      z-index: -1
+      opacity: 0
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      img
+        width: 30px
+        margin-left: 10px
+      &_text
+        position: absolute
+        color: $white
+        left: -170%
+        text-shadow: $black 0 0 0.5px
+    .main_media_wrapper_third
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+      background-color: $white
+      border-radius: 50%
+      right: 10px
+      top: 10px
+      text-decoration: none
+      z-index: -1
+      opacity: 0
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      img
+        width: 30px
+      &_text
+        position: absolute
+        color: $white
+        left: -170%
+        text-shadow: $black 0 0 0.5px
+
+
+
+
+
+
+
