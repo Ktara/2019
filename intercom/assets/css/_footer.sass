@@ -30,6 +30,7 @@
     position: relative
     width: 100%
     margin-top: 40px
+    margin-bottom: 30px
     &:after
       content: ''
       position: absolute
@@ -41,7 +42,6 @@
       opacity: 0.2
   &_copy
     width: 100%
-    text-align: center
     font-size: 16px
     @extend .open-light
     color: $dark-grey
@@ -62,12 +62,13 @@
       @extend .open-light
       opacity: 0.75
   &_form
+    position: relative
     width: 100%
     display: flex
     justify-content: space-between
     label
       position: absolute
-      width: 100%
+      width: 50%
       top: 0
       left: 0
       font-size: 16px

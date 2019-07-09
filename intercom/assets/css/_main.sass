@@ -38,16 +38,18 @@
   &_btn
     margin-top: 50px
   &_media_wrapper
-    position: absolute
+    position: fixed
     display: block
     background-color: $white
     border-radius: 50%
+    border: 0.5px solid rgba(0,0,0,0.16)
     width: 80px
     height: 80px
     bottom: 50px
     right: 25px
     z-index: 20
     cursor: pointer
+    box-shadow: 0 0 33px rgba(0,0,0,0.16)
     &:hover
       .main_media_wrapper_first
         opacity: 1
@@ -102,6 +104,7 @@
       &_text
         position: absolute
         color: $white
+        -webkit-text-stroke: 0.5px black
         top: -50%
         text-shadow: $black 0 0 0.5px
     .main_media_wrapper_second
@@ -129,6 +132,7 @@
       &_text
         position: absolute
         color: $white
+        -webkit-text-stroke: 0.5px black
         left: -170%
         text-shadow: $black 0 0 0.5px
     .main_media_wrapper_third
@@ -155,6 +159,7 @@
       &_text
         position: absolute
         color: $white
+        -webkit-text-stroke: 0.5px black
         left: -170%
         text-shadow: $black 0 0 0.5px
 

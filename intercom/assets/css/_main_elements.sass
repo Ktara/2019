@@ -1,0 +1,65 @@
+.main_elements
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_box
+    position: relative
+    width: 100%
+    height: 25vh
+    min-height: 360px
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: bottom
+    overflow: hidden
+    border-radius: 10px
+    margin-top: 30px
+    .filter
+      position: absolute
+      display: block
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background: linear-gradient(-90deg, rgba(63, 70, 75, 0.7), rgba(13, 14, 15, 0))
+    &_title
+      position: absolute
+      width: 50%
+      height: auto
+      bottom: 20px
+      left: 30px
+      @extend .open-semi
+      font-size: 50px
+      color: $white
+      -webkit-text-stroke: 1px black
+      @media screen and (max-width: 1440px)
+        font-size: 40px
+    &_text_wrapper
+      position: relative
+      width: 100%
+      padding-top: 20px
+      padding-right: 20px
+      p
+        @extend .open-semi
+        font-size: 18px
+        line-height: 27px
+        color: $white
+        margin-bottom: 20px
+        @media screen and (max-width: 1440px)
+          font-size: 16px
+          line-height: 20px
+      a
+        display: block
+        font-size: 16px
+        color: $white
+        margin-top: 10px
+        text-decoration: underline
+        @media screen and (max-width: 1440px)
+          font-size: 14px
+    &_btn
+      position: absolute
+      width: 250px
+      bottom: 20px
+      left: 50%
+      color: $white
+      text-decoration: none
