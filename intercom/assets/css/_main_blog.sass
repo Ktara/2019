@@ -1,0 +1,45 @@
+.blog
+  position: relative
+  width: 100%
+  margin-top: 120px
+  .col-lg-3:nth-child(1) .blog_box
+    margin-top: 75px
+  .col-lg-3:nth-child(2) .blog_box
+    margin-top: 125px
+  .col-lg-3:nth-child(3) .blog_box
+    margin-top: 15px
+  .col-lg-3:nth-child(4) .blog_box
+    margin-top: 100px
+  &_box
+    position: relative
+    width: 100%
+    overflow: hidden
+    &_image
+      position: relative
+      width: 100%
+      height: 15vh
+      min-height: 170px
+      border-radius: 10px
+      overflow: hidden
+      img
+        //position: absolute
+        //bottom: -20%
+        height: auto
+        width: 100%
+    &_title
+      display: block
+      text-decoration: none
+      text-transform: uppercase
+      @extend .open-light
+      color: $dark-grey
+      margin-top: 20px
+      font-size: 24px
+      line-height: 27px
+      @media screen and (max-width: 1440px)
+        font-size: 20px
+    &_text
+      font-size: 16px
+      line-height: 24px
+      color: $dark-grey
+      opacity: 0.75
+      margin-top: 10px
