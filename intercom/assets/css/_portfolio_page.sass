@@ -1,0 +1,114 @@
+.portfolio_main
+  position: relative
+  width: 100%
+  margin-top: 210px
+  &_header
+    @extend .open-light
+    font-size: 54px
+    text-align: center
+  &_sort_list
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: center
+    width: 100%
+    margin-top: 50px
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 60%
+      height: 2px
+      bottom: -50px
+      left: 20%
+      background-color: $blue
+      opacity: 0.3
+    .active_wallness_list
+      color: $white
+      background-color: $blue
+      border-radius: 10px
+    li
+      margin-right: 30px
+      @extend .open-bold
+      font-size: 28px
+      color: $black
+      cursor: pointer
+      padding: 5px 10px
+      @media screen and (max-width: 1440px)
+        font-size: 24px
+        margin-right: 15px
+
+
+
+
+
+
+.portfolio_sort_result
+  position: relative
+  width: 100%
+  margin-top: 100px
+  &_box
+    position: relative
+    width: 100%
+    margin-bottom: 140px
+    &:hover
+      .portfolio_sort_result_title
+        height: auto
+      .portfolio_sort_result_box_text
+        height: auto
+        opacity: 1
+    &_text
+      //position: absolute
+      width: calc(100% - 60px)
+      height: 0
+      margin-left: 30px
+      margin-top: 30px
+      //left: 30px
+      //bottom: -80%
+      @extend .open-light
+      font-size: 18px
+      line-height: 27px
+      text-align: left
+      opacity: 0
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+  &_image
+    width: 100%
+    height: 20vh
+    min-height: 400px
+    display: block
+    overflow: hidden
+    text-decoration: none
+    @media screen and (max-width: 1440px)
+      min-height: 300px
+    img
+      height: 100%
+      transform: translate(-10%)
+  &_title
+    position: absolute
+    display: flex
+    flex-direction: column
+    //align-items: center
+    width: 100%
+    height: 110px
+    //bottom: -30px
+    padding-top: 30px
+    padding-bottom: 30px
+    border: 1px solid $blue
+    @extend .open-semi
+    font-size: 28px
+    color: $black
+    background-color: $white
+    text-decoration: none
+    text-align: center
+    z-index: 10
+    -webkit-transition: all 0.6s
+    -moz-transition: all 0.6s
+    -ms-transition: all 0.6s
+    -o-transition: all 0.6s
+    transition: all 0.6s
+    @media screen and (max-width: 1440px)
+      font-size: 20px
+
+
