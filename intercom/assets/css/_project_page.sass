@@ -1,0 +1,216 @@
+.project_main
+  position: relative
+  width: 100%
+  margin-top: 210px
+  &_image
+    position: relative
+    width: calc(100% - 5vw)
+    height: 40vh
+    min-height: 500px
+    border-radius: 10px 0 0 10px
+    overflow: hidden
+    margin-bottom: 30px
+    margin-left: 5vw
+    img
+      position: absolute
+      width: 100%
+      -webkit-transform: translate(0, -25%)
+      -moz-transform: translate(0, -25%)
+      -ms-transform: translate(0, -25%)
+      -o-transform: translate(0, -25%)
+      transform: translate(0, -25%)
+  &_header
+    @extend .open-light
+    font-size: 44px
+    line-height: 55px
+    color: $black
+    @media screen and (max-width: 1440px)
+      font-size: 34px
+      line-height: 45px
+  &_btn
+    width: 60%
+    margin-top: 130px
+  &_about_head
+    position: relative
+    display: flex
+    li
+      @extend .open-light
+      color: $black
+      padding: 10px
+      background-color: $white
+      margin-right: 40px
+      font-size: 28px
+      cursor: pointer
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      border-radius: 10px
+    .project_main_about_active
+      color: $white
+      background-color: $blue
+  &_about_wrapper
+    width: 100%
+    height: auto
+    transition: height 1s
+    overflow: hidden
+    margin-top: 30px
+    .project_main_about_text_active
+      display: block
+  &_about_block
+    display: none
+    &_point
+      font-size: 18px
+      color: $black
+      @extend .open-reg
+      margin-bottom: 20px
+      span
+        @extend .open-semi
+        font-size: 24px
+        color: $blue
+
+
+
+
+
+
+
+.project_about
+  position: relative
+  width: 100%
+  margin-top: 80px
+  &_slider_wrapper
+    position: relative
+    width: 100%
+    &:after
+      content: ''
+      position: absolute
+      width: 50%
+      height: 3px
+      top: 340px
+      left: 25%
+      background-color: $blue
+      opacity: 0.25
+  &_slide
+    //position: relative
+    //width: 45%
+    &_header
+      @extend .open-semi
+      font-size: 44px
+      color: $black
+    &_text
+      position: relative
+      width: 100%
+      height: 25vh
+      min-height: 250px
+      overflow: hidden
+      p
+        @extend .open-light
+        font-size: 18px
+        line-height: 27px
+        color: $black
+        margin-top: 30px
+        @media screen and (max-width: 1440px)
+          font-size: 16px
+          line-height: 24px
+    &_image
+      position: relative
+      width: 100%
+      height: 30vh
+      min-height: 300px
+      overflow: hidden
+      margin-top: 80px
+      img
+        position: absolute
+        width: 100%
+        -webkit-transform: translate(0, -25%)
+        -moz-transform: translate(0, -25%)
+        -ms-transform: translate(0, -25%)
+        -o-transform: translate(0, -25%)
+        transform: translate(0, -25%)
+    &_image_title
+      margin-top: 35px
+      @extend .open-reg
+      font-size: 18px
+      line-height: 27px
+      color: $black
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+
+
+
+
+
+
+
+
+
+.project_block
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    @extend .open-semi
+    font-size: 54px
+    color: $black
+  &_text_wrapper
+    position: relative
+    width: 100%
+    height: auto
+    margin-top: 30px
+    &_btn
+      position: absolute
+      width: 25%
+      bottom: 0
+      right: 0
+  &_text
+    @extend .open-light
+    font-size: 18px
+    line-height: 27px
+    color: $black
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 24px
+
+
+
+
+
+
+.project_block_other
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    @extend .open-semi
+    font-size: 54px
+    color: $black
+  &_text_wrapper
+    position: relative
+    width: 100%
+    height: auto
+    margin-top: 30px
+    &_btn
+      position: absolute
+      width: 25%
+      bottom: 0
+      right: 0
+  &_text
+    @extend .open-light
+    font-size: 18px
+    line-height: 27px
+    color: $black
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 24px
+  &_image
+    position: relative
+    width: 100%
+    border-radius: 10px
+    overflow: hidden
+    margin-top: 80px
+    img
+      width: 100%
+

@@ -1,0 +1,256 @@
+.about_main
+  position: relative
+  display: flex
+  width: 100%
+  margin-top: 210px
+  &_header
+    display: inline-block
+    width: 40%
+    margin-left: 5vw
+    margin-right: 15px
+    @extend .open-light
+    font-size: 44px
+    line-height: 55px
+    @media screen and (max-width: 1440px)
+      font-size: 34px
+      line-height: 45px
+  &_video
+    display: inline-block
+    width: 55%
+    height: 50vh
+    min-height: 500px
+    border-radius: 10px 0 0 10px
+    overflow: hidden
+
+
+
+
+
+
+.about_second
+  position: relative
+  width: 100%
+  margin-top: 80px
+  &_image
+    width: 100%
+    //height: 20vh
+    //min-height: 430px
+    img
+      width: 100%
+  &_header
+    @extend .open-semi
+    font-size: 54px
+    color: $black
+    margin-top: 110px
+    @media screen and (max-width: 1440px)
+      font-size: 44px
+    &_list
+      margin-top: 50px
+      li
+        @extend .open-light
+        font-size: 18px
+        line-height: 27px
+        color: $black
+        @media screen and (max-width: 1440px)
+          font-size: 16px
+          line-height: 24px
+  &_text
+    @extend .open-light
+    font-size: 18px
+    line-height: 27px
+    color: $black
+    margin-top: 30px
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 24px
+    &_list
+      margin-top: 30px
+      li
+        @extend .open-semi
+        font-size: 18px
+        line-height: 27px
+        color: $black
+        opacity: 0.5
+        @media screen and (max-width: 1440px)
+          font-size: 16px
+          line-height: 24px
+  &_text_other
+    @extend .open-reg
+    font-size: 18px
+    line-height: 27px
+    color: $black
+    margin-top: 30px
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 24px
+
+
+
+
+
+
+.about_advantage
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    @extend .open-semi
+    font-size: 54px
+    @media screen and (max-width: 1440px)
+      font-size: 44px
+  &_block
+    margin-top: 50px
+    &_title
+      @extend .open-semi
+      font-size: 24px
+      line-height: 33px
+      text-align: center
+      @media screen and (max-width: 1440px)
+        font-size: 20px
+        line-height: 30px
+    &_text
+      width: 95%
+      @extend .open-light
+      font-size: 18px
+      line-height: 27px
+      color: $black
+      margin-top: 20px
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+
+
+
+
+
+
+.about_components
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_header
+    @extend .open-semi
+    font-size: 54px
+    @media screen and (max-width: 1440px)
+      font-size: 44px
+  &_text_wrapper
+    margin-top: 10px
+  &_title
+    @extend .open-semi
+    font-size: 24px
+    line-height: 33px
+    margin-top: 40px
+    @media screen and (max-width: 1440px)
+      font-size: 20px
+      line-height: 30px
+  &_text
+    @extend .open-light
+    font-size: 18px
+    line-height: 27px
+    color: $black
+    margin-top: 20px
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 24px
+  &_image_wrapper
+    position: relative
+    width: 100%
+  &_image_first
+    width: 100%
+    border-radius: 10px
+    overflow: hidden
+    box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+    font-size: 0
+    img
+      width: 100%
+  &_image_second
+    position: absolute
+    width: 80%
+    height: 200px
+    top: 200px
+    left: 0
+    border-radius: 10px
+    overflow: hidden
+    box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+    img
+      height: 100%
+  &_image_third
+    position: absolute
+    width: 80%
+    height: 200px
+    top: 350px
+    right: 0
+    border-radius: 10px
+    overflow: hidden
+    box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+    img
+      width: 100%
+
+
+
+
+
+.about_team
+  position: relative
+  width: 100%
+  margin-top: 120px
+  .row .col-lg-5 .about_team_image:nth-child(1)
+    height: 415px
+  .row .col-lg-5 .about_team_image:nth-child(2)
+    height: 500px
+  .row .col-lg-7 .about_team_image:nth-child(1)
+    height: 585px
+  .row .col-lg-7 .about_team_image:nth-child(2)
+    height: 330px
+    img
+      width: 100%
+      height: auto
+  &_text
+    width: 45%
+    @extend .open-light
+    font-size: 18px
+    line-height: 27px
+    color: $black
+    margin-top: 50px
+    margin-bottom: 50px
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 24px
+  &_image
+    position: relative
+    width: 100%
+    border-radius: 10px
+    overflow: hidden
+    margin-top: 30px
+    img
+      height: 100%
+
+
+
+
+
+
+
+.about_diploma
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_image
+    width: 100%
+    overflow: hidden
+    border-radius: 10px
+    img
+      width: 100%
+  &_btn
+    display: block
+    width: 25%
+    margin: 50px auto 0 auto
+  &_text
+    @extend .open-reg
+    font-size: 18px
+    line-height: 27px
+    color: $black
+    margin-top: 80px
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 24px
