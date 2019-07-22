@@ -43,6 +43,22 @@ $productTabs.click(function () {
 
 
 
+var $blogTabs = $('.blog_main_sort li');
+var $blogTexts = $('.blog_main_block_wrapper');
+$blogTabs.click(function () {
+
+    for(var i = 0; i < $blogTabs.length; i++) {
+        if($(this)[0] == $blogTabs[i]) {
+            $blogTabs.removeClass('active_point_sort');
+            $blogTexts.removeClass('active_block_sort');
+            $(this).addClass('active_point_sort');
+            $($blogTexts[i]).addClass('active_block_sort');
+        }
+    }
+});
+
+
+
 
 $('.project_about_slider_wrapper').slick({
     slidesToShow: 2,

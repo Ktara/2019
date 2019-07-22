@@ -1,0 +1,118 @@
+.blog_main
+  position: relative
+  width: 100%
+  margin-top: 210px
+  &_header
+    @extend .open-light
+    font-size: 54px
+    text-align: center
+  &_sort
+    position: relative
+    display: flex
+    justify-content: center
+    margin-top: 55px
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 50%
+      height: 2px
+      bottom: -50px
+      left: 25%
+      background-color: $blue
+      opacity: 0.25
+    li
+      @extend .open-bold
+      color: $black
+      padding: 10px
+      background-color: $white
+      margin-right: 20px
+      margin-left: 20px
+      font-size: 28px
+      cursor: pointer
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      border-radius: 10px
+      @media screen and (max-width: 1440px)
+        margin-right: 10px
+        margin-left: 10px
+    .active_point_sort
+      color: $white
+      background-color: $blue
+  &_block_wrapper
+    padding-top: 50px
+  &_block
+    margin-top: 50px
+    &_image
+      position: relative
+      width: 100%
+      height: 15vh
+      min-height: 300px
+      overflow: hidden
+      border-radius: 10px
+      @media screen and (max-width: 1440px)
+        min-height: 250px
+      img
+        position: absolute
+        width: 100%
+    &_title
+      display: block
+      @extend .open-semi
+      color: $black
+      text-transform: uppercase
+      text-decoration: none
+      font-size: 24px
+      line-height: 33px
+      @media screen and (max-width: 1440px)
+        font-size: 22px
+        line-height: 30px
+    &_text
+      @extend .open-light
+      font-size: 18px
+      line-height: 27px
+      margin-top: 30px
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+  &_read_more
+    &_header
+      @extend .open-bold
+      color: $blue
+      font-size: 28px
+      margin-top: 100px
+    &_block
+      position: relative
+      margin-top: 50px
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 100%
+        height: 3px
+        bottom: -20px
+        left: 0
+        background-color: $blue
+        opacity: 0.25
+      &_title
+        @extend .open-semi
+        color: $black
+        opacity: 0.75
+        font-size: 18px
+        line-height: 24px
+        text-decoration: none
+        @media screen and (max-width: 1440px)
+          font-size: 16px
+          line-height: 22px
+      &_text
+        @extend .open-light
+        color: $black
+        opacity: 0.75
+        font-size: 16px
+        line-height: 27px
+        margin-top: 10px
+        @media screen and (max-width: 1440px)
+          font-size: 14px
+          line-height: 25px
