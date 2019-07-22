@@ -1,0 +1,162 @@
+.article_main
+  position: relative
+  width: 100%
+  margin-top: 210px
+  &_block
+    &_header
+      @extend .open-light
+      font-size: 54px
+      line-height: 74px
+      color: $blue
+      @media screen and (max-width: 1440px)
+        font-size: 40px
+        line-height: 56px
+    &_sub_header
+      @extend .open-reg
+      font-size: 24px
+      line-height: 30px
+      color: $black
+      margin-top: 40px
+      @media screen and (max-width: 1440px)
+        font-size: 20px
+        line-height: 26px
+    &_text
+      width: 80%
+      @extend .open-light
+      font-size: 18px
+      line-height: 27px
+      color: $black
+      margin-top: 50px
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+    &_image
+      width: 100%
+      overflow: hidden
+      border-radius: 10px
+      margin-top: 80px
+      font-size: 0
+      box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+      img
+        width: 100%
+    &_text2
+      width: 90%
+      @extend .open-reg
+      font-size: 18px
+      line-height: 27px
+      color: $black
+      margin-top: 115px
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+  &_objects
+    margin-top: 75px
+    &_title
+      @extend .open-semi
+      font-size: 24px
+      line-height: 33px
+      color: $black
+      @media screen and (max-width: 1440px)
+        font-size: 20px
+        line-height: 26px
+    &_list
+      padding-top: 20px
+      li
+        margin-top: 30px
+      &_image
+        width: 100%
+        overflow: hidden
+        font-size: 0
+        border-radius: 10px
+        box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+        img
+          width: 100%
+      &_text
+        display: flex
+        height: 100%
+        align-items: center
+        p
+          @extend .open-light
+          font-size: 18px
+          line-height: 27px
+          color: $black
+          @media screen and (max-width: 1440px)
+            font-size: 16px
+            line-height: 24px
+  &_video_block
+    margin-top: 115px
+    &_title
+      @extend .open-reg
+      font-size: 18px
+      line-height: 27px
+      color: $black
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+    &_watch
+      width: 100%
+      overflow: hidden
+      border-radius: 10px
+      font-size: 0
+      margin-top: 50px
+      box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+  &_portfolio
+    padding-top: 60px
+    &_text
+      p
+        @extend .open-light
+        font-size: 18px
+        line-height: 27px
+        color: $black
+        margin-top: 20px
+        @media screen and (max-width: 1440px)
+          font-size: 16px
+          line-height: 24px
+    &_image
+      width: 100%
+      overflow: hidden
+      border-radius: 10px
+      font-size: 0
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16)
+      img
+        width: 100%
+    &_btn
+      margin-top: 20px
+  &_subscription
+    margin-top: 80px
+    &_text
+      @extend .open-reg
+      font-size: 18px
+      line-height: 27px
+      color: $black
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 24px
+    &_form
+      position: relative
+      width: 100%
+      display: flex
+      justify-content: space-between
+      label
+        position: absolute
+        width: 50%
+        top: 0
+        left: 0
+        font-size: 16px
+        @extend .open-light
+        color: $dark-grey
+        opacity: 0.75
+      input
+        position: relative
+        display: inline-block
+        width: 48%
+        height: 25px
+        margin-top: 25px
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        outline: none
+        border: none
+        border-bottom: 4px solid rgba(39, 39, 39, 0.75)
+      &_btn
+        width: 48%
