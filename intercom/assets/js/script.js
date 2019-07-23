@@ -15,12 +15,32 @@ $('.text_block_list_point_title').click(function(){
         $(this).removeClass('text_block_list_point_title_open');
         return;
     };
-    $('.main_cooperate_list_point_title').removeClass('text_block_list_point_title_open');
+    $('.text_block_list_point_title').removeClass('text_block_list_point_title_open');
     var childHeight = target.children().height();
     target.animate({
         height: childHeight
     }, 400);
     $(this).addClass('text_block_list_point_title_open');
+});
+
+
+
+
+$('.vacancy_list_title').click(function(){
+    $('.vacancy_list_text_wrapper').animate({
+        height: 0
+    }, 400);
+    var target = $(this).next();
+    if ($(this).hasClass('vacancy_list_title_open')){
+        $(this).removeClass('vacancy_list_title_open');
+        return;
+    };
+    $('.vacancy_list_title').removeClass('vacancy_list_title_open');
+    var childHeight = target.children().height();
+    target.animate({
+        height: childHeight
+    }, 400);
+    $(this).addClass('vacancy_list_title_open');
 });
 
 
