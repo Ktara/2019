@@ -1,0 +1,100 @@
+.contact_main
+  position: relative
+  width: 100%
+  padding-top: 210px
+  &_map
+    position: absolute
+    width: 40%
+    height: calc(100vh - 220px)
+    display: block
+    top: 110px
+    left: 0
+  &_header
+    @extend .open-light
+    font-size: 54px
+    text-align: center
+  &_adress
+    @extend .open-reg
+    font-size: 18px
+    line-height: 27px
+    margin-top: 240px
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+      line-height: 22px
+  &_tel
+    @extend .open-reg
+    font-size: 18px
+    line-height: 27px
+    margin-top: 70px
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+      line-height: 22px
+  &_email
+    @extend .open-reg
+    font-size: 18px
+    line-height: 27px
+    margin-top: 55px
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+      line-height: 22px
+  &_time
+    @extend .open-reg
+    font-size: 18px
+    line-height: 27px
+    margin-top: 100px
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+      line-height: 22px
+  &_form_title
+    font-size: 24px
+    text-transform: uppercase
+    margin-top: 175px
+    text-align: center
+  &_form
+    position: relative
+    display: block
+    width: 100%
+    input
+      width: 100%
+      height: 50px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      font-size: 16px
+      text-indent: 20px
+      color: rgba(0, 0, 0, 1)
+      border: 1px solid $blue
+      border-radius: 10px
+      margin-top: 20px
+    input::-moz-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::-webkit-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input:-ms-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::-ms-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input:focus::placeholder
+      color: rgba(0, 0, 0, 0.5)
+      outline: none
+    textarea
+      width: 100%
+      height: 160px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      resize: none
+      overflow-y: auto
+      font-size: 16px
+      @extend .open-reg
+      color: rgba(0, 0, 0, 1)
+      border: 1px solid $blue
+      border-radius: 10px
+      margin-top: 50px
+      padding: 20px
+    &_btn
+      margin-top: 40px
