@@ -5,7 +5,6 @@ $('.nav_header_burger').click(function(){
 
 
 
-
 $('.text_block_list_point_title').click(function(){
     $('.text_block_list_point_wrapper').animate({
         height: 0
