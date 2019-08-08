@@ -5,6 +5,13 @@ $('.nav_header_burger').click(function(){
 
 
 
+$('.nav_header_langs_plus').click(function(){
+    $('.nav_header_langs').toggleClass('nav_header_langs_open');
+    $('.nav_header_langs_plus').toggleClass('nav_header_langs_plus_open');
+});
+
+
+
 $('.text_block_list_point_title').click(function(){
     $('.text_block_list_point_wrapper').animate({
         height: 0
@@ -115,8 +122,9 @@ $('.main_slider').slick({
 
 $('.review_slider').slick({
     centerMode: true,
+    centerPadding: '0',
     focusOnSelect: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     nextArrow: '<div class="main_next_arrow">Дальше</div>',
     prevArrow: '<div class="main_prev_arrow">Назад</div>',

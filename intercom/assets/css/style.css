@@ -40,7 +40,7 @@
   font-weight: 700;
   font-style: normal;
 }
-.open-reg, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .article_main_subscription_text, .article_main_video_block_title, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .about_second_text_other, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
+.open-reg, .review .slick-center_text, .review .slick-center_sub_title, .review .slick-center .review_slide_title, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .article_main_subscription_text, .article_main_video_block_title, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .about_second_text_other, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
 }
@@ -184,14 +184,57 @@
 .nav_header_langs_wrapper {
   position: relative;
   width: 100%;
+  overflow: hidden;
+}
+.nav_header .nav_header_langs_open {
+  width: 100%;
+  margin-left: 30px;
+}
+.nav_header .nav_header_langs_open li {
+  opacity: 1;
+}
+.nav_header .nav_header_langs_open .langs_active:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  right: -10px;
+  top: calc(50% - 7.5px);
+  background-color: #41C4DC;
+}
+.nav_header_langs_plus_open:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.nav_header_langs_plus_open:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .nav_header_langs {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 45px;
   height: 110px;
+  margin-left: 80%;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+@media screen and (max-width: 1440px) {
+  .nav_header_langs {
+    margin-left: 75%;
+  }
 }
 .nav_header_langs li {
+  opacity: 0;
   font-size: 14px;
   color: #000000;
   cursor: pointer;
@@ -201,6 +244,7 @@
 .nav_header_langs .langs_active {
   position: relative;
   display: inline-block;
+  opacity: 1;
   width: auto;
 }
 .nav_header_langs_plus {
@@ -208,7 +252,7 @@
   width: 15px;
   height: 15px;
   top: calc(50% - 7.5px);
-  left: 30px;
+  right: 0;
   cursor: pointer;
 }
 .nav_header_langs_plus:after {
@@ -220,6 +264,11 @@
   top: 50%;
   left: 0;
   background-color: #41C4DC;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 .nav_header_langs_plus:before {
   content: "";
@@ -230,6 +279,11 @@
   top: calc(50% - 4.5px);
   left: 4px;
   background-color: #41C4DC;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 .nav_header_burger {
   width: 100%;
@@ -3245,14 +3299,17 @@
 }
 .review_slide {
   display: block;
-  height: 15vh;
-  min-height: 365px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 33px rgba(0, 0, 0, 0.1);
-  padding: 15px 50px;
-  opacity: 0.5;
-  margin: 20px 0;
+  padding: 15px 20px;
+  opacity: 0.3;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 1440px) {
   .review_slide {
@@ -3300,11 +3357,21 @@
   opacity: 1;
   background-color: #ffffff;
   z-index: 100;
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.review .slick-center .review_slide_title {
+  font-size: 14px;
+}
+.review .slick-center_sub_title {
+  font-size: 10px;
+}
+.review .slick-center_text {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .calculator {
