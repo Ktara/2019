@@ -16,39 +16,50 @@
     text-decoration: none
     img
       width: 160px
-  &_langs
+  &_langs_wrapper
     position: relative
     width: 100%
+  &_langs
+    position: relative
+    display: flex
+    width: 100%
     height: 110px
-    overflow: hidden
     li
       @extend .open-semi
       font-size: 14px
       color: $black
       cursor: pointer
+      line-height: 110px
+      margin-right: 30px
     .langs_active
       position: relative
       display: inline-block
       width: auto
-      line-height: 110px
-      &:after
-        content: ''
-        position: absolute
-        display: block
-        width: 10px
-        height: 2px
-        top: 50%
-        right: -20px
-        background-color: $blue
-      &:before
-        content: ''
-        position: absolute
-        display: block
-        width: 2px
-        height: 10px
-        top: calc(50% - 4.5px)
-        right: -15.5px
-        background-color: $blue
+  &_langs_plus
+    position: absolute
+    width: 15px
+    height: 15px
+    top: calc(50% - 7.5px)
+    left: 30px
+    cursor: pointer
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 10px
+      height: 2px
+      top: 50%
+      left: 0
+      background-color: $blue
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 2px
+      height: 10px
+      top: calc(50% - 4.5px)
+      left: 4px
+      background-color: $blue
   &_burger
     width: 100%
     height: 100px

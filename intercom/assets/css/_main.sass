@@ -2,17 +2,75 @@
   position: relative
   width: 100%
   height: 100vh
-  background-repeat: no-repeat
-  -webkit-background-size: cover
-  background-size: cover
-  .filter
+  &_slide
+    position: relative
+    width: 100%
+    height: calc(100vh - 60px)
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    .filter
+      position: absolute
+      display: block
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background: linear-gradient(90deg, rgba(63, 70, 75, 0.7), rgba(13, 14, 15, 0))
+  .main_next_arrow
     position: absolute
     display: block
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-    background: linear-gradient(90deg, rgba(63, 70, 75, 0.7), rgba(13, 14, 15, 0))
+    width: auto
+    bottom: -30px
+    right: 6vw
+    cursor: pointer
+  .main_prev_arrow
+    position: absolute
+    display: block
+    width: auto
+    bottom: -30px
+    right: calc(6vw + 100px)
+    cursor: pointer
+  //.slick-dots:nth-child(end) li:after
+  //    width: 0
+  .slick-dots
+    position: absolute
+    display: flex
+    bottom: -30px
+    left: 10vw
+    .slick-active
+      position: relative
+      margin-right: 90px
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 70px
+        height: 1px
+        bottom: 0
+        right: -80px
+        background-color: $blue
+    li
+      margin-right: 20px
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      &:after
+        content: ''
+        position: absolute
+        display: none
+        width: 0
+        height: 1px
+        bottom: 0
+        right: -80px
+        background-color: $blue
+        -webkit-transition: all 0.6s
+        -moz-transition: all 0.6s
+        -ms-transition: all 0.6s
+        -o-transition: all 0.6s
+        transition: all 0.6s
   &_text
     display: inline-block
     width: 100%
@@ -45,7 +103,7 @@
     border: 0.5px solid rgba(0,0,0,0.16)
     width: 80px
     height: 80px
-    bottom: 50px
+    bottom: 100px
     right: 25px
     z-index: 20
     cursor: pointer
@@ -162,10 +220,54 @@
         -webkit-text-stroke: 0.5px black
         left: -170%
         text-shadow: $black 0 0 0.5px
-
-
-
-
-
-
-
+  &_block
+    position: absolute
+    width: calc(100% - 10vw)
+    bottom: 90px
+    left: 5vw
+    .row
+      align-items: flex-end
+    &_product
+      position: relative
+      display: inline-block
+      width: 100%
+      height: 10vh
+      min-height: 170px
+      overflow: hidden
+      border-radius: 10px
+      text-decoration: none
+      background-repeat: no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+      background-position: center
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      @media screen and (max-width: 1440px)
+        min-height: 150px
+      &:hover
+        min-height: 340px
+        @media screen and (max-width: 1440px)
+          min-height: 300px
+      &_title
+        position: absolute
+        display: block
+        width: auto
+        bottom: 20px
+        left: 20px
+        @extend .rel-bold
+        font-size: 32px
+        color: $white
+        z-index: 2
+        @media screen and (max-width: 1440px)
+          font-size: 28px
+      .filter
+        position: absolute
+        display: block
+        width: 100%
+        height: 100px
+        bottom: 0
+        left: 0
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.7))

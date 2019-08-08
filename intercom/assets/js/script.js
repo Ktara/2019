@@ -92,3 +92,34 @@ $('.project_about_slider_wrapper').slick({
         return i + 1 + '/' + length;
     }
 });
+
+
+
+
+$('.main_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<div class="main_next_arrow">Дальше</div>',
+    prevArrow: '<div class="main_prev_arrow">Назад</div>',
+    dots: true,
+    arrows: true,
+    customPaging : function(slider, i) {
+        var length = slider.$slides.length;
+        $('.main_count').text(length);
+        return i + 1 + length;
+    }
+});
+
+
+
+
+$('.review_slider').slick({
+    centerMode: true,
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: '<div class="main_next_arrow">Дальше</div>',
+    prevArrow: '<div class="main_prev_arrow">Назад</div>',
+    dots: true,
+    arrows: true
+});
