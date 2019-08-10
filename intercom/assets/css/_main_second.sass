@@ -2,6 +2,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 420px)
+    margin-top: 80px
   &_text
     @extend .open-it
     font-size: 18px
@@ -9,29 +11,43 @@
     opacity: 0.5
     text-align: right
     margin-top: 20px
+    @media screen and (max-width: 420px)
+      margin-top: 0
+      font-size: 16px
   &_header
     @extend .open-semi
     font-size: 32px
     color: $black
     margin-top: 60px
     text-align: right
+    @media screen and (max-width: 420px)
+      font-size: 28px
+      margin-top: 35px
   &_sub_header
     font-size: 18px
     color: $black
     opacity: 0.75
     margin-top: 20px
     text-align: right
+    @media screen and (max-width: 420px)
+      font-size: 16px
   &_image
     width: 100%
     height: 30vh
     min-height: 400px
     border-radius: 10px
     overflow: hidden
+    @media screen and (max-width: 780px)
+      min-height: 300px
+    @media screen and (max-width: 420px)
+      margin-top: 20px
     img
       height: 100%
       min-width: 100%
   &_box_wrapper
     margin-top: 35px
+    @media screen and (max-width: 420px)
+      margin-top: 0
   &_box_wrapper .col-lg-4:nth-child(2) .main_second_box_decor
     left: auto
     right: 20px
@@ -55,6 +71,8 @@
     overflow: hidden
     @media screen and (max-width: 1440px)
       min-height: 300px
+    @media screen and (max-width: 420px)
+      margin-top: 30px
     &:hover
       .main_second_box_link
         opacity: 0.75
@@ -85,6 +103,14 @@
       @media screen and (max-width: 1440px)
         font-size: 24px
         left: 20px
+      @media screen and (max-width: 780px)
+        width: 50%
+        left: 25%
+        text-align: center
+      @media screen and (max-width: 420px)
+        left: 10px
+        text-align: left
+        font-size: 18px
     &_decor
       position: absolute
       display: block
@@ -138,6 +164,9 @@
       -o-transition: top 0.6s
       transition: top 0.6s
       @media screen and (max-width: 1440px)
+        font-size: 16px
+      @media screen and (max-width: 420px)
+        padding-top: 15px
         font-size: 16px
 
 

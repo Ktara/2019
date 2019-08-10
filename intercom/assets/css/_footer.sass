@@ -5,21 +5,29 @@
   -webkit-background-size: cover
   background-size: cover
   margin-top: 150px
+  @media screen and (max-width: 780px)
+    margin-top: 80px
   &_text
     font-size: 16px
     line-height: 24px
     color: $black
     margin-top: 20px
+    @media screen and (max-width: 780px)
+      margin-top: 0
   &_contact
     font-size: 16px
     line-height: 24px
     color: $black
+    @media screen and (max-width: 780px)
+      margin-top: 50px
   &_social
     display: flex
     justify-content: space-between
     align-items: center
     width: 100%
     height: 45px
+    @media screen and (max-width: 780px)
+      margin-top: 50px
     a
       text-decoration: none
       width: 40px
@@ -34,6 +42,8 @@
     width: 100%
     margin-top: 40px
     margin-bottom: 30px
+    @media screen and (max-width: 780px)
+      display: none
     &:after
       content: ''
       position: absolute
@@ -51,6 +61,8 @@
     opacity: 0.75
     margin-top: 30px
     margin-bottom: 50px
+    @media screen and (max-width: 780px)
+      margin-top: 50px
   &_menu
     width: 100%
     display: flex
@@ -70,6 +82,8 @@
     width: 100%
     display: flex
     justify-content: space-between
+    @media screen and (max-width: 780px)
+      margin-top: 50px
     label
       position: absolute
       width: 50%

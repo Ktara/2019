@@ -2,6 +2,8 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 420px)
+    margin-top: 80px
   &_image
     position: relative
     width: 100%
@@ -9,14 +11,22 @@
     overflow: hidden
     border-radius: 10px
     box-shadow: 0 3px 6px rgba(0,0,0,0.16)
+    @media screen and (max-width: 780px)
+      height: 500px
+    @media screen and (max-width: 420px)
+      height: 300px
     img
       position: absolute
       height: 100%
       min-width: 100%
       right: -60%
+      @media screen and (max-width: 420px)
+        right: -30%
   &_text_wrapper
     position: relative
     width: 100%
+    @media screen and (max-width: 420px)
+      margin-top: 20px
     &_title
       @extend .open-semi
       font-size: 24px
@@ -47,11 +57,22 @@
       margin-bottom: 20px
       @media screen and (max-width: 1440px)
         font-size: 16px
+  .about_input_wrapper
+    @media screen and (max-width: 780px)
+      display: flex
+      flex-direction: column
+      width: 48%
+      float: left
+    @media screen and (max-width: 420px)
+      width: 100%
   &_form_wrapper
     position: relative
     width: 100%
     box-shadow: -10px 10px 20px rgba(0,0,0,0.06)
     padding-bottom: 90px
+    @media screen and (max-width: 780px)
+      margin-top: 50px
+      padding-bottom: 40px
   &_form_title_wrapper
     width: 100%
     height: 100px
@@ -68,6 +89,10 @@
     width: calc(100% - 100px)
     margin-left: 50px
     margin-top: 70px
+    @media screen and (max-width: 420px)
+      margin-top: 30px
+      width: calc(100% - 30px)
+      margin-left: 15px
     input
       width: 100%
       height: 50px
@@ -110,5 +135,20 @@
       border-radius: 10px
       margin-top: 50px
       padding: 20px
+      @media screen and (max-width: 780px)
+        width: 48%
+        height: 120px
+        display: inline-block
+        margin-top: 20px
+        margin-left: 4%
+      @media screen and (max-width: 420px)
+        width: 100%
+        margin-left: 0
     &_btn
       margin-top: 40px
+      @media screen and (max-width: 780px)
+        width: 56%
+        margin-left: 22%
+      @media screen and (max-width: 420px)
+        width: 100%
+        margin-left: 0

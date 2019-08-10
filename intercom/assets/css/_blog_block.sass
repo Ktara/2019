@@ -2,14 +2,24 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 420px)
+    margin-top: 80px
   .col-lg-3:nth-child(1) .blog_box
     margin-top: 75px
+    @media screen and (max-width: 780px)
+      margin-top: 30px
   .col-lg-3:nth-child(2) .blog_box
     margin-top: 125px
+    @media screen and (max-width: 780px)
+      margin-top: 30px
   .col-lg-3:nth-child(3) .blog_box
     margin-top: 15px
+    @media screen and (max-width: 780px)
+      display: none
   .col-lg-3:nth-child(4) .blog_box
     margin-top: 100px
+    @media screen and (max-width: 780px)
+      display: none
   &_box
     position: relative
     width: 100%

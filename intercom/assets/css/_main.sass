@@ -9,6 +9,8 @@
     background-repeat: no-repeat
     -webkit-background-size: cover
     background-size: cover
+    @media screen and (max-width: 420px)
+      background-position: center
     .filter
       position: absolute
       display: block
@@ -22,8 +24,36 @@
     display: block
     width: auto
     bottom: -30px
-    right: 6vw
+    right: calc(5vw + 20px)
     cursor: pointer
+    &:after
+      content: ''
+      position: absolute
+      width: 10px
+      height: 1px
+      top: 5px
+      right: -20px
+      background-color: $black
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+      opacity: 0.75
+    &:before
+      content: ''
+      position: absolute
+      width: 10px
+      height: 1px
+      bottom: 4px
+      right: -20px
+      background-color: $black
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      opacity: 0.75
   .main_prev_arrow
     position: absolute
     display: block
@@ -31,8 +61,8 @@
     bottom: -30px
     right: calc(6vw + 100px)
     cursor: pointer
-  //.slick-dots:nth-child(end) li:after
-  //    width: 0
+  .slick-dots li:last-child:after
+      width: 0
   .slick-dots
     position: absolute
     display: flex
@@ -79,6 +109,8 @@
     font-size: 18px
     opacity: 0.85
     margin-top: 35vh
+    @media screen and (max-width: 420px)
+      font-size: 16px
   &_header
     display: inline-block
     width: 100%
@@ -86,6 +118,8 @@
     font-size: 50px
     color: $white
     margin-top: 50px
+    @media screen and (max-width: 420px)
+      font-size: 36px
   &_sub_header
     display: inline-block
     width: 100%
@@ -93,6 +127,8 @@
     font-size: 24px
     color: $white
     margin-top: 10px
+    @media screen and (max-width: 420px)
+      font-size: 20px
   &_btn
     margin-top: 50px
   &_media_wrapper
@@ -108,22 +144,24 @@
     z-index: 20
     cursor: pointer
     box-shadow: 0 0 33px rgba(0,0,0,0.16)
-    &:hover
-      .main_media_wrapper_first
-        opacity: 1
-        z-index: 20
-        top: -60px
-        right: 15px
-      .main_media_wrapper_second
-        opacity: 1
-        z-index: 20
-        top: -40px
-        right: 70px
-      .main_media_wrapper_third
-        opacity: 1
-        z-index: 20
-        top: 15px
-        right: 90px
+    //-webkit-transform: translateZ(0)
+    //transform: translateZ(0)
+    //&:hover
+    //  .main_media_wrapper_first
+    //    opacity: 1
+    //    z-index: 20
+    //    top: -60px
+    //    right: 15px
+    //  .main_media_wrapper_second
+    //    opacity: 1
+    //    z-index: 20
+    //    top: -40px
+    //    right: 70px
+    //  .main_media_wrapper_third
+    //    opacity: 1
+    //    z-index: 20
+    //    top: 15px
+    //    right: 90px
     .main_media_wrapper_dots
       display: flex
       flex-direction: row
@@ -225,6 +263,8 @@
     width: calc(100% - 10vw)
     bottom: 90px
     left: 5vw
+    @media screen and (max-width: 420px)
+      display: none
     .row
       align-items: flex-end
     &_product
@@ -271,3 +311,6 @@
         bottom: 0
         left: 0
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.7))
+  .slick-dots
+    @media screen and (max-width: 420px)
+      display: none !important
