@@ -2606,6 +2606,13 @@
     margin-left: 10px;
   }
 }
+@media screen and (max-width: 780px) {
+  .blog_main_sort li {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 16px;
+  }
+}
 .blog_main_sort .active_point_sort {
   color: #ffffff;
   background-color: #41C4DC;
@@ -2632,6 +2639,12 @@
 .blog_main_block_image img {
   position: absolute;
   width: 100%;
+}
+@media screen and (max-width: 780px) {
+  .blog_main_block_image img {
+    width: auto;
+    height: 100%;
+  }
 }
 .blog_main_block_title {
   display: block;

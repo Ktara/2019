@@ -39,6 +39,10 @@
       @media screen and (max-width: 1440px)
         margin-right: 10px
         margin-left: 10px
+      @media screen and (max-width: 780px)
+        margin-right: 0
+        margin-left: 0
+        font-size: 16px
     .active_point_sort
       color: $white
       background-color: $blue
@@ -58,6 +62,9 @@
       img
         position: absolute
         width: 100%
+        @media screen and (max-width: 780px)
+          width: auto
+          height: 100%
     &_title
       display: block
       @extend .open-semi
