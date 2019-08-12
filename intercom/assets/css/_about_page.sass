@@ -3,6 +3,13 @@
   display: flex
   width: 100%
   margin-top: 210px
+  @media screen and (max-width: 780px)
+    flex-direction: column
+    margin-left: 5vw
+  @media screen and (max-width: 420px)
+    margin-left: 0
+    padding: 0 5vw
+    margin-top: 160px
   &_header
     display: inline-block
     width: 40%
@@ -14,6 +21,14 @@
     @media screen and (max-width: 1440px)
       font-size: 34px
       line-height: 45px
+    @media screen and (max-width: 780px)
+      width: 100%
+      margin-top: 50px
+      margin-right: 0
+      margin-left: 0
+    @media screen and (max-width: 420px)
+      font-size: 22px
+      line-height: 30px
   &_video
     display: inline-block
     width: 55%
@@ -21,6 +36,13 @@
     min-height: 500px
     border-radius: 10px 0 0 10px
     overflow: hidden
+    @media screen and (max-width: 780px)
+      width: 100%
+      order: -1
+    @media screen and (max-width: 420px)
+      height: 25vh
+      min-height: 250px
+      border-radius: 10px
 
 
 
@@ -44,6 +66,8 @@
     margin-top: 110px
     @media screen and (max-width: 1440px)
       font-size: 44px
+    @media screen and (max-width: 420px)
+      font-size: 36px
     &_list
       margin-top: 50px
       li
@@ -93,11 +117,15 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 420px)
+    margin-top: 80px
   &_header
     @extend .open-semi
     font-size: 54px
     @media screen and (max-width: 1440px)
       font-size: 44px
+    @media screen and (max-width: 420px)
+      font-size: 36px
   &_block
     margin-top: 50px
     &_title
@@ -128,11 +156,15 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 420px)
+    margin-top: 80px
   &_header
     @extend .open-semi
     font-size: 54px
     @media screen and (max-width: 1440px)
       font-size: 44px
+    @media screen and (max-width: 420px)
+      font-size: 36px
   &_text_wrapper
     margin-top: 10px
   &_title
@@ -155,12 +187,23 @@
   &_image_wrapper
     position: relative
     width: 100%
+    @media screen and (max-width: 780px)
+      margin-top: 50px
+      min-height: 650px
+    @media screen and (max-width: 420px)
+      min-height: 400px
   &_image_first
     width: 100%
     border-radius: 10px
     overflow: hidden
     box-shadow: 0 15px 20px rgba(0,0,0,0.16)
     font-size: 0
+    @media screen and (max-width: 780px)
+      width: 80%
+      margin-left: 20%
+    @media screen and (max-width: 420px)
+      width: 100%
+      margin-left: 0
     img
       width: 100%
   &_image_second
@@ -172,6 +215,12 @@
     border-radius: 10px
     overflow: hidden
     box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+    @media screen and (max-width: 780px)
+      width: 65%
+      top: 300px
+    @media screen and (max-width: 420px)
+      height: 150px
+      top: 150px
     img
       height: 100%
   &_image_third
@@ -183,8 +232,16 @@
     border-radius: 10px
     overflow: hidden
     box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+    @media screen and (max-width: 780px)
+      width: 65%
+      top: 450px
+    @media screen and (max-width: 420px)
+      height: 150px
+      top: 250px
     img
       width: 100%
+      @media screen and (max-width: 420px)
+        height: 100%
 
 
 
@@ -194,14 +251,24 @@
   position: relative
   width: 100%
   margin-top: 120px
+  @media screen and (max-width: 420px)
+    margin-top: 80px
   .row .col-lg-5 .about_team_image:nth-child(1)
     height: 415px
+    @media screen and (max-width: 780px)
+      height: auto
   .row .col-lg-5 .about_team_image:nth-child(2)
     height: 500px
+    @media screen and (max-width: 780px)
+      height: auto
   .row .col-lg-7 .about_team_image:nth-child(1)
     height: 585px
+    @media screen and (max-width: 780px)
+      height: auto
   .row .col-lg-7 .about_team_image:nth-child(2)
     height: 330px
+    @media screen and (max-width: 780px)
+      height: auto
     img
       width: 100%
       height: auto
@@ -216,6 +283,8 @@
     @media screen and (max-width: 1440px)
       font-size: 16px
       line-height: 24px
+    @media screen and (max-width: 780px)
+      width: 100%
   &_image
     position: relative
     width: 100%
@@ -224,6 +293,9 @@
     margin-top: 30px
     img
       height: 100%
+      @media screen and (max-width: 420px)
+        width: 100%
+        height: auto
 
 
 
@@ -245,6 +317,8 @@
     display: block
     width: 25%
     margin: 50px auto 0 auto
+    @media screen and (max-width: 420px)
+      width: 100%
   &_text
     @extend .open-reg
     font-size: 18px

@@ -174,7 +174,15 @@ $('.gallery_slider').slick({
         $('.gallery_count').text(length);
         var idx = i + 1;
         return '0' + idx;
-    }
+    },
+    responsive: [
+        {
+            breakpoint: 420,
+            settings: {
+                dots: false
+            }
+        }
+    ]
 });
 $('.gallery_slider_nav').slick({
     centerMode: true,
