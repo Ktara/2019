@@ -3332,6 +3332,7 @@
 }
 .partners_cooperate_block_image img {
   height: 100%;
+  min-width: 100%;
 }
 @media screen and (max-width: 780px) {
   .partners_cooperate_block_image img {
