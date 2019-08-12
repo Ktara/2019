@@ -20,26 +20,29 @@
 
     <header class="nav_header">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2">
-                    <a href="/2019/intercom/index.html" class="nav_header_logo">
+            <div class="row no-gutters">
+                <div class="col-lg-2 col-md-2 col-3">
+                    <a href="index.html" class="nav_header_logo">
                         <img src="assets/img/logo/logo-new.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-1 offset-lg-8">
-                    <ul class="nav_header_langs">
-                        <li>
-                            Рус
-                        </li>
-                        <li>
-                            Eng
-                        </li>
-                        <li>
-                            Укр
-                        </li>
-                    </ul>
+                <div class="col-lg-2 offset-lg-7 col-md-4 offset-md-5 col-7 offset-0">
+                    <div class="nav_header_langs_wrapper">
+                        <ul class="nav_header_langs">
+                            <li class="langs_active">
+                                Рус
+                            </li>
+                            <li>
+                                Eng
+                            </li>
+                            <li>
+                                Укр
+                            </li>
+                        </ul>
+                        <div class="nav_header_langs_plus"></div>
+                    </div>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-lg-1 col-md-1 col-2">
                     <div class="nav_header_burger">
 
                     </div>
@@ -60,7 +63,7 @@
                         Контакты
                     </div>
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-md-12">
                             <div class="contact_main_adress">
                                 <p>
                                     г. Киев
@@ -72,33 +75,37 @@
                                     офис 110 &laquo;Бассейны Сауны&raquo; (м.Нивки)
                                 </p>
                             </div>
-                            <div class="contact_main_tel">
-                                <p>
-                                    + 380 (44) 206 10 10
-                                </p>
-                                <p>
-                                    + 380 (67) 620 22 25
-                                </p>
-                            </div>
-                            <div class="contact_main_email">
-                                info@intercom.in.ua
-                            </div>
-                            <div class="contact_main_time">
-                                <p>
-                                    Пн-Пт: с&nbsp;9:00 до&nbsp;18:00
-                                </p>
-                                <p>
-                                    Сб-Вс&nbsp;&mdash; выходные
-                                </p>
+                            <div class="contact_main_wrapper">
+                                <div class="contact_main_tel">
+                                    <p>
+                                        + 380 (44) 206 10 10
+                                    </p>
+                                    <p>
+                                        + 380 (67) 620 22 25
+                                    </p>
+                                </div>
+                                <div class="contact_main_email">
+                                    info@intercom.in.ua
+                                </div>
+                                <div class="contact_main_time">
+                                    <p>
+                                        Пн-Пт: с&nbsp;9:00 до&nbsp;18:00
+                                    </p>
+                                    <p>
+                                        Сб-Вс&nbsp;&mdash; выходные
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-2">
+                        <div class="col-lg-5 offset-lg-2 col-12 offset-0">
                             <div class="contact_main_form_title">
                                 Связатся с нами
                             </div>
                             <form action="" class="contact_main_form">
-                                <input type="text" placeholder="Имя*">
-                                <input type="email" placeholder="Емейл*">
+                                <div class="contact_main_input_wrapper">
+                                    <input type="text" placeholder="Имя*">
+                                    <input type="email" placeholder="Емейл*">
+                                </div>
                                 <textarea name="" placeholder="Сообщение"></textarea>
                                 <button type="submit" class="contact_main_form_btn light_btn">Отправить</button>
                             </form>
@@ -113,7 +120,7 @@
 
     <section class="popup_nav_menu">
         <div class="row no-gutters">
-            <div class="col-lg-3 offset-lg-9">
+            <div class="col-lg-3 offset-lg-9 col-md-6 offset-md-6 col-12 offset-0">
                 <div class="popup_nav_menu_wrapper">
                     <ul class="popup_nav_menu_list">
                         <li>
@@ -215,13 +222,13 @@
     <footer class="footer" style="background-image: url(assets/img/photo/footer-back.svg)">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12">
                     <div class="footer_text">
                         Копіювання, тиражування, передрук, розміщення в інтернеті матеріалів з сайту www.intercom.in.ua
                         можливе тільки з письмового дозволу. Зв'язатися з нами.
                     </div>
                 </div>
-                <div class="col-lg-3 offset-lg-3">
+                <div class="col-lg-3 offset-lg-3 col-md-6 offset-md-0 col-12">
                     <div class="footer_contact">
                         <p>
                             Телефон: +380(44) 206-10-10
@@ -232,7 +239,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-lg-1 offset-lg-0 col-md-2 offset-md-3 col-4 offset-4">
                     <div class="footer_social">
                         <a href="">
                             <img src="assets/img/icon/facebook.svg" alt="">
@@ -298,12 +305,12 @@
 
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-12">
                     <div class="footer_copy">
                         © intercom 2019
                     </div>
                 </div>
-                <div class="col-lg-4 offset-lg-5">
+                <div class="col-lg-4 offset-lg-5 col-md-8 offset-md-0 col-12">
                     <form action="" class="footer_form">
                         <input id="email" type="email"><label for="email">Емейл</label>
                         <button type="submit" class="footer_form_btn btn">
