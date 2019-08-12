@@ -11,11 +11,18 @@
     display: flex
     width: calc(100% - 5vw)
     margin-top: 70px
+    @media screen and (max-width: 780px)
+      display: inline-block
   &_image
     width: 45%
     display: inline-block
     overflow: hidden
     border-radius: 0 10px 10px 0
+    @media screen and (max-width: 780px)
+      width: 100%
+      height: 400px
+    @media screen and (max-width: 420px)
+      height: 250px
     img
       height: 100%
       -webkit-transform: translate(-30%, 0)
@@ -23,11 +30,29 @@
       -ms-transform: translate(-30%, 0)
       -o-transform: translate(-30%, 0)
       transform: translate(-30%, 0)
+      @media screen and (max-width: 780px)
+        height: auto
+        width: 100%
+        -webkit-transform: translate(0, -15%)
+        -moz-transform: translate(0, -15%)
+        -ms-transform: translate(0, -15%)
+        -o-transform: translate(0, -15%)
+        transform: translate(0, -15%)
+      @media screen and (max-width: 420px)
+        height: 100%
+        width: auto
+        -webkit-transform: translate(0)
+        -moz-transform: translate(0)
+        -ms-transform: translate(0)
+        -o-transform: translate(0)
+        transform: translate(0)
   &_block
     display: inline-block
     width: 54.5%
     padding-top: 50px
     margin-left: 30px
+    @media screen and (max-width: 780px)
+      width: 100%
     &_text
       width: 80%
       @extend .open-light
@@ -36,11 +61,20 @@
       @media screen and (max-width: 1440px)
         font-size: 16px
         line-height: 24px
+      @media screen and (max-width: 780px)
+        width: 90%
     &_btn
       width: 35%
       margin-top: 50px
+      @media screen and (max-width: 780px)
+        width: 50%
+      @media screen and (max-width: 420px)
+        width: calc(100% - 10vw)
   &_box_wrapper
     margin-top: 35px
+    @media screen and (max-width: 420px)
+      position: relative
+      margin-right: 10vw
   &_box_wrapper .col-lg-4:nth-child(2) .partners_main_box_decor
     left: auto
     right: 20px
@@ -64,6 +98,8 @@
     overflow: hidden
     @media screen and (max-width: 1440px)
       min-height: 300px
+    @media screen and (max-width: 420px)
+      margin-top: 20px
     &:hover
       .partners_main_box_link
         opacity: 0.75
@@ -163,11 +199,19 @@
     @media screen and (max-width: 1440px)
       font-size: 16px
       line-height: 24px
+    @media screen and (max-width: 780px)
+      margin-top: 20px
   &_btn
     position: absolute
     width: 23%
     right: 0
     bottom: 0
+    @media screen and (max-width: 780px)
+      position: relative
+      width: 50%
+      margin-top: 50px
+    @media screen and (max-width: 420px)
+      width: 100%
 
 
 
@@ -188,6 +232,8 @@
         height: 200px
       img
         height: 100%
+        @media screen and (max-width: 780px)
+          min-width: 100%
     &_title
       @extend .open-semi
       font-size: 24px
@@ -198,3 +244,7 @@
       line-height: 24px
       color: $black
       margin-top: 20px
+  .fix
+    @media screen and (max-width: 780px)
+      padding-left: 15px
+      padding-right: 15px
