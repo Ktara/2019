@@ -2710,6 +2710,11 @@
   width: 100%;
   margin-top: 210px;
 }
+@media screen and (max-width: 420px) {
+  .article_main {
+    margin-top: 180px;
+  }
+}
 .article_main_block_header {
   font-size: 54px;
   line-height: 74px;
@@ -2719,6 +2724,12 @@
   .article_main_block_header {
     font-size: 40px;
     line-height: 56px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .article_main_block_header {
+    font-size: 26px;
+    line-height: 30px;
   }
 }
 .article_main_block_sub_header {
@@ -2746,6 +2757,11 @@
     line-height: 24px;
   }
 }
+@media screen and (max-width: 420px) {
+  .article_main_block_text {
+    width: 100%;
+  }
+}
 .article_main_block_image {
   width: 100%;
   overflow: hidden;
@@ -2756,6 +2772,11 @@
 }
 .article_main_block_image img {
   width: 100%;
+}
+@media screen and (max-width: 420px) {
+  .article_main_block_image {
+    margin-top: 30px;
+  }
 }
 .article_main_block_text2 {
   width: 90%;
@@ -2768,6 +2789,11 @@
   .article_main_block_text2 {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .article_main_block_text2 {
+    margin-top: 50px;
   }
 }
 .article_main_objects {
@@ -2819,6 +2845,11 @@
 .article_main_video_block {
   margin-top: 115px;
 }
+@media screen and (max-width: 420px) {
+  .article_main_video_block {
+    margin-top: 50px;
+  }
+}
 .article_main_video_block_title {
   font-size: 18px;
   line-height: 27px;
@@ -2832,11 +2863,17 @@
 }
 .article_main_video_block_watch {
   width: 100%;
+  height: 500px;
   overflow: hidden;
   border-radius: 10px;
   font-size: 0;
   margin-top: 50px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.16);
+}
+@media screen and (max-width: 420px) {
+  .article_main_video_block_watch {
+    height: 250px;
+  }
 }
 .article_main_portfolio {
   padding-top: 60px;
@@ -2859,6 +2896,11 @@
   border-radius: 10px;
   font-size: 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (max-width: 420px) {
+  .article_main_portfolio_image {
+    margin-top: 30px;
+  }
 }
 .article_main_portfolio_image img {
   width: 100%;
@@ -2885,6 +2927,11 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 420px) {
+  .article_main_subscription_form {
+    margin-top: 30px;
+  }
 }
 .article_main_subscription_form label {
   position: absolute;
@@ -4444,6 +4491,11 @@
 @media screen and (max-width: 1440px) {
   .other_elements_box_image {
     min-height: 335px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .other_elements_box_image {
+    min-height: 285px;
   }
 }
 .other_elements_box_image img {
