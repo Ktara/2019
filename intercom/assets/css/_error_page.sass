@@ -18,8 +18,18 @@
     background-attachment: fixed
     margin-top: 30px
     margin-left: 10%
+    @media screen and (max-width: 780px)
+      height: 280px
+    @media screen and (max-width: 420px)
+      height: 180px
     svg
       width: 100%
       text
         font-size: 34px
         @extend .open-extra
+  &_btn
+    @media screen and (max-width: 420px)
+      margin-top: 30px
+  &_sub_btn
+    @media screen and (max-width: 420px)
+      margin-top: 30px

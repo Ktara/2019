@@ -3714,11 +3714,31 @@
   margin-top: 30px;
   margin-left: 10%;
 }
+@media screen and (max-width: 780px) {
+  .error_main_font_wrapper {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .error_main_font_wrapper {
+    height: 180px;
+  }
+}
 .error_main_font_wrapper svg {
   width: 100%;
 }
 .error_main_font_wrapper svg text {
   font-size: 34px;
+}
+@media screen and (max-width: 420px) {
+  .error_main_btn {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .error_main_sub_btn {
+    margin-top: 30px;
+  }
 }
 
 .popup_nav_menu {
