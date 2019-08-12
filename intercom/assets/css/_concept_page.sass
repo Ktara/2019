@@ -2,12 +2,21 @@
   position: relative
   width: 100%
   margin-top: 210px
+  @media screen and (max-width: 420px)
+    margin-top: 180px
   &_header
     @extend .open-light
     font-size: 54px
     color: $black
+    @media screen and (max-width: 420px)
+      font-size: 36px
   &_btn
     margin-top: 100px
+  &_btn2
+    display: none
+    @media screen and (max-width: 780px)
+      display: block
+      margin-top: 50px
   &_text
     font-size: 18px
     line-height: 27px
@@ -15,6 +24,8 @@
     @media screen and (max-width: 1440px)
       font-size: 16px
       line-height: 24px
+    @media screen and (max-width: 780px)
+      margin-top: 50px
 
 
 
