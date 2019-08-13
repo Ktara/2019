@@ -63,6 +63,10 @@ $purple: #5B73BF
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
+  @media screen and (max-width: 1440px)
+    height: 45px
+    line-height: 43px
+    font-size: 16px
   &:hover
     border: 2px solid $dark-blue
     background-color: $dark-blue
@@ -86,6 +90,10 @@ $purple: #5B73BF
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
+  @media screen and (max-width: 1440px)
+    height: 45px
+    line-height: 43px
+    font-size: 16px
   &:hover
     border: 2px solid $light-blue
     background-color: $light-blue
@@ -97,17 +105,17 @@ $purple: #5B73BF
   display: inline-block
   width: auto
   @extend .open-semi
-  font-size: 54px
+  font-size: 44px
   color: $dark-grey
   border: 2px solid $blue
   border-radius: 10px 10px 10px 0
-  padding: 15px 75px
+  padding: 10px 40px
   margin-bottom: 35px
   @media screen and (max-width: 1440px)
-    font-size: 44px
+    font-size: 32px
   @media screen and (max-width: 420px)
     font-size: 32px
-    padding: 15px 25px
+    padding: 10px 25px
   &:after
     content: ''
     position: absolute

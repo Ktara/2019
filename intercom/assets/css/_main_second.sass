@@ -1,9 +1,9 @@
 .main_second
   position: relative
   width: 100%
-  margin-top: 120px
+  margin-top: 70px
   @media screen and (max-width: 420px)
-    margin-top: 80px
+    margin-top: 50px
   &_text
     @extend .open-it
     font-size: 18px
@@ -16,34 +16,36 @@
       font-size: 16px
   &_header
     @extend .open-semi
-    font-size: 32px
+    font-size: 26px
     color: $black
-    margin-top: 60px
+    margin-top: 30px
     text-align: right
+    @media screen and (max-width: 1440px)
+      font-size: 22px
     @media screen and (max-width: 420px)
-      font-size: 28px
-      margin-top: 35px
+      font-size: 16px
   &_sub_header
-    font-size: 18px
+    font-size: 16px
     color: $black
     opacity: 0.75
     margin-top: 20px
     text-align: right
-    @media screen and (max-width: 420px)
-      font-size: 16px
+    @media screen and (max-width: 1440px)
+      font-size: 14px
   &_image
     width: 100%
     height: 30vh
-    min-height: 400px
+    min-height: 280px
     border-radius: 10px
     overflow: hidden
     @media screen and (max-width: 780px)
-      min-height: 300px
+      min-height: 250px
     @media screen and (max-width: 420px)
       margin-top: 20px
     img
-      height: 100%
-      min-width: 100%
+      width: 100%
+      //height: 100%
+      //min-width: 100%
   &_box_wrapper
     margin-top: 35px
     @media screen and (max-width: 420px)
@@ -70,7 +72,7 @@
     cursor: pointer
     overflow: hidden
     @media screen and (max-width: 1440px)
-      min-height: 300px
+      min-height: 200px
     @media screen and (max-width: 420px)
       margin-top: 30px
     &:hover
@@ -79,14 +81,12 @@
       .main_second_box_text
         top: 0
     &_image
-      width: 180px
       height: 160px
       margin-top: 40px
       margin-left: 35px
       opacity: 0.5
       @media screen and (max-width: 1440px)
-        width: 150px
-        height: 130px
+        height: 60px
         margin-top: 25px
       img
         height: 100%
@@ -101,7 +101,7 @@
       font-size: 28px
       color: $black
       @media screen and (max-width: 1440px)
-        font-size: 24px
+        font-size: 18px
         left: 20px
       @media screen and (max-width: 780px)
         width: 50%
@@ -119,8 +119,8 @@
       top: calc(50% - 40px)
       left: calc(50% - 40px)
       @media screen and (max-width: 1440px)
-        width: 60px
-        height: 60px
+        width: 40px
+        height: 40px
         top: calc(50% - 30px)
         left: 50%
       img
@@ -143,6 +143,7 @@
       -o-transition: opacity 0.6s
       transition: opacity 0.6s
       @media screen and (max-width: 1440px)
+        font-size: 14px
         right: 15px
         bottom: 22px
     &_text
@@ -164,10 +165,12 @@
       -o-transition: top 0.6s
       transition: top 0.6s
       @media screen and (max-width: 1440px)
-        font-size: 16px
-      @media screen and (max-width: 420px)
-        padding-top: 15px
-        font-size: 16px
+        top: -65%
+        height: 65%
+        padding-top: 5px
+        padding-left: 10px
+        padding-right: 10px
+        font-size: 14px
 
 
 

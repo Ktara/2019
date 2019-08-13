@@ -109,6 +109,8 @@
     font-size: 18px
     opacity: 0.85
     margin-top: 35vh
+    @media screen and (max-width: 1440px)
+      margin-top: 25vh
     @media screen and (max-width: 420px)
       font-size: 16px
   &_header
@@ -144,26 +146,30 @@
     z-index: 20
     cursor: pointer
     box-shadow: 0 0 33px rgba(0,0,0,0.16)
+    @media screen and (max-width: 1440px)
+      width: 60px
+      height: 60px
+      bottom: 8%
     @media screen and (max-width: 420px)
       display: none
-    //-webkit-transform: translateZ(0)
-    //transform: translateZ(0)
-    //&:hover
-    //  .main_media_wrapper_first
-    //    opacity: 1
-    //    z-index: 20
-    //    top: -60px
-    //    right: 15px
-    //  .main_media_wrapper_second
-    //    opacity: 1
-    //    z-index: 20
-    //    top: -40px
-    //    right: 70px
-    //  .main_media_wrapper_third
-    //    opacity: 1
-    //    z-index: 20
-    //    top: 15px
-    //    right: 90px
+    -webkit-transform: translateZ(0)
+    transform: translateZ(0)
+    &:hover
+      .main_media_wrapper_first
+        opacity: 1
+        z-index: 20
+        top: -60px
+        right: 15px
+      .main_media_wrapper_second
+        opacity: 1
+        z-index: 20
+        top: -40px
+        right: 70px
+      .main_media_wrapper_third
+        opacity: 1
+        z-index: 20
+        top: 15px
+        right: 90px
     .main_media_wrapper_dots
       display: flex
       flex-direction: row
@@ -172,11 +178,18 @@
       width: 50px
       height: 80px
       margin-left: 15px
+      @media screen and (max-width: 1440px)
+        width: 30px
+        height: 60px
       .main_media_wrapper_dot
         width: 10px
         height: 10px
         border: 2px solid $black
         border-radius: 50%
+        @media screen and (max-width: 1440px)
+          width: 5px
+          height: 5px
+          border: 1px solid $black
     .main_media_wrapper_first
       position: absolute
       display: flex
@@ -292,7 +305,7 @@
       &:hover
         min-height: 340px
         @media screen and (max-width: 1440px)
-          min-height: 300px
+          min-height: 200px
       &_title
         position: absolute
         display: block
@@ -300,11 +313,11 @@
         bottom: 20px
         left: 20px
         @extend .rel-bold
-        font-size: 32px
+        font-size: 28px
         color: $white
         z-index: 2
         @media screen and (max-width: 1440px)
-          font-size: 28px
+          font-size: 22px
       .filter
         position: absolute
         display: block
