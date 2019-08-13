@@ -3,30 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb52c44-4312-456f-af0d-3ebc9c6b0a2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_concept_page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_concept_page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_gallery_block.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_gallery_block.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_product_page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_product_page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_project_page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_project_page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_reviews_page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_reviews_page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_text_block.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_text_block.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/_vacancy_page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_vacancy_page.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concept.html" beforeDir="false" afterPath="$PROJECT_DIR$/concept.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/partners.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/reviews.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vacancy.html" beforeDir="false" afterPath="$PROJECT_DIR$/vacancy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wallness.html" beforeDir="false" afterPath="$PROJECT_DIR$/wallness.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../issa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../issa/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../issa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../issa/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jk_metropolia/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jk_metropolia/.idea/deployment.xml" afterDir="false" />
@@ -179,8 +159,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/vacancy.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="349">
-                  <caret line="513" column="16" selection-start-line="513" selection-start-column="16" selection-end-line="537" selection-end-column="22" />
+                <state relative-caret-position="436">
+                  <caret line="547" column="65" selection-start-line="547" selection-start-column="65" selection-end-line="547" selection-end-column="65" />
                   <folding>
                     <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#1;n#li#0;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -191,7 +171,29 @@
                     <element signature="n#div#1;n#li#3;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#1;n#li#4;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#1;n#li#5;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="e#28423#28429#0" expanded="true" />
+                    <element signature="e#28461#28467#0" expanded="true" />
+                    <element signature="e#28483#28489#0" expanded="true" />
+                    <element signature="e#28490#28496#0" expanded="true" />
+                    <element signature="e#28497#28503#0" expanded="true" />
+                    <element signature="e#28505#28511#0" expanded="true" />
                     <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/contact.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="398">
+                  <caret line="109" column="112" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="109" selection-end-column="112" />
+                  <folding>
+                    <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -237,11 +239,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/_vacancy_page.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="709">
-                  <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
+                <state relative-caret-position="158">
+                  <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
                   <folding>
-                    <marker date="1565678952371" expanded="true" signature="1498:1530" ph="..." />
+                    <marker date="1565679624771" expanded="true" signature="1498:1530" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/_contact_page.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="823">
+                  <caret line="160" column="19" lean-forward="true" selection-start-line="92" selection-start-column="3" selection-end-line="160" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -309,8 +320,8 @@
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/article.html" />
         <option value="$PROJECT_DIR$/partners.html" />
-        <option value="$PROJECT_DIR$/assets/css/_vacancy_page.sass" />
         <option value="$PROJECT_DIR$/vacancy.html" />
+        <option value="$PROJECT_DIR$/assets/css/_vacancy_page.sass" />
       </list>
     </option>
   </component>
@@ -423,18 +434,18 @@
       <workItem from="1565524157130" duration="9351000" />
       <workItem from="1565606719112" duration="10504000" />
       <workItem from="1565617460688" duration="1160000" />
-      <workItem from="1565671787765" duration="7204000" />
+      <workItem from="1565671787765" duration="7822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180476000" />
+    <option name="totallyTimeSpent" value="181094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1433902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1433902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -596,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_contact_page.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="112" column="42" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_error_page.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -621,20 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
           <caret line="234" column="23" selection-start-line="234" selection-start-column="23" selection-end-line="234" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,20 +954,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_vacancy_page.sass">
+    <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
+        <state relative-caret-position="398">
+          <caret line="109" column="112" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="109" selection-end-column="112" />
           <folding>
-            <marker date="1565678952371" expanded="true" signature="1498:1530" ph="..." />
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vacancy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="513" column="16" selection-start-line="513" selection-start-column="16" selection-end-line="537" selection-end-column="22" />
+        <state relative-caret-position="436">
+          <caret line="547" column="65" selection-start-line="547" selection-start-column="65" selection-end-line="547" selection-end-column="65" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#li#0;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -988,10 +982,33 @@
             <element signature="n#div#1;n#li#3;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#li#4;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#li#5;n#ul#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#28423#28429#0" expanded="true" />
+            <element signature="e#28461#28467#0" expanded="true" />
+            <element signature="e#28483#28489#0" expanded="true" />
+            <element signature="e#28490#28496#0" expanded="true" />
+            <element signature="e#28497#28503#0" expanded="true" />
+            <element signature="e#28505#28511#0" expanded="true" />
             <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_contact_page.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="160" column="19" lean-forward="true" selection-start-line="92" selection-start-column="3" selection-end-line="160" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_vacancy_page.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+          <folding>
+            <marker date="1565679624771" expanded="true" signature="1498:1530" ph="..." />
           </folding>
         </state>
       </provider>
