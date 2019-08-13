@@ -138,6 +138,50 @@
       @media screen and (max-width: 1440px)
         font-size: 16px
         line-height: 24px
+  &_next_arrow
+    position: absolute
+    display: block
+    width: auto
+    bottom: -30px
+    right: 3%
+    cursor: pointer
+    z-index: 10
+    &:after
+      content: ''
+      position: absolute
+      width: 10px
+      height: 1px
+      top: 5px
+      right: -20px
+      background-color: $black
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+      opacity: 0.75
+    &:before
+      content: ''
+      position: absolute
+      width: 10px
+      height: 1px
+      bottom: 4px
+      right: -20px
+      background-color: $black
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      opacity: 0.75
+  &_prev_arrow
+    position: absolute
+    display: block
+    width: auto
+    bottom: -30px
+    right: 13%
+    cursor: pointer
+    z-index: 10
 
 
 

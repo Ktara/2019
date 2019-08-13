@@ -97,9 +97,9 @@ $blogTabs.click(function () {
 $('.project_about_slider_wrapper').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
-    // nextArrow: '<div class="comment_next_arrow"></div>',
-    // prevArrow: '<div class="comment_prev_arrow"></div>',
-    dots: true,
+    nextArrow: '<div class="project_about_next_arrow">Дальше</div>',
+    prevArrow: '<div class="project_about_prev_arrow">Назад</div>',
+    dots: false,
     arrows: true,
     customPaging : function(slider, i) {
         var length = slider.$slides.length;
@@ -164,7 +164,7 @@ $('.gallery_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    dots: true,
+    dots: false,
     nextArrow: '<div class="gallery_next_arrow">Дальше</div>',
     prevArrow: '<div class="gallery_prev_arrow">Назад</div>',
     fade: true,
@@ -211,4 +211,27 @@ $('.gallery_slider_nav').slick({
             }
         }
     ]
+});
+
+
+
+
+
+$('.product_main_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false
+});
+
+
+
+
+$('.product_point_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    nextArrow: '<div class="product_point_next_arrow">Дальше</div>',
+    prevArrow: '<div class="product_point_prev_arrow">Назад</div>'
 });

@@ -40,22 +40,22 @@
   font-weight: 700;
   font-style: normal;
 }
-.open-reg, .review .slick-center_text, .review .slick-center_sub_title, .review .slick-center .review_slide_title, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .article_main_subscription_text, .article_main_video_block_title, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .about_second_text_other, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
+.open-reg, .review .slick-center_text, .review .slick-center_sub_title, .review .slick-center .review_slide_title, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .vacancy_main_text p b, .article_main_subscription_text, .article_main_video_block_title, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .about_second_text_other, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
 }
 
-.open-bold, .other_elements_box_title, .blog_main_read_more_header, .blog_main_sort li, .portfolio_main_sort_list li, .wallness_main_sort_list li, .concept_second_header, .main_about_text a {
+.open-bold, .other_elements_box_title, .text_block_header, .blog_main_read_more_header, .blog_main_sort li, .product_main_sub_title, .portfolio_main_sort_list li, .wallness_main_sort_list li, .concept_second_header, .main_about_text a {
   font-family: "OpenSans", sans-serif;
   font-weight: 700;
 }
 
-.open-semi, .watch_block_title, .text_block_first_block p a, .gallery_slide_text, .popup_nav_menu_list li:nth-child(-n+4) a, .error_main_text, .vacancy_offer_list li, .vacancy_offer_text, .vacancy_list_sub_title, .vacancy_list_point li, .partners_cooperate_block_title, .partners_main_box_link, .partners_main_box_header, .article_main_objects_title, .blog_main_read_more_block_title, .blog_main_block_title, .about_components_title, .about_components_header, .about_advantage_block_title, .about_advantage_header, .about_second_text_list li, .about_second_header, .reviews_main_block_text, .project_block_other_header, .project_block_header, .project_about_slide_header, .project_main_about_block_point span, .product_main_block_title, .portfolio_sort_result_title, .wallness_sort_result_title, .wallness_main_title, .concept_second_block_title, .main_about_text, .main_about_text_wrapper_title, .main_elements_box_more, .main_elements_box_text_wrapper_tablet p, .main_elements_box_text_wrapper p, .main_elements_box_title, .main_second_box_link, .main_second_box_header, .main_second_header, .main_header, .nav_header_langs li, .section_header {
+.open-semi, .watch_block_title, .text_block_list_point_title, .text_block_first_block p a, .gallery_slide_text, .popup_nav_menu_list li:nth-child(-n+4) a, .error_main_text, .vacancy_offer_list li, .vacancy_offer_text, .vacancy_text2, .vacancy_list_sub_title, .vacancy_list_point li, .vacancy_list_title, .partners_cooperate_block_title, .partners_main_box_link, .partners_main_box_header, .article_main_objects_title, .blog_main_read_more_block_title, .blog_main_block_title, .about_components_title, .about_components_header, .about_advantage_block_title, .about_advantage_header, .about_second_text_list li, .about_second_header, .reviews_main_block_text, .project_block_other_header, .project_block_header, .project_about_slide_header, .project_main_about_block_point span, .product_point_slide_header, .product_main_block_title, .portfolio_sort_result_title, .wallness_sort_result_title, .wallness_main_title, .concept_second_block_title, .main_about_text, .main_about_text_wrapper_title, .main_elements_box_more, .main_elements_box_text_wrapper_tablet p, .main_elements_box_text_wrapper p, .main_elements_box_title, .main_second_box_link, .main_second_box_header, .main_second_header, .main_header, .nav_header_langs li, .section_header {
   font-family: "OpenSans", sans-serif;
   font-weight: 600;
 }
 
-.open-light, .contact_us_form label, .blog_box_title, .footer_form label, .footer_menu a, .footer_copy, .contact_main_header, .vacancy_list_sub_text, .vacancy_list_text, .vacancy_main_text p, .vacancy_main_header, .partners_cooperate_block_text, .partners_advantage_text, .partners_main_block_text, .partners_main_header, .article_main_subscription_form label, .article_main_portfolio_text p, .article_main_objects_list_text p, .article_main_block_text, .article_main_block_header, .blog_main_read_more_block_text, .blog_main_block_text, .blog_main_header, .about_team_text, .about_components_text, .about_advantage_block_text, .about_second_text, .about_second_header_list li, .about_main_header, .reviews_main_header, .project_block_other_text, .project_block_text, .project_about_slide_text p, .project_main_about_head li, .project_main_header, .product_main_block_text, .product_main_text, .product_main_title, .portfolio_sort_result_box_text, .portfolio_main_header, .wallness_main_text, .wallness_main_header, .concept_second_block_text, .concept_second_text, .concept_main_header, .main_about_text_wrapper p, .main_sub_header {
+.open-light, .contact_us_form label, .blog_box_title, .footer_form label, .footer_menu a, .footer_copy, .contact_main_header, .vacancy_list_sub_text, .vacancy_list_text, .vacancy_main_text p, .vacancy_main_header, .partners_cooperate_block_text, .partners_advantage_text, .partners_main_block_text, .partners_main_header, .article_main_subscription_form label, .article_main_portfolio_text p, .article_main_objects_list_text p, .article_main_block_text, .article_main_block_header, .blog_main_read_more_block_text, .blog_main_block_text, .blog_main_header, .about_team_text, .about_components_text, .about_advantage_block_text, .about_second_text, .about_second_header_list li, .about_main_header, .reviews_main_header, .project_block_other_text, .project_block_text, .project_about_slide_text p, .project_main_about_head li, .project_main_header, .product_point_slide_text, .product_main_block_text, .product_main_text, .product_main_title, .portfolio_sort_result_box_text, .portfolio_main_header, .wallness_main_text, .wallness_main_header, .concept_second_block_text, .concept_second_text, .concept_main_header, .main_about_text_wrapper p, .main_sub_header {
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
 }
@@ -1509,6 +1509,11 @@
   font-size: 44px;
   color: #000000;
 }
+@media screen and (max-width: 1440px) {
+  .concept_second_header {
+    font-size: 36px;
+  }
+}
 .concept_second_text {
   font-size: 18px;
   line-height: 27px;
@@ -1521,7 +1526,7 @@
   }
 }
 .concept_second_block_title {
-  font-size: 24px;
+  font-size: 20px;
   color: #000000;
   margin-top: 70px;
   text-align: center;
@@ -1789,6 +1794,11 @@
   width: 100%;
   margin-top: 210px;
 }
+@media screen and (max-width: 420px) {
+  .product_main {
+    margin-top: 180px;
+  }
+}
 .product_main_image {
   position: absolute;
   width: 90vw;
@@ -1797,6 +1807,7 @@
   top: 0;
   min-height: 450px;
   overflow: hidden;
+  border-radius: 10px 0 0 10px;
 }
 @media screen and (max-width: 1440px) {
   .product_main_image {
@@ -1817,33 +1828,138 @@
 .product_main_btn {
   margin-top: 95px;
 }
+.product_main_sub_title {
+  font-size: 44px;
+  margin-top: 75px;
+}
 .product_main_text {
   font-size: 18px;
   line-height: 27px;
   color: #000000;
-  margin-top: 70px;
+  margin-top: 30px;
+}
+.product_main_slider_wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 .product_main_block {
+  position: relative;
   margin-top: 70px;
 }
+.product_main_block_decor {
+  position: absolute;
+  display: block;
+  width: 110px;
+  height: 110px;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  background-color: #CEF7FF;
+  z-index: 0;
+}
 .product_main_block_title {
+  position: relative;
   font-size: 24px;
   color: #000000;
   text-align: center;
+  z-index: 1;
 }
 .product_main_block_text {
+  position: relative;
   display: block;
   width: 95%;
   font-size: 18px;
   line-height: 27px;
   color: #000000;
   margin-top: 20px;
+  z-index: 1;
 }
 @media screen and (max-width: 1440px) {
   .product_main_block_text {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.product_point {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+@media screen and (max-width: 420px) {
+  .product_point {
+    margin-top: 80px;
+  }
+}
+.product_point_slider_wrapper {
+  margin-left: 6vw;
+}
+.product_point_slide_header {
+  font-size: 24px;
+}
+.product_point_slide_text {
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 20px;
+}
+.product_point_slide_text p {
+  margin-top: 10px;
+}
+.product_point_slide_image {
+  width: 100%;
+  height: 40vh;
+  min-height: 665px;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+  z-index: 15;
+}
+@media screen and (max-width: 1440px) {
+  .product_point_slide_image {
+    min-height: 565px;
+  }
+}
+.product_point_slide_image img {
+  height: 100%;
+}
+.product_point_slide_btn {
+  margin-top: 50px;
+}
+.product_point_next_arrow {
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 50px;
+  bottom: 30%;
+  left: 20%;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px solid #41C4DC;
+  background-color: inherit;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  z-index: 10;
+}
+.product_point_next_arrow:hover {
+  border: 1px solid #CEF7FF;
+  background-color: #CEF7FF;
+}
+.product_point_prev_arrow {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  bottom: 30%;
+  left: 10%;
+  cursor: pointer;
+  color: #000000;
+  opacity: 0.5;
+  z-index: 10;
 }
 
 .product_work {
@@ -2007,6 +2123,54 @@
     line-height: 24px;
   }
 }
+.project_about_next_arrow {
+  position: absolute;
+  display: block;
+  width: auto;
+  bottom: -30px;
+  right: 3%;
+  cursor: pointer;
+  z-index: 10;
+}
+.project_about_next_arrow:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  top: 5px;
+  right: -20px;
+  background-color: #000000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity: 0.75;
+}
+.project_about_next_arrow:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  bottom: 4px;
+  right: -20px;
+  background-color: #000000;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0.75;
+}
+.project_about_prev_arrow {
+  position: absolute;
+  display: block;
+  width: auto;
+  bottom: -30px;
+  right: 13%;
+  cursor: pointer;
+  z-index: 10;
+}
 
 .project_block {
   position: relative;
@@ -2095,6 +2259,11 @@
   text-align: center;
   margin-bottom: 70px;
 }
+@media screen and (max-width: 420px) {
+  .reviews_main_header {
+    font-size: 36px;
+  }
+}
 .reviews_main_block {
   width: 100%;
 }
@@ -2106,10 +2275,21 @@
   border-radius: 10px;
   overflow: hidden;
 }
+@media screen and (max-width: 420px) {
+  .reviews_main_block_image {
+    height: 20vh;
+    min-height: 360px;
+  }
+}
 .reviews_main_block_image img {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 420px) {
+  .reviews_main_block_image img {
+    height: auto;
+  }
 }
 .reviews_main_block_text {
   font-size: 24px;
@@ -2121,6 +2301,12 @@
 @media screen and (max-width: 1440px) {
   .reviews_main_block_text {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .reviews_main_block_text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 .reviews_main_block_video {
@@ -3384,7 +3570,6 @@
 .vacancy_main_text {
   width: 46%;
   margin-left: 8%;
-  padding-top: 30px;
 }
 .vacancy_main_text p {
   font-size: 18px;
@@ -3397,7 +3582,6 @@
     line-height: 24px;
   }
 }
-
 .vacancy {
   position: relative;
   width: 100%;
@@ -3439,7 +3623,6 @@
   overflow: hidden;
 }
 .vacancy_list_block {
-  padding-top: 50px;
   padding-bottom: 90px;
 }
 .vacancy_list_text {
@@ -3456,7 +3639,6 @@
 .vacancy_list_point li {
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 5px;
 }
 @media screen and (max-width: 1440px) {
   .vacancy_list_point li {
@@ -3468,6 +3650,7 @@
   font-size: 24px;
   line-height: 27px;
   margin-bottom: 10px;
+  padding-top: 50px;
 }
 @media screen and (max-width: 1440px) {
   .vacancy_list_sub_title {
@@ -3496,14 +3679,17 @@
   -o-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
+.vacancy_text_wrapper {
+  margin-top: 100px;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
 .vacancy_text {
   position: relative;
   width: auto;
   display: inline-block;
   font-size: 18px;
   line-height: 27px;
-  padding-top: 90px;
-  margin-left: 6vw;
 }
 @media screen and (max-width: 1440px) {
   .vacancy_text {
@@ -3520,6 +3706,22 @@
   bottom: -20px;
   background-color: #41C4DC;
   opacity: 0.25;
+}
+.vacancy_text2 {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 90px;
+  margin-left: 6vw;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_text2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .vacancy_offer {
   margin-top: 70px;
@@ -4379,12 +4581,27 @@
   right: -80px;
   background-color: #41C4DC;
 }
+.gallery_slide_want {
+  margin-top: 20px;
+}
+@media screen and (max-width: 420px) {
+  .gallery_slide_want {
+    margin-top: 60px;
+  }
+}
+.gallery_slide_portfolio {
+  margin-top: 20px;
+}
 
 .text_block {
   position: relative;
   width: 100%;
   margin-top: 120px;
   margin-bottom: 20px;
+}
+.text_block_header {
+  width: 70%;
+  font-size: 40px;
 }
 .text_block_first_block {
   position: relative;
@@ -4428,10 +4645,15 @@
 .text_block_list_point_title {
   position: relative;
   width: 100%;
-  font-size: 32px;
+  font-size: 24px;
   color: #000000;
   cursor: pointer;
   margin-top: 30px;
+}
+@media screen and (max-width: 1440px) {
+  .text_block_list_point_title {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 420px) {
   .text_block_list_point_title {
@@ -4468,6 +4690,7 @@
   padding-top: 20px;
 }
 .text_block_btn {
+  width: 60%;
   margin-top: 50px;
 }
 .text_block_sub_btn {

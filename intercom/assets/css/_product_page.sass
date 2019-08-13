@@ -2,6 +2,8 @@
   position: relative
   width: 100%
   margin-top: 210px
+  @media screen and (max-width: 420px)
+    margin-top: 180px
   &_image
     position: absolute
     width: 90vw
@@ -10,6 +12,7 @@
     top: 0
     min-height: 450px
     overflow: hidden
+    border-radius: 10px 0 0 10px
     @media screen and (max-width: 1440px)
       width: 95vw
     img
@@ -24,20 +27,42 @@
     margin-top: 480px
   &_btn
     margin-top: 95px
+  &_sub_title
+    @extend .open-bold
+    font-size: 44px
+    margin-top: 75px
   &_text
     @extend .open-light
     font-size: 18px
     line-height: 27px
     color: $black
-    margin-top: 70px
+    margin-top: 30px
+  &_slider_wrapper
+    margin-left: 6vw
+    margin-right: 6vw
+
   &_block
+    position: relative
     margin-top: 70px
+    &_decor
+      position: absolute
+      display: block
+      width: 110px
+      height: 110px
+      top: 0
+      left: 0
+      border-radius: 100%
+      background-color: #CEF7FF
+      z-index: 0
     &_title
+      position: relative
       @extend .open-semi
       font-size: 24px
       color: $black
       text-align: center
+      z-index: 1
     &_text
+      position: relative
       display: block
       width: 95%
       @extend .open-light
@@ -45,9 +70,85 @@
       line-height: 27px
       color: $black
       margin-top: 20px
+      z-index: 1
       @media screen and (max-width: 1440px)
         font-size: 16px
         line-height: 24px
+
+
+
+
+
+
+.product_point
+  position: relative
+  width: 100%
+  margin-top: 120px
+  @media screen and (max-width: 420px)
+    margin-top: 80px
+  &_slider_wrapper
+    margin-left: 6vw
+  &_slide
+    &_header
+      @extend .open-semi
+      font-size: 24px
+    &_text
+      @extend .open-light
+      font-size: 18px
+      line-height: 27px
+      padding-top: 20px
+      p
+        margin-top: 10px
+    &_image
+      width: 100%
+      height: 40vh
+      min-height: 665px
+      overflow: hidden
+      border-radius: 10px 0 0 10px
+      //box-shadow: 0 15px 20px rgba(0,0,0,0.16)
+      z-index: 15
+      @media screen and (max-width: 1440px)
+        min-height: 565px
+      img
+        height: 100%
+    &_btn
+      margin-top: 50px
+  &_next_arrow
+    position: absolute
+    display: block
+    width: 250px
+    height: 50px
+    bottom: 30%
+    left: 20%
+    text-align: center
+    line-height: 48px
+    border-radius: 30px
+    cursor: pointer
+    border: 1px solid $blue
+    background-color: inherit
+    -webkit-transition: all 0.6s
+    -moz-transition: all 0.6s
+    -ms-transition: all 0.6s
+    -o-transition: all 0.6s
+    transition: all 0.6s
+    z-index: 10
+    &:hover
+      border: 1px solid $light-blue
+      background-color: $light-blue
+  &_prev_arrow
+    position: absolute
+    display: block
+    width: auto
+    height: 50px
+    line-height: 50px
+    bottom: 30%
+    left: 10%
+    cursor: pointer
+    color: $black
+    opacity: 0.5
+    z-index: 10
+
+
 
 
 

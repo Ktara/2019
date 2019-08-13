@@ -3,6 +3,10 @@
   width: 100%
   margin-top: 120px
   margin-bottom: 20px
+  &_header
+    width: 70%
+    @extend .open-bold
+    font-size: 40px
   &_first_block
     position: relative
     width: 100%
@@ -37,10 +41,13 @@
       &_title
         position: relative
         width: 100%
-        font-size: 32px
+        @extend .open-semi
+        font-size: 24px
         color: $black
         cursor: pointer
         margin-top: 30px
+        @media screen and (max-width: 1440px)
+          font-size: 20px
         @media screen and (max-width: 420px)
           font-size: 18px
         &:after
@@ -72,6 +79,7 @@
             color: $black
             padding-top: 20px
   &_btn
+    width: 60%
     margin-top: 50px
   &_sub_btn
     margin-top: 50px
