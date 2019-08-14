@@ -4,20 +4,23 @@
   background-repeat: no-repeat
   -webkit-background-size: cover
   background-size: cover
-  margin-top: 150px
-  @media screen and (max-width: 780px)
-    margin-top: 80px
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    margin-top: 50px
   &_text
     font-size: 16px
     line-height: 24px
     color: $black
-    margin-top: 20px
-    @media screen and (max-width: 780px)
-      margin-top: 0
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+      line-height: 22px
   &_contact
     font-size: 16px
     line-height: 24px
     color: $black
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+      line-height: 22px
     @media screen and (max-width: 780px)
       margin-top: 50px
   &_social
@@ -41,42 +44,67 @@
     position: relative
     width: 100%
     margin-top: 40px
-    margin-bottom: 30px
-    @media screen and (max-width: 780px)
-      display: none
     &:after
       content: ''
       position: absolute
       width: 200%
       height: 1px
       top: -20px
-      left: -100%
+      left: 0
       background-color: $purple
       opacity: 0.2
   &_copy
-    width: 100%
+    position: relative
+    width: auto
+    display: inline-block
     font-size: 16px
     @extend .open-light
     color: $dark-grey
     opacity: 0.75
-    margin-top: 30px
+    margin-top: 20px
     margin-bottom: 50px
+    margin-right: 20px
+    @media screen and (max-width: 1440px)
+      font-size: 14px
     @media screen and (max-width: 780px)
       margin-top: 50px
+    &:after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 15px
+      right: -13px
+      top: 0
+      background-color: $black
+      opacity: 0.5
+  .footer_menu li:first-child
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 15px
+      right: -13px
+      top: 0
+      background-color: $black
+      opacity: 0.5
   &_menu
-    width: 100%
-    display: flex
+    width: auto
+    display: inline-block
     //justify-content: space-between
-    margin-top: 30px
+    margin-top: 20px
     li
       display: inline-block
       width: auto
-      margin-right: 10px
+      margin-right: 20px
     a
+      font-size: 16px
       text-decoration: none
       color: $dark-grey
       @extend .open-light
       opacity: 0.75
+      @media screen and (max-width: 1440px)
+        font-size: 14px
   &_form
     position: relative
     width: 100%
@@ -93,17 +121,24 @@
       @extend .open-light
       color: $dark-grey
       opacity: 0.75
+      @media screen and (max-width: 1440px)
+        font-size: 14px
     input
       position: relative
       display: inline-block
       width: 48%
       height: 25px
       margin-top: 25px
+      font-size: 16px
       -webkit-appearance: none
       -moz-appearance: none
       appearance: none
       outline: none
       border: none
-      border-bottom: 4px solid rgba(39, 39, 39, 0.75)
+      border-bottom: 2px solid rgba(39, 39, 39, 0.75)
+      background-color: inherit
+      @media screen and (max-width: 1440px)
+        font-size: 14px
+        height: 20px
     &_btn
       width: 48%

@@ -11,6 +11,15 @@ $('.nav_header_langs_plus').click(function(){
 });
 
 
+$('.details_btn').click(function(){
+    $('.popup_details').toggleClass('popup_details_active');
+});
+$('.popup_details_close').click(function(){
+    $('.popup_details').toggleClass('popup_details_active');
+});
+
+
+
 
 $('.text_block_list_point_title').click(function(){
     $('.text_block_list_point_wrapper').animate({

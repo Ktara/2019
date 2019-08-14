@@ -14,11 +14,12 @@
     margin-top: 50px
     padding-top: 30px
     //overflow: hidden
+    @media screen and (max-width: 1440px)
+      min-height: 390px
     @media screen and (max-width: 780px)
       min-height: 480px
   &_slide
     display: block
-    //width: 50%
     height: 15vh
     min-height: 300px
     overflow: hidden
@@ -33,6 +34,8 @@
     transition: all 0.5s
     margin: 0 25px
     z-index: 10
+    @media screen and (max-width: 1440px)
+      min-height: 290px
     @media screen and (max-width: 780px)
       min-height: 350px
     @media screen and (max-width: 420px)
@@ -48,6 +51,8 @@
       width: 95px
       box-shadow: 0 0 33px rgba(0,0,0,0.10)
       margin-right: 30px
+      @media screen and (max-width: 1440px)
+        width: 55px
       img
         width: 100%
     &_title_wrapper
@@ -63,7 +68,7 @@
       margin-top: 10px
     &_text
       @extend .open-reg
-      font-size: 18px
+      font-size: 16px
       line-height: 27px
       margin-top: 20px
       @media screen and (max-width: 1440px)
@@ -83,13 +88,15 @@
     transform: scale(1.2)
     .review_slide_title
       @extend .open-reg
-      font-size: 14px
-    &_sub_title
+      font-size: 20px
+      @media screen and (max-width: 1440px)
+        font-size: 18px
+    .review_slide_sub_title
       @extend .open-reg
       font-size: 10px
-    &_text
+    .review_slide_text
       @extend .open-reg
-      font-size: 15px
+      font-size: 13px
       line-height: 20px
       @media screen and (max-width: 420px)
         font-size: 12px
