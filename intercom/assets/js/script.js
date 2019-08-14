@@ -21,6 +21,25 @@ $('.popup_details_close').click(function(){
 
 
 
+$('.consultation_btn').click(function(){
+    $('.popup_consultation').toggleClass('popup_consultation_active');
+});
+$('.popup_consultation_close').click(function(){
+    $('.popup_consultation').toggleClass('popup_consultation_active');
+});
+
+
+
+$('.price_btn').click(function(){
+    $('.popup_price').toggleClass('popup_price_active');
+});
+$('.popup_price_close').click(function(){
+    $('.popup_price').toggleClass('popup_price_active');
+});
+
+
+
+
 $('.text_block_list_point_title').click(function(){
     $('.text_block_list_point_wrapper').animate({
         height: 0

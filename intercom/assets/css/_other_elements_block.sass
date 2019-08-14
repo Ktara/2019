@@ -1,11 +1,12 @@
 .other_elements
   position: relative
   width: 100%
-  margin-top: 120px
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    font-size: 50px
   &_box
     position: relative
     width: 100%
-    margin-top: 30px
     &_image
       position: relative
       display: block
@@ -15,16 +16,14 @@
       border-radius: 10px
       overflow: hidden
       @media screen and (max-width: 1440px)
-        min-height: 335px
-      @media screen and (max-width: 780px)
-        min-height: 285px
+        min-height: 250px
       img
         height: 100%
-        -webkit-transform: translate(-30%)
-        -moz-transform: translate(-30%)
-        -ms-transform: translate(-30%)
-        -o-transform: translate(-30%)
-        transform: translate(-30%)
+        -webkit-transform: translate(-15%)
+        -moz-transform: translate(-15%)
+        -ms-transform: translate(-15%)
+        -o-transform: translate(-15%)
+        transform: translate(-15%)
     //&_viewer
     //  position: relative
     //  display: inline-block
@@ -34,9 +33,11 @@
     //    height: 100%
     //    transform: translate(0)
     &_title
+      display: block
       @extend .open-bold
       font-size: 28px
       text-decoration: none
       color: $black
+      margin-top: 10px
       @media screen and (max-width: 1440px)
-        font-size: 22px
+        font-size: 20px
