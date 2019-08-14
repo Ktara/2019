@@ -228,7 +228,12 @@ $('.gallery_slider_nav').slick({
         {
             breakpoint: 1440,
             settings: {
-                centerPadding: '66.5%',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '133px',
+                vertical: true,
+                verticalSwiping: true
             }
         },
         {
@@ -262,4 +267,34 @@ $('.product_point_slider').slick({
     arrows: true,
     nextArrow: '<div class="product_point_next_arrow">Дальше</div>',
     prevArrow: '<div class="product_point_prev_arrow">Назад</div>'
+});
+
+
+
+$('.product_main_image_slider').slick({
+    centerMode: true,
+    centerPadding: '0',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: '<div class="product_main_image_next_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
+    prevArrow: '<div class="product_main_image_prev_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
+    dots: false,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 780,
+            settings: {
+                slidesToShow: 1,
+                centerPadding: '100px'
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                centerPadding: '20px'
+            }
+        }
+    ]
 });
