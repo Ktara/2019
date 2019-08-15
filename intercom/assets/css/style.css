@@ -4219,11 +4219,21 @@
 .vacancy_main {
   position: relative;
   width: 100%;
-  margin-top: 210px;
+  margin-top: 140px;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_main {
+    margin-top: 100px;
+  }
 }
 .vacancy_main_header {
   font-size: 54px;
   text-align: center;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_main_header {
+    font-size: 44px;
+  }
 }
 .vacancy_main_wrapper {
   position: relative;
@@ -4252,14 +4262,20 @@
 }
 @media screen and (max-width: 1440px) {
   .vacancy_main_text p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
   }
 }
 .vacancy {
   position: relative;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 70px;
+}
+@media screen and (max-width: 420px) {
+  .vacancy {
+    margin-top: 50px;
+  }
 }
 .vacancy_list li:nth-child(odd) .vacancy_list_title:before {
   content: "";
@@ -4278,6 +4294,12 @@
   cursor: pointer;
   padding: 30px 6vw 30px 6vw;
 }
+@media screen and (max-width: 1440px) {
+  .vacancy_list_title {
+    font-size: 22px;
+    padding: 15px 6vw;
+  }
+}
 .vacancy_list_title:after {
   content: url(../img/icon/arrow-down.svg);
   position: absolute;
@@ -4289,6 +4311,11 @@
   -webkit-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_list_title:after {
+    top: 13px;
+  }
 }
 .vacancy_list_text_wrapper {
   padding-left: 6vw;
@@ -4306,8 +4333,8 @@
 }
 @media screen and (max-width: 1440px) {
   .vacancy_list_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .vacancy_list_point li {
@@ -4316,8 +4343,8 @@
 }
 @media screen and (max-width: 1440px) {
   .vacancy_list_point li {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .vacancy_list_sub_title {
@@ -4328,7 +4355,7 @@
 }
 @media screen and (max-width: 1440px) {
   .vacancy_list_sub_title {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 24px;
   }
 }
@@ -4344,7 +4371,7 @@
 @media screen and (max-width: 1440px) {
   .vacancy_list_sub_text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 22px;
   }
 }
 .vacancy_list_title_open:after {
@@ -4357,6 +4384,11 @@
   margin-top: 100px;
   margin-left: 6vw;
   margin-right: 6vw;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_text_wrapper {
+    margin-top: 50px;
+  }
 }
 .vacancy_text_wrapper_form {
   position: relative;
@@ -4383,6 +4415,12 @@
   border: 1px solid #41C4DC;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_text_wrapper_form input {
+    font-size: 14px;
+    height: 45px;
+  }
 }
 .vacancy_text_wrapper_form input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.5);
@@ -4431,8 +4469,8 @@
 }
 @media screen and (max-width: 1440px) {
   .vacancy_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .vacancy_text:after {
@@ -4444,6 +4482,11 @@
   bottom: -20px;
   background-color: #41C4DC;
   opacity: 0.25;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_text:after {
+    bottom: -15px;
+  }
 }
 .vacancy_text2 {
   position: relative;
@@ -4457,8 +4500,8 @@
 }
 @media screen and (max-width: 1440px) {
   .vacancy_text2 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .vacancy_offer {
@@ -4466,14 +4509,19 @@
   padding-left: 6vw;
   padding-right: 6vw;
 }
+@media screen and (max-width: 1440px) {
+  .vacancy_offer {
+    margin-top: 30px;
+  }
+}
 .vacancy_offer_text {
   font-size: 18px;
   line-height: 27px;
 }
 @media screen and (max-width: 1440px) {
   .vacancy_offer_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .vacancy_offer_list li {
@@ -4484,8 +4532,8 @@
 }
 @media screen and (max-width: 1440px) {
   .vacancy_offer_list li {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 

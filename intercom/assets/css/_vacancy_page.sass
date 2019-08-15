@@ -1,11 +1,15 @@
 .vacancy_main
   position: relative
   width: 100%
-  margin-top: 210px
+  margin-top: 140px
+  @media screen and (max-width: 1440px)
+    margin-top: 100px
   &_header
     @extend .open-light
     font-size: 54px
     text-align: center
+    @media screen and (max-width: 1440px)
+      font-size: 44px
   &_wrapper
     position: relative
     display: flex
@@ -28,8 +32,9 @@
       line-height: 27px
       margin-top: 20px
       @media screen and (max-width: 1440px)
-        font-size: 16px
-        line-height: 24px
+        font-size: 14px
+        line-height: 22px
+        margin-top: 10px
       b
         @extend .open-reg
 
@@ -41,7 +46,9 @@
 .vacancy
   position: relative
   width: 100%
-  margin-top: 100px
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    margin-top: 50px
   &_list
     li:nth-child(odd) .vacancy_list_title:before
       content: ''
@@ -59,6 +66,9 @@
       color: $black
       cursor: pointer
       padding: 30px 6vw 30px 6vw
+      @media screen and (max-width: 1440px)
+        font-size: 22px
+        padding: 15px 6vw
       &:after
         content: url(../img/icon/arrow-down.svg)
         position: absolute
@@ -70,6 +80,8 @@
         -webkit-transition: all 0.6s
         -o-transition: all 0.6s
         transition: all 0.6s
+        @media screen and (max-width: 1440px)
+          top: 13px
     &_text_wrapper
       padding-left: 6vw
       padding-right: 6vw
@@ -83,16 +95,16 @@
       line-height: 27px
       margin-bottom: 30px
       @media screen and (max-width: 1440px)
-        font-size: 16px
-        line-height: 24px
+        font-size: 14px
+        line-height: 22px
     &_point
       li
         @extend .open-semi
         font-size: 18px
         line-height: 27px
         @media screen and (max-width: 1440px)
-          font-size: 16px
-          line-height: 24px
+          font-size: 14px
+          line-height: 22px
     &_sub_title
       @extend .open-semi
       font-size: 24px
@@ -100,7 +112,7 @@
       margin-bottom: 10px
       padding-top: 50px
       @media screen and (max-width: 1440px)
-        font-size: 22px
+        font-size: 18px
         line-height: 24px
     &_btn
       width: 60%
@@ -112,7 +124,7 @@
       margin-top: 20px
       @media screen and (max-width: 1440px)
         font-size: 14px
-        line-height: 24px
+        line-height: 22px
     &_title_open
       &:after
         -webkit-transform: rotate(-180deg)
@@ -123,6 +135,8 @@
     margin-top: 100px
     margin-left: 6vw
     margin-right: 6vw
+    @media screen and (max-width: 1440px)
+      margin-top: 50px
     &_form
       position: relative
       display: block
@@ -146,6 +160,9 @@
         border: 1px solid $blue
         border-radius: 10px
         margin-bottom: 10px
+        @media screen and (max-width: 1440px)
+          font-size: 14px
+          height: 45px
       input::-moz-placeholder
         color: rgba(0, 0, 0, 0.5)
       input::-webkit-input-placeholder
@@ -179,8 +196,8 @@
     font-size: 18px
     line-height: 27px
     @media screen and (max-width: 1440px)
-      font-size: 16px
-      line-height: 24px
+      font-size: 14px
+      line-height: 22px
     &:after
       content: ''
       position: absolute
@@ -190,6 +207,8 @@
       bottom: -20px
       background-color: $blue
       opacity: 0.25
+      @media screen and (max-width: 1440px)
+        bottom: -15px
   &_text2
     position: relative
     width: auto
@@ -201,19 +220,21 @@
     margin-left: 6vw
     text-transform: uppercase
     @media screen and (max-width: 1440px)
-      font-size: 16px
-      line-height: 24px
+      font-size: 14px
+      line-height: 22px
   &_offer
     margin-top: 70px
     padding-left: 6vw
     padding-right: 6vw
+    @media screen and (max-width: 1440px)
+      margin-top: 30px
     &_text
       @extend .open-semi
       font-size: 18px
       line-height: 27px
       @media screen and (max-width: 1440px)
-        font-size: 16px
-        line-height: 24px
+        font-size: 14px
+        line-height: 22px
     &_list
       li
         @extend .open-semi
@@ -222,5 +243,5 @@
         opacity: 0.5
         margin-top: 5px
         @media screen and (max-width: 1440px)
-          font-size: 16px
-          line-height: 24px
+          font-size: 14px
+          line-height: 22px
