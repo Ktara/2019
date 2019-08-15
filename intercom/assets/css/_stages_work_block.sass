@@ -1,0 +1,63 @@
+.stages_work
+  position: relative
+  width: 100%
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    margin-top: 50px
+  &_slider_wrapper
+    position: relative
+    margin-left: 6vw
+    //overflow: hidden
+  &_slider_arrow
+    position: absolute
+    display: block
+    width: 65px
+    top: 0
+    right: 6vw
+    img
+      width: 100%
+  &_slider
+    margin-right: 6vw
+    margin-top: 60px
+    @media screen and (max-width: 1440px)
+      margin-top: 30px
+    .slick-list
+      overflow: visible
+    .slick-track .stages_work_slide:nth-child(odd)
+      position: relative
+      width: 105.6666px !important
+      margin-top: 240px
+      .stages_work_slide_box
+        width: 300%
+  &_slide
+    width: 417px !important
+    //margin-right: 100px
+    @media screen and (max-width: 1440px)
+      width: 317px !important
+    &_number
+      @extend .open-light
+      font-size: 80px
+      margin-top: 25px
+    &_wrapper
+      display: flex
+      margin-top: 15px
+      @media screen and (max-width: 1440px)
+        margin-top: 10px
+    &_image
+      width: 60px
+      margin-right: 10px
+      margin-left: 25px
+      img
+        width: 100%
+    &_text_wrapper
+      width: calc(100% - 95px)
+    &_header
+      @extend .open-semi
+      font-size: 24px
+    &_text
+      @extend .open-light
+      font-size: 16px
+      line-height: 24px
+      @media screen and (max-width: 1440px)
+        font-size: 14px
+        line-height: 22px

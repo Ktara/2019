@@ -217,6 +217,7 @@ $('.gallery_slider_nav').slick({
     centerPadding: '48.5%',
     slidesToShow: 3,
     slidesToScroll: 1,
+    // initialSlide: -2,
     asNavFor: '.gallery_slider',
     dots: false,
     arrows: false,
@@ -228,12 +229,12 @@ $('.gallery_slider_nav').slick({
         {
             breakpoint: 1440,
             settings: {
+                // centerMode: true,
+                centerPadding: '0%',
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '133px',
-                vertical: true,
-                verticalSwiping: true
+                // slidesToScroll: 1,
+                // vertical: true,
+                // verticalSwiping: true
             }
         },
         {
@@ -297,4 +298,15 @@ $('.product_main_image_slider').slick({
             }
         }
     ]
+});
+
+
+
+
+$('.stages_work_slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    initialSlide: -1.8
 });
