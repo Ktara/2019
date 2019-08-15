@@ -1,7 +1,9 @@
 .project_main
   position: relative
   width: 100%
-  margin-top: 210px
+  margin-top: 140px
+  @media screen and (max-width: 1440px)
+    margin-top: 100px
   &_image
     position: relative
     width: calc(100% - 5vw)
@@ -11,6 +13,8 @@
     overflow: hidden
     margin-bottom: 30px
     margin-left: 5vw
+    @media screen and (max-width: 1440px)
+      min-height: 350px
     img
       position: absolute
       width: 100%
@@ -30,6 +34,8 @@
   &_btn
     width: 60%
     margin-top: 130px
+    @media screen and (max-width: 1440px)
+      margin-top: 80px
   &_about_head
     position: relative
     display: flex
@@ -47,6 +53,9 @@
       -o-transition: all 0.5s
       transition: all 0.5s
       border-radius: 10px
+      @media screen and (max-width: 1440px)
+        font-size: 22px
+        margin-right: 25px
     .project_main_about_active
       color: $white
       background-color: $blue
@@ -65,10 +74,15 @@
       color: $black
       @extend .open-reg
       margin-bottom: 20px
+      @media screen and (max-width: 1440px)
+        font-size: 14px
       span
         @extend .open-semi
         font-size: 24px
         color: $blue
+        @media screen and (max-width: 1440px)
+          font-size: 18px
+          margin-right: 5px
 
 
 
@@ -92,6 +106,8 @@
       left: 25%
       background-color: $blue
       opacity: 0.25
+      @media screen and (max-width: 1440px)
+        top: 270px
   &_slide
     //position: relative
     //width: 45%
@@ -99,6 +115,8 @@
       @extend .open-semi
       font-size: 44px
       color: $black
+      @media screen and (max-width: 1440px)
+        font-size: 34px
     &_text
       position: relative
       width: 100%
@@ -112,8 +130,9 @@
         color: $black
         margin-top: 30px
         @media screen and (max-width: 1440px)
-          font-size: 16px
-          line-height: 24px
+          font-size: 14px
+          line-height: 22px
+          margin-top: 15px
     &_image
       position: relative
       width: 100%
@@ -121,6 +140,10 @@
       min-height: 300px
       overflow: hidden
       margin-top: 80px
+      border-radius: 10px
+      @media screen and (max-width: 1440px)
+        min-height: 250px
+        margin-top: 30px
       img
         position: absolute
         width: 100%
@@ -136,8 +159,9 @@
       line-height: 27px
       color: $black
       @media screen and (max-width: 1440px)
-        font-size: 16px
-        line-height: 24px
+        font-size: 14px
+        line-height: 22px
+        margin-top: 15px
   &_next_arrow
     position: absolute
     display: block
@@ -194,16 +218,22 @@
 .project_block
   position: relative
   width: 100%
-  margin-top: 120px
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    margin-top: 50px
   &_header
     @extend .open-semi
     font-size: 54px
     color: $black
+    @media screen and (max-width: 1440px)
+      font-size: 44px
   &_text_wrapper
     position: relative
     width: 100%
     height: auto
     margin-top: 30px
+    @media screen and (max-width: 1440px)
+      margin-top: 20px
     &_btn
       position: absolute
       width: 25%
@@ -215,8 +245,10 @@
     line-height: 27px
     color: $black
     @media screen and (max-width: 1440px)
-      font-size: 16px
-      line-height: 24px
+      font-size: 14px
+      line-height: 22px
+  .gallery
+    margin-top: 20px
 
 
 
@@ -226,16 +258,22 @@
 .project_block_other
   position: relative
   width: 100%
-  margin-top: 120px
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    margin-top: 50px
   &_header
     @extend .open-semi
     font-size: 54px
     color: $black
+    @media screen and (max-width: 1440px)
+      font-size: 44px
   &_text_wrapper
     position: relative
     width: 100%
     height: auto
     margin-top: 30px
+    @media screen and (max-width: 1440px)
+      margin-top: 20px
     &_btn
       position: absolute
       width: 25%
@@ -247,14 +285,16 @@
     line-height: 27px
     color: $black
     @media screen and (max-width: 1440px)
-      font-size: 16px
-      line-height: 24px
+      font-size: 14px
+      line-height: 22px
   &_image
     position: relative
     width: 100%
     border-radius: 10px
     overflow: hidden
     margin-top: 80px
+    @media screen and (max-width: 1440px)
+      margin-top: 30px
     img
       width: 100%
 

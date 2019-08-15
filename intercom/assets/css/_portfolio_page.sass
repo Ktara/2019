@@ -1,11 +1,15 @@
 .portfolio_main
   position: relative
   width: 100%
-  margin-top: 210px
+  margin-top: 140px
+  @media screen and (max-width: 1440px)
+    margin-top: 100px
   &_header
     @extend .open-light
     font-size: 54px
     text-align: center
+    @media screen and (max-width: 1440px)
+      font-size: 44px
   &_sort_list
     position: relative
     display: flex
@@ -13,6 +17,8 @@
     justify-content: center
     width: 100%
     margin-top: 50px
+    @media screen and (max-width: 1440px)
+      margin-top: 30px
     &:after
       content: ''
       position: absolute
@@ -23,6 +29,8 @@
       left: 20%
       background-color: $blue
       opacity: 0.3
+      @media screen and (max-width: 1440px)
+        bottom: -20px
     .active_wallness_list
       color: $white
       background-color: $blue
@@ -49,7 +57,9 @@
 .portfolio_sort_result
   position: relative
   width: 100%
-  margin-top: 100px
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    margin-top: 50px
   &_box
     position: relative
     width: 100%
@@ -84,10 +94,14 @@
     overflow: hidden
     text-decoration: none
     @media screen and (max-width: 1440px)
-      min-height: 300px
+      min-height: 200px
     img
       height: 100%
       transform: translate(-10%)
+      @media screen and (max-width: 1440px)
+        height: auto
+        width: 100%
+        transform: translate(0, -10%)
   &_title
     position: absolute
     display: flex
@@ -96,8 +110,7 @@
     width: 100%
     height: 110px
     //bottom: -30px
-    padding-top: 30px
-    padding-bottom: 30px
+    padding: 30px 10px
     border: 1px solid $blue
     @extend .open-semi
     font-size: 28px
@@ -112,6 +125,9 @@
     -o-transition: all 0.6s
     transition: all 0.6s
     @media screen and (max-width: 1440px)
-      font-size: 20px
+      font-size: 18px
+      height: 80px
+      padding-top: 15px
+      padding-bottom: 15px
 
 

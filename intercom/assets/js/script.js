@@ -39,6 +39,15 @@ $('.popup_price_close').click(function(){
 
 
 
+$('.want_btn').click(function(){
+    $('.popup_want').toggleClass('popup_want_active');
+});
+$('.popup_want_close').click(function(){
+    $('.popup_want').toggleClass('popup_want_active');
+});
+
+
+
 
 $('.text_block_list_point_title').click(function(){
     $('.text_block_list_point_wrapper').animate({
