@@ -40,7 +40,7 @@
   font-weight: 700;
   font-style: normal;
 }
-.open-reg, .review .slick-center .review_slide_text, .review .slick-center .review_slide_sub_title, .review .slick-center .review_slide_title, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .vacancy_main_text p b, .article_main_subscription_text, .article_main_video_block_title, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .about_second_text_other, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
+.open-reg, .review .slick-center .review_slide_text, .review .slick-center .review_slide_sub_title, .review .slick-center .review_slide_title, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .vacancy_main_text p b, .article_main_subscription_text, .article_main_video_block_title, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
 }
@@ -55,7 +55,7 @@
   font-weight: 600;
 }
 
-.open-light, .stages_work_slide_text, .stages_work_slide_number, .contact_us_form label, .blog_box_title, .footer_form label, .footer_menu a, .footer_copy, .popup_want_header, .popup_price_header, .popup_consultation_header, .popup_details_header, .contact_main_header, .vacancy_list_sub_text, .vacancy_list_text, .vacancy_main_text p, .vacancy_main_header, .partners_cooperate_block_text, .partners_advantage_text, .partners_main_block_text, .partners_main_header, .article_main_subscription_form label, .article_main_portfolio_text p, .article_main_objects_list_text p, .article_main_block_text, .article_main_block_header, .blog_main_read_more_block_text, .blog_main_block_text, .blog_main_header, .about_team_text, .about_components_text, .about_advantage_block_text, .about_second_text, .about_second_header_list li, .about_main_header, .reviews_main_header, .project_block_other_text, .project_block_text, .project_about_slide_text p, .project_main_about_head li, .project_main_header, .product_point_slide_text, .product_main_block_text, .product_main_text, .product_main_title, .portfolio_sort_result_box_text, .portfolio_main_header, .wallness_main_text, .wallness_main_header, .concept_second_block_text, .concept_second_text, .concept_main_header, .main_about_text_wrapper p, .main_sub_header {
+.open-light, .stages_work_slide_text, .stages_work_slide_number, .contact_us_form label, .blog_box_title, .footer_form label, .footer_menu a, .footer_copy, .popup_want_header, .popup_price_header, .popup_consultation_header, .popup_details_header, .contact_main_header, .vacancy_list_sub_text, .vacancy_list_text, .vacancy_main_text p, .vacancy_main_header, .partners_cooperate_block_text, .partners_advantage_text, .partners_main_block_text, .partners_main_header, .article_main_subscription_form label, .article_main_portfolio_text p, .article_main_objects_list_text p, .article_main_block_text, .article_main_block_header, .blog_main_read_more_block_text, .blog_main_block_text, .blog_main_header, .about_team_text, .about_components_text, .about_advantage_block_text, .about_second_text_other, .about_second_text, .about_second_header_list li, .about_main_header, .reviews_main_header, .project_block_other_text, .project_block_text, .project_about_slide_text p, .project_main_about_head li, .project_main_header, .product_point_slide_text, .product_main_block_text, .product_main_text, .product_main_title, .portfolio_sort_result_box_text, .portfolio_main_header, .wallness_main_text, .wallness_main_header, .concept_second_block_text, .concept_second_text, .concept_main_header, .main_about_text_wrapper p, .main_sub_header {
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
 }
@@ -2861,7 +2861,12 @@
   position: relative;
   display: flex;
   width: 100%;
-  margin-top: 210px;
+  margin-top: 140px;
+}
+@media screen and (max-width: 1440px) {
+  .about_main {
+    margin-top: 100px;
+  }
 }
 @media screen and (max-width: 780px) {
   .about_main {
@@ -2886,8 +2891,9 @@
 }
 @media screen and (max-width: 1440px) {
   .about_main_header {
-    font-size: 34px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -2912,6 +2918,12 @@
   border-radius: 10px 0 0 10px;
   overflow: hidden;
 }
+@media screen and (max-width: 1440px) {
+  .about_main_video {
+    height: 30vh;
+    min-height: 350px;
+  }
+}
 @media screen and (max-width: 780px) {
   .about_main_video {
     width: 100%;
@@ -2929,7 +2941,12 @@
 .about_second {
   position: relative;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 70px;
+}
+@media screen and (max-width: 420px) {
+  .about_second {
+    margin-top: 50px;
+  }
 }
 .about_second_image {
   width: 100%;
@@ -2944,7 +2961,7 @@
 }
 @media screen and (max-width: 1440px) {
   .about_second_header {
-    font-size: 44px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -2955,6 +2972,11 @@
 .about_second_header_list {
   margin-top: 50px;
 }
+@media screen and (max-width: 1440px) {
+  .about_second_header_list {
+    margin-top: 30px;
+  }
+}
 .about_second_header_list li {
   font-size: 18px;
   line-height: 27px;
@@ -2962,8 +2984,8 @@
 }
 @media screen and (max-width: 1440px) {
   .about_second_header_list li {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .about_second_text {
@@ -2974,8 +2996,8 @@
 }
 @media screen and (max-width: 1440px) {
   .about_second_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .about_second_text_list {
@@ -2989,8 +3011,8 @@
 }
 @media screen and (max-width: 1440px) {
   .about_second_text_list li {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .about_second_text_other {
@@ -3001,19 +3023,19 @@
 }
 @media screen and (max-width: 1440px) {
   .about_second_text_other {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
 .about_advantage {
   position: relative;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 @media screen and (max-width: 420px) {
   .about_advantage {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 .about_advantage_header {
@@ -3052,19 +3074,19 @@
 }
 @media screen and (max-width: 1440px) {
   .about_advantage_block_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
 .about_components {
   position: relative;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 @media screen and (max-width: 420px) {
   .about_components {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 .about_components_header {
@@ -3092,6 +3114,7 @@
   .about_components_title {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 20px;
   }
 }
 .about_components_text {
@@ -3102,8 +3125,8 @@
 }
 @media screen and (max-width: 1440px) {
   .about_components_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .about_components_image_wrapper {
@@ -3202,15 +3225,24 @@
 .about_team {
   position: relative;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 @media screen and (max-width: 420px) {
   .about_team {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 .about_team .row .col-lg-5 .about_team_image:nth-child(1) {
   height: 415px;
+}
+@media screen and (max-width: 1440px) {
+  .about_team .row .col-lg-5 .about_team_image:nth-child(1) {
+    height: 315px;
+  }
+  .about_team .row .col-lg-5 .about_team_image:nth-child(1) img {
+    height: auto;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 780px) {
   .about_team .row .col-lg-5 .about_team_image:nth-child(1) {
@@ -3220,6 +3252,11 @@
 .about_team .row .col-lg-5 .about_team_image:nth-child(2) {
   height: 500px;
 }
+@media screen and (max-width: 1440px) {
+  .about_team .row .col-lg-5 .about_team_image:nth-child(2) {
+    height: 400px;
+  }
+}
 @media screen and (max-width: 780px) {
   .about_team .row .col-lg-5 .about_team_image:nth-child(2) {
     height: auto;
@@ -3228,6 +3265,11 @@
 .about_team .row .col-lg-7 .about_team_image:nth-child(1) {
   height: 585px;
 }
+@media screen and (max-width: 1440px) {
+  .about_team .row .col-lg-7 .about_team_image:nth-child(1) {
+    height: 485px;
+  }
+}
 @media screen and (max-width: 780px) {
   .about_team .row .col-lg-7 .about_team_image:nth-child(1) {
     height: auto;
@@ -3235,6 +3277,15 @@
 }
 .about_team .row .col-lg-7 .about_team_image:nth-child(2) {
   height: 330px;
+}
+@media screen and (max-width: 1440px) {
+  .about_team .row .col-lg-7 .about_team_image:nth-child(2) {
+    height: 230px;
+  }
+  .about_team .row .col-lg-7 .about_team_image:nth-child(2) img {
+    position: absolute;
+    top: -25%;
+  }
 }
 @media screen and (max-width: 780px) {
   .about_team .row .col-lg-7 .about_team_image:nth-child(2) {
@@ -3255,8 +3306,10 @@
 }
 @media screen and (max-width: 1440px) {
   .about_team_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -3284,12 +3337,18 @@
 .about_diploma {
   position: relative;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 70px;
+}
+@media screen and (max-width: 420px) {
+  .about_diploma {
+    margin-top: 50px;
+  }
 }
 .about_diploma_image {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
+  margin-top: 30px;
 }
 .about_diploma_image img {
   width: 100%;
@@ -3312,8 +3371,9 @@
 }
 @media screen and (max-width: 1440px) {
   .about_diploma_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 40px;
   }
 }
 
