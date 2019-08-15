@@ -1,16 +1,22 @@
 .partners_main
   position: relative
   width: 100%
-  margin-top: 210px
+  margin-top: 140px
+  @media screen and (max-width: 1440px)
+    margin-top: 100px
   &_header
     @extend .open-light
     font-size: 54px
     text-align: center
+    @media screen and (max-width: 1440px)
+      font-size: 44px
   &_wrapper
     position: relative
     display: flex
     width: calc(100% - 5vw)
     margin-top: 70px
+    @media screen and (max-width: 1440px)
+      margin-top: 30px
     @media screen and (max-width: 780px)
       display: inline-block
   &_image
@@ -18,9 +24,10 @@
     display: inline-block
     overflow: hidden
     border-radius: 0 10px 10px 0
+    @media screen and (max-width: 1440px)
+      height: 400px
     @media screen and (max-width: 780px)
       width: 100%
-      height: 400px
     @media screen and (max-width: 420px)
       height: 250px
     img
@@ -30,9 +37,15 @@
       -ms-transform: translate(-30%, 0)
       -o-transform: translate(-30%, 0)
       transform: translate(-30%, 0)
-      @media screen and (max-width: 780px)
+      @media screen and (max-width: 1440px)
         height: auto
         width: 100%
+        -webkit-transform: translate(0)
+        -moz-transform: translate(0)
+        -ms-transform: translate(0)
+        -o-transform: translate(0)
+        transform: translate(0)
+      @media screen and (max-width: 780px)
         -webkit-transform: translate(0, -15%)
         -moz-transform: translate(0, -15%)
         -ms-transform: translate(0, -15%)
@@ -51,6 +64,8 @@
     width: 54.5%
     padding-top: 50px
     margin-left: 30px
+    @media screen and (max-width: 1440px)
+      padding-top: 30px
     @media screen and (max-width: 780px)
       width: 100%
     &_text
@@ -59,13 +74,15 @@
       font-size: 18px
       line-height: 27px
       @media screen and (max-width: 1440px)
-        font-size: 16px
-        line-height: 24px
+        font-size: 14px
+        line-height: 22px
       @media screen and (max-width: 780px)
         width: 90%
     &_btn
       width: 35%
       margin-top: 50px
+      @media screen and (max-width: 1440px)
+        margin-top: 30px
       @media screen and (max-width: 780px)
         width: 50%
       @media screen and (max-width: 420px)
@@ -94,10 +111,9 @@
     border-radius: 10px
     border-top: 25px solid $blue
     box-shadow: 0 3px 20px rgba(0,0,0,0.16)
-    cursor: pointer
     overflow: hidden
     @media screen and (max-width: 1440px)
-      min-height: 300px
+      min-height: 200px
     @media screen and (max-width: 420px)
       margin-top: 20px
     &:hover
@@ -121,14 +137,17 @@
       position: absolute
       display: block
       width: auto
-      height: auto
+      height: 30px
       bottom: 20px
       left: 35px
       @extend .open-semi
       font-size: 28px
       color: $black
+      text-decoration: none
       @media screen and (max-width: 1440px)
-        font-size: 18px
+        font-size: 17px
+        bottom: 10px
+        left: 15px
     &_decor
       position: absolute
       display: block
@@ -143,43 +162,6 @@
         left: 50%
       img
         width: 100%
-    &_link
-      position: absolute
-      display: block
-      width: auto
-      height: auto
-      bottom: 25px
-      right: 40px
-      color: $black
-      opacity: 0
-      @extend .open-semi
-      font-size: 18px
-      text-decoration: none
-      -webkit-transition: opacity 0.6s
-      -moz-transition: opacity 0.6s
-      -ms-transition: opacity 0.6s
-      -o-transition: opacity 0.6s
-      transition: opacity 0.6s
-    &_text
-      position: absolute
-      display: block
-      width: 100%
-      height: 80%
-      top: -80%
-      left: 0
-      padding-top: 5px
-      padding-left: 25px
-      padding-right: 25px
-      background-color: $blue
-      color: $white
-      font-size: 16px
-      -webkit-transition: top 0.6s
-      -moz-transition: top 0.6s
-      -ms-transition: top 0.6s
-      -o-transition: top 0.6s
-      transition: top 0.6s
-      @media screen and (max-width: 1440px)
-        font-size: 14px
 
 
 
@@ -188,7 +170,9 @@
 .partners_advantage
   position: relative
   width: 100%
-  margin-top: 120px
+  margin-top: 70px
+  @media screen and (max-width: 420px)
+    margin-top: 50px
   &_wrapper
     position: relative
     width: 100%
@@ -196,9 +180,10 @@
     @extend .open-light
     font-size: 18px
     line-height: 27px
+    margin-top: 30px
     @media screen and (max-width: 1440px)
-      font-size: 16px
-      line-height: 24px
+      font-size: 14px
+      line-height: 22px
     @media screen and (max-width: 780px)
       margin-top: 20px
   &_btn
@@ -239,13 +224,14 @@
       @extend .open-semi
       font-size: 24px
       color: $black
+      @media screen and (max-width: 1440px)
+        font-size: 22px
     &_text
       @extend .open-light
       font-size: 16px
       line-height: 24px
       color: $black
       margin-top: 20px
-  .fix
-    @media screen and (max-width: 780px)
-      padding-left: 15px
-      padding-right: 15px
+      @media screen and (max-width: 1440px)
+        font-size: 14px
+        line-height: 22px
