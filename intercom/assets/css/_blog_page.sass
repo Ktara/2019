@@ -1,20 +1,24 @@
 .blog_main
   position: relative
   width: 100%
-  margin-top: 210px
-  @media screen and (max-width: 420px)
-    margin-top: 180px
+  margin-top: 140px
+  @media screen and (max-width: 1440px)
+    margin-top: 100px
   &_header
     @extend .open-light
     font-size: 54px
     text-align: center
+    @media screen and (max-width: 1440px)
+      font-size: 44px
     @media screen and (max-width: 420px)
       font-size: 36px
   &_sort
     position: relative
     display: flex
     justify-content: center
-    margin-top: 55px
+    margin-top: 50px
+    @media screen and (max-width: 1440px)
+      margin-top: 30px
     @media screen and (max-width: 420px)
       flex-direction: column
     &:after
@@ -27,6 +31,8 @@
       left: 25%
       background-color: $blue
       opacity: 0.25
+      @media screen and (max-width: 1440px)
+        bottom: -20px
     li
       @extend .open-bold
       color: $black
@@ -43,6 +49,7 @@
       transition: all 0.5s
       border-radius: 10px
       @media screen and (max-width: 1440px)
+        font-size: 24px
         margin-right: 10px
         margin-left: 10px
       @media screen and (max-width: 780px)
@@ -56,6 +63,7 @@
     padding-top: 50px
   &_block
     margin-top: 50px
+    margin-right: 20px
     &_image
       position: relative
       width: 100%
@@ -80,25 +88,30 @@
       font-size: 24px
       line-height: 33px
       @media screen and (max-width: 1440px)
-        font-size: 22px
-        line-height: 30px
+        font-size: 20px
+        line-height: 27px
     &_text
       @extend .open-light
       font-size: 18px
       line-height: 27px
       margin-top: 30px
       @media screen and (max-width: 1440px)
-        font-size: 16px
-        line-height: 24px
+        font-size: 14px
+        line-height: 22px
+        margin-top: 15px
   &_read_more
     &_header
       @extend .open-bold
       color: $blue
       font-size: 28px
       margin-top: 100px
+      @media screen and (max-width: 1440px)
+        font-size: 24px
     &_block
       position: relative
       margin-top: 50px
+      @media screen and (max-width: 1440px)
+        margin-top: 30px
       &:after
         content: ''
         position: absolute
@@ -117,7 +130,7 @@
         line-height: 24px
         text-decoration: none
         @media screen and (max-width: 1440px)
-          font-size: 16px
+          font-size: 14px
           line-height: 22px
       &_text
         @extend .open-light
@@ -127,5 +140,5 @@
         line-height: 27px
         margin-top: 10px
         @media screen and (max-width: 1440px)
-          font-size: 14px
-          line-height: 25px
+          font-size: 13px
+          line-height: 20px

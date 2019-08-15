@@ -3380,16 +3380,21 @@
 .blog_main {
   position: relative;
   width: 100%;
-  margin-top: 210px;
+  margin-top: 140px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1440px) {
   .blog_main {
-    margin-top: 180px;
+    margin-top: 100px;
   }
 }
 .blog_main_header {
   font-size: 54px;
   text-align: center;
+}
+@media screen and (max-width: 1440px) {
+  .blog_main_header {
+    font-size: 44px;
+  }
 }
 @media screen and (max-width: 420px) {
   .blog_main_header {
@@ -3400,7 +3405,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 55px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1440px) {
+  .blog_main_sort {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 420px) {
   .blog_main_sort {
@@ -3417,6 +3427,11 @@
   left: 25%;
   background-color: #41C4DC;
   opacity: 0.25;
+}
+@media screen and (max-width: 1440px) {
+  .blog_main_sort:after {
+    bottom: -20px;
+  }
 }
 .blog_main_sort li {
   color: #000000;
@@ -3435,6 +3450,7 @@
 }
 @media screen and (max-width: 1440px) {
   .blog_main_sort li {
+    font-size: 24px;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -3455,6 +3471,7 @@
 }
 .blog_main_block {
   margin-top: 50px;
+  margin-right: 20px;
 }
 .blog_main_block_image {
   position: relative;
@@ -3489,8 +3506,8 @@
 }
 @media screen and (max-width: 1440px) {
   .blog_main_block_title {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 .blog_main_block_text {
@@ -3500,8 +3517,9 @@
 }
 @media screen and (max-width: 1440px) {
   .blog_main_block_text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
   }
 }
 .blog_main_read_more_header {
@@ -3509,9 +3527,19 @@
   font-size: 28px;
   margin-top: 100px;
 }
+@media screen and (max-width: 1440px) {
+  .blog_main_read_more_header {
+    font-size: 24px;
+  }
+}
 .blog_main_read_more_block {
   position: relative;
   margin-top: 50px;
+}
+@media screen and (max-width: 1440px) {
+  .blog_main_read_more_block {
+    margin-top: 30px;
+  }
 }
 .blog_main_read_more_block:after {
   content: "";
@@ -3533,7 +3561,7 @@
 }
 @media screen and (max-width: 1440px) {
   .blog_main_read_more_block_title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
   }
 }
@@ -3546,8 +3574,8 @@
 }
 @media screen and (max-width: 1440px) {
   .blog_main_read_more_block_text {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 20px;
   }
 }
 
