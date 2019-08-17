@@ -88,9 +88,9 @@ $('.vacancy_list_title').click(function(){
 
 
 
-$('.main_elements_box_more').click(function(){
-    $('.main_elements_box_wrapper').toggleClass('main_elements_open');
-    $('.main_elements_box_text_wrapper_tablet').toggleClass('main_elements_open_text');
+$('.main_elements_box_more').click(function(event){
+    $('.main_elements_box_wrapper').removeClass('main_elements_open');
+    $(event.target).parent().parent().addClass('main_elements_open');
     $('.main_elements_box_more').toggleClass('more_open');
 });
 
