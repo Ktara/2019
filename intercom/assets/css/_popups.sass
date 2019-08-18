@@ -111,6 +111,8 @@
     height: calc(35vh - 70px)
     top: 70px
     min-height: 210px
+  @media screen and (max-width: 420px)
+    height: calc(100vh - 70px)
   &_active
     display: block
     top: 110px
@@ -130,6 +132,8 @@
     @media screen and (max-width: 1440px)
       font-size: 44px
       margin-top: 30px
+    @media screen and (max-width: 420px)
+      font-size: 28px
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -162,6 +166,9 @@
     input:focus::placeholder
       color: rgba(0, 0, 0, 0.5)
       outline: none
+    &_btn
+      @media screen and (max-width: 420px)
+        margin-top: 40px
   &_close
     position: absolute
     display: block
@@ -192,7 +199,7 @@
       @media screen and (max-width: 1440px)
         top: 19px
       @media screen and (max-width: 768px)
-        right: -10px
+        right: -8px
     &:before
       content: ""
       display: block
@@ -231,6 +238,8 @@
     height: calc(35vh - 70px)
     top: 70px
     min-height: 210px
+  @media screen and (max-width: 420px)
+    height: calc(100vh - 70px)
   &_active
     display: block
     top: 110px
@@ -250,6 +259,8 @@
     @media screen and (max-width: 1440px)
       font-size: 44px
       margin-top: 30px
+    @media screen and (max-width: 420px)
+      font-size: 28px
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -282,6 +293,9 @@
     input:focus::placeholder
       color: rgba(0, 0, 0, 0.5)
       outline: none
+    &_btn
+      @media screen and (max-width: 420px)
+        margin-top: 40px
   &_close
     position: absolute
     display: block
@@ -312,7 +326,7 @@
       @media screen and (max-width: 1440px)
         top: 19px
       @media screen and (max-width: 768px)
-        right: -10px
+        right: -8px
     &:before
       content: ""
       display: block
@@ -350,6 +364,8 @@
     height: calc(35vh - 70px)
     top: 70px
     min-height: 210px
+  @media screen and (max-width: 420px)
+    height: calc(100vh - 70px)
   &_active
     display: block
     top: 110px
@@ -369,6 +385,8 @@
     @media screen and (max-width: 1440px)
       font-size: 44px
       margin-top: 30px
+    @media screen and (max-width: 420px)
+      font-size: 28px
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -401,6 +419,9 @@
     input:focus::placeholder
       color: rgba(0, 0, 0, 0.5)
       outline: none
+    &_btn
+      @media screen and (max-width: 420px)
+        margin-top: 40px
   &_close
     position: absolute
     display: block
@@ -431,7 +452,7 @@
       @media screen and (max-width: 1440px)
         top: 19px
       @media screen and (max-width: 768px)
-        right: -10px
+        right: -8px
     &:before
       content: ""
       display: block
@@ -469,6 +490,8 @@
     height: calc(35vh - 70px)
     top: 70px
     min-height: 210px
+  @media screen and (max-width: 420px)
+    height: calc(100vh - 70px)
   &_active
     display: block
     top: 110px
@@ -488,6 +511,8 @@
     @media screen and (max-width: 1440px)
       font-size: 44px
       margin-top: 30px
+    @media screen and (max-width: 420px)
+      font-size: 28px
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -520,6 +545,9 @@
     input:focus::placeholder
       color: rgba(0, 0, 0, 0.5)
       outline: none
+    &_btn
+      @media screen and (max-width: 420px)
+        margin-top: 40px
   &_close
     position: absolute
     display: block
@@ -550,7 +578,133 @@
       @media screen and (max-width: 1440px)
         top: 19px
       @media screen and (max-width: 768px)
-        right: -10px
+        right: -8px
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      width: 40px
+      height: 3px
+      top: 55px
+      right: 0
+      background-color: $black
+      transition: all 0.5s
+      transform: rotate(-45deg)
+      @media screen and (max-width: 1440px)
+        top: 35px
+
+
+
+
+
+.popup_partner
+  position: fixed
+  display: none
+  width: 100%
+  height: calc(40vh - 110px)
+  top: -100%
+  left: 0
+  opacity: 0
+  background-color: $white
+  -webkit-transition: all 0.6s
+  -moz-transition: all 0.6s
+  -ms-transition: all 0.6s
+  -o-transition: all 0.6s
+  transition: all 0.6s
+  z-index: 25
+  @media screen and (max-width: 1440px)
+    height: calc(35vh - 70px)
+    top: 70px
+    min-height: 210px
+  @media screen and (max-width: 420px)
+    height: calc(100vh - 70px)
+  &_active
+    display: block
+    top: 110px
+    opacity: 1
+    -webkit-transition: all 0.6s
+    -moz-transition: all 0.6s
+    -ms-transition: all 0.6s
+    -o-transition: all 0.6s
+    transition: all 0.6s
+    @media screen and (max-width: 1440px)
+      top: 70px
+  &_header
+    @extend .open-light
+    font-size: 54px
+    margin-top: 40px
+    color: $blue
+    @media screen and (max-width: 1440px)
+      font-size: 44px
+      margin-top: 30px
+    @media screen and (max-width: 420px)
+      font-size: 28px
+  &_form
+    margin-top: 40px
+    @media screen and (max-width: 1440px)
+      margin-top: 30px
+    input
+      width: 100%
+      height: 30px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      font-size: 14px
+      text-indent: 10px
+      color: rgba(0, 0, 0, 1)
+      border: none
+      border-bottom: 1px solid $blue
+      margin-top: 20px
+      @media screen and (max-width: 1440px)
+        margin-top: 15px
+    input::-moz-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::-webkit-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input:-ms-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::-ms-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input:focus::placeholder
+      color: rgba(0, 0, 0, 0.5)
+      outline: none
+    &_btn
+      @media screen and (max-width: 420px)
+        margin-top: 40px
+  &_close
+    position: absolute
+    display: block
+    width: 50px
+    height: 100px
+    top: 0
+    right: 5vw
+    overflow: hidden
+    cursor: pointer
+    padding-right: 0
+    margin: 0
+    z-index: 30
+    @media screen and (max-width: 1440px)
+      height: 70px
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 40px
+      height: 22px
+      border-top: 3px solid $black
+      border-bottom: 3px solid $black
+      transition: all 0.5s
+      transform: rotate(45deg)
+      border-top: none
+      right: -7px
+      top: 38px
+      @media screen and (max-width: 1440px)
+        top: 19px
+      @media screen and (max-width: 768px)
+        right: -8px
     &:before
       content: ""
       display: block

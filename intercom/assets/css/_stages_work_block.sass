@@ -27,33 +27,71 @@
       position: relative
       width: 105.6666px !important
       margin-top: 240px
+      @media screen and (max-width: 420px)
+        width: 247px !important
+        margin-top: 0
       .stages_work_slide_box
         width: 300%
+        @media screen and (max-width: 420px)
+          width: 100%
+      .stages_work_slide_image
+        width: 450%
   &_slide
+    position: relative
     width: 417px !important
-    //margin-right: 100px
     @media screen and (max-width: 1440px)
       width: 317px !important
-    &_number
-      @extend .open-light
-      font-size: 80px
-      margin-top: 25px
-    &_wrapper
-      display: flex
-      margin-top: 15px
-      @media screen and (max-width: 1440px)
-        margin-top: 10px
+    @media screen and (max-width: 420px)
+      width: 247px !important
+    //&:hover
+    //  .stages_work_slide_image
+    //    opacity: 1
+    //    -webkit-transition: all 0.5s
+    //    -moz-transition: all 0.5s
+    //    -ms-transition: all 0.5s
+    //    -o-transition: all 0.5s
+    //    transition: all 0.5s
     &_image
-      width: 60px
-      margin-right: 10px
-      margin-left: 25px
+      position: absolute
+      width: 150%
+      height: 10vh
+      min-height: 300px
+      top: 0
+      left: 0
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      overflow: hidden
+      border-radius: 10px
+      opacity: 0
       img
         width: 100%
+    &_image_active
+      opacity: 1
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+    &_number
+      position: relative
+      @extend .open-light
+      font-size: 80px
+      z-index: 1
+      @media screen and (max-width: 420px)
+        font-size: 50px
     &_text_wrapper
-      width: calc(100% - 95px)
+      position: relative
+      width: 100%
+      padding-left: 95px
+      z-index: 1
     &_header
       @extend .open-semi
       font-size: 24px
+      @media screen and (max-width: 420px)
+        font-size: 18px
     &_text
       @extend .open-light
       font-size: 16px
@@ -61,3 +99,6 @@
       @media screen and (max-width: 1440px)
         font-size: 14px
         line-height: 22px
+      @media screen and (max-width: 420px)
+        font-size: 12px
+        line-height: 20px

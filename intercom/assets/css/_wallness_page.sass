@@ -10,6 +10,8 @@
     text-align: center
     @media screen and (max-width: 1440px)
       font-size: 44px
+    @media screen and (max-width: 420px)
+      font-size: 32px
   &_sort_list
     position: relative
     display: flex
@@ -19,6 +21,8 @@
     margin-top: 50px
     @media screen and (max-width: 1440px)
       margin-top: 30px
+    @media screen and (max-width: 420px)
+      flex-direction: column
     &:after
       content: ''
       position: absolute
@@ -45,6 +49,9 @@
       @media screen and (max-width: 1440px)
         font-size: 24px
         margin-right: 15px
+      @media screen and (max-width: 780px)
+        font-size: 16px
+        margin-right: 0
   &_text_block
     position: relative
     width: 175%
@@ -56,6 +63,8 @@
       padding-top: 30px
       padding-bottom: 30px
       margin-top: 40px
+    @media screen and (max-width: 420px)
+      box-shadow: none
   &_title
     width: 50%
     @extend .open-semi
@@ -63,6 +72,8 @@
     margin-left: 60px
     @media screen and (max-width: 1440px)
       font-size: 22px
+    @media screen and (max-width: 420px)
+      margin-left: 0
   &_text
     width: 50%
     @extend .open-light
@@ -74,6 +85,8 @@
       font-size: 14px
       line-height: 22px
       margin-top: 20px
+    @media screen and (max-width: 420px)
+      margin-left: 0
   &_image
     position: relative
     width: 100%
@@ -85,6 +98,10 @@
     @media screen and (max-width: 1440px)
       margin-top: 50px
       min-height: 250px
+    @media screen and (max-width: 780px)
+      margin-top: 0
+    @media screen and (max-width: 420px)
+      min-height: 170px
     img
       min-width: 100%
       height: 100%
@@ -93,6 +110,11 @@
         bottom: -15%
         height: auto
         width: 100%
+      @media screen and (max-width: 420px)
+        bottom: 0
+        height: 100%
+        width: auto
+        min-width: 100%
 
 
 
@@ -104,6 +126,9 @@
 .wallness_sort_result
   position: relative
   width: 100%
+  @media screen and (max-width: 780px)
+    margin-top: 50px
+    padding-bottom: 50px
   &_box
     margin-top: 50px
     @media screen and (max-width: 1440px)
@@ -121,9 +146,13 @@
     @media screen and (max-width: 1440px)
       height: 15vh
       min-height: 250px
+    @media screen and (max-width: 420px)
+      min-height: 170px
     img
       width: 100%
-      //transform: translate(-15%)
+      @media screen and (max-width: 780px)
+        width: auto
+        height: 100%
   &_title
     display: block
     @extend .open-semi
@@ -133,3 +162,5 @@
     margin-top: 10px
     @media screen and (max-width: 1440px)
       font-size: 24px
+    @media screen and (max-width: 420px)
+      font-size: 18px

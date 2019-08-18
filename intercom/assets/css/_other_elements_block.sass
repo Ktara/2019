@@ -18,6 +18,8 @@
       overflow: hidden
       @media screen and (max-width: 1440px)
         min-height: 250px
+      @media screen and (max-width: 420px)
+        min-height: 170px
       img
         height: 100%
         -webkit-transform: translate(-15%)
@@ -25,14 +27,14 @@
         -ms-transform: translate(-15%)
         -o-transform: translate(-15%)
         transform: translate(-15%)
-    //&_viewer
-    //  position: relative
-    //  display: inline-block
-    //  width: auto
-    //  height: 100%
-    //  img
-    //    height: 100%
-    //    transform: translate(0)
+        @media screen and (max-width: 420px)
+          min-height: 100%
+          width: 100%
+          -webkit-transform: translate(0)
+          -moz-transform: translate(0)
+          -ms-transform: translate(0)
+          -o-transform: translate(0)
+          transform: translate(0)
     &_title
       display: block
       @extend .open-bold
@@ -42,3 +44,5 @@
       margin-top: 10px
       @media screen and (max-width: 1440px)
         font-size: 20px
+      @media screen and (max-width: 420px)
+        font-size: 18px

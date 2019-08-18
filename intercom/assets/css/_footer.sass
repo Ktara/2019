@@ -71,6 +71,9 @@
     @media screen and (max-width: 780px)
       margin-top: 20px
       margin-bottom: 0
+    @media screen and (max-width: 420px)
+      font-size: 12px
+      margin-right: 10px
     &:after
       content: ''
       position: absolute
@@ -80,6 +83,8 @@
       top: 0
       background-color: $black
       opacity: 0.5
+      @media screen and (max-width: 420px)
+        right: -8px
   .footer_menu li:first-child
     position: relative
     &:after
@@ -91,6 +96,8 @@
       top: 0
       background-color: $black
       opacity: 0.5
+      @media screen and (max-width: 420px)
+        right: -8px
   &_menu
     width: auto
     display: inline-block
@@ -100,6 +107,8 @@
       display: inline-block
       width: auto
       margin-right: 20px
+      @media screen and (max-width: 420px)
+        margin-right: 10px
     a
       font-size: 16px
       text-decoration: none
@@ -108,6 +117,8 @@
       opacity: 0.75
       @media screen and (max-width: 1440px)
         font-size: 14px
+      @media screen and (max-width: 420px)
+        font-size: 12px
   &_form
     position: relative
     width: 100%
@@ -115,6 +126,8 @@
     justify-content: space-between
     @media screen and (max-width: 780px)
       margin-top: 20px
+    @media screen and (max-width: 420px)
+      margin-top: 30px
     label
       position: absolute
       width: 50%

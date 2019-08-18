@@ -48,6 +48,15 @@ $('.popup_want_close').click(function(){
 
 
 
+$('.partner_btn').click(function(){
+    $('.popup_partner').toggleClass('popup_partner_active');
+});
+$('.popup_partner_close').click(function(){
+    $('.popup_partner').toggleClass('popup_partner_active');
+});
+
+
+
 
 $('.text_block_list_point_title').click(function(){
     $('.text_block_list_point_wrapper').animate({
@@ -142,7 +151,16 @@ $('.project_about_slider_wrapper').slick({
         var length = slider.$slides.length;
         $('.reviews_count').text(length);
         return i + 1 + '/' + length;
-    }
+    },
+    responsive: [
+        {
+            breakpoint: 780,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 
@@ -262,9 +280,24 @@ $('.gallery_slider_nav').slick({
 
 $('.product_main_slider').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     dots: false,
-    arrows: false
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 780,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 
@@ -293,29 +326,47 @@ $('.product_main_image_slider').slick({
     arrows: true,
     responsive: [
         {
-            breakpoint: 780,
-            settings: {
-                slidesToShow: 1,
-                centerPadding: '100px'
-            }
-        },
-        {
             breakpoint: 420,
             settings: {
                 slidesToShow: 1,
-                centerPadding: '20px'
+                centerPadding: '40px'
             }
         }
     ]
 });
 
+(function () {
+    $('.stages_work_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: false,
+        arrows: false,
+        initialSlide: -1,
+        infinite: true,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 0,
+                }
+            }
+        ]
+    });
+})();
 
 
 
-$('.stages_work_slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: false,
-    initialSlide: -1.8
+
+$('.stages_work_slide').mouseenter(function(){
+    $('.stages_work_slide_image').removeClass('stages_work_slide_image_active');
+    $('.stages_work_slide').css('opacity', 0.5);
+    $(this).css('opacity', 1);
+    $(this).find('.stages_work_slide_image').addClass('stages_work_slide_image_active');
+});
+$('.stages_work_slide').mouseleave(function(){
+    $('.stages_work_slide_image').removeClass('stages_work_slide_image_active');
+    $('.stages_work_slide').css('opacity', 1);
 });
