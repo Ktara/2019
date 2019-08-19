@@ -370,3 +370,20 @@ $('.stages_work_slide').mouseleave(function(){
     $('.stages_work_slide_image').removeClass('stages_work_slide_image_active');
     $('.stages_work_slide').css('opacity', 1);
 });
+
+
+
+var scroll_targets = $('.show_on_scroll');
+if(scroll_targets[0] != undefined) {
+    $(window).scroll(function(){
+        for(var i = 0; i < scroll_targets.length; i++){
+            var position = $(scroll_targets[i]).offset().top - $(window).height()*0.7;
+            if(position < $(window).scrollTop()){
+                $(scroll_targets[i]).animate({
+                    top: 0,
+                    opacity: 1
+                }, 900);
+            }
+        }
+    });
+}

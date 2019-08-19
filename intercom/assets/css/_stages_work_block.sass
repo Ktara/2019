@@ -36,6 +36,8 @@
           width: 100%
       .stages_work_slide_image
         width: 450%
+        @media screen and (max-width: 420px)
+          width: 120%
   &_slide
     position: relative
     width: 417px !important
@@ -43,14 +45,6 @@
       width: 317px !important
     @media screen and (max-width: 420px)
       width: 247px !important
-    //&:hover
-    //  .stages_work_slide_image
-    //    opacity: 1
-    //    -webkit-transition: all 0.5s
-    //    -moz-transition: all 0.5s
-    //    -ms-transition: all 0.5s
-    //    -o-transition: all 0.5s
-    //    transition: all 0.5s
     &_image
       position: absolute
       width: 150%
@@ -66,6 +60,8 @@
       overflow: hidden
       border-radius: 10px
       opacity: 0
+      @media screen and (max-width: 420px)
+        min-height: 170px
       img
         width: 100%
     &_image_active

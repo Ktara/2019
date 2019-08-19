@@ -5,10 +5,12 @@
   &_slide
     position: relative
     width: 100%
-    height: calc(100vh - 60px)
+    height: calc(100vh - 160px)
     background-repeat: no-repeat
     -webkit-background-size: cover
     background-size: cover
+    @media screen and (max-width: 1440px)
+      height: calc(100vh - 130px)
     @media screen and (max-width: 420px)
       background-position: center
     .filter
@@ -276,8 +278,10 @@
   &_block
     position: absolute
     width: calc(100% - 10vw)
-    bottom: 90px
+    bottom: 160px
     left: 5vw
+    @media screen and (max-width: 1440px)
+      bottom: 130px
     @media screen and (max-width: 420px)
       display: none
     .row

@@ -455,10 +455,15 @@
 .main_slide {
   position: relative;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 160px);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+}
+@media screen and (max-width: 1440px) {
+  .main_slide {
+    height: calc(100vh - 130px);
+  }
 }
 @media screen and (max-width: 420px) {
   .main_slide {
@@ -780,8 +785,13 @@
 .main_block {
   position: absolute;
   width: calc(100% - 10vw);
-  bottom: 90px;
+  bottom: 160px;
   left: 5vw;
+}
+@media screen and (max-width: 1440px) {
+  .main_block {
+    bottom: 130px;
+  }
 }
 @media screen and (max-width: 420px) {
   .main_block {
@@ -7650,6 +7660,11 @@
 .stages_work_slider .slick-track .stages_work_slide:nth-child(odd) .stages_work_slide_image {
   width: 450%;
 }
+@media screen and (max-width: 420px) {
+  .stages_work_slider .slick-track .stages_work_slide:nth-child(odd) .stages_work_slide_image {
+    width: 120%;
+  }
+}
 .stages_work_slide {
   position: relative;
   width: 417px !important;
@@ -7679,6 +7694,11 @@
   overflow: hidden;
   border-radius: 10px;
   opacity: 0;
+}
+@media screen and (max-width: 420px) {
+  .stages_work_slide_image {
+    min-height: 170px;
+  }
 }
 .stages_work_slide_image img {
   width: 100%;
@@ -7730,6 +7750,66 @@
     font-size: 12px;
     line-height: 20px;
   }
+}
+
+@keyframes show_header {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes show_block {
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes show_content {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+.animate_header {
+  position: relative;
+  opacity: 0;
+  top: -110px;
+  animation: show_header 1s 1.7s forwards;
+}
+@media screen and (max-width: 1440px) {
+  .animate_header {
+    top: -70px;
+  }
+}
+
+.animate_block {
+  margin-left: -100%;
+  opacity: 0;
+  animation: show_block 0.7s 0.5s forwards;
+}
+
+.animate_text1 {
+  opacity: 0;
+  top: 20px;
+  animation: show_content 1s 0.9s forwards;
+}
+
+.animate_text2 {
+  opacity: 0;
+  top: 20px;
+  animation: show_content 1s 1.1s forwards;
+}
+
+.animate_text3 {
+  opacity: 0;
+  top: 20px;
+  animation: show_content 1s 1.3s forwards;
+}
+
+.animate_text4 {
+  opacity: 0;
+  top: 20px;
+  animation: show_content 1s 1.5s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
