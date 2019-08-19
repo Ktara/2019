@@ -2,6 +2,7 @@
   position: relative
   width: 100%
   margin-top: 70px
+  padding-bottom: 70px
   @media screen and (max-width: 420px)
     margin-top: 50px
   &_slider_wrapper
@@ -31,11 +32,15 @@
         width: 247px !important
         margin-top: 0
       .stages_work_slide_box
-        width: 300%
+        width: 400%
+        @media screen and (max-width: 1440px)
+          width: 300%
         @media screen and (max-width: 420px)
           width: 100%
       .stages_work_slide_image
-        width: 450%
+        width: 575%
+        @media screen and (max-width: 1440px)
+          width: 475%
         @media screen and (max-width: 420px)
           width: 120%
   &_slide
@@ -47,7 +52,7 @@
       width: 247px !important
     &_image
       position: absolute
-      width: 150%
+      width: 145%
       height: 10vh
       min-height: 300px
       top: 0
@@ -60,6 +65,9 @@
       overflow: hidden
       border-radius: 10px
       opacity: 0
+      @media screen and (max-width: 1440px)
+        width: 160%
+        min-height: 250px
       @media screen and (max-width: 420px)
         min-height: 170px
       img
@@ -80,9 +88,17 @@
         font-size: 50px
     &_text_wrapper
       position: relative
-      width: 100%
-      padding-left: 95px
+      width: calc(110% - 115px)
+      //padding-left: 95px
       z-index: 1
+    &_text_decor_wrapper
+      position: relative
+      display: flex
+    &_text_decor
+      width: 60px
+      margin-right: 15px
+      img
+        width: 100%
     &_header
       @extend .open-semi
       font-size: 24px

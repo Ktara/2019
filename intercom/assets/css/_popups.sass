@@ -2,8 +2,8 @@
   position: fixed
   display: block
   width: 100%
-  height: calc(100vh - 110px)
-  top: 110px
+  height: 100vh
+  top: 0
   right: -100%
   opacity: 0
   -webkit-transition: all 0.6s
@@ -12,9 +12,9 @@
   -o-transition: all 0.6s
   transition: all 0.6s
   z-index: 25
-  @media screen and (max-width: 1440px)
-    height: calc(100vh - 70px)
-    top: 70px
+  //@media screen and (max-width: 1440px)
+  //  height: calc(100vh - 70px)
+  //  top: 70px
   &_active
     //height: calc(100vh - 110px)
     right: 0
@@ -27,11 +27,13 @@
   &_wrapper
     position: relative
     width: 100%
-    height: calc(100vh - 110px)
+    height: 100vh
+    padding-top: 110px
     background-color: $white
     padding-left: 20%
     @media screen and (max-width: 1440px)
-      height: calc(100vh - 70px)
+      //height: calc(100vh - 70px)
+      padding-top: 70px
     @media screen and (max-width: 420px)
       padding-left: 10%
   &_list
@@ -96,8 +98,8 @@
   position: fixed
   display: none
   width: 100%
-  height: calc(40vh - 110px)
-  top: -100%
+  height: 40vh
+  top: 0
   left: 0
   opacity: 0
   background-color: $white
@@ -106,24 +108,21 @@
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
-  z-index: 25
+  z-index: 210
   @media screen and (max-width: 1440px)
-    height: calc(35vh - 70px)
-    top: 70px
+    height: 35vh
     min-height: 210px
   @media screen and (max-width: 420px)
-    height: calc(100vh - 70px)
+    height: 100vh
   &_active
     display: block
-    top: 110px
+    top: 0
     opacity: 1
     -webkit-transition: all 0.6s
     -moz-transition: all 0.6s
     -ms-transition: all 0.6s
     -o-transition: all 0.6s
     transition: all 0.6s
-    @media screen and (max-width: 1440px)
-      top: 70px
   &_header
     @extend .open-light
     font-size: 54px
@@ -223,7 +222,7 @@
   position: fixed
   display: none
   width: 100%
-  height: calc(40vh - 110px)
+  height: 40vh
   top: -100%
   left: 0
   opacity: 0
@@ -233,24 +232,21 @@
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
-  z-index: 25
+  z-index: 210
   @media screen and (max-width: 1440px)
-    height: calc(35vh - 70px)
-    top: 70px
+    height: 35vh
     min-height: 210px
   @media screen and (max-width: 420px)
-    height: calc(100vh - 70px)
+    height: 100vh
   &_active
     display: block
-    top: 110px
+    top: 0
     opacity: 1
     -webkit-transition: all 0.6s
     -moz-transition: all 0.6s
     -ms-transition: all 0.6s
     -o-transition: all 0.6s
     transition: all 0.6s
-    @media screen and (max-width: 1440px)
-      top: 70px
   &_header
     @extend .open-light
     font-size: 54px
@@ -349,7 +345,7 @@
   position: fixed
   display: none
   width: 100%
-  height: calc(40vh - 110px)
+  height: 40vh
   top: -100%
   left: 0
   opacity: 0
@@ -359,24 +355,21 @@
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
-  z-index: 25
+  z-index: 210
   @media screen and (max-width: 1440px)
-    height: calc(35vh - 70px)
-    top: 70px
+    height: 35vh
     min-height: 210px
   @media screen and (max-width: 420px)
-    height: calc(100vh - 70px)
+    height: 100vh
   &_active
     display: block
-    top: 110px
+    top: 0
     opacity: 1
     -webkit-transition: all 0.6s
     -moz-transition: all 0.6s
     -ms-transition: all 0.6s
     -o-transition: all 0.6s
     transition: all 0.6s
-    @media screen and (max-width: 1440px)
-      top: 70px
   &_header
     @extend .open-light
     font-size: 54px
@@ -475,7 +468,7 @@
   position: fixed
   display: none
   width: 100%
-  height: calc(40vh - 110px)
+  height: 40vh
   top: -100%
   left: 0
   opacity: 0
@@ -485,24 +478,21 @@
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
-  z-index: 25
+  z-index: 210
   @media screen and (max-width: 1440px)
-    height: calc(35vh - 70px)
-    top: 70px
+    height: 35vh
     min-height: 210px
   @media screen and (max-width: 420px)
-    height: calc(100vh - 70px)
+    height: 100vh
   &_active
     display: block
-    top: 110px
+    top: 0
     opacity: 1
     -webkit-transition: all 0.6s
     -moz-transition: all 0.6s
     -ms-transition: all 0.6s
     -o-transition: all 0.6s
     transition: all 0.6s
-    @media screen and (max-width: 1440px)
-      top: 70px
   &_header
     @extend .open-light
     font-size: 54px
@@ -601,7 +591,7 @@
   position: fixed
   display: none
   width: 100%
-  height: calc(40vh - 110px)
+  height: 40vh
   top: -100%
   left: 0
   opacity: 0
@@ -611,16 +601,15 @@
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
-  z-index: 25
+  z-index: 210
   @media screen and (max-width: 1440px)
-    height: calc(35vh - 70px)
-    top: 70px
+    height: 35vh
     min-height: 210px
   @media screen and (max-width: 420px)
-    height: calc(100vh - 70px)
+    height: 100vh
   &_active
     display: block
-    top: 110px
+    top: 0
     opacity: 1
     -webkit-transition: all 0.6s
     -moz-transition: all 0.6s
@@ -737,7 +726,7 @@
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
-  z-index: 25
+  z-index: 210
   padding-bottom: 30px
   @media screen and (max-width: 1440px)
     height: calc(100vh - 70px)
