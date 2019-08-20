@@ -117,9 +117,14 @@ $purple: #5B73BF
   //margin-bottom: 35px
   @media screen and (max-width: 1440px)
     font-size: 32px
+  @media screen and (max-width: 780px)
+    font-size: 30px
+    line-height: 38px
+    border: none
+    padding: 0
   @media screen and (max-width: 420px)
     font-size: 24px
-    padding: 10px 25px
+    line-height: 33px
   &:after
     content: ''
     position: absolute
@@ -129,3 +134,5 @@ $purple: #5B73BF
     bottom: -2px
     left: -120%
     background-color: $blue
+    @media screen and (max-width: 780px)
+      display: none

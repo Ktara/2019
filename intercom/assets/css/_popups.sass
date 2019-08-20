@@ -4,14 +4,14 @@
   width: 100%
   height: 100vh
   top: 0
-  right: -100%
+  right: -100vw
   opacity: 0
   -webkit-transition: all 0.6s
   -moz-transition: all 0.6s
   -ms-transition: all 0.6s
   -o-transition: all 0.6s
   transition: all 0.6s
-  z-index: 25
+  z-index: 51
   //@media screen and (max-width: 1440px)
   //  height: calc(100vh - 70px)
   //  top: 70px
@@ -77,11 +77,14 @@
     height: 45px
     bottom: 5%
     @media screen and (max-width: 420px)
-      justify-content: flex-end
+      justify-content: flex-start
+      left: 10%
     li
       width: 40px
       height: 40px
       margin: 0 12px
+      @media screen and (max-width: 420px)
+        margin: 0 25px 0 0
       a
         text-decoration: none
         @media screen and (max-width: 1440px)
@@ -96,19 +99,19 @@
 
 .popup_details
   position: fixed
-  display: none
+  display: block
   width: 100%
   height: 40vh
-  top: 0
+  top: -100vh
   left: 0
   opacity: 0
   background-color: $white
-  -webkit-transition: all 0.6s
-  -moz-transition: all 0.6s
-  -ms-transition: all 0.6s
-  -o-transition: all 0.6s
-  transition: all 0.6s
-  z-index: 210
+  -webkit-transition: top 0.6s, opacity 0.6s
+  -moz-transition: top 0.6s, opacity 0.6s
+  -ms-transition: top 0.6s, opacity 0.6s
+  -o-transition: top 0.6s, opacity 0.6s
+  transition: top 0.6s, opacity 0.6s
+  z-index: 10
   @media screen and (max-width: 1440px)
     height: 35vh
     min-height: 210px
@@ -118,21 +121,21 @@
     display: block
     top: 0
     opacity: 1
-    -webkit-transition: all 0.6s
-    -moz-transition: all 0.6s
-    -ms-transition: all 0.6s
-    -o-transition: all 0.6s
+    -webkit-transition: top 0.6s, opacity 0.6s
+    -moz-transition: top 0.6s, opacity 0.6s
+    -ms-transition: top 0.6s, opacity 0.6s
+    -o-transition: top 0.6s, opacity 0.6s
     transition: all 0.6s
   &_header
     @extend .open-light
     font-size: 54px
-    margin-top: 40px
+    margin-top: 100px
     color: $blue
     @media screen and (max-width: 1440px)
       font-size: 44px
-      margin-top: 30px
     @media screen and (max-width: 420px)
       font-size: 28px
+      text-align: center
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -152,6 +155,8 @@
       margin-top: 20px
       @media screen and (max-width: 1440px)
         margin-top: 15px
+      @media screen and (max-width: 420px)
+        margin-top: 60px
     input::-moz-placeholder
       color: rgba(0, 0, 0, 0.5)
     input::-webkit-input-placeholder
@@ -167,51 +172,7 @@
       outline: none
     &_btn
       @media screen and (max-width: 420px)
-        margin-top: 40px
-  &_close
-    position: absolute
-    display: block
-    width: 50px
-    height: 100px
-    top: 0
-    right: 5vw
-    overflow: hidden
-    cursor: pointer
-    padding-right: 0
-    margin: 0
-    z-index: 30
-    @media screen and (max-width: 1440px)
-      height: 70px
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 22px
-      border-top: 3px solid $black
-      border-bottom: 3px solid $black
-      transition: all 0.5s
-      transform: rotate(45deg)
-      border-top: none
-      right: -7px
-      top: 38px
-      @media screen and (max-width: 1440px)
-        top: 19px
-      @media screen and (max-width: 768px)
-        right: -8px
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 3px
-      top: 55px
-      right: 0
-      background-color: $black
-      transition: all 0.5s
-      transform: rotate(-45deg)
-      @media screen and (max-width: 1440px)
-        top: 35px
+        margin-top: 60px
 
 
 
@@ -220,19 +181,19 @@
 
 .popup_consultation
   position: fixed
-  display: none
+  display: block
   width: 100%
   height: 40vh
-  top: -100%
+  top: -100vh
   left: 0
   opacity: 0
   background-color: $white
-  -webkit-transition: all 0.6s
-  -moz-transition: all 0.6s
-  -ms-transition: all 0.6s
-  -o-transition: all 0.6s
-  transition: all 0.6s
-  z-index: 210
+  -webkit-transition: top 0.6s, opacity 0.6s
+  -moz-transition: top 0.6s, opacity 0.6s
+  -ms-transition: top 0.6s, opacity 0.6s
+  -o-transition: top 0.6s, opacity 0.6s
+  transition: top 0.6s, opacity 0.6s
+  z-index: 10
   @media screen and (max-width: 1440px)
     height: 35vh
     min-height: 210px
@@ -242,21 +203,21 @@
     display: block
     top: 0
     opacity: 1
-    -webkit-transition: all 0.6s
-    -moz-transition: all 0.6s
-    -ms-transition: all 0.6s
-    -o-transition: all 0.6s
+    -webkit-transition: top 0.6s, opacity 0.6s
+    -moz-transition: top 0.6s, opacity 0.6s
+    -ms-transition: top 0.6s, opacity 0.6s
+    -o-transition: top 0.6s, opacity 0.6s
     transition: all 0.6s
   &_header
     @extend .open-light
     font-size: 54px
-    margin-top: 40px
+    margin-top: 100px
     color: $blue
     @media screen and (max-width: 1440px)
       font-size: 44px
-      margin-top: 30px
     @media screen and (max-width: 420px)
       font-size: 28px
+      text-align: center
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -276,6 +237,8 @@
       margin-top: 20px
       @media screen and (max-width: 1440px)
         margin-top: 15px
+      @media screen and (max-width: 420px)
+        margin-top: 60px
     input::-moz-placeholder
       color: rgba(0, 0, 0, 0.5)
     input::-webkit-input-placeholder
@@ -291,51 +254,7 @@
       outline: none
     &_btn
       @media screen and (max-width: 420px)
-        margin-top: 40px
-  &_close
-    position: absolute
-    display: block
-    width: 50px
-    height: 100px
-    top: 0
-    right: 5vw
-    overflow: hidden
-    cursor: pointer
-    padding-right: 0
-    margin: 0
-    z-index: 30
-    @media screen and (max-width: 1440px)
-      height: 70px
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 22px
-      border-top: 3px solid $black
-      border-bottom: 3px solid $black
-      transition: all 0.5s
-      transform: rotate(45deg)
-      border-top: none
-      right: -7px
-      top: 38px
-      @media screen and (max-width: 1440px)
-        top: 19px
-      @media screen and (max-width: 768px)
-        right: -8px
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 3px
-      top: 55px
-      right: 0
-      background-color: $black
-      transition: all 0.5s
-      transform: rotate(-45deg)
-      @media screen and (max-width: 1440px)
-        top: 35px
+        margin-top: 60px
 
 
 
@@ -343,19 +262,19 @@
 
 .popup_price
   position: fixed
-  display: none
+  display: block
   width: 100%
   height: 40vh
-  top: -100%
+  top: -100vh
   left: 0
   opacity: 0
   background-color: $white
-  -webkit-transition: all 0.6s
-  -moz-transition: all 0.6s
-  -ms-transition: all 0.6s
-  -o-transition: all 0.6s
-  transition: all 0.6s
-  z-index: 210
+  -webkit-transition: top 0.6s, opacity 0.6s
+  -moz-transition: top 0.6s, opacity 0.6s
+  -ms-transition: top 0.6s, opacity 0.6s
+  -o-transition: top 0.6s, opacity 0.6s
+  transition: top 0.6s, opacity 0.6s
+  z-index: 10
   @media screen and (max-width: 1440px)
     height: 35vh
     min-height: 210px
@@ -365,21 +284,21 @@
     display: block
     top: 0
     opacity: 1
-    -webkit-transition: all 0.6s
-    -moz-transition: all 0.6s
-    -ms-transition: all 0.6s
-    -o-transition: all 0.6s
+    -webkit-transition: top 0.6s, opacity 0.6s
+    -moz-transition: top 0.6s, opacity 0.6s
+    -ms-transition: top 0.6s, opacity 0.6s
+    -o-transition: top 0.6s, opacity 0.6s
     transition: all 0.6s
   &_header
     @extend .open-light
     font-size: 54px
-    margin-top: 40px
+    margin-top: 100px
     color: $blue
     @media screen and (max-width: 1440px)
       font-size: 44px
-      margin-top: 30px
     @media screen and (max-width: 420px)
       font-size: 28px
+      text-align: center
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -399,6 +318,8 @@
       margin-top: 20px
       @media screen and (max-width: 1440px)
         margin-top: 15px
+      @media screen and (max-width: 420px)
+        margin-top: 60px
     input::-moz-placeholder
       color: rgba(0, 0, 0, 0.5)
     input::-webkit-input-placeholder
@@ -414,51 +335,8 @@
       outline: none
     &_btn
       @media screen and (max-width: 420px)
-        margin-top: 40px
-  &_close
-    position: absolute
-    display: block
-    width: 50px
-    height: 100px
-    top: 0
-    right: 5vw
-    overflow: hidden
-    cursor: pointer
-    padding-right: 0
-    margin: 0
-    z-index: 30
-    @media screen and (max-width: 1440px)
-      height: 70px
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 22px
-      border-top: 3px solid $black
-      border-bottom: 3px solid $black
-      transition: all 0.5s
-      transform: rotate(45deg)
-      border-top: none
-      right: -7px
-      top: 38px
-      @media screen and (max-width: 1440px)
-        top: 19px
-      @media screen and (max-width: 768px)
-        right: -8px
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 3px
-      top: 55px
-      right: 0
-      background-color: $black
-      transition: all 0.5s
-      transform: rotate(-45deg)
-      @media screen and (max-width: 1440px)
-        top: 35px
+        margin-top: 60px
+
 
 
 
@@ -466,19 +344,19 @@
 
 .popup_want
   position: fixed
-  display: none
+  display: block
   width: 100%
   height: 40vh
-  top: -100%
+  top: -100vh
   left: 0
   opacity: 0
   background-color: $white
-  -webkit-transition: all 0.6s
-  -moz-transition: all 0.6s
-  -ms-transition: all 0.6s
-  -o-transition: all 0.6s
-  transition: all 0.6s
-  z-index: 210
+  -webkit-transition: top 0.6s, opacity 0.6s
+  -moz-transition: top 0.6s, opacity 0.6s
+  -ms-transition: top 0.6s, opacity 0.6s
+  -o-transition: top 0.6s, opacity 0.6s
+  transition: top 0.6s, opacity 0.6s
+  z-index: 10
   @media screen and (max-width: 1440px)
     height: 35vh
     min-height: 210px
@@ -488,21 +366,21 @@
     display: block
     top: 0
     opacity: 1
-    -webkit-transition: all 0.6s
-    -moz-transition: all 0.6s
-    -ms-transition: all 0.6s
-    -o-transition: all 0.6s
+    -webkit-transition: top 0.6s, opacity 0.6s
+    -moz-transition: top 0.6s, opacity 0.6s
+    -ms-transition: top 0.6s, opacity 0.6s
+    -o-transition: top 0.6s, opacity 0.6s
     transition: all 0.6s
   &_header
     @extend .open-light
     font-size: 54px
-    margin-top: 40px
+    margin-top: 100px
     color: $blue
     @media screen and (max-width: 1440px)
       font-size: 44px
-      margin-top: 30px
     @media screen and (max-width: 420px)
       font-size: 28px
+      text-align: center
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -522,6 +400,8 @@
       margin-top: 20px
       @media screen and (max-width: 1440px)
         margin-top: 15px
+      @media screen and (max-width: 420px)
+        margin-top: 60px
     input::-moz-placeholder
       color: rgba(0, 0, 0, 0.5)
     input::-webkit-input-placeholder
@@ -537,51 +417,8 @@
       outline: none
     &_btn
       @media screen and (max-width: 420px)
-        margin-top: 40px
-  &_close
-    position: absolute
-    display: block
-    width: 50px
-    height: 100px
-    top: 0
-    right: 5vw
-    overflow: hidden
-    cursor: pointer
-    padding-right: 0
-    margin: 0
-    z-index: 30
-    @media screen and (max-width: 1440px)
-      height: 70px
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 22px
-      border-top: 3px solid $black
-      border-bottom: 3px solid $black
-      transition: all 0.5s
-      transform: rotate(45deg)
-      border-top: none
-      right: -7px
-      top: 38px
-      @media screen and (max-width: 1440px)
-        top: 19px
-      @media screen and (max-width: 768px)
-        right: -8px
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 3px
-      top: 55px
-      right: 0
-      background-color: $black
-      transition: all 0.5s
-      transform: rotate(-45deg)
-      @media screen and (max-width: 1440px)
-        top: 35px
+        margin-top: 60px
+
 
 
 
@@ -589,19 +426,19 @@
 
 .popup_partner
   position: fixed
-  display: none
+  display: block
   width: 100%
   height: 40vh
-  top: -100%
+  top: -100vh
   left: 0
   opacity: 0
   background-color: $white
-  -webkit-transition: all 0.6s
-  -moz-transition: all 0.6s
-  -ms-transition: all 0.6s
-  -o-transition: all 0.6s
-  transition: all 0.6s
-  z-index: 210
+  -webkit-transition: top 0.6s, opacity 0.6s
+  -moz-transition: top 0.6s, opacity 0.6s
+  -ms-transition: top 0.6s, opacity 0.6s
+  -o-transition: top 0.6s, opacity 0.6s
+  transition: top 0.6s, opacity 0.6s
+  z-index: 10
   @media screen and (max-width: 1440px)
     height: 35vh
     min-height: 210px
@@ -611,23 +448,21 @@
     display: block
     top: 0
     opacity: 1
-    -webkit-transition: all 0.6s
-    -moz-transition: all 0.6s
-    -ms-transition: all 0.6s
-    -o-transition: all 0.6s
+    -webkit-transition: top 0.6s, opacity 0.6s
+    -moz-transition: top 0.6s, opacity 0.6s
+    -ms-transition: top 0.6s, opacity 0.6s
+    -o-transition: top 0.6s, opacity 0.6s
     transition: all 0.6s
-    @media screen and (max-width: 1440px)
-      top: 70px
   &_header
     @extend .open-light
     font-size: 54px
-    margin-top: 40px
+    margin-top: 100px
     color: $blue
     @media screen and (max-width: 1440px)
       font-size: 44px
-      margin-top: 30px
     @media screen and (max-width: 420px)
       font-size: 28px
+      text-align: center
   &_form
     margin-top: 40px
     @media screen and (max-width: 1440px)
@@ -647,6 +482,8 @@
       margin-top: 20px
       @media screen and (max-width: 1440px)
         margin-top: 15px
+      @media screen and (max-width: 420px)
+        margin-top: 60px
     input::-moz-placeholder
       color: rgba(0, 0, 0, 0.5)
     input::-webkit-input-placeholder
@@ -662,87 +499,46 @@
       outline: none
     &_btn
       @media screen and (max-width: 420px)
-        margin-top: 40px
-  &_close
-    position: absolute
-    display: block
-    width: 50px
-    height: 100px
-    top: 0
-    right: 5vw
-    overflow: hidden
-    cursor: pointer
-    padding-right: 0
-    margin: 0
-    z-index: 30
-    @media screen and (max-width: 1440px)
-      height: 70px
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 22px
-      border-top: 3px solid $black
-      border-bottom: 3px solid $black
-      transition: all 0.5s
-      transform: rotate(45deg)
-      border-top: none
-      right: -7px
-      top: 38px
-      @media screen and (max-width: 1440px)
-        top: 19px
-      @media screen and (max-width: 768px)
-        right: -8px
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 3px
-      top: 55px
-      right: 0
-      background-color: $black
-      transition: all 0.5s
-      transform: rotate(-45deg)
-      @media screen and (max-width: 1440px)
-        top: 35px
+        margin-top: 60px
+
 
 
 
 
 .popup_image
   position: fixed
-  display: none
+  display: block
   width: 100%
-  height: calc(100vh - 110px)
+  height: 100vh
   top: -100%
-  left: 0
+  left: -100vw
   opacity: 0
   overflow: scroll
   background-color: $white
-  -webkit-transition: all 0.6s
-  -moz-transition: all 0.6s
-  -ms-transition: all 0.6s
-  -o-transition: all 0.6s
-  transition: all 0.6s
-  z-index: 210
+  -webkit-transition: top 0.6s, opacity 0.6s
+  -moz-transition: top 0.6s, opacity 0.6s
+  -ms-transition: top 0.6s, opacity 0.6s
+  -o-transition: top 0.6s, opacity 0.6s
+  transition: top 0.6s, opacity 0.6s
+  z-index: 10
   padding-bottom: 30px
   @media screen and (max-width: 1440px)
-    height: calc(100vh - 70px)
     top: 70px
-    min-height: 210px
+    //min-height: 210px
   &_active
     display: block
-    top: 110px
+    top: 0
+    left: 0
     opacity: 1
-    -webkit-transition: all 0.6s
-    -moz-transition: all 0.6s
-    -ms-transition: all 0.6s
-    -o-transition: all 0.6s
-    transition: all 0.6s
+    -webkit-transition: top 0.6s, opacity 0.6s
+    -moz-transition: top 0.6s, opacity 0.6s
+    -ms-transition: top 0.6s, opacity 0.6s
+    -o-transition: top 0.6s, opacity 0.6s
+    transition: top 0.6s, opacity 0.6s
+  &_slider
+    margin-top: 130px
     @media screen and (max-width: 1440px)
-      top: 70px
+      margin-top: 100px
   &_slide_img
     position: relative
     width: 100%
@@ -793,50 +589,6 @@
     @media screen and (max-width: 420px)
       font-size: 12px
       line-height: 20px
-  &_close
-    position: absolute
-    display: block
-    width: 50px
-    height: 100px
-    top: -2vh
-    right: 1vw
-    overflow: hidden
-    cursor: pointer
-    padding-right: 0
-    margin: 0
-    z-index: 30
-    @media screen and (max-width: 1440px)
-      height: 70px
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 22px
-      border-top: 3px solid $black
-      border-bottom: 3px solid $black
-      transition: all 0.5s
-      transform: rotate(45deg)
-      border-top: none
-      right: -7px
-      top: 38px
-      @media screen and (max-width: 1440px)
-        top: 19px
-      @media screen and (max-width: 768px)
-        right: -8px
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      width: 40px
-      height: 3px
-      top: 55px
-      right: 0
-      background-color: $black
-      transition: all 0.5s
-      transform: rotate(-45deg)
-      @media screen and (max-width: 1440px)
-        top: 35px
   &_next_arrow
     position: absolute
     display: block

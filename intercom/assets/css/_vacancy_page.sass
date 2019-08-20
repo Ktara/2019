@@ -15,17 +15,28 @@
     display: flex
     width: calc(100% - 5vw)
     margin-top: 70px
+    @media screen and (max-width: 780px)
+      display: inline-block
+      width: calc(100% - 12vw)
+      margin-left: 6vw
+      margin-right: 6vw
   &_image
     width: 45%
     height: 330px
     display: inline-block
     overflow: hidden
     border-radius: 0 10px 10px 0
+    @media screen and (max-width: 780px)
+      width: 100%
+      border-radius: 10px
     img
       width: 100%
   &_text
     width: 46%
     margin-left: 8%
+    @media screen and (max-width: 780px)
+      width: 100%
+      margin-left: 0
     p
       @extend .open-light
       font-size: 18px
@@ -58,6 +69,10 @@
       top: 0
       left: 0
       box-shadow: -10px 10px 99px rgba(0,0,0,0.06)
+      @media screen and (max-width: 780px)
+        width: 150%
+    li:first-child .vacancy_list_text_wrapper
+      height: auto
     &_title
       position: relative
       width: 100%
@@ -69,6 +84,11 @@
       @media screen and (max-width: 1440px)
         font-size: 22px
         padding: 15px 6vw
+      @media screen and (max-width: 780px)
+        width: 95%
+      @media screen and (max-width: 420px)
+        font-size: 18px
+        width: 90%
       &:after
         content: url(../img/icon/arrow-down.svg)
         position: absolute
@@ -82,6 +102,12 @@
         transition: all 0.6s
         @media screen and (max-width: 1440px)
           top: 13px
+        @media screen and (max-width: 780px)
+          right: -3%
+        @media screen and (max-width: 420px)
+          top: 25%
+          right: -5%
+
     &_text_wrapper
       padding-left: 6vw
       padding-right: 6vw
@@ -89,6 +115,19 @@
       overflow: hidden
     &_block
       padding-bottom: 90px
+      @media screen and (max-width: 780px)
+        position: relative
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding-bottom: 0
+      @media screen and (max-width: 420px)
+        flex-direction: column
+    &_box
+      @media screen and (max-width: 780px)
+        width: 49%
+      @media screen and (max-width: 420px)
+        width: 100%
     &_text
       @extend .open-light
       font-size: 18px
@@ -117,6 +156,8 @@
     &_btn
       width: 60%
       margin-top: 100px
+      @media screen and (max-width: 780px)
+        margin-top: 50px
     &_sub_text
       @extend .open-light
       font-size: 16px
@@ -163,6 +204,8 @@
         @media screen and (max-width: 1440px)
           font-size: 14px
           height: 45px
+        @media screen and (max-width: 780px)
+          width: 100%
       input::-moz-placeholder
         color: rgba(0, 0, 0, 0.5)
       input::-webkit-input-placeholder
@@ -182,8 +225,10 @@
         bottom: 10px
         right: 0
         @media screen and (max-width: 780px)
-          width: 60%
-          margin-left: 20%
+          position: inherit
+          width: 100%
+          bottom: auto
+          margin-top: 10px
         @media screen and (max-width: 420px)
           width: 100%
           margin-left: 0

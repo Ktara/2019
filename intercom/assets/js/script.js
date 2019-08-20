@@ -1,7 +1,4 @@
-$('.nav_header_burger').click(function(){
-    $('.popup_nav_menu').toggleClass('popup_nav_menu_active');
-    $('.nav_header_burger').toggleClass('nav_header_burger_close');
-});
+
 
 
 
@@ -41,10 +38,12 @@ $('.popup_price_close').click(function(){
 
 $('.want_btn').click(function(){
     $('.popup_want').toggleClass('popup_want_active');
+    $('.nav_header_burger').addClass('nav_popup_burger_close');
+    $('.nav_popup_burger_close').click(function (event) {
+        $('.popup_want').removeClass('popup_want_active');
+    })
 });
-$('.popup_want_close').click(function(){
-    $('.popup_want').toggleClass('popup_want_active');
-});
+
 
 
 
@@ -55,14 +54,39 @@ $('.popup_partner_close').click(function(){
     $('.popup_partner').toggleClass('popup_partner_active');
 });
 
-
-
-$('.popup_btn').click(function(){
-    $('.popup_image').toggleClass('popup_image_active');
+$('.popup_image_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<div class="popup_image_next_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
+    prevArrow: '<div class="popup_image_prev_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
+    dots: false,
+    arrows: true
 });
-$('.popup_image_close').click(function(){
-    $('.popup_image').toggleClass('popup_image_active');
+
+$('.popup_btn').click(function(event){
+    $('.popup_image').addClass('popup_image_active');
+    var target = $(event.currentTarget)[0].dataset.slickIndex;
+    $('.popup_image_slider').slick('slickGoTo', target,  true);
+    $('.nav_header_burger').addClass('nav_popup_burger_close');
+    $('.nav_popup_burger_close').click(function (event) {
+        $('.popup_image').removeClass('popup_image_active');
+    })
 });
+
+$('.gallery_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+console.log(currentSlide);
+
+});
+
+$('.nav_header_burger').click(function(){
+    if ($('.nav_header_burger').hasClass('nav_popup_burger_close')) {
+        $('.nav_header_burger').removeClass('nav_popup_burger_close');
+    } else {
+        $('.popup_nav_menu').toggleClass('popup_nav_menu_active');
+        $('.nav_header_burger').toggleClass('nav_header_burger_close');
+    }
+});
+
 
 
 $('.text_block_list_point_title').click(function(){
@@ -105,9 +129,13 @@ $('.vacancy_list_title').click(function(){
 
 
 $('.main_elements_box_more').click(function(event){
+    let status = $(event.target).parent().parent().hasClass('main_elements_open');
     $('.main_elements_box_wrapper').removeClass('main_elements_open');
-    $(event.target).parent().parent().addClass('main_elements_open');
-    $('.main_elements_box_more').toggleClass('more_open');
+    $('.main_elements_box_more').removeClass('more_open');
+    if (!status) {
+        $(event.target).parent().parent().addClass('main_elements_open');
+        $(event.target).addClass('more_open');
+    };
 });
 
 
@@ -225,10 +253,8 @@ $('.review_slider').slick({
 $('.gallery_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: false,
-    nextArrow: '<div class="gallery_next_arrow">Дальше</div>',
-    prevArrow: '<div class="gallery_prev_arrow">Назад</div>',
     fade: true,
     infinite: true,
     customPaging : function(slider, i) {
@@ -239,9 +265,12 @@ $('.gallery_slider').slick({
     },
     responsive: [
         {
-            breakpoint: 420,
+            breakpoint: 780,
             settings: {
-                dots: false
+                dots: false,
+                arrows: true,
+                nextArrow: '<div class="gallery_next_arrow">Дальше</div>',
+                prevArrow: '<div class="gallery_prev_arrow">Назад</div>'
             }
         }
     ]
@@ -254,7 +283,9 @@ $('.gallery_slider_nav').slick({
     // initialSlide: -2,
     asNavFor: '.gallery_slider',
     dots: false,
-    arrows: false,
+    arrows: true,
+    nextArrow: '<div class="gallery_next_arrow">Дальше</div>',
+    prevArrow: '<div class="gallery_prev_arrow">Назад</div>',
     infinite: true,
     focusOnSelect: true,
     vertical: true,
@@ -263,12 +294,14 @@ $('.gallery_slider_nav').slick({
         {
             breakpoint: 1440,
             settings: {
-                // centerMode: true,
                 centerPadding: '0%',
-                slidesToShow: 1,
-                // slidesToScroll: 1,
-                // vertical: true,
-                // verticalSwiping: true
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 780,
+            settings: {
+                arrows: false
             }
         },
         {
@@ -366,23 +399,7 @@ $('.product_main_image_slider').slick({
 
 
 
-$('.popup_image_slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: '<div class="popup_image_next_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
-    prevArrow: '<div class="popup_image_prev_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
-    dots: false,
-    arrows: true
-});
-$('.gallery_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-//console.log('beforeChange');
-    $('.popup_image_slider').slick('slickGoTo', 0,  true);
-});
 
-$('.popup_image_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-//console.log('beforeChange child');
-    return false;
-});
 
 
 
