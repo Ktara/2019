@@ -1,16 +1,19 @@
 .contact_main
   position: relative
   width: 100%
+  height: calc(100vh - 110px)
   margin-top: 140px
   padding-bottom: 80px
   @media screen and (max-width: 1440px)
     margin-top: 100px
+  @media screen and (max-width: 780px)
+    height: auto
   @media screen and (max-width: 420px)
     padding-bottom: 30px
   &_map
     position: absolute
     width: 40%
-    height: calc(100vh - 320px)
+    height: 100%
     display: block
     top: 0
     left: 0

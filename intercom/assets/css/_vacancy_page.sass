@@ -241,11 +241,13 @@
         cursor: pointer
         @media screen and (max-width: 1440px)
           font-size: 13px
+          text-align: center
         @media screen and (max-width: 780px)
           position: inherit
           width: 100%
           line-height: 50px
           text-indent: 20px
+          text-align: left
         &:after
           content: url(../img/icon/upload.svg)
           position: absolute
@@ -254,9 +256,15 @@
           top: -15px
           right: 0
           opacity: 1
+          @media screen and (max-width: 1440px)
+            top: 30px
+            right: auto
+            left: calc(50% - 25px)
           @media screen and (max-width: 780px)
             width: auto
             top: auto
+            left: auto
+            right: 0
             bottom: -15px
         input
           display: none

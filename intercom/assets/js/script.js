@@ -384,7 +384,7 @@ $('.product_main_image_slider').slick({
             breakpoint: 420,
             settings: {
                 slidesToShow: 1,
-                centerPadding: '40px'
+                centerPadding: '10px'
             }
         }
     ]
