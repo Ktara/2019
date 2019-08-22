@@ -58,6 +58,11 @@
         display: none
       img
         width: 100%
+        -webkit-transition: all 0.5s
+        -moz-transition: all 0.5s
+        -ms-transition: all 0.5s
+        -o-transition: all 0.5s
+        transition: all 0.5s
     &_title_wrapper
       margin-top: 35px
       @media screen and (max-width: 420px)
@@ -108,6 +113,19 @@
       @media screen and (max-width: 420px)
         font-size: 11px
         line-height: 16px
+    .review_slide_image
+      img:hover
+        -webkit-transform: scale(1.4)
+        -moz-transform: scale(1.4)
+        -ms-transform: scale(1.4)
+        -o-transform: scale(1.4)
+        transform: scale(1.4)
+        -webkit-transition: all 0.5s
+        -moz-transition: all 0.5s
+        -ms-transition: all 0.5s
+        -o-transition: all 0.5s
+        transition: all 0.5s
+        cursor: pointer
   .slick-list
     overflow: visible
   .review_next_arrow

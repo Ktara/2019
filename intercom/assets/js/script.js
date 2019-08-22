@@ -1,7 +1,3 @@
-
-
-
-
 $('.nav_header_langs_plus').click(function(){
     $('.nav_header_langs').toggleClass('nav_header_langs_open');
     $('.nav_header_langs_plus').toggleClass('nav_header_langs_plus_open');
@@ -412,4 +408,28 @@ $('.stages_work_slide').mouseenter(function(){
 $('.stages_work_slide').mouseleave(function(){
     $('.stages_work_slide_image').removeClass('stages_work_slide_image_active');
     $('.stages_work_slide').css('opacity', 1);
+});
+
+
+
+
+$('.reviews_main_block_btn').click(function (event) {
+    var target = $(event.currentTarget);
+    target.parent().addClass('reviews_main_block_image_close');
+    target.parent().next().addClass('reviews_main_block_blank_open');
+    $('.reviews_main_block_blank_more').click(function (event) {
+        var target = $(event.currentTarget);
+        target.parent().prev().removeClass('reviews_main_block_image_close');
+        target.parent().removeClass('reviews_main_block_blank_open');
+    })
+});
+
+
+
+
+$('.image_in_popup').click(function(event){
+    var image_src = event.target.src;
+    console.log(event.target.src);
+    $('.picture_popup_active').find('img').attr('src', image_src);
+    $('.picture_popup').addClass('picture_popup_active');
 });
