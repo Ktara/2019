@@ -236,11 +236,29 @@
   @media screen and (max-width: 420px)
     margin-top: 50px
   &_slider_wrapper
+    position: relative
     margin-left: 6vw
     @media screen and (max-width: 780px)
       padding-bottom: 70px
     @media screen and (max-width: 420px)
       padding-bottom: 100px
+  &_back
+    position: absolute
+    display: block
+    width: 100vw
+    height: 100px
+    left: -6vw
+    bottom: calc(30% - 25px)
+    z-index: 1
+    box-shadow: -10px 10px 99px rgba(0,0,0,0.06)
+    @media screen and (max-width: 1440px)
+      height: 90px
+      bottom: calc(25% - 25px)
+    @media screen and (max-width: 780px)
+      height: 80px
+      bottom: -15px
+    @media screen and (max-width: 420px)
+      display: none
   &_slide
     &_header
       @extend .open-semi
