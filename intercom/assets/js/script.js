@@ -397,9 +397,15 @@ $('.product_main_image_slider').slick({
 
 
 
-
-
+var stages_status = true;
+$('.stages_work_slide').click(function(event){
+    if (stages_status){
+        $(event.currentTarget).find('.stages_work_slide_image').toggleClass('stages_work_slide_image_active');
+    };
+    stages_status = true;
+});
 $('.stages_work_slide').mouseenter(function(){
+    stages_status = false;
     $('.stages_work_slide_image').removeClass('stages_work_slide_image_active');
     $('.stages_work_slide').css('opacity', 0.5);
     $(this).css('opacity', 1);
@@ -430,6 +436,6 @@ $('.reviews_main_block_btn').click(function (event) {
 $('.image_in_popup').click(function(event){
     var image_src = event.target.src;
     console.log(event.target.src);
-    $('.picture_popup_active').find('img').attr('src', image_src);
+    $('.picture_popup').find('img').attr('src', image_src);
     $('.picture_popup').addClass('picture_popup_active');
 });
