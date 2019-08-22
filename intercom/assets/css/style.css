@@ -40,12 +40,12 @@
   font-weight: 700;
   font-style: normal;
 }
-.open-reg, .review .slick-center .review_slide_text, .review .slick-center .review_slide_sub_title, .review .slick-center .review_slide_title, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_image_sub_title, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .vacancy_main_text p b, .article_main_subscription_text, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .reviews_main_block_btn, .reviews_main_block_blank_list li b, .reviews_main_block_blank_more, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
+.open-reg, .review .slick-center .review_slide_text, .review .slick-center .review_slide_sub_title, .review .slick-center .review_slide_title, .review_slide_text, .review_slide_sub_title, .review_slide_title, .text_block_first_block_text, .popup_image_sub_title, .popup_nav_menu_list li a, .contact_main_form textarea, .contact_main_time, .contact_main_email, .contact_main_tel, .contact_main_adress, .vacancy_text, .vacancy_text_wrapper_form lable, .vacancy_main_text p b, .article_main_subscription_text, .article_main_block_text2, .article_main_block_sub_header, .about_diploma_text, .reviews_main_block_btn, .reviews_main_block_blank_list li b, .reviews_main_block_blank_more, .project_about_slide_image_title, .project_main_about_block_point, .main_about_form textarea, .light_btn, .btn, .main_wrapper {
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
 }
 
-.open-bold, .other_elements_box_title, .blog_main_read_more_header, .blog_main_sort li, .product_main_sub_title, .portfolio_main_sort_list li, .wallness_main_sort_list li, .concept_second_header, .main_about_text_more {
+.open-bold, .special_box_title, .other_elements_box_title, .blog_main_read_more_header, .blog_main_sort li, .product_main_sub_title, .portfolio_main_sort_list li, .wallness_main_sort_list li, .concept_second_header, .main_about_text_more {
   font-family: "OpenSans", sans-serif;
   font-weight: 700;
 }
@@ -5237,12 +5237,6 @@
   width: 100%;
   margin-top: 30px;
 }
-.vacancy_text_wrapper_form lable {
-  position: absolute;
-  width: 35%;
-  top: 0;
-  right: 0;
-}
 .vacancy_text_wrapper_form input {
   width: 60%;
   height: 50px;
@@ -5307,6 +5301,50 @@
     margin-left: 0;
     margin-top: 30px;
   }
+}
+.vacancy_text_wrapper_form lable {
+  position: absolute;
+  display: block;
+  width: 35%;
+  height: 50px;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .vacancy_text_wrapper_form lable {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .vacancy_text_wrapper_form lable {
+    position: inherit;
+    width: 100%;
+    line-height: 50px;
+    text-indent: 20px;
+  }
+}
+.vacancy_text_wrapper_form lable:after {
+  content: url(../img/icon/upload.svg);
+  position: absolute;
+  display: block;
+  width: 50px;
+  top: -15px;
+  right: 0;
+  opacity: 1;
+}
+@media screen and (max-width: 780px) {
+  .vacancy_text_wrapper_form lable:after {
+    width: auto;
+    top: auto;
+    bottom: -15px;
+  }
+}
+.vacancy_text_wrapper_form lable input {
+  display: none;
+  border: none;
 }
 .vacancy_text {
   position: relative;
@@ -8138,6 +8176,110 @@
   .stages_work_slide_text {
     font-size: 12px;
     line-height: 20px;
+  }
+}
+
+.special {
+  position: relative;
+  width: 100%;
+  margin-top: 70px;
+}
+@media screen and (max-width: 420px) {
+  .special {
+    margin-top: 50px;
+  }
+}
+.special_header {
+  text-transform: uppercase;
+}
+.special_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+@media screen and (max-width: 1440px) {
+  .special_wrapper {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .special_wrapper {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+.special_box {
+  position: relative;
+  width: 13.5%;
+}
+@media screen and (max-width: 780px) {
+  .special_box {
+    width: 23.5%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .special_box {
+    width: 48.5%;
+  }
+}
+.special_box_image {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  min-height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 33px rgba(0, 0, 0, 0.16);
+}
+@media screen and (max-width: 1440px) {
+  .special_box_image {
+    min-height: 170px;
+  }
+}
+.special_box_image:hover .special_box_btn {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.special_box_image img {
+  height: 100%;
+  min-width: 100%;
+}
+.special_box_title {
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .special_box_title {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+}
+.special_box_btn {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: calc(50% - 25px);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 1440px) {
+  .special_box_btn {
+    top: calc(50% - 22.5px);
+    font-size: 13px;
   }
 }
 
