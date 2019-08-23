@@ -45,7 +45,7 @@
   font-weight: 400;
 }
 
-.open-bold, .special_box_title, .other_elements_box_title, .blog_main_read_more_header, .blog_main_sort li, .product_main_sub_title, .portfolio_main_sort_list li, .wallness_main_sort_list li, .concept_second_header, .main_about_text_more {
+.open-bold, .nav_pagination .pagination .pagination_number, .special_box_title, .other_elements_box_title, .blog_main_read_more_header, .blog_main_sort li, .product_main_sub_title, .portfolio_main_sort_list li, .wallness_main_sort_list li, .concept_second_header, .main_about_text_more {
   font-family: "OpenSans", sans-serif;
   font-weight: 700;
 }
@@ -8552,6 +8552,73 @@
   opacity: 0;
   top: 20px;
   animation: show_content 1s 1.5s forwards;
+}
+
+.nav_pagination {
+  margin-top: 50px;
+}
+.nav_pagination .pagination {
+  display: flex;
+  justify-content: center;
+}
+.nav_pagination .pagination .page-link {
+  height: 50px;
+}
+.nav_pagination .pagination .active a {
+  background-color: #41C4DC;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.nav_pagination .pagination_prev_ar {
+  display: flex;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  border: 1px solid #41C4DC;
+  border-radius: 10px;
+}
+@media screen and (max-width: 420px) {
+  .nav_pagination .pagination_prev_ar {
+    width: 50px;
+  }
+}
+.nav_pagination .pagination_prev_ar img {
+  display: inline-block;
+}
+.nav_pagination .pagination_next_ar {
+  display: flex;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  border: 1px solid #41C4DC;
+  border-radius: 10px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 420px) {
+  .nav_pagination .pagination_next_ar {
+    width: 50px;
+  }
+}
+.nav_pagination .pagination_next_ar img {
+  display: inline-block;
+}
+.nav_pagination .pagination .pagination_number {
+  font-size: 28px;
+  line-height: 50px;
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 0 10px;
+}
+@media screen and (max-width: 420px) {
+  .nav_pagination .pagination .pagination_number {
+    margin: 0;
+    padding: 5px 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
