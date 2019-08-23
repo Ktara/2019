@@ -40,6 +40,18 @@
     li:first-child .text_block_list_point_wrapper
       height: auto
     &_point
+      position: relative
+      display: block
+      width: 100%
+      &:after
+        content: ''
+        position: absolute
+        width: 101%
+        height: 1px
+        left: 0
+        bottom: -15px
+        background-color: $blue
+        opacity: 0.5
       &_title
         position: relative
         width: 100%

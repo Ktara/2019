@@ -13,18 +13,30 @@
     position: relative
     width: 100%
     height: auto
-    min-height: 430px
+    //min-height: 430px
     margin-top: 50px
+    -webkit-transition: all 0.5s
+    -moz-transition: all 0.5s
+    -ms-transition: all 0.5s
+    -o-transition: all 0.5s
+    transition: all 0.5s
+    padding-bottom: 30px
     //padding-top: 30px
     //overflow: hidden
     @media screen and (max-width: 1440px)
-      min-height: 390px
-    @media screen and (max-width: 420px)
-      min-height: 330px
+      //min-height: 390px
+    //@media screen and (max-width: 420px)
+    //  min-height: 330px
+  .review_slider_active
+    height: auto
+    min-height: auto
+  .review_slide_active
+    height: auto
+    min-height: auto
   &_slide
     display: block
-    height: auto
-    min-height: 300px
+    height: 15vh
+    min-height: 350px
     overflow: hidden
     border-radius: 10px
     box-shadow: 0 0 33px rgba(0,0,0,0.10)
@@ -76,17 +88,30 @@
       @extend .open-reg
       font-size: 14px
       margin-top: 10px
+    &_text_wrapper
+      height: 160px
+      overflow: hidden
+      padding-bottom: 20px
+      //@media screen and (max-width: 1440px)
+      //  height: 150px
     &_text
       @extend .open-reg
       font-size: 16px
       line-height: 27px
-      margin-top: 20px
+      padding-top: 20px
       @media screen and (max-width: 1440px)
         font-size: 16px
         line-height: 20px
       @media screen and (max-width: 420px)
         font-size: 12px
         line-height: 16px
+    .review_show_btn
+      font-size: 12px
+      cursor: pointer
+      margin-top: 15px
+      float: right
+      @media screen and (max-width: 420px)
+        font-size: 10px
   .slick-center
     opacity: 1
     background-color: $white
@@ -127,6 +152,7 @@
         transition: all 0.5s
         cursor: pointer
   .slick-list
+    height: auto !important
     overflow: visible
   .review_next_arrow
     position: absolute
@@ -140,7 +166,7 @@
       right: 0
     @media screen and (max-width: 420px)
       width: 16px
-      right: -2%
+      right: -5%
     img
       width: 100%
   .review_prev_arrow
@@ -160,19 +186,19 @@
       left: 0
     @media screen and (max-width: 420px)
       width: 16px
-      left: -2%
+      left: -5%
     img
       width: 100%
   .slick-dots
     position: absolute
     width: 100%
-    bottom: 0
+    bottom: -5%
     left: 0
     display: flex
     flex-direction: row
     justify-content: center
     @media screen and (max-width: 420px)
-      bottom: -10%
+      bottom: -8%
     .slick-active
       button
         color: $blue
@@ -206,9 +232,19 @@
     text-align: right
     color: $black
     cursor: pointer
+    margin-top: 30px
     @media screen and (max-width: 1440px)
       height: 45px
       line-height: 45px
       font-size: 16px
     @media screen and (max-width: 420px)
       text-align: center
+      margin-top: 50px
+  &_more_btn
+    margin-top: 30px
+    @media screen and (max-width: 420px)
+      margin-top: 50px
+  .btn_wrapper
+    padding-top: 50px
+    @media screen and (max-width: 420px)
+      padding-top: 30px

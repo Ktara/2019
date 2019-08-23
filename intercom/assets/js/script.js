@@ -240,6 +240,7 @@ $('.review_slider').slick({
     // focusOnSelect: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     nextArrow: '<div class="review_next_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
     prevArrow: '<div class="review_prev_arrow"><img src="assets/img/icon/arrow-right.svg" alt=""></div>',
     dots: true,
@@ -256,7 +257,7 @@ $('.review_slider').slick({
             breakpoint: 420,
             settings: {
                 slidesToShow: 1,
-                centerPadding: '20px'
+                centerPadding: '5px'
             }
         }
     ]
@@ -448,3 +449,17 @@ $('.reviews_main_block_btn').click(function (event) {
         target.parent().removeClass('reviews_main_block_blank_open');
     })
 });
+
+
+
+(function(){
+    $('.review_show_btn').click(function(e){
+        $(e.target).css('display' , 'none');
+        var trHeight = $(e.target).prev().children().css('height');
+        $(e.target).prev().animate({'height' : trHeight}, 600);
+        $('.review_slide').addClass('review_slide_active');
+        // $('.review_show_btn').parent().css('height');
+        // var parHeight =  $('.review_show_btn').parent().css('height');
+        // $('.review_slider').animate({'height' : parHeight}, 600);
+    });
+})();
