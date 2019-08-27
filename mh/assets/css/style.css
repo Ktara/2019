@@ -1,0 +1,156 @@
+.rob-reg, .login_form_input span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.rob-bold, .login_form_btn, .login_form input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.rel-reg {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.rel-bold, .login_title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.main_wrapper {
+  background-color: #FBF7F5;
+}
+.main_wrapper .container-fluid {
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.login {
+  position: relative;
+  width: 100%;
+}
+.login_logo {
+  width: 100%;
+  margin-top: 10vh;
+}
+.login_logo img {
+  width: 100%;
+}
+.login_title {
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 10vh;
+}
+.login .input_active input {
+  border-bottom: 2px solid #E93C3C;
+}
+.login .input_active span {
+  opacity: 1;
+}
+.login_form {
+  position: relative;
+  display: block;
+}
+.login_form input {
+  width: 100%;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid #191B29;
+  margin-top: 50px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.login_form input::-moz-placeholder {
+  color: black;
+}
+.login_form input::-webkit-input-placeholder {
+  color: black;
+}
+.login_form input:-ms-input-placeholder {
+  color: black;
+}
+.login_form input::-ms-input-placeholder {
+  color: black;
+}
+.login_form input::placeholder {
+  color: black;
+}
+.login_form input:focus::placeholder {
+  color: black;
+  outline: none;
+}
+.login_form_btn {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #191B29;
+  margin-top: 50px;
+  border: none;
+  border-radius: 27px;
+  cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+  .login_form_btn {
+    width: 100%;
+  }
+}
+.login_form_input {
+  position: relative;
+  width: 100%;
+}
+.login_form_input span {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  right: 0;
+  bottom: 3px;
+  color: #E93C3C;
+  font-size: 14px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */
