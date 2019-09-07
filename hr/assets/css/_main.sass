@@ -7,7 +7,7 @@
   .blue_filter
     position: absolute
     width: calc(100% - 30px)
-    height: 100vh
+    height: 140vh
     top: 0
     right: 15px
     background-color: $blue
@@ -19,6 +19,8 @@
     height: 80vh
     margin-top: 13vh
     z-index: 2
+    padding-left: 6vw
+    padding-right: calc(5vw - 2px)
     //overflow: hidden
   &_slide
     position: relative
@@ -32,16 +34,12 @@
       height: 77vh
       background-color: $light-black
       &_wrapper
-        position: absolute
         display: inline-block
-        width: auto
+        width: 100%
         height: auto
-        top: 10vh
-        left: 13%
+        margin-top: 100px
         background-color: $blue
         box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16)
-        @media screen and (max-width: 1440px)
-          left: 7%
       &_title
         @extend .pt-bold
         color: $white
@@ -49,7 +47,7 @@
         padding-left: 20px
         padding-top: 25px
         padding-right: 65px
-        @media screen and (max-width: 1280px)
+        @media screen and (max-width: 1440px)
           font-size: 22px
       &_sub_title
         @extend .pt-reg
@@ -58,7 +56,7 @@
         margin-top: 15px
         padding-left: 20px
         padding-bottom: 20px
-        @media screen and (max-width: 1280px)
+        @media screen and (max-width: 1440px)
           font-size: 16px
     &_image
       position: relative
@@ -77,15 +75,15 @@
     display: flex
     justify-content: center
     bottom: -61px
-    left: 13%
+    left: 8.3333%
     background-color: $blue
     z-index: 3
     padding: 0 90px
     box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16)
     @media screen and (max-width: 1440px)
-      left: 7%
       bottom: -58.5px
       padding: 0 70px
+
     li
       width: 30px
       margin: 0 12.5px
@@ -100,7 +98,7 @@
     width: 22px
     height: 80px
     top: calc(45% - 40px)
-    right: 0
+    right: -3vw
     z-index: 15
     -webkit-transform: rotate(180deg)
     -moz-transform: rotate(180deg)
@@ -113,7 +111,7 @@
     width: 22px
     height: 80px
     top: calc(45% - 40px)
-    left: 0
+    left: -3.5vw
     z-index: 15
     cursor: pointer
   .slick-list

@@ -1,0 +1,113 @@
+.blur
+  position: relative
+  width: 100%
+  margin-top: 200px
+  &_header
+    position: absolute
+    width: auto
+    top: -15%
+    left: 5vw
+    font-size: 300px
+    @media screen and (max-width: 1440px)
+      font-size: 250px
+  &_wrapper
+    position: relative
+    width: 100%
+    margin-top: 50px
+  &_wrapper:nth-child(2) .blur_number
+    position: absolute
+    width: 30px
+    top: 65%
+    left: 30px
+    font-size: 30px
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 1px
+      bottom: 5px
+      left: -110%
+      background-color: $black
+  &_wrapper:last-child .blur_number
+    position: absolute
+    width: 30px
+    top: 0
+    left: 30px
+    font-size: 30px
+  &_title
+    @extend .pt-reg
+    font-size: 70px
+    margin-left: 5vw
+    margin-top: 80px
+    @media screen and (max-width: 1440px)
+      font-size: 60px
+  &_text
+    @extend .pt-reg
+    font-size: 18px
+    line-height: 23px
+    margin-left: 5vw
+    margin-top: 50px
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 22px
+  &_btn
+    position: relative
+    display: flex
+    width: auto
+    height: 40px
+    line-height: 40px
+    @extend .pt-reg
+    font-size: 30px
+    text-decoration: none
+    color: $black
+    margin-left: calc(5vw + 15px)
+    margin-top: 8vh
+    @media screen and (max-width: 1440px)
+      font-size: 26px
+    &:hover
+      p:after
+        width: 100%
+        opacity: 1
+        -webkit-transition: all 0.5s
+        -moz-transition: all 0.5s
+        -ms-transition: all 0.5s
+        -o-transition: all 0.5s
+        transition: all 0.5s
+    p
+      position: relative
+      width: auto
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 0
+        height: 2px
+        bottom: -5px
+        left: 0
+        opacity: 0
+        background-color: $blue
+        -webkit-transition: all 0.5s
+        -moz-transition: all 0.5s
+        -ms-transition: all 0.5s
+        -o-transition: all 0.5s
+        transition: all 0.5s
+    img
+      width: 20px
+      margin-left: 40px
+  &_image
+    position: relative
+    width: 100%
+    overflow: hidden
+    z-index: 2
+    .filter
+      position: absolute
+      display: block
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: rgba(0, 0, 0, 0.5)
+      z-index: 2
+    img
+      width: 100%
+  &_number

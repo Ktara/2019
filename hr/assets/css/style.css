@@ -1,4 +1,4 @@
-.pt-reg, .footer_menu a, .about_ps, .about_list li, .about_text, .main_slide .black_box_sub_title, .nav_header_menu a, body .main_wrapper {
+.pt-reg, .blur_btn, .blur_text, .blur_title, .footer_menu a, .about_ps, .about_list li, .about_text, .main_slide .black_box_sub_title, .nav_header_menu a, body .main_wrapper {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
 }
@@ -32,11 +32,6 @@ body .main_wrapper .container-fluid {
 .section_header {
   font-size: 186px;
   color: #EFEDEA;
-}
-@media screen and (max-width: 1440px) {
-  .section_header {
-    font-size: 156px;
-  }
 }
 
 @font-face {
@@ -165,7 +160,7 @@ body .main_wrapper .container-fluid {
 .main .blue_filter {
   position: absolute;
   width: calc(100% - 30px);
-  height: 100vh;
+  height: 140vh;
   top: 0;
   right: 15px;
   background-color: #1EC8FF;
@@ -178,6 +173,8 @@ body .main_wrapper .container-fluid {
   height: 80vh;
   margin-top: 13vh;
   z-index: 2;
+  padding-left: 6vw;
+  padding-right: calc(5vw - 2px);
 }
 .main_slide {
   position: relative;
@@ -196,19 +193,12 @@ body .main_wrapper .container-fluid {
   background-color: #111016;
 }
 .main_slide .black_box_wrapper {
-  position: absolute;
   display: inline-block;
-  width: auto;
+  width: 100%;
   height: auto;
-  top: 10vh;
-  left: 13%;
+  margin-top: 100px;
   background-color: #1EC8FF;
   box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16);
-}
-@media screen and (max-width: 1440px) {
-  .main_slide .black_box_wrapper {
-    left: 7%;
-  }
 }
 .main_slide .black_box_title {
   color: #ffffff;
@@ -217,7 +207,7 @@ body .main_wrapper .container-fluid {
   padding-top: 25px;
   padding-right: 65px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .main_slide .black_box_title {
     font-size: 22px;
   }
@@ -229,7 +219,7 @@ body .main_wrapper .container-fluid {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .main_slide .black_box_sub_title {
     font-size: 16px;
   }
@@ -256,7 +246,7 @@ body .main_wrapper .container-fluid {
   display: flex;
   justify-content: center;
   bottom: -61px;
-  left: 13%;
+  left: 8.3333%;
   background-color: #1EC8FF;
   z-index: 3;
   padding: 0 90px;
@@ -264,7 +254,6 @@ body .main_wrapper .container-fluid {
 }
 @media screen and (max-width: 1440px) {
   .main_social {
-    left: 7%;
     bottom: -58.5px;
     padding: 0 70px;
   }
@@ -288,7 +277,7 @@ body .main_wrapper .container-fluid {
   width: 22px;
   height: 80px;
   top: calc(45% - 40px);
-  right: 0;
+  right: -3vw;
   z-index: 15;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -302,7 +291,7 @@ body .main_wrapper .container-fluid {
   width: 22px;
   height: 80px;
   top: calc(45% - 40px);
-  left: 0;
+  left: -3.5vw;
   z-index: 15;
   cursor: pointer;
 }
@@ -555,6 +544,143 @@ body .main_wrapper .container-fluid {
   }
 }
 .footer_social li img {
+  width: 100%;
+}
+
+.blur {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+}
+.blur_header {
+  position: absolute;
+  width: auto;
+  top: -15%;
+  left: 5vw;
+  font-size: 300px;
+}
+@media screen and (max-width: 1440px) {
+  .blur_header {
+    font-size: 250px;
+  }
+}
+.blur_wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+.blur_wrapper:nth-child(2) .blur_number {
+  position: absolute;
+  width: 30px;
+  top: 65%;
+  left: 30px;
+  font-size: 30px;
+}
+.blur_wrapper:nth-child(2) .blur_number:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 5px;
+  left: -110%;
+  background-color: #000000;
+}
+.blur_wrapper:last-child .blur_number {
+  position: absolute;
+  width: 30px;
+  top: 0;
+  left: 30px;
+  font-size: 30px;
+}
+.blur_title {
+  font-size: 70px;
+  margin-left: 5vw;
+  margin-top: 80px;
+}
+@media screen and (max-width: 1440px) {
+  .blur_title {
+    font-size: 60px;
+  }
+}
+.blur_text {
+  font-size: 18px;
+  line-height: 23px;
+  margin-left: 5vw;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1440px) {
+  .blur_text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.blur_btn {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000000;
+  margin-left: calc(5vw + 15px);
+  margin-top: 8vh;
+}
+@media screen and (max-width: 1440px) {
+  .blur_btn {
+    font-size: 26px;
+  }
+}
+.blur_btn:hover p:after {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.blur_btn p {
+  position: relative;
+  width: auto;
+}
+.blur_btn p:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  opacity: 0;
+  background-color: #1EC8FF;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.blur_btn img {
+  width: 20px;
+  margin-left: 40px;
+}
+.blur_image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+.blur_image .filter {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.blur_image img {
   width: 100%;
 }
 
