@@ -1,0 +1,112 @@
+.about
+  position: relative
+  width: 100%
+  margin-top: 100px
+  &_image
+    width: 100%
+    img
+      width: 100%
+  &_header
+    margin-left: 30px
+  &_sub_header
+    @extend .pt-bold
+    font-size: 24px
+    width: 100%
+    display: block
+    color: $white
+    margin-top: 30px
+    padding: 15px 0 15px 30px
+    background-color: $blue
+    @media screen and (max-width: 1440px)
+      font-size: 20px
+  &_text
+    @extend .pt-reg
+    font-size: 18px
+    line-height: 23px
+    margin-top: 30px
+    margin-left: 30px
+    @media screen and (max-width: 1440px)
+      font-size: 16px
+      line-height: 21px
+  &_title
+    position: relative
+    display: block
+    width: 100%
+    @extend .pt-bold
+    font-size: 24px
+    color: $black
+    padding-left: 30px
+    margin-top: 50px
+    @media screen and (max-width: 1440px)
+      font-size: 20px
+  &_title_first
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 1px
+      top: -15px
+      left: 0
+      background-color: $blue
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 1px
+      height: calc(100% + 30px)
+      top: -15px
+      left: 0
+      background-color: $blue
+  &_title_second
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 1px
+      bottom: -15px
+      left: 0
+      background-color: $blue
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 1px
+      height: calc(100% + 30px)
+      top: -15px
+      left: 0
+      background-color: $blue
+  &_list
+    margin-top: 30px
+    margin-left: 50px
+    list-style: disc
+    li
+      @extend .pt-reg
+      font-size: 18px
+      line-height: 24px
+      color: $black
+      padding-left: 30px
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+        line-height: 22px
+  &_ps_wrapper
+    position: relative
+    display: flex
+    align-items: center
+    margin-top: 40px
+    margin-left: 30px
+  &_double_image
+    display: inline-block
+    width: 170px
+    margin-right: 25px
+    img
+      width: 100%
+  &_ps
+    display: inline-block
+    @extend .pt-reg
+    font-size: 24px
+    line-height: 31px
+    @media screen and (max-width: 1440px)
+      font-size: 20px
+      line-height: 27px

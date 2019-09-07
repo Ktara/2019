@@ -1,0 +1,43 @@
+.pt-reg
+  font-family: 'PT Sans', sans-serif
+  font-weight: 400
+
+.pt-bold
+  font-family: 'PT Sans', sans-serif
+  font-weight: 700
+
+.lato-light
+  font-family: 'Lato', sans-serif
+  font-weight: 300
+
+.lato-semi
+  font-family: 'Lato', sans-serif
+  font-weight: 600
+
+
+$blue: #1EC8FF
+$grey: #EFEDEA
+$green: #3AD235
+$black: #000000
+$light-black: #111016
+$white: #ffffff
+
+
+
+body
+  font-size: 10px
+
+  .main_wrapper
+    @extend .pt-reg
+    overflow: hidden
+    .container-fluid
+      width: 90vw
+      margin-left: 5vw
+
+
+.section_header
+  @extend .pt-bold
+  font-size: 186px
+  color: $grey
+  @media screen and (max-width: 1440px)
+    font-size: 156px
