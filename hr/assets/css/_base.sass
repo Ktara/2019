@@ -17,6 +17,8 @@
 
 $blue: #1EC8FF
 $grey: #EFEDEA
+$dark-grey: #656565
+$light-grey: #B5B5B5
 $green: #3AD235
 $black: #000000
 $light-black: #111016
@@ -39,5 +41,55 @@ body
   @extend .pt-bold
   font-size: 186px
   color: $grey
-  //@media screen and (max-width: 1440px)
-  //  font-size: 156px
+  @media screen and (max-width: 1440px)
+    font-size: 146px
+
+.btn
+  position: relative
+  display: flex
+  width: auto
+  height: 40px
+  line-height: 40px
+  @extend .pt-reg
+  font-size: 30px
+  text-decoration: none
+  color: $black
+  cursor: pointer
+  @media screen and (max-width: 1440px)
+    font-size: 24px
+  @media screen and (max-width: 1280px)
+    font-size: 22px
+  &:hover
+    p:after
+      width: 100%
+      opacity: 1
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+  p
+    position: relative
+    width: auto
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 0
+      height: 2px
+      bottom: -5px
+      left: 0
+      opacity: 0
+      background-color: $blue
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+  img
+    width: 20px
+    margin-left: 40px
+    @media screen and (max-width: 1440px)
+      margin-left: 25px
+    @media screen and (max-width: 1280px)
+      margin-left: 20px

@@ -1,0 +1,141 @@
+.main_events
+  position: relative
+  width: 100%
+  margin-top: 120px
+  &_letter
+    position: absolute
+    display: block
+    @extend .lato-semi
+    font-size: 764px
+    top: -120px
+    left: -8vw
+    color: rgba(0, 0, 0, 0.03)
+    @media screen and (max-width: 1440px)
+      font-size: 664px
+      top: -110px
+  &_title
+    position: relative
+    width: 100%
+    @extend .pt-bold
+    font-size: 36px
+    margin-top: 30px
+  &_wrapper
+    padding-top: 45px
+  &_viewer
+    position: relative
+    display: flex
+    margin-top: 25px
+    &_image
+      width: 85px
+      margin-right: 10%
+      @media screen and (max-width: 1440px)
+        width: 65px
+      img
+        width: 100%
+    &_text
+      display: block
+      width: calc(90% - 85px)
+      @media screen and (max-width: 1440px)
+        width: calc(90% - 65px)
+    &_title
+      @extend .pt-bold
+      font-size: 24px
+      line-height: 31px
+      @media screen and (max-width: 1440px)
+        font-size: 22px
+        line-height: 29px
+    &_date
+      position: relative
+      display: block
+      margin-top: 5px
+      p
+        @extend .pt-bold
+        font-size: 16px
+        color: $dark-grey
+        span
+          @extend .pt-reg
+          color: $light-grey
+          @media screen and (max-width: 1440px)
+            font-size: 14px
+    &_status
+      position: absolute
+      display: inline-block
+      width: auto
+      top: 0
+      right: 10%
+      @extend .pt-reg
+      font-size: 16px
+      color: $green
+      @media screen and (max-width: 1440px)
+        font-size: 14px
+  .row .col-lg-3:last-child
+    margin-left: 30px
+  &_box
+    position: relative
+    display: block
+    margin-top: 70px
+    &_image
+      width: 100%
+      img
+        width: 100%
+    &_wrapper
+      position: absolute
+      display: block
+      width: 100%
+      left: 30px
+      top: calc(100% - 45px)
+      background-color: $blue
+      text-decoration: none
+    &_title
+      display: block
+      width: 80%
+      @extend .pt-bold
+      font-size: 18px
+      color: $white
+      padding-top: 15px
+      padding-left: 15px
+      @media screen and (max-width: 1440px)
+        font-size: 16px
+    &_text
+      display: block
+      width: 80%
+      @extend .pt-reg
+      font-size: 16px
+      line-height: 24px
+      color: $white
+      margin-top: 20px
+      padding-bottom: 15px
+      padding-left: 15px
+      @media screen and (max-width: 1440px)
+        font-size: 13px
+        line-height: 22px
+    &_date
+      position: absolute
+      display: block
+      left: 15px
+      bottom: -25px
+      p
+        @extend .pt-bold
+        font-size: 16px
+        color: $dark-grey
+        span
+          @extend .pt-reg
+          color: $light-grey
+          @media screen and (max-width: 1440px)
+            font-size: 14px
+    &_btn
+      position: absolute
+      display: block
+      width: 20px
+      top: calc(50% - 20px)
+      right: calc(10% - 10px)
+      img
+        width: 100%
+  &_btn
+    position: absolute
+    bottom: -10%
+    right: 5vw
+    @media screen and (max-width: 1440px)
+      bottom: -8%
+    @media screen and (max-width: 1280px)
+      bottom: -6%
