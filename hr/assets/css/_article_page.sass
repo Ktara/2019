@@ -1,0 +1,81 @@
+.article
+  position: relative
+  width: 100%
+  margin-top: 13vh
+  &_image
+    position: relative
+    width: 100%
+    height: 60vh
+    overflow: hidden
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16)
+    img
+      position: absolute
+      width: 100%
+      bottom: -30%
+  &_title
+    @extend .pt-reg
+    font-size: 28px
+    margin-top: 50px
+    @media screen and (max-width: 1440px)
+      font-size: 24px
+  &_sub_title
+    @extend .pt-reg
+    font-size: 16px
+    color: $light-grey
+    margin-top: 10px
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+  &_text
+    width: 80%
+    padding-top: 20px
+    p
+      @extend .pt-reg
+      font-size: 18px
+      line-height: 23px
+      @media screen and (max-width: 1440px)
+        font-size: 15px
+        line-height: 20px
+  &_list_wrapper
+    position: relative
+    width: 100%
+    margin-top: 30px
+    margin-bottom: 30px
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 2px
+      height: 100%
+      left: 0
+      top: 0
+      background-color: $blue
+  &_list_title
+    @extend .pt-bold
+    font-size: 24px
+    line-height: 31
+    margin-left: 30px
+    @media screen and (max-width: 1440px)
+      font-size: 21px
+      line-height: 27px
+  &_list
+    list-style-type: disc
+    margin-top: 20px
+    margin-left: 50px
+    li
+      @extend .pt-reg
+      font-size: 18px
+      line-height: 24
+      padding-left: 30px
+      @media screen and (max-width: 1440px)
+        font-size: 15px
+        line-height: 21px
+  &_img
+    position: relative
+    width: 100%
+    height: 60vh
+    overflow: hidden
+    margin-top: 50px
+    img
+      position: absolute
+      width: 100%
+      bottom: -30%
