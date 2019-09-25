@@ -1,0 +1,185 @@
+.contacts
+  position: relative
+  width: 100%
+  height: 87vh
+  background-color: $grey
+  padding-top: 20vh
+  @media screen and (max-width: 1440px)
+    padding-top: 15vh
+  .blue_filter
+    position: absolute
+    width: calc(100% - 30px)
+    height: 87vh
+    top: -20vh
+    right: 15px
+    background-color: $blue
+    box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16)
+    z-index: 1
+    @media screen and (max-width: 1440px)
+      top: -15vh
+  &_header
+    @extend .pt-reg
+    font-size: 16px
+    margin-top: 50px
+    color: $light-grey
+    @media screen and (max-width: 1440px)
+      font-size: 14px
+  &_text
+    position: relative
+    @extend .pt-reg
+    font-size: 70px
+    margin-top: 20px
+    z-index: 3
+    @media screen and (max-width: 1440px)
+      font-size: 56px
+  &_social
+    display: flex
+    margin-top: 20px
+    &_box
+      display: flex
+      flex-direction: column
+      text-decoration: none
+      align-items: center
+      margin-right: 5%
+      opacity: 0.1
+      -webkit-transition: opacity 0.4s
+      -moz-transition: opacity 0.4s
+      -ms-transition: opacity 0.4s
+      -o-transition: opacity 0.4s
+      transition: opacity 0.4s
+      &:hover
+        opacity: 1
+        -webkit-transition: opacity 0.4s
+        -moz-transition: opacity 0.4s
+        -ms-transition: opacity 0.4s
+        -o-transition: opacity 0.4s
+        transition: opacity 0.4s
+        p
+          opacity: 1
+      img
+        height: 120px
+        @media screen and (max-width: 1440px)
+          height: 90px
+        @media screen and (max-width: 1280px)
+          height: 70px
+      p
+        @extend .pt-reg
+        font-size: 24px
+        margin-top: 10px
+        color: $black
+        opacity: 0
+        -webkit-transition: opacity 0.4s
+        -moz-transition: opacity 0.4s
+        -ms-transition: opacity 0.4s
+        -o-transition: opacity 0.4s
+        transition: opacity 0.4s
+        @media screen and (max-width: 1440px)
+          font-size: 20px
+        @media screen and (max-width: 1280px)
+          font-size: 18px
+  &_map
+    position: absolute
+    display: block
+    width: 55%
+    top: 30vh
+    right: 7vw
+    z-index: 2
+    @media screen and (max-width: 1440px)
+      width: 60%
+    img
+      width: 100%
+  &_form_wrapper
+    position: absolute
+    width: 43%
+    bottom: -2px
+    right: 21vw
+    @media screen and (max-width: 1440px)
+      width: 44%
+  &_form
+    position: relative
+    width: 100%
+    z-index: 3
+    &_header
+      position: relative
+      @extend .pt-bold
+      font-size: 24px
+      z-index: 3
+      margin-bottom: 10px
+      @media screen and (max-width: 1440px)
+        font-size: 20px
+    input
+      width: 100%
+      height: 50px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      font-size: 16px
+      text-indent: 20px
+      color: rgba(0, 0, 0, 1)
+      border: 1px solid $blue
+      margin-top: 20px
+      background-color: $grey
+      @extend .pt-reg
+      @media screen and (max-width: 1440px)
+        font-size: 14px
+    input::-moz-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::-webkit-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input:-ms-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::-ms-input-placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input::placeholder
+      color: rgba(0, 0, 0, 0.5)
+    input:focus::placeholder
+      color: rgba(0, 0, 0, 0.5)
+      outline: none
+    textarea
+      width: 100%
+      height: 50px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      resize: none
+      overflow-y: auto
+      font-size: 16px
+      @extend .pt-reg
+      color: rgba(0, 0, 0, 1)
+      border: 1px solid $blue
+      margin-top: 20px
+      padding-left: 20px
+      padding-top: 14px
+      background-color: inherit
+    &_btn
+      display: block
+      width: 100%
+      height: 50px
+      line-height: 48px
+      border: 1px solid $blue
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      font-size: 16px
+      text-align: center
+      color: $white
+      background-color: $blue
+      margin-top: 20px
+      cursor: pointer
+      -webkit-transition: all 0.5s
+      -moz-transition: all 0.5s
+      -ms-transition: all 0.5s
+      -o-transition: all 0.5s
+      transition: all 0.5s
+      @media screen and (max-width: 1440px)
+        font-size: 14px
+      &:hover
+        background-color: $dark-blue
+        -webkit-transition: all 0.5s
+        -moz-transition: all 0.5s
+        -ms-transition: all 0.5s
+        -o-transition: all 0.5s
+        transition: all 0.5s

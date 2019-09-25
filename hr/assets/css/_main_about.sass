@@ -2,6 +2,8 @@
   position: relative
   width: 100%
   margin-top: 100px
+  @media screen and (max-width: 780px)
+    margin-bottom: 150px
   &_image
     width: 100%
     img
@@ -19,6 +21,9 @@
     background-color: $blue
     @media screen and (max-width: 1440px)
       font-size: 20px
+    @media screen and (max-width: 780px)
+      padding-right: 30px
+      margin-top: 0
   &_text
     @extend .pt-reg
     font-size: 18px
@@ -28,6 +33,12 @@
     @media screen and (max-width: 1440px)
       font-size: 16px
       line-height: 21px
+  &_box
+    @media screen and (max-width: 780px)
+      display: none
+  &_box_table
+    @media screen and (max-width: 780px)
+      display: block
   &_title
     position: relative
     display: block
