@@ -13,7 +13,7 @@
     background-color: $blue
     box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16)
     z-index: 1
-    @media screen and (max-width: 780px)
+    @media screen and (max-width: 850px)
       height: 130vh
   &_slider_wrapper
     position: relative
@@ -35,7 +35,7 @@
       width: 100%
       height: 77vh
       background-color: $light-black
-      @media screen and (max-width: 780px)
+      @media screen and (max-width: 850px)
         width: 110%
       &_wrapper
         display: inline-block
@@ -46,7 +46,7 @@
         box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16)
       &_wrapper_tablet
         display: none
-        @media screen and (max-width: 780px)
+        @media screen and (max-width: 850px)
           position: absolute
           display: inline-block
           width: 80%
@@ -55,6 +55,8 @@
           height: auto
           background-color: $blue
           box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16)
+        @media screen and (max-width: 450px)
+          bottom: 20vh
       &_title
         @extend .pt-bold
         color: $white
@@ -64,6 +66,11 @@
         padding-right: 65px
         @media screen and (max-width: 1440px)
           font-size: 22px
+        @media screen and (max-width: 450px)
+          padding-top: 10px
+          padding-left: 10px
+          padding-right: 10px
+          font-size: 18px
       &_sub_title
         @extend .pt-reg
         color: $white
@@ -73,6 +80,10 @@
         padding-bottom: 20px
         @media screen and (max-width: 1440px)
           font-size: 16px
+        @media screen and (max-width: 450px)
+          padding-left: 10px
+          padding-bottom: 10px
+          font-size: 13px
     &_image
       position: relative
       width: 100%
@@ -98,7 +109,7 @@
     @media screen and (max-width: 1440px)
       bottom: -58.5px
       padding: 0 70px
-    @media screen and (max-width: 780px)
+    @media screen and (max-width: 850px)
       bottom: -31px
       padding: 0 25px
       left: 27%
@@ -109,11 +120,30 @@
       padding-bottom: 45px
       @media screen and (max-width: 1440px)
         width: 25px
-      @media screen and (max-width: 780px)
+      @media screen and (max-width: 850px)
         padding-top: 20px
         padding-bottom: 20px
       img
         width: 100%
+  &_social_mob
+    display: none
+    @media screen and (max-width: 450px)
+      position: absolute
+      display: flex
+      justify-content: center
+      bottom: -21px
+      left: 10%
+      background-color: $blue
+      z-index: 3
+      padding: 0
+      box-shadow: -5px 3px 20px rgba(0, 0, 0, 0.16)
+      li
+        width: 25px
+        margin: 0 7.5px
+        padding-top: 20px
+        padding-bottom: 20px
+        img
+          width: 100%
   .main_next_arrow
     position: absolute
     width: 22px
@@ -127,6 +157,8 @@
     -o-transform: rotate(180deg)
     transform: rotate(180deg)
     cursor: pointer
+    @media screen and (max-width: 450px)
+      right: 0
   .main_prev_arrow
     position: absolute
     width: 22px
@@ -135,6 +167,8 @@
     left: -3.5vw
     z-index: 15
     cursor: pointer
+    @media screen and (max-width: 450px)
+      left: 0
   .slick-list
     height: 87vh
   .slick-dots
@@ -145,14 +179,20 @@
     display: flex
     flex-direction: row
     justify-content: center
-    @media screen and (max-width: 780px)
+    @media screen and (max-width: 850px)
       width: 21%
       right: 15px
+    @media screen and (max-width: 450px)
+      width: 25%
     .slick-active
       button
         border: 1px solid $white
         background-color: $white
         border-radius: 50px
+      @media screen and (max-width: 450px)
+        display: inline-block
+        font-size: 16px
+        color: $white
     li
       display: inline-block
       width: 15px
@@ -161,6 +201,10 @@
       @media screen and (max-width: 1440px)
         width: 13px
         height: 13px
+      @media screen and (max-width: 450px)
+        display: none
+        width: auto
+        height: auto
       button
         display: inline-block
         width: 15px

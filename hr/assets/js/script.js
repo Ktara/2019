@@ -4,7 +4,19 @@ $('.main_slider').slick({
     nextArrow: '<div class="main_next_arrow"><img src="assets/img/icon/white-ar.svg" alt=""></div>',
     prevArrow: '<div class="main_prev_arrow"><img src="assets/img/icon/white-ar.svg" alt=""></div>',
     dots: true,
-    arrows: true
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 450,
+            settings: {
+                customPaging : function(slider, i) {
+                    var length = slider.$slides.length;
+                    $('.main_count').text(length);
+                    return i + 1 + '/' + length;
+                }
+            }
+        }
+    ]
 });
 
 
